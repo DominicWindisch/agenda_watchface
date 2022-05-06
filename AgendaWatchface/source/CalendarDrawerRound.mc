@@ -173,136 +173,121 @@ class CalendarDrawerRound {
 	function drawCalendar(dc,y) {
 
 	// _done
-		var evCount = c.events.size();
-		var evStart = 0;
-		var evNext = -1;
-		var evLast = evCount; 
 		var ev = null;
 		var now = Time.now().value();
-		var past = calendar_agendastyle ? Time.today().value() : now;
 		var col1,col2,col3; // colors 
 		var midx = 0;
-		var i, maxitems = calendar_onelinestyle?6:3;
+		var i, maxitems = 6;
 		
 		var xDelta; // delta for every line -> to show on round
 		var dyDate; // dy after the date line
 		var dyLine; // dy after each event
-		
+
+		// max seconds since last update before showing a warning		
 		var lastUpdt = App.Storage.getValue("LastChangedM");
 		var lastReq = App.Storage.getValue("LastRequestM");
-		// max seconds since last update before showing a warning
 		var maxUpdateDelay = 300; 
-
+		var lastUpdtTime = lastUpdt != null ? lastUpdt : 0;
+	    var lastReqTime = lastReq != null ? lastReq : maxUpdateDelay + 1;
+		var noConnection = ( (lastReqTime - lastUpdtTime) > maxUpdateDelay);
+		
 		xDelta = [10,12,16,25,38,62];
 		dyDate = 16;
 		dyLine = 16;
 
-		 
-		// cleanup (determine last entry of todays)
-		var lastev = c.cleanup();
-		var lastev_tomorrow = c.cleanup_tomorrow(lastev);
-		var lastallday = c.getLastAllday();
+		// we need a few events to set placeholders and draw section dividers:
+		var lastEvTodayAlldayIdx = c.getLastTodayAllday();
+		var lastEvTodayTimedIdx = c.getLastTodayTimed();
+		var lastEvTomorrowIdx = c.getLastEvTomorrow();
+		var lastEvTodayIdx;
 		
-		// draw:
-		var iinc = 0;
-		var got_timed = false;
-    	for ( i=0; i<6-iinc; i++ ) {
-    		ev = c.getUpcomingEvent(evStart+i,past);
-    		if (ev!=null)
-    		{
-    			// colors:
-  		  		if ( i < lastev && ev.allday )
-  		  			{
-	    				col1 = 0xaaaaaa; col2 = 0xaaaaaa; // todays all-day events
-				}
-				else if ( i < lastev && !ev.allday)
-				{
-					col1 = 0xffffff; col2 = 0xffffff; // todays timed events
-				}
-				else if ( i >= lastev_tomorrow )
-				{
-					col1 = 0x555555; col2 = 0x555555; //anything after tomorrow
-				}
-    			else 
-    			{
-					col1 = 0xaaaaaa; col2 = 0xaaaaaa; //tomorrows events
-				}
-    			
-				// align left mode:	    			
-    			if (calendar_alignleft) {
-    				midx = dc.getTextWidthInPixels(ev.time,Gfx.FONT_XTINY);
-    			}
-    			
-    			if (i == 0) {
-	    			// connection to server lost -> display red message!
-	    			var durationSinceUpdate = 0; 
-	    			var lastUpdtTime = lastUpdt != null ? lastUpdt : 0;
-	    			var lastReqTime = lastReq != null ? lastReq : maxUpdateDelay + 1;
-	    			
-	    			durationSinceUpdate = lastReqTime - lastUpdtTime;
-	    			if (durationSinceUpdate > maxUpdateDelay) {
-	    				// no connection for more than 10 minutes, something is wrong:
-	    				dc.setColor(0xff0000, Gfx.COLOR_TRANSPARENT);
-						dc.drawText(w/2, y, Gfx.FONT_XTINY, "Keine Verbindung!", Gfx.TEXT_JUSTIFY_CENTER);
-						y += dyLine;
-						iinc++;
-	    			}
-    			}
-    						
-    			// paint:
-    			if (i == lastallday && i > 0)
-				{
-					// draw a horizontal line after last allday event of today						
-					y+= 3;
-					
-					dc.setColor(0x555555,Gfx.COLOR_TRANSPARENT);
-					dc.setPenWidth(1);
-					dc.drawLine(0,y,w,y);
-				}
-    			
-    			if ( ev.lastone == 1 && !got_timed )
-    			{
-    				dc.setColor(0xffffff, Gfx.COLOR_TRANSPARENT);
-					dc.drawText(w/2, y, Gfx.FONT_XTINY, "Heute keine Termine mehr", Gfx.TEXT_JUSTIFY_CENTER);
-					y += dyLine;
-					iinc++;
-    			}
-    			
-    			if (ev.lastone==1 )
-				{
-					// draw a horizontal line after last event of today						
-					y+= 4;
-					
-					dc.setColor(0x555555,Gfx.COLOR_TRANSPARENT);
-					dc.setPenWidth(2);
-					dc.drawLine(0,y,w,y);
-				}
+		var noEventsToday = (lastEvTodayAlldayIdx == null && lastEvTodayAlldayIdx == null);
+		var noEventsTomorrow = (lastEvTomorrowIdx == null);
+		
+		if (noEventsToday) {
+			lastEvTodayIdx = 0;
+		} else if (lastEvTodayAlldayIdx == null) {
+			lastEvTodayIdx = lastEvTodayTimedIdx;
+		} else if (lastEvTodayTimedIdx == null) {
+			lastEvTodayIdx = lastEvTodayAlldayIdx;
+		} else {
+			lastEvTodayIdx = lastEvTodayAlldayIdx > lastEvTodayTimedIdx ? lastEvTodayAlldayIdx : lastEvTodayTimedIdx;
+		}
 				
-				if (i == lastev && i == lastev_tomorrow) {
-    				// next event after today = next event after tomorrow -> i.e. no events tomorrow
-    				dc.setColor(0xaaaaaa, Gfx.COLOR_TRANSPARENT);
+		// draw:
+		var lineOffset = 0;
+		var timeEndOfToday = Time.today().value() + 24*60*60;
+		var timeEndOfTomorrow = Time.today().value() + 48*60*60; 
+    	for ( i=0; i < c.getNumEvents(); i++ ) {
+    	
+    		if (i == 0 && noConnection) {
+    			dc.setColor(0xff0000, Gfx.COLOR_TRANSPARENT);
+				dc.drawText(w/2, y, Gfx.FONT_XTINY, "Keine Verbindung!", Gfx.TEXT_JUSTIFY_CENTER);
+				y += dyLine;
+				lineOffset++;
+    		}
+    		
+    		if (i == 0 && noEventsToday) {
+				dc.setColor(0xffffff, Gfx.COLOR_TRANSPARENT);
+				dc.drawText(w/2, y, Gfx.FONT_XTINY, "Heute keine Termine mehr", Gfx.TEXT_JUSTIFY_CENTER);
+				y += dyLine;
+				lineOffset++;
+			}
+			
+			if (i > 0 && lastEvTodayAlldayIdx == i) {
+				// draw a horizontal line after last allday event of today						
+				y+= 3;
+				dc.setColor(0x555555,Gfx.COLOR_TRANSPARENT);
+				dc.setPenWidth(1);
+				dc.drawLine(0,y,w,y);
+			}
+			
+			if (i == lastEvTodayIdx) {
+				y+= 4;
+				dc.setColor(0x555555,Gfx.COLOR_TRANSPARENT);
+				dc.setPenWidth(2);
+				dc.drawLine(0,y,w,y);
+				
+				if (noEventsTomorrow) {
+					dc.setColor(0xaaaaaa, Gfx.COLOR_TRANSPARENT);
 					dc.drawText(w/2, y, Gfx.FONT_XTINY, "Morgen keine Termine", Gfx.TEXT_JUSTIFY_CENTER);
 					y += dyLine;
-					iinc++;
-    			}
+					lineOffset++;
+				}
+				
+			}
+    	
+    		ev = c.getEventIfNotPastAlready(i, now);
+    		if (ev!=null && i+lineOffset < maxitems)
+    		{
+    			// colors:
+    			var isTodayEvent = false, isTomorrowEvent = false;
+    			if (ev.tStart < timeEndOfToday) {
+    				//todays events (color depending on allday or timed event)
+    				col1 = ev.allday ? 0xaaaaaa : 0xffffff;
+    				col2 = ev.allday ? 0xaaaaaa : 0xffffff;    
+    			} else if (ev.tStart < timeEndOfTomorrow) {
+    				//tomorrows events
+    				col1 = 0xaaaaaa; col2 = 0xaaaaaa; 
+    			} else {
+					col1 = 0x555555; col2 = 0x555555; //anything after tomorrow
+				}
     			
-    			if ((i >= lastev || !ev.allday) && i+iinc < 6){
+    			// paint event texts:
+    			if (!ev.allday){
+    				midx = dc.getTextWidthInPixels(ev.time,Gfx.FONT_XTINY);
     				dc.setColor(col1, Gfx.COLOR_TRANSPARENT);
-					dc.drawText(midx+xDelta[i+iinc], y, Gfx.FONT_XTINY, ev.time, Gfx.TEXT_JUSTIFY_RIGHT);
+					dc.drawText(midx+xDelta[i+lineOffset], y, Gfx.FONT_XTINY, ev.time, Gfx.TEXT_JUSTIFY_RIGHT);
 					
 	    			dc.setColor(col2, Gfx.COLOR_TRANSPARENT);
-					dc.drawText(midx+xDelta[i+iinc]+5, y, Gfx.FONT_XTINY, ev.desc, Gfx.TEXT_JUSTIFY_LEFT);
-				} else {
+					dc.drawText(midx+xDelta[i+lineOffset]+5, y, Gfx.FONT_XTINY, ev.desc, Gfx.TEXT_JUSTIFY_LEFT);
+				} else if (ev.allday) {
 					// center todays allday events
 					dc.setColor(col1, Gfx.COLOR_TRANSPARENT);
 					dc.drawText(w/2, y, Gfx.FONT_XTINY, ev.desc, Gfx.TEXT_JUSTIFY_CENTER);
 				}
 				
 				y+=dyLine;
-				
-				if (ev.allday == false){
-					got_timed = true;
-				}
 				
     		}
     	}
