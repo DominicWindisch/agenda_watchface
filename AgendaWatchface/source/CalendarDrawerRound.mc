@@ -237,7 +237,6 @@ class CalendarDrawerRound {
     		if (ev!=null && i+lineOffset < maxitems)
     		{
     			// colors:
-    			var isTodayEvent = false, isTomorrowEvent = false;
     			if (ev.tStart < timeEndOfToday) {
     				//todays events (color depending on allday or timed event)
     				col1 = ev.allday ? 0xaaaaaa : 0xffffff;
