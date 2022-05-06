@@ -288,7 +288,7 @@ class Calendar
 		var timeEndOfTomorrow   = Time.today().value() + 48*60*60;
 		for (var i = 0; i < events.size(); i++)
 		{
-			if (events[i].tStart >= timeEndOfTomorrow && events[i].tStart < timeEndOfTomorrow)
+			if (events[i].tStart >= timeStartOfTomorrow && events[i].tStart < timeEndOfTomorrow)
 			{
 				lastEvTomorrow = i;
 			}	

@@ -172,7 +172,6 @@ class CalendarDrawerRound {
 	// draws the calendar
 	function drawCalendar(dc,y) {
 
-	// _done
 		var ev = null;
 		var now = Time.now().value();
 		var col1,col2,col3; // colors 
@@ -201,7 +200,7 @@ class CalendarDrawerRound {
 		var lastEvTomorrowIdx = c.getLastEvTomorrow();
 		var lastEvTodayIdx;
 		
-		var noEventsToday = (lastEvTodayAlldayIdx == null && lastEvTodayAlldayIdx == null);
+		var noEventsToday = (lastEvTodayAlldayIdx == null && lastEvTodayTimedIdx == null);
 		var noEventsTomorrow = (lastEvTomorrowIdx == null);
 		
 		if (noEventsToday) {
@@ -234,29 +233,6 @@ class CalendarDrawerRound {
 				lineOffset++;
 			}
 			
-			if (i > 0 && lastEvTodayAlldayIdx == i) {
-				// draw a horizontal line after last allday event of today						
-				y+= 3;
-				dc.setColor(0x555555,Gfx.COLOR_TRANSPARENT);
-				dc.setPenWidth(1);
-				dc.drawLine(0,y,w,y);
-			}
-			
-			if (i == lastEvTodayIdx) {
-				y+= 4;
-				dc.setColor(0x555555,Gfx.COLOR_TRANSPARENT);
-				dc.setPenWidth(2);
-				dc.drawLine(0,y,w,y);
-				
-				if (noEventsTomorrow) {
-					dc.setColor(0xaaaaaa, Gfx.COLOR_TRANSPARENT);
-					dc.drawText(w/2, y, Gfx.FONT_XTINY, "Morgen keine Termine", Gfx.TEXT_JUSTIFY_CENTER);
-					y += dyLine;
-					lineOffset++;
-				}
-				
-			}
-    	
     		ev = c.getEventIfNotPastAlready(i, now);
     		if (ev!=null && i+lineOffset < maxitems)
     		{
@@ -290,6 +266,29 @@ class CalendarDrawerRound {
 				y+=dyLine;
 				
     		}
+    		
+			if (i > 0 && lastEvTodayAlldayIdx == i) {
+				// draw a horizontal line after last allday event of today						
+				y+= 3;
+				dc.setColor(0x555555,Gfx.COLOR_TRANSPARENT);
+				dc.setPenWidth(1);
+				dc.drawLine(0,y,w,y);
+			}
+    		
+    		if (i == lastEvTodayIdx) {
+				y+= 4;
+				dc.setColor(0x555555,Gfx.COLOR_TRANSPARENT);
+				dc.setPenWidth(2);
+				dc.drawLine(0,y,w,y);
+				
+				if (noEventsTomorrow) {
+					dc.setColor(0xaaaaaa, Gfx.COLOR_TRANSPARENT);
+					dc.drawText(w/2, y, Gfx.FONT_XTINY, "Morgen keine Termine", Gfx.TEXT_JUSTIFY_CENTER);
+					y += dyLine;
+					lineOffset++;
+				}
+				
+			}
     	}
 	}
 
