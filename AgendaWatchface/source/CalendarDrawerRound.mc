@@ -231,6 +231,19 @@ class CalendarDrawerRound {
 				dc.drawText(w/2, y, Gfx.FONT_XTINY, "Heute keine Termine mehr", Gfx.TEXT_JUSTIFY_CENTER);
 				y += dyLine;
 				lineOffset++;
+				
+				y+= 4;
+				dc.setColor(0x555555,Gfx.COLOR_TRANSPARENT);
+				dc.setPenWidth(2);
+				dc.drawLine(0,y,w,y);
+				
+				if (noEventsTomorrow) {
+					dc.setColor(0xaaaaaa, Gfx.COLOR_TRANSPARENT);
+					dc.drawText(w/2, y, Gfx.FONT_XTINY, "Morgen keine Termine", Gfx.TEXT_JUSTIFY_CENTER);
+					y += dyLine;
+					lineOffset++;
+				}
+				
 			}
 			
     		ev = c.getEventIfNotPastAlready(i, now);
@@ -266,28 +279,29 @@ class CalendarDrawerRound {
 				
     		}
     		
-			if (i > 0 && lastEvTodayAlldayIdx == i) {
-				// draw a horizontal line after last allday event of today						
-				y+= 3;
-				dc.setColor(0x555555,Gfx.COLOR_TRANSPARENT);
-				dc.setPenWidth(1);
-				dc.drawLine(0,y,w,y);
-			}
-    		
-    		if (i == lastEvTodayIdx) {
-				y+= 4;
-				dc.setColor(0x555555,Gfx.COLOR_TRANSPARENT);
-				dc.setPenWidth(2);
-				dc.drawLine(0,y,w,y);
-				
-				if (noEventsTomorrow) {
-					dc.setColor(0xaaaaaa, Gfx.COLOR_TRANSPARENT);
-					dc.drawText(w/2, y, Gfx.FONT_XTINY, "Morgen keine Termine", Gfx.TEXT_JUSTIFY_CENTER);
-					y += dyLine;
-					lineOffset++;
+			if (!noEventsToday) {
+				if ( i == lastEvTodayIdx) {
+					y+= 4;
+					dc.setColor(0x555555,Gfx.COLOR_TRANSPARENT);
+					dc.setPenWidth(2);
+					dc.drawLine(0,y,w,y);
+					
+					if (noEventsTomorrow) {
+						dc.setColor(0xaaaaaa, Gfx.COLOR_TRANSPARENT);
+						dc.drawText(w/2, y, Gfx.FONT_XTINY, "Morgen keine Termine", Gfx.TEXT_JUSTIFY_CENTER);
+						y += dyLine;
+						lineOffset++;
+					}
+					
+				} else if (i == lastEvTodayAlldayIdx) {
+					// draw a horizontal line after last allday event of today						
+					y+= 3;
+					dc.setColor(0x555555,Gfx.COLOR_TRANSPARENT);
+					dc.setPenWidth(1);
+					dc.drawLine(0,y,w,y);
 				}
-				
-			}
+    		}
+    		
     	}
 	}
 
