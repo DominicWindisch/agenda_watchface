@@ -1,0 +1,1161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <pcToLineNum>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="3" lineNum="19" pc="268438629" symbol="resetLiveHR"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="3" lineNum="20" pc="268438633" symbol="resetLiveHR"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="4" lineNum="23" pc="268438647" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="4" lineNum="24" pc="268438651" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="4" lineNum="25" pc="268438670" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="4" lineNum="26" pc="268438689" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="4" lineNum="27" pc="268438699" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="4" lineNum="28" pc="268438709" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="4" lineNum="30" pc="268438739" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="5" lineNum="33" pc="268438752" symbol="updateSettings"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="5" lineNum="35" pc="268438756" symbol="updateSettings"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="5" lineNum="37" pc="268438776" symbol="updateSettings"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="5" lineNum="38" pc="268438789" symbol="updateSettings"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="5" lineNum="39" pc="268438802" symbol="updateSettings"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="42" pc="268438816" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="45" pc="268438820" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="46" pc="268438837" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="47" pc="268438840" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="50" pc="268438843" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="54" pc="268438931" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="58" pc="268438956" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="59" pc="268438992" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="64" pc="268439004" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="65" pc="268439004" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="66" pc="268439004" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="67" pc="268439004" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="68" pc="268439011" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="69" pc="268439011" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="70" pc="268439011" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="71" pc="268439011" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="72" pc="268439011" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="73" pc="268439011" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="74" pc="268439011" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="76" pc="268439011" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="77" pc="268439045" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="78" pc="268439076" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="79" pc="268439083" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="80" pc="268439090" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="81" pc="268439106" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="82" pc="268439113" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="83" pc="268439120" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="84" pc="268439157" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="86" pc="268439167" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="88" pc="268439174" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="89" pc="268439181" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="90" pc="268439188" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="91" pc="268439195" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="92" pc="268439202" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="95" pc="268439209" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="96" pc="268439241" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="99" pc="268439279" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="100" pc="268439311" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="101" pc="268439356" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="103" pc="268439401" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="104" pc="268439467" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="105" pc="268439484" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="106" pc="268439501" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="107" pc="268439518" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="108" pc="268439550" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="109" pc="268439567" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="111" pc="268439599" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="113" pc="268439628" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="114" pc="268439717" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="116" pc="268439752" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="119" pc="268439815" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="120" pc="268439826" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="121" pc="268439855" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="122" pc="268439932" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="124" pc="268439967" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="129" pc="268440044" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="130" pc="268440076" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="131" pc="268440129" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="133" pc="268440191" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="135" pc="268440208" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="137" pc="268440230" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="141" pc="268440276" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="142" pc="268440305" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="143" pc="268440322" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="148" pc="268440351" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="149" pc="268440417" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="6" lineNum="151" pc="268440436" symbol="draw"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="7" lineNum="157" pc="268440453" symbol="drawWaitInfo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="7" lineNum="159" pc="268440457" symbol="drawWaitInfo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="7" lineNum="161" pc="268440473" symbol="drawWaitInfo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="7" lineNum="162" pc="268440533" symbol="drawWaitInfo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="7" lineNum="164" pc="268440547" symbol="drawWaitInfo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="7" lineNum="165" pc="268440576" symbol="drawWaitInfo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="7" lineNum="166" pc="268440650" symbol="drawWaitInfo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="7" lineNum="167" pc="268440734" symbol="drawWaitInfo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="7" lineNum="168" pc="268440818" symbol="drawWaitInfo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="173" pc="268440903" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="175" pc="268440907" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="176" pc="268440910" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="177" pc="268440938" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="178" pc="268440938" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="179" pc="268440945" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="181" pc="268440952" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="182" pc="268440952" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="183" pc="268440952" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="186" pc="268440952" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="187" pc="268440980" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="188" pc="268441008" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="189" pc="268441015" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="190" pc="268441034" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="191" pc="268441056" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="193" pc="268441066" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="194" pc="268441152" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="195" pc="268441159" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="198" pc="268441166" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="199" pc="268441185" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="200" pc="268441204" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="201" pc="268441223" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="203" pc="268441223" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="204" pc="268441239" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="206" pc="268441245" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="207" pc="268441250" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="208" pc="268441260" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="209" pc="268441267" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="210" pc="268441274" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="211" pc="268441281" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="213" pc="268441288" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="217" pc="268441305" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="218" pc="268441312" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="219" pc="268441346" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="220" pc="268441380" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="222" pc="268441410" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="223" pc="268441429" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="224" pc="268441458" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="225" pc="268441515" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="226" pc="268441522" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="229" pc="268441535" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="230" pc="268441554" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="231" pc="268441583" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="232" pc="268441640" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="233" pc="268441647" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="236" pc="268441660" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="237" pc="268441683" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="240" pc="268441704" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="242" pc="268441718" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="243" pc="268441744" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="244" pc="268441773" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="246" pc="268441787" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="246" pc="268441794" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="248" pc="268441804" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="248" pc="268441811" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="252" pc="268441818" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="253" pc="268441830" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="254" pc="268441863" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="255" pc="268441889" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="257" pc="268441946" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="258" pc="268441972" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="259" pc="268442038" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="261" pc="268442049" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="262" pc="268442075" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="265" pc="268442138" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="269" pc="268442148" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="271" pc="268442170" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="272" pc="268442180" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="273" pc="268442209" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="274" pc="268442226" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="277" pc="268442258" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="278" pc="268442266" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="279" pc="268442276" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="280" pc="268442305" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="281" pc="268442322" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="283" pc="268442351" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="284" pc="268442356" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="285" pc="268442385" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="286" pc="268442442" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarDrawerRound.mc" id="8" lineNum="287" pc="268442449" symbol="drawCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="10" lineNum="26" pc="268442479" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="10" lineNum="27" pc="268442483" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="10" lineNum="28" pc="268442526" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="11" lineNum="31" pc="268442570" symbol="getSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="11" lineNum="32" pc="268442574" symbol="getSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="11" lineNum="33" pc="268442581" symbol="getSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="11" lineNum="33" pc="268442592" symbol="getSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="11" lineNum="34" pc="268442602" symbol="getSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="11" lineNum="34" pc="268442613" symbol="getSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="11" lineNum="35" pc="268442623" symbol="getSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="11" lineNum="35" pc="268442634" symbol="getSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="11" lineNum="36" pc="268442644" symbol="getSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="11" lineNum="36" pc="268442655" symbol="getSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="11" lineNum="37" pc="268442665" symbol="getSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="11" lineNum="37" pc="268442676" symbol="getSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="11" lineNum="38" pc="268442686" symbol="getSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="11" lineNum="38" pc="268442697" symbol="getSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="11" lineNum="39" pc="268442707" symbol="getSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="12" lineNum="42" pc="268442711" symbol="getWeatherSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="12" lineNum="43" pc="268442715" symbol="getWeatherSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="12" lineNum="44" pc="268442722" symbol="getWeatherSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="12" lineNum="45" pc="268442736" symbol="getWeatherSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="12" lineNum="45" pc="268442747" symbol="getWeatherSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="12" lineNum="46" pc="268442757" symbol="getWeatherSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="12" lineNum="46" pc="268442768" symbol="getWeatherSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="12" lineNum="47" pc="268442778" symbol="getWeatherSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="12" lineNum="47" pc="268442789" symbol="getWeatherSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="12" lineNum="48" pc="268442799" symbol="getWeatherSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="12" lineNum="48" pc="268442810" symbol="getWeatherSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="12" lineNum="49" pc="268442820" symbol="getWeatherSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="12" lineNum="49" pc="268442831" symbol="getWeatherSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="12" lineNum="50" pc="268442841" symbol="getWeatherSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="12" lineNum="50" pc="268442852" symbol="getWeatherSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="12" lineNum="51" pc="268442862" symbol="getWeatherSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="12" lineNum="51" pc="268442873" symbol="getWeatherSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="12" lineNum="52" pc="268442883" symbol="getWeatherSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="12" lineNum="52" pc="268442894" symbol="getWeatherSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="12" lineNum="53" pc="268442907" symbol="getWeatherSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="12" lineNum="54" pc="268442930" symbol="getWeatherSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="12" lineNum="55" pc="268442955" symbol="getWeatherSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="12" lineNum="55" pc="268442966" symbol="getWeatherSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="12" lineNum="56" pc="268442976" symbol="getWeatherSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="12" lineNum="56" pc="268442987" symbol="getWeatherSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="12" lineNum="58" pc="268443000" symbol="getWeatherSymbol"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="13" lineNum="62" pc="268443004" symbol="drawInfoLeft"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="13" lineNum="63" pc="268443008" symbol="drawInfoLeft"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="13" lineNum="64" pc="268443034" symbol="drawInfoLeft"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="14" lineNum="69" pc="268443079" symbol="drawInfoRight"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="14" lineNum="70" pc="268443083" symbol="drawInfoRight"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="14" lineNum="71" pc="268443115" symbol="drawInfoRight"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="14" lineNum="72" pc="268443156" symbol="drawInfoRight"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="14" lineNum="74" pc="268443169" symbol="drawInfoRight"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="14" lineNum="75" pc="268443195" symbol="drawInfoRight"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="14" lineNum="76" pc="268443236" symbol="drawInfoRight"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="14" lineNum="78" pc="268443249" symbol="drawInfoRight"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="14" lineNum="79" pc="268443281" symbol="drawInfoRight"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="14" lineNum="80" pc="268443322" symbol="drawInfoRight"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="15" lineNum="84" pc="268443336" symbol="drawLeft"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="15" lineNum="85" pc="268443340" symbol="drawLeft"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="15" lineNum="86" pc="268443351" symbol="drawLeft"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="15" lineNum="87" pc="268443406" symbol="drawLeft"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="15" lineNum="88" pc="268443460" symbol="drawLeft"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="16" lineNum="91" pc="268443521" symbol="drawRight"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="16" lineNum="92" pc="268443525" symbol="drawRight"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="16" lineNum="93" pc="268443536" symbol="drawRight"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="16" lineNum="94" pc="268443590" symbol="drawRight"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="16" lineNum="95" pc="268443644" symbol="drawRight"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="17" lineNum="98" pc="268443699" symbol="drawHR"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="17" lineNum="100" pc="268443703" symbol="drawHR"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="17" lineNum="102" pc="268443710" symbol="drawHR"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="17" lineNum="104" pc="268443721" symbol="drawHR"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="17" lineNum="105" pc="268443744" symbol="drawHR"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="17" lineNum="107" pc="268443751" symbol="drawHR"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="17" lineNum="112" pc="268443767" symbol="drawHR"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="17" lineNum="114" pc="268443782" symbol="drawHR"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="17" lineNum="115" pc="268443806" symbol="drawHR"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="17" lineNum="116" pc="268443819" symbol="drawHR"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="17" lineNum="117" pc="268443840" symbol="drawHR"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="17" lineNum="118" pc="268443864" symbol="drawHR"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="17" lineNum="124" pc="268443889" symbol="drawHR"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="17" lineNum="125" pc="268443943" symbol="drawHR"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="17" lineNum="127" pc="268443960" symbol="drawHR"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="17" lineNum="129" pc="268444007" symbol="drawHR"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="18" lineNum="132" pc="268444050" symbol="drawDay"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="18" lineNum="134" pc="268444054" symbol="drawDay"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\DataDrawer.mc" id="18" lineNum="135" pc="268444098" symbol="drawDay"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="20" lineNum="13" pc="268435456" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="20" lineNum="14" pc="268435460" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="21" lineNum="17" pc="268435483" symbol="onTemporalEvent"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="21" lineNum="18" pc="268435487" symbol="onTemporalEvent"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="21" lineNum="19" pc="268435537" symbol="onTemporalEvent"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="21" lineNum="20" pc="268435613" symbol="onTemporalEvent"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="22" lineNum="23" pc="268435626" symbol="onWakeTime"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="22" lineNum="24" pc="268435630" symbol="onWakeTime"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="22" lineNum="25" pc="268435680" symbol="onWakeTime"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="22" lineNum="26" pc="268435756" symbol="onWakeTime"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="23" lineNum="29" pc="268435769" symbol="updateCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="23" lineNum="30" pc="268435773" symbol="updateCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="23" lineNum="31" pc="268435799" symbol="updateCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="23" lineNum="41" pc="268435913" symbol="updateCalendar"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="24" lineNum="45" pc="268435951" symbol="onWeb"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="24" lineNum="46" pc="268435955" symbol="onWeb"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="24" lineNum="47" pc="268435955" symbol="onWeb"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="24" lineNum="48" pc="268435976" symbol="onWeb"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="24" lineNum="50" pc="268436012" symbol="onWeb"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="24" lineNum="51" pc="268436026" symbol="onWeb"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="24" lineNum="55" pc="268436033" symbol="onWeb"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="24" lineNum="57" pc="268436054" symbol="onWeb"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="27" lineNum="25" pc="268444147" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="28" lineNum="29" pc="268444152" symbol="decodeCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="28" lineNum="31" pc="268444156" symbol="decodeCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="28" lineNum="32" pc="268444156" symbol="decodeCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="28" lineNum="35" pc="268444163" symbol="decodeCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="28" lineNum="37" pc="268444175" symbol="decodeCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="28" lineNum="39" pc="268444189" symbol="decodeCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="28" lineNum="41" pc="268444197" symbol="decodeCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="28" lineNum="44" pc="268444214" symbol="decodeCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="28" lineNum="45" pc="268444225" symbol="decodeCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="28" lineNum="48" pc="268444253" symbol="decodeCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="28" lineNum="49" pc="268444264" symbol="decodeCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="28" lineNum="52" pc="268444292" symbol="decodeCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="28" lineNum="53" pc="268444303" symbol="decodeCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="28" lineNum="56" pc="268444331" symbol="decodeCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="28" lineNum="57" pc="268444342" symbol="decodeCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="28" lineNum="60" pc="268444355" symbol="decodeCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="28" lineNum="61" pc="268444366" symbol="decodeCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="28" lineNum="65" pc="268444382" symbol="decodeCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="28" lineNum="66" pc="268444392" symbol="decodeCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="29" lineNum="73" pc="268444419" symbol="formatDate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="29" lineNum="75" pc="268444423" symbol="formatDate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="29" lineNum="76" pc="268444436" symbol="formatDate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="29" lineNum="77" pc="268444499" symbol="formatDate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="29" lineNum="80" pc="268444499" symbol="formatDate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="29" lineNum="83" pc="268444587" symbol="formatDate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="29" lineNum="85" pc="268444612" symbol="formatDate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="29" lineNum="86" pc="268444623" symbol="formatDate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="29" lineNum="88" pc="268444648" symbol="formatDate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="29" lineNum="92" pc="268444676" symbol="formatDate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="29" lineNum="94" pc="268444701" symbol="formatDate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="29" lineNum="95" pc="268444712" symbol="formatDate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="29" lineNum="97" pc="268444743" symbol="formatDate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="29" lineNum="102" pc="268444777" symbol="formatDate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="29" lineNum="103" pc="268444788" symbol="formatDate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="29" lineNum="105" pc="268444842" symbol="formatDate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="30" lineNum="122" pc="268444903" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="30" lineNum="124" pc="268444907" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="30" lineNum="125" pc="268444939" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="31" lineNum="129" pc="268444952" symbol="decodeFromCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="31" lineNum="131" pc="268444956" symbol="decodeFromCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="31" lineNum="133" pc="268444963" symbol="decodeFromCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="31" lineNum="134" pc="268444976" symbol="decodeFromCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="31" lineNum="135" pc="268444983" symbol="decodeFromCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="31" lineNum="136" pc="268444996" symbol="decodeFromCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="31" lineNum="137" pc="268444996" symbol="decodeFromCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="31" lineNum="139" pc="268444996" symbol="decodeFromCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="31" lineNum="140" pc="268445010" symbol="decodeFromCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="31" lineNum="142" pc="268445021" symbol="decodeFromCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="31" lineNum="145" pc="268445053" symbol="decodeFromCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="31" lineNum="147" pc="268445068" symbol="decodeFromCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="31" lineNum="148" pc="268445084" symbol="decodeFromCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="31" lineNum="150" pc="268445107" symbol="decodeFromCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="31" lineNum="152" pc="268445121" symbol="decodeFromCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="31" lineNum="153" pc="268445151" symbol="decodeFromCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="31" lineNum="154" pc="268445171" symbol="decodeFromCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="31" lineNum="155" pc="268445191" symbol="decodeFromCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="31" lineNum="157" pc="268445214" symbol="decodeFromCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="31" lineNum="162" pc="268445240" symbol="decodeFromCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="31" lineNum="164" pc="268445254" symbol="decodeFromCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="31" lineNum="165" pc="268445284" symbol="decodeFromCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="31" lineNum="166" pc="268445304" symbol="decodeFromCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="31" lineNum="167" pc="268445324" symbol="decodeFromCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="31" lineNum="170" pc="268445350" symbol="decodeFromCSV"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="32" lineNum="174" pc="268445364" symbol="getEventIfNotPastAlready"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="32" lineNum="175" pc="268445368" symbol="getEventIfNotPastAlready"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="32" lineNum="176" pc="268445371" symbol="getEventIfNotPastAlready"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="32" lineNum="177" pc="268445408" symbol="getEventIfNotPastAlready"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="32" lineNum="178" pc="268445431" symbol="getEventIfNotPastAlready"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="32" lineNum="181" pc="268445450" symbol="getEventIfNotPastAlready"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="33" lineNum="184" pc="268445454" symbol="getNumEvents"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="33" lineNum="185" pc="268445458" symbol="getNumEvents"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="34" lineNum="188" pc="268445477" symbol="getEvent"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="34" lineNum="189" pc="268445481" symbol="getEvent"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="34" lineNum="190" pc="268445484" symbol="getEvent"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="34" lineNum="191" pc="268445521" symbol="getEvent"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="34" lineNum="193" pc="268445537" symbol="getEvent"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="35" lineNum="197" pc="268445541" symbol="checkForNewDay"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="35" lineNum="198" pc="268445545" symbol="checkForNewDay"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="35" lineNum="199" pc="268445571" symbol="checkForNewDay"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="35" lineNum="200" pc="268445585" symbol="checkForNewDay"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="35" lineNum="201" pc="268445595" symbol="checkForNewDay"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="35" lineNum="203" pc="268445607" symbol="checkForNewDay"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="35" lineNum="204" pc="268445619" symbol="checkForNewDay"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="35" lineNum="207" pc="268445634" symbol="checkForNewDay"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="35" lineNum="208" pc="268445653" symbol="checkForNewDay"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="35" lineNum="209" pc="268445668" symbol="checkForNewDay"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="36" lineNum="215" pc="268445714" symbol="updateDateString"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="36" lineNum="216" pc="268445718" symbol="updateDateString"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="36" lineNum="217" pc="268445762" symbol="updateDateString"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="36" lineNum="219" pc="268445772" symbol="updateDateString"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="36" lineNum="220" pc="268445848" symbol="updateDateString"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="223" pc="268445909" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="225" pc="268445913" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="226" pc="268445923" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="228" pc="268445937" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="229" pc="268445967" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="230" pc="268445992" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="231" pc="268446008" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="232" pc="268446030" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="233" pc="268446040" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="233" pc="268446051" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="233" pc="268446094" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="234" pc="268446110" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="234" pc="268446121" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="235" pc="268446167" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="235" pc="268446178" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="236" pc="268446224" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="237" pc="268446267" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="238" pc="268446287" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="240" pc="268446307" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="241" pc="268446325" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="242" pc="268446343" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="243" pc="268446373" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="244" pc="268446398" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="245" pc="268446456" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="246" pc="268446478" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="246" pc="268446489" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="246" pc="268446532" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="247" pc="268446548" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="247" pc="268446559" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="248" pc="268446605" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="248" pc="268446616" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="249" pc="268446662" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="250" pc="268446705" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="37" lineNum="251" pc="268446725" symbol="demo"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="38" lineNum="256" pc="268446772" symbol="getLastTodayAllday"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="38" lineNum="258" pc="268446776" symbol="getLastTodayAllday"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="38" lineNum="259" pc="268446779" symbol="getLastTodayAllday"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="38" lineNum="260" pc="268446811" symbol="getLastTodayAllday"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="38" lineNum="262" pc="268446841" symbol="getLastTodayAllday"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="38" lineNum="264" pc="268446887" symbol="getLastTodayAllday"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="38" lineNum="267" pc="268446907" symbol="getLastTodayAllday"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="39" lineNum="270" pc="268446911" symbol="getLastTodayTimed"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="39" lineNum="272" pc="268446915" symbol="getLastTodayTimed"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="39" lineNum="273" pc="268446918" symbol="getLastTodayTimed"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="39" lineNum="274" pc="268446950" symbol="getLastTodayTimed"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="39" lineNum="276" pc="268446980" symbol="getLastTodayTimed"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="39" lineNum="278" pc="268447027" symbol="getLastTodayTimed"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="39" lineNum="281" pc="268447047" symbol="getLastTodayTimed"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="40" lineNum="284" pc="268447051" symbol="getLastEvTomorrow"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="40" lineNum="286" pc="268447055" symbol="getLastEvTomorrow"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="40" lineNum="287" pc="268447058" symbol="getLastEvTomorrow"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="40" lineNum="288" pc="268447090" symbol="getLastEvTomorrow"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="40" lineNum="289" pc="268447122" symbol="getLastEvTomorrow"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="40" lineNum="291" pc="268447152" symbol="getLastEvTomorrow"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="40" lineNum="293" pc="268447201" symbol="getLastEvTomorrow"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\Calendar.mc" id="40" lineNum="296" pc="268447221" symbol="getLastEvTomorrow"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="42" lineNum="35" pc="268436075" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="42" lineNum="36" pc="268436079" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="42" lineNum="38" pc="268436097" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="42" lineNum="40" pc="268436097" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="42" lineNum="41" pc="268436125" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="42" lineNum="41" pc="268436149" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="42" lineNum="43" pc="268436162" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="42" lineNum="44" pc="268436190" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="42" lineNum="44" pc="268436214" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="42" lineNum="46" pc="268436227" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="42" lineNum="47" pc="268436255" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="42" lineNum="48" pc="268436262" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="42" lineNum="49" pc="268436293" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="42" lineNum="50" pc="268436303" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="42" lineNum="54" pc="268436319" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="42" lineNum="55" pc="268436347" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="42" lineNum="55" pc="268436371" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="42" lineNum="56" pc="268436384" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="42" lineNum="57" pc="268436412" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="42" lineNum="57" pc="268436436" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="42" lineNum="58" pc="268436449" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="42" lineNum="59" pc="268436477" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="42" lineNum="59" pc="268436501" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="42" lineNum="60" pc="268436514" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="42" lineNum="61" pc="268436542" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="42" lineNum="61" pc="268436566" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="42" lineNum="62" pc="268436579" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="42" lineNum="63" pc="268436607" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="42" lineNum="63" pc="268436631" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="42" lineNum="65" pc="268436644" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="42" lineNum="67" pc="268436656" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="42" lineNum="68" pc="268436667" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="43" lineNum="73" pc="268436681" symbol="onStart"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="44" lineNum="77" pc="268436686" symbol="onStop"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="45" lineNum="81" pc="268436691" symbol="getInitialView"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="45" lineNum="82" pc="268436695" symbol="getInitialView"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="45" lineNum="83" pc="268436707" symbol="getInitialView"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="46" lineNum="87" pc="268436747" symbol="onSettingsChanged"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="46" lineNum="88" pc="268436751" symbol="onSettingsChanged"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="46" lineNum="89" pc="268436763" symbol="onSettingsChanged"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="46" lineNum="90" pc="268436775" symbol="onSettingsChanged"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="46" lineNum="91" pc="268436785" symbol="onSettingsChanged"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="94" pc="268436802" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="95" pc="268436806" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="97" pc="268436830" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="98" pc="268436880" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="99" pc="268437004" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="101" pc="268437030" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="102" pc="268437049" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="104" pc="268437065" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="106" pc="268437100" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="107" pc="268437104" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="109" pc="268437123" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="110" pc="268437133" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="112" pc="268437143" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="115" pc="268437175" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="116" pc="268437189" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="118" pc="268437193" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="119" pc="268437203" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="120" pc="268437213" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="121" pc="268437223" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="122" pc="268437258" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="123" pc="268437293" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="124" pc="268437322" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="129" pc="268437360" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="131" pc="268437366" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="132" pc="268437375" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="133" pc="268437385" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="134" pc="268437420" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="137" pc="268437455" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="138" pc="268437474" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="139" pc="268437490" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="141" pc="268437528" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="143" pc="268437541" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="144" pc="268437560" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="145" pc="268437576" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="147" pc="268437614" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="149" pc="268437627" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="150" pc="268437646" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="151" pc="268437662" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="153" pc="268437700" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="155" pc="268437713" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="156" pc="268437732" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="157" pc="268437748" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="159" pc="268437786" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="161" pc="268437799" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="162" pc="268437818" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="163" pc="268437834" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="165" pc="268437872" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="168" pc="268437885" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="169" pc="268437904" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="172" pc="268437929" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="173" pc="268437958" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="174" pc="268437987" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="47" lineNum="176" pc="268438006" symbol="onBackgroundData"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="48" lineNum="179" pc="268438019" symbol="getServiceDelegate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="48" lineNum="180" pc="268438023" symbol="getServiceDelegate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="49" lineNum="183" pc="268438061" symbol="readSettings"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="49" lineNum="184" pc="268438065" symbol="readSettings"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="49" lineNum="185" pc="268438075" symbol="readSettings"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="49" lineNum="186" pc="268438085" symbol="readSettings"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="49" lineNum="187" pc="268438095" symbol="readSettings"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="49" lineNum="188" pc="268438108" symbol="readSettings"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="49" lineNum="189" pc="268438121" symbol="readSettings"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="49" lineNum="190" pc="268438134" symbol="readSettings"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="49" lineNum="191" pc="268438147" symbol="readSettings"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="49" lineNum="192" pc="268438157" symbol="readSettings"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="49" lineNum="193" pc="268438170" symbol="readSettings"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="49" lineNum="194" pc="268438180" symbol="readSettings"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="50" lineNum="197" pc="268438191" symbol="requestImmediateUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="50" lineNum="198" pc="268438195" symbol="requestImmediateUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="50" lineNum="199" pc="268438214" symbol="requestImmediateUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="50" lineNum="201" pc="268438221" symbol="requestImmediateUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="50" lineNum="202" pc="268438265" symbol="requestImmediateUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="50" lineNum="203" pc="268438283" symbol="requestImmediateUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="50" lineNum="205" pc="268438306" symbol="requestImmediateUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="50" lineNum="206" pc="268438324" symbol="requestImmediateUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="51" lineNum="210" pc="268438358" symbol="requestFastUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="51" lineNum="211" pc="268438362" symbol="requestFastUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="51" lineNum="212" pc="268438380" symbol="requestFastUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="52" lineNum="215" pc="268438430" symbol="requestNormalUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="52" lineNum="216" pc="268438434" symbol="requestNormalUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="52" lineNum="217" pc="268438452" symbol="requestNormalUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="52" lineNum="218" pc="268438470" symbol="requestNormalUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="52" lineNum="219" pc="268438490" symbol="requestNormalUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="52" lineNum="220" pc="268438507" symbol="requestNormalUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveWatch.mc" id="52" lineNum="222" pc="268438568" symbol="requestNormalUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveView.mc" id="54" lineNum="12" pc="268447225" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveView.mc" id="54" lineNum="13" pc="268447229" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveView.mc" id="54" lineNum="14" pc="268447247" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveView.mc" id="54" lineNum="15" pc="268447257" symbol="initialize"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveView.mc" id="55" lineNum="18" pc="268447288" symbol="onLayout"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveView.mc" id="55" lineNum="19" pc="268447292" symbol="onLayout"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveView.mc" id="55" lineNum="20" pc="268447315" symbol="onLayout"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveView.mc" id="55" lineNum="22" pc="268447338" symbol="onLayout"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveView.mc" id="56" lineNum="26" pc="268447384" symbol="onShow"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveView.mc" id="57" lineNum="30" pc="268447389" symbol="onUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveView.mc" id="57" lineNum="31" pc="268447393" symbol="onUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveView.mc" id="57" lineNum="32" pc="268447404" symbol="onUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveView.mc" id="57" lineNum="33" pc="268447422" symbol="onUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveView.mc" id="57" lineNum="36" pc="268447435" symbol="onUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveView.mc" id="57" lineNum="37" pc="268447446" symbol="onUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveView.mc" id="57" lineNum="38" pc="268447456" symbol="onUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveView.mc" id="57" lineNum="40" pc="268447467" symbol="onUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveView.mc" id="57" lineNum="42" pc="268447488" symbol="onUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveView.mc" id="57" lineNum="44" pc="268447508" symbol="onUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveView.mc" id="57" lineNum="48" pc="268447537" symbol="onUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveView.mc" id="57" lineNum="50" pc="268447555" symbol="onUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveView.mc" id="57" lineNum="52" pc="268447567" symbol="onUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveView.mc" id="57" lineNum="55" pc="268447585" symbol="onUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveView.mc" id="57" lineNum="56" pc="268447598" symbol="onUpdate"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveView.mc" id="58" lineNum="60" pc="268447622" symbol="onHide"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveView.mc" id="59" lineNum="63" pc="268447627" symbol="onExitSleep"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveView.mc" id="59" lineNum="64" pc="268447631" symbol="onExitSleep"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveView.mc" id="59" lineNum="64" pc="268447644" symbol="onExitSleep"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveView.mc" id="59" lineNum="65" pc="268447665" symbol="onExitSleep"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveView.mc" id="59" lineNum="66" pc="268447683" symbol="onExitSleep"/>
+        <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\CalendarActiveView.mc" id="60" lineNum="69" pc="268447702" symbol="onEnterSleep"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry field="true" id="13" symbol="code"/>
+        <entry id="42" method="true" symbol="requestNormalUpdate"/>
+        <entry field="true" id="86" symbol="WeekdayTitle"/>
+        <entry field="true" id="29" symbol="watch_rightdatafield"/>
+        <entry id="138" method="true" symbol="updateDateString"/>
+        <entry field="true" id="27" symbol="calendar_infocolor"/>
+        <entry field="true" id="121" symbol="LeftDataFieldTitle"/>
+        <entry field="true" id="24" symbol="calendar_alignleft"/>
+        <entry id="133" method="true" symbol="decodeFromCSV"/>
+        <entry field="true" id="101" symbol="Steps"/>
+        <entry field="true" id="145" symbol="tEnd"/>
+        <entry id="152" method="true" symbol="formatDate"/>
+        <entry field="true" id="61" symbol="fontDeltaY"/>
+        <entry field="true" id="59" symbol="fontDeltaX"/>
+        <entry id="8389683" method="true" symbol="onSettingsChanged"/>
+        <entry field="true" id="20" symbol="weatherid"/>
+        <entry id="128" object="true" symbol="Event"/>
+        <entry field="true" id="77" symbol="ColorRed"/>
+        <entry id="8389702" method="true" symbol="getHeartRateHistory"/>
+        <entry id="8390150" method="true" symbol="onWakeTime"/>
+        <entry field="true" id="91" symbol="ColorLightCyan"/>
+        <entry field="true" id="17" symbol="weathermin"/>
+        <entry field="true" id="44" symbol="drawer"/>
+        <entry field="true" id="115" symbol="Font_Enigmatic"/>
+        <entry field="true" id="25" symbol="calendar_updaterate"/>
+        <entry field="true" id="149" symbol="allday"/>
+        <entry field="true" id="18" symbol="weathermax"/>
+        <entry field="true" id="150" symbol="lastone"/>
+        <entry field="true" id="131" symbol="dateString"/>
+        <entry id="141" method="true" symbol="getLastTodayTimed"/>
+        <entry id="8388924" module="true" symbol="Gregorian"/>
+        <entry id="40" method="true" symbol="requestImmediateUpdate"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry id="140" method="true" symbol="getLastTodayAllday"/>
+        <entry id="47" method="true" symbol="getSymbol"/>
+        <entry id="136" method="true" symbol="getEvent"/>
+        <entry field="true" id="96" symbol="RateManual"/>
+        <entry field="true" id="112" symbol="DemoTitle"/>
+        <entry field="true" id="102" symbol="ColorBlue"/>
+        <entry field="true" id="98" symbol="Rate30Minutes"/>
+        <entry field="true" id="108" symbol="AppName"/>
+        <entry id="8388633" module="true" symbol="ActivityMonitor"/>
+        <entry field="true" id="109" symbol="Rate5Minutes"/>
+        <entry field="true" id="130" symbol="events"/>
+        <entry id="39" method="true" symbol="readSettings"/>
+        <entry field="true" id="118" symbol="FloorsClimbed"/>
+        <entry field="true" id="15" symbol="calendar_dirty"/>
+        <entry id="8389594" symbol="headers"/>
+        <entry id="48" method="true" symbol="getWeatherSymbol"/>
+        <entry field="true" id="14" symbol="calendar_raw"/>
+        <entry id="8388772" module="true" object="true" symbol="Fonts"/>
+        <entry id="53" method="true" symbol="drawHR"/>
+        <entry id="8388631" module="true" symbol="Activity"/>
+        <entry id="35" object="true" symbol="CalendarActiveWatch"/>
+        <entry field="true" id="88" symbol="Distance"/>
+        <entry field="true" id="97" symbol="ColorOrange"/>
+        <entry field="true" id="34" symbol="settings_dirty"/>
+        <entry id="8390148" method="true" symbol="onTemporalEvent"/>
+        <entry field="true" id="89" symbol="FontTitle"/>
+        <entry field="true" id="99" symbol="InfoColorTitle"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry field="true" id="129" symbol="valid"/>
+        <entry id="66" method="true" symbol="drawCalendar"/>
+        <entry id="37" method="true" symbol="updateCalendar"/>
+        <entry field="true" id="106" symbol="ColorLightOrange"/>
+        <entry field="true" id="110" symbol="FreeMemory"/>
+        <entry field="true" id="62" symbol="dataDrawer"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8390169" method="true" symbol="getServiceDelegate"/>
+        <entry id="68" module="true" symbol="Menus"/>
+        <entry field="true" id="119" symbol="ColorDarkGray"/>
+        <entry id="63" method="true" symbol="resetLiveHR"/>
+        <entry field="true" id="8388923" method="true" symbol="today"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry id="8389376" method="true" symbol="onEnterSleep"/>
+        <entry field="true" id="126" symbol="ColorCyan"/>
+        <entry field="true" id="146" symbol="time"/>
+        <entry field="true" id="111" symbol="EnglishMonth"/>
+        <entry id="151" method="true" symbol="decodeCSV"/>
+        <entry field="true" id="45" symbol="fontSymbols"/>
+        <entry field="true" id="104" symbol="Rate240Minutes"/>
+        <entry id="12" object="true" symbol="Calendar"/>
+        <entry field="true" id="60" symbol="fontDeltaXam"/>
+        <entry id="64" method="true" symbol="updateSettings"/>
+        <entry id="11" object="true" symbol="UpdateService"/>
+        <entry field="true" id="87" symbol="ColorWhite"/>
+        <entry field="true" id="103" symbol="Font_Enigmatic_Bold"/>
+        <entry field="true" id="120" symbol="ColorBlack"/>
+        <entry field="true" id="16" symbol="calendar_updated"/>
+        <entry field="true" id="148" symbol="loc"/>
+        <entry field="true" id="114" symbol="Font_System"/>
+        <entry field="true" id="105" symbol="AgendaStyleTitle"/>
+        <entry id="8390170" method="true" symbol="onBackgroundData"/>
+        <entry id="36" object="true" symbol="CalendarActiveView"/>
+        <entry id="8389844" symbol="responseType"/>
+        <entry field="true" id="113" symbol="UpdateRateTitle"/>
+        <entry id="41" method="true" symbol="requestFastUpdate"/>
+        <entry field="true" id="28" symbol="watch_leftdatafield"/>
+        <entry field="true" id="92" symbol="LastChangedTitle"/>
+        <entry field="true" id="144" symbol="tStart"/>
+        <entry id="8388786" method="true" symbol="method"/>
+        <entry field="true" id="80" symbol="CodeInfo_r4"/>
+        <entry field="true" id="85" symbol="CodeInfo_r3"/>
+        <entry field="true" id="82" symbol="CodeInfo_r2"/>
+        <entry id="8389377" method="true" symbol="onExitSleep"/>
+        <entry field="true" id="31" symbol="watch_weekday"/>
+        <entry id="10" object="true" symbol="DataDrawer"/>
+        <entry field="true" id="78" symbol="LastRequestTitle"/>
+        <entry id="8388645" module="true" symbol="Time"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry field="true" id="147" symbol="desc"/>
+        <entry field="true" id="125" symbol="ActivityMinutesDay"/>
+        <entry id="49" method="true" symbol="drawInfoLeft"/>
+        <entry field="true" id="46" symbol="fontWeather"/>
+        <entry id="9" object="true" symbol="CalendarDrawerRound"/>
+        <entry id="139" method="true" symbol="demo"/>
+        <entry field="true" id="32" symbol="english_month"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry field="true" id="33" symbol="liveHR"/>
+        <entry field="true" id="107" symbol="MetersClimbed"/>
+        <entry id="8390088" module="true" object="true" symbol="JsonData"/>
+        <entry field="true" id="123" symbol="CodeTitle"/>
+        <entry id="8389068" method="true" symbol="draw"/>
+        <entry field="true" id="69" symbol="LauncherIcon"/>
+        <entry id="51" method="true" symbol="drawLeft"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry field="true" id="22" symbol="calendar_agendastyle"/>
+        <entry field="true" id="70" symbol="symbols"/>
+        <entry field="true" id="100" symbol="WaitInfo_04"/>
+        <entry field="true" id="74" symbol="WaitInfo_03"/>
+        <entry field="true" id="75" symbol="WaitInfo_02"/>
+        <entry field="true" id="76" symbol="WaitInfo_01"/>
+        <entry field="true" id="71" symbol="weathericons"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry field="true" id="8388960" symbol="heartRate"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry field="true" id="95" symbol="DemoEvent_04"/>
+        <entry field="true" id="93" symbol="DemoEvent_03"/>
+        <entry field="true" id="94" symbol="DemoEvent_02"/>
+        <entry field="true" id="90" symbol="DemoEvent_01"/>
+        <entry field="true" id="132" symbol="dateShortString"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry field="true" id="26" symbol="calendar_clockcolor"/>
+        <entry id="52" method="true" symbol="drawRight"/>
+        <entry field="true" id="127" symbol="OneLineStyleTitle"/>
+        <entry field="true" id="117" symbol="ColorLightGray"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry field="true" id="72" symbol="Font_Aileron"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry field="true" id="122" symbol="ClockColorTitle"/>
+        <entry id="50" method="true" symbol="drawInfoRight"/>
+        <entry field="true" id="73" symbol="AlignLeftTitle"/>
+        <entry field="true" id="58" symbol="fontClock"/>
+        <entry id="67" module="true" symbol="Layouts"/>
+        <entry id="135" method="true" symbol="getNumEvents"/>
+        <entry field="true" id="124" symbol="Calories"/>
+        <entry field="true" id="30" symbol="calendar_demo"/>
+        <entry id="137" method="true" symbol="checkForNewDay"/>
+        <entry field="true" id="83" symbol="Font_Aleo"/>
+        <entry field="true" id="116" symbol="RightDataFieldTitle"/>
+        <entry field="true" id="19" symbol="weathernow"/>
+        <entry field="true" id="81" symbol="CodeInfo_03"/>
+        <entry field="true" id="79" symbol="CodeInfo_02"/>
+        <entry field="true" id="84" symbol="CodeInfo_01"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="65" method="true" symbol="drawWaitInfo"/>
+        <entry id="134" method="true" symbol="getEventIfNotPastAlready"/>
+        <entry field="true" id="55" symbol="w"/>
+        <entry field="true" id="57" symbol="t"/>
+        <entry field="true" id="56" symbol="h"/>
+        <entry field="true" id="23" symbol="calendar_onelinestyle"/>
+        <entry field="true" id="43" symbol="c"/>
+        <entry field="true" id="8389762" symbol="a"/>
+        <entry id="142" method="true" symbol="getLastEvTomorrow"/>
+        <entry id="38" method="true" symbol="onWeb"/>
+        <entry field="true" id="21" symbol="phoneBattery"/>
+        <entry id="54" method="true" symbol="drawDay"/>
+    </symbolTable>
+    <localVars>
+        <entry endPc="268438752" name="dc" stackId="2" startPc="268438647"/>
+        <entry endPc="268438752" name="type" stackId="3" startPc="268438647"/>
+        <entry endPc="268438752" name="calendar" stackId="1" startPc="268438647"/>
+        <entry endPc="268440452" name="timeString" stackId="3" startPc="268438820"/>
+        <entry endPc="268440452" name="xClock24" stackId="7" startPc="268438820"/>
+        <entry endPc="268440452" name="dySymbols" stackId="16" startPc="268438820"/>
+        <entry endPc="268440452" name="yDate" stackId="9" startPc="268438820"/>
+        <entry endPc="268440452" name="yClock" stackId="10" startPc="268438820"/>
+        <entry endPc="268440452" name="now" stackId="2" startPc="268438820"/>
+        <entry endPc="268440452" name="yDay" stackId="14" startPc="268438820"/>
+        <entry endPc="268440452" name="timeAdd" stackId="4" startPc="268438820"/>
+        <entry endPc="268440452" name="yClockSmall" stackId="11" startPc="268438820"/>
+        <entry endPc="268440452" name="xClock12" stackId="6" startPc="268438820"/>
+        <entry endPc="268440452" name="battery" stackId="5" startPc="268438820"/>
+        <entry endPc="268440452" name="dyHR" stackId="18" startPc="268438820"/>
+        <entry endPc="268440452" name="yHR" stackId="13" startPc="268438820"/>
+        <entry endPc="268440452" name="yCalendar" stackId="15" startPc="268438820"/>
+        <entry endPc="268440452" name="xBattery" stackId="8" startPc="268438820"/>
+        <entry endPc="268440452" name="dyDataField" stackId="17" startPc="268438820"/>
+        <entry endPc="268440452" name="yDataField" stackId="12" startPc="268438820"/>
+        <entry endPc="268440453" name="dc" stackId="1" startPc="268438816"/>
+        <entry endPc="268440902" name="x" stackId="5" startPc="268440457"/>
+        <entry endPc="268440902" name="fontWait" stackId="4" startPc="268440457"/>
+        <entry endPc="268440902" name="dy" stackId="3" startPc="268440457"/>
+        <entry endPc="268440903" name="dc" stackId="1" startPc="268440453"/>
+        <entry endPc="268440903" name="y" stackId="2" startPc="268440453"/>
+        <entry endPc="268442478" name="noConnection" stackId="19" startPc="268440907"/>
+        <entry endPc="268442478" name="lastEvTodayIdx" stackId="23" startPc="268440907"/>
+        <entry endPc="268442478" name="timeEndOfToday" stackId="27" startPc="268440907"/>
+        <entry endPc="268442478" name="now" stackId="4" startPc="268440907"/>
+        <entry endPc="268442478" name="lastUpdtTime" stackId="17" startPc="268440907"/>
+        <entry endPc="268442478" name="maxUpdateDelay" stackId="16" startPc="268440907"/>
+        <entry endPc="268442478" name="lastReq" stackId="15" startPc="268440907"/>
+        <entry endPc="268442478" name="lastEvTodayAlldayIdx" stackId="20" startPc="268440907"/>
+        <entry endPc="268442478" name="lastReqTime" stackId="18" startPc="268440907"/>
+        <entry endPc="268442478" name="timeEndOfTomorrow" stackId="28" startPc="268440907"/>
+        <entry endPc="268442478" name="maxitems" stackId="10" startPc="268440907"/>
+        <entry endPc="268442478" name="lastUpdt" stackId="14" startPc="268440907"/>
+        <entry endPc="268442478" name="dyLine" stackId="13" startPc="268440907"/>
+        <entry endPc="268442478" name="noEventsToday" stackId="24" startPc="268440907"/>
+        <entry endPc="268442478" name="i" stackId="9" startPc="268440907"/>
+        <entry endPc="268442478" name="midx" stackId="8" startPc="268440907"/>
+        <entry endPc="268442478" name="lineOffset" stackId="26" startPc="268440907"/>
+        <entry endPc="268442478" name="col3" stackId="7" startPc="268440907"/>
+        <entry endPc="268442478" name="col2" stackId="6" startPc="268440907"/>
+        <entry endPc="268442478" name="ev" stackId="3" startPc="268440907"/>
+        <entry endPc="268442478" name="col1" stackId="5" startPc="268440907"/>
+        <entry endPc="268442478" name="noEventsTomorrow" stackId="25" startPc="268440907"/>
+        <entry endPc="268442478" name="xDelta" stackId="11" startPc="268440907"/>
+        <entry endPc="268442478" name="lastEvTodayTimedIdx" stackId="21" startPc="268440907"/>
+        <entry endPc="268442478" name="lastEvTomorrowIdx" stackId="22" startPc="268440907"/>
+        <entry endPc="268442478" name="dyDate" stackId="12" startPc="268440907"/>
+        <entry endPc="268442479" name="dc" stackId="1" startPc="268440903"/>
+        <entry endPc="268442479" name="y" stackId="2" startPc="268440903"/>
+        <entry endPc="268442710" name="rc" stackId="2" startPc="268442574"/>
+        <entry endPc="268442711" name="what" stackId="1" startPc="268442570"/>
+        <entry endPc="268443003" name="hour" stackId="3" startPc="268442715"/>
+        <entry endPc="268443003" name="rc" stackId="2" startPc="268442715"/>
+        <entry endPc="268443004" name="weatherid" stackId="1" startPc="268442711"/>
+        <entry endPc="268443079" name="x" stackId="2" startPc="268443004"/>
+        <entry endPc="268443079" name="dc" stackId="1" startPc="268443004"/>
+        <entry endPc="268443079" name="y" stackId="3" startPc="268443004"/>
+        <entry endPc="268443336" name="x" stackId="2" startPc="268443079"/>
+        <entry endPc="268443336" name="dc" stackId="1" startPc="268443079"/>
+        <entry endPc="268443336" name="y" stackId="3" startPc="268443079"/>
+        <entry endPc="268443521" name="x" stackId="2" startPc="268443336"/>
+        <entry endPc="268443521" name="weathernow" stackId="6" startPc="268443336"/>
+        <entry endPc="268443521" name="dc" stackId="1" startPc="268443336"/>
+        <entry endPc="268443521" name="weatherid" stackId="7" startPc="268443336"/>
+        <entry endPc="268443521" name="dySym" stackId="5" startPc="268443336"/>
+        <entry endPc="268443521" name="what" stackId="4" startPc="268443336"/>
+        <entry endPc="268443521" name="y" stackId="3" startPc="268443336"/>
+        <entry endPc="268443699" name="x" stackId="2" startPc="268443521"/>
+        <entry endPc="268443699" name="dc" stackId="1" startPc="268443521"/>
+        <entry endPc="268443699" name="dySym" stackId="5" startPc="268443521"/>
+        <entry endPc="268443699" name="wmax" stackId="7" startPc="268443521"/>
+        <entry endPc="268443699" name="what" stackId="4" startPc="268443521"/>
+        <entry endPc="268443699" name="wmin" stackId="6" startPc="268443521"/>
+        <entry endPc="268443699" name="y" stackId="3" startPc="268443521"/>
+        <entry endPc="268443764" name="sample" stackId="7" startPc="268443721"/>
+        <entry endPc="268443886" name="hrIterator" stackId="8" startPc="268443782"/>
+        <entry endPc="268443886" name="sample" stackId="9" startPc="268443782"/>
+        <entry endPc="268444049" name="hr" stackId="6" startPc="268443703"/>
+        <entry endPc="268444050" name="x" stackId="2" startPc="268443699"/>
+        <entry endPc="268444050" name="dc" stackId="1" startPc="268443699"/>
+        <entry endPc="268444050" name="liveHR" stackId="5" startPc="268443699"/>
+        <entry endPc="268444050" name="dySym" stackId="4" startPc="268443699"/>
+        <entry endPc="268444050" name="y" stackId="3" startPc="268443699"/>
+        <entry endPc="268444146" name="ti" stackId="4" startPc="268444054"/>
+        <entry endPc="268444147" name="x" stackId="2" startPc="268444050"/>
+        <entry endPc="268444147" name="dc" stackId="1" startPc="268444050"/>
+        <entry endPc="268444147" name="y" stackId="3" startPc="268444050"/>
+        <entry endPc="268435625" name="t" stackId="1" startPc="268435487"/>
+        <entry endPc="268435625" name="ts" stackId="2" startPc="268435487"/>
+        <entry endPc="268435768" name="t" stackId="1" startPc="268435630"/>
+        <entry endPc="268435768" name="ts" stackId="2" startPc="268435630"/>
+        <entry endPc="268436074" name="ts" stackId="3" startPc="268435955"/>
+        <entry endPc="268436075" name="responseCode" stackId="1" startPc="268435951"/>
+        <entry endPc="268436075" name="data" stackId="2" startPc="268435951"/>
+        <entry endPc="268444379" name="s" stackId="7" startPc="268444197"/>
+        <entry endPc="268444418" name="arg_i" stackId="6" startPc="268444156"/>
+        <entry endPc="268444418" name="i" stackId="5" startPc="268444156"/>
+        <entry endPc="268444419" name="end" stackId="4" startPc="268444152"/>
+        <entry endPc="268444419" name="csv" stackId="1" startPc="268444152"/>
+        <entry endPc="268444419" name="csvChars" stackId="2" startPc="268444152"/>
+        <entry endPc="268444419" name="start" stackId="3" startPc="268444152"/>
+        <entry endPc="268444902" name="timeinfo" stackId="3" startPc="268444423"/>
+        <entry endPc="268444902" name="timeString" stackId="4" startPc="268444423"/>
+        <entry endPc="268444902" name="duration" stackId="2" startPc="268444423"/>
+        <entry endPc="268444903" name="today" stackId="1" startPc="268444419"/>
+        <entry endPc="268445227" name="c" stackId="7" startPc="268445068"/>
+        <entry endPc="268445360" name="i" stackId="5" startPc="268444963"/>
+        <entry endPc="268445360" name="e" stackId="6" startPc="268444963"/>
+        <entry endPc="268445360" name="csvChars" stackId="2" startPc="268444963"/>
+        <entry endPc="268445360" name="n" stackId="4" startPc="268444963"/>
+        <entry endPc="268445360" name="start" stackId="3" startPc="268444963"/>
+        <entry endPc="268445364" name="csv" stackId="1" startPc="268444952"/>
+        <entry endPc="268445453" name="ev" stackId="3" startPc="268445368"/>
+        <entry endPc="268445454" name="index" stackId="1" startPc="268445364"/>
+        <entry endPc="268445454" name="t" stackId="2" startPc="268445364"/>
+        <entry endPc="268445540" name="ev" stackId="2" startPc="268445481"/>
+        <entry endPc="268445541" name="index" stackId="1" startPc="268445477"/>
+        <entry endPc="268445710" name="i" stackId="3" startPc="268445668"/>
+        <entry endPc="268445710" name="n" stackId="2" startPc="268445634"/>
+        <entry endPc="268445713" name="day" stackId="1" startPc="268445545"/>
+        <entry endPc="268445908" name="todayInfo" stackId="1" startPc="268445718"/>
+        <entry endPc="268445908" name="month" stackId="2" startPc="268445718"/>
+        <entry endPc="268446745" name="t" stackId="6" startPc="268446343"/>
+        <entry endPc="268446745" name="e" stackId="5" startPc="268446343"/>
+        <entry endPc="268446758" name="h" stackId="4" startPc="268446343"/>
+        <entry endPc="268446771" name="d" stackId="3" startPc="268446325"/>
+        <entry endPc="268446771" name="t" stackId="2" startPc="268445913"/>
+        <entry endPc="268446771" name="e" stackId="1" startPc="268445913"/>
+        <entry endPc="268446907" name="i" stackId="3" startPc="268446841"/>
+        <entry endPc="268446910" name="timeEndOfToday" stackId="2" startPc="268446776"/>
+        <entry endPc="268446910" name="lastTodayAllday" stackId="1" startPc="268446776"/>
+        <entry endPc="268447047" name="i" stackId="3" startPc="268446980"/>
+        <entry endPc="268447050" name="timeEndOfToday" stackId="2" startPc="268446915"/>
+        <entry endPc="268447050" name="lastTodayTimed" stackId="1" startPc="268446915"/>
+        <entry endPc="268447221" name="i" stackId="4" startPc="268447152"/>
+        <entry endPc="268447224" name="timeStartOfTomorrow" stackId="2" startPc="268447055"/>
+        <entry endPc="268447224" name="timeEndOfTomorrow" stackId="3" startPc="268447055"/>
+        <entry endPc="268447224" name="lastEvTomorrow" stackId="1" startPc="268447055"/>
+        <entry endPc="268436680" name="temp" stackId="1" startPc="268436079"/>
+        <entry endPc="268436686" name="state" stackId="1" startPc="268436681"/>
+        <entry endPc="268436691" name="state" stackId="1" startPc="268436686"/>
+        <entry endPc="268437357" name="updated" stackId="7" startPc="268437123"/>
+        <entry endPc="268437357" name="calendar" stackId="6" startPc="268437123"/>
+        <entry endPc="268437926" name="hasCalendar" stackId="5" startPc="268437049"/>
+        <entry endPc="268438003" name="tm" stackId="4" startPc="268436830"/>
+        <entry endPc="268438003" name="t" stackId="2" startPc="268436830"/>
+        <entry endPc="268438003" name="ts" stackId="3" startPc="268436830"/>
+        <entry endPc="268438019" name="data" stackId="1" startPc="268436802"/>
+        <entry endPc="268438303" name="nextTime" stackId="2" startPc="268438221"/>
+        <entry endPc="268438357" name="lastTime" stackId="1" startPc="268438195"/>
+        <entry endPc="268447288" name="app" stackId="1" startPc="268447225"/>
+        <entry endPc="268447383" name="partNumber" stackId="2" startPc="268447292"/>
+        <entry endPc="268447383" name="id" stackId="3" startPc="268447292"/>
+        <entry endPc="268447384" name="dc" stackId="1" startPc="268447288"/>
+        <entry endPc="268447622" name="dc" stackId="1" startPc="268447389"/>
+    </localVars>
+    <annotations/>
+    <dataEntryOffsetMappings>
+        <dataEntry offset="87" parentId="" symbolId="globals" type="module"/>
+        <dataEntry offset="358" parentId="globals" symbolId="UpdateService" type="class"/>
+        <dataEntry offset="437" parentId="globals" symbolId="CalendarActiveWatch" type="class"/>
+        <dataEntry offset="1384" parentId="globals" symbolId="CalendarActiveView" type="class"/>
+        <dataEntry offset="1503" parentId="globals" symbolId="DataDrawer" type="class"/>
+        <dataEntry offset="1630" parentId="globals" symbolId="CalendarDrawerRound" type="class"/>
+        <dataEntry offset="1797" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry offset="1876" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry offset="1915" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry offset="1946" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry offset="1993" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry offset="2024" parentId="Rez" symbolId="JsonData" type="module"/>
+        <dataEntry offset="2055" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry offset="2534" parentId="globals" symbolId="Calendar" type="class"/>
+        <dataEntry offset="2717" parentId="Calendar" symbolId="Event" type="class"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" name="resetLiveHR" parent="CalendarDrawerRound">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="CalendarDrawerRound">
+            <param id="calendar"/>
+            <param id="dc"/>
+            <param id="type"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="updateSettings" parent="CalendarDrawerRound">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="draw" parent="CalendarDrawerRound">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="drawWaitInfo" parent="CalendarDrawerRound">
+            <param id="dc"/>
+            <param id="y"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="drawCalendar" parent="CalendarDrawerRound">
+            <param id="dc"/>
+            <param id="y"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="DataDrawer">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="getSymbol" parent="DataDrawer">
+            <param id="what"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="getWeatherSymbol" parent="DataDrawer">
+            <param id="weatherid"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="drawInfoLeft" parent="DataDrawer">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="drawInfoRight" parent="DataDrawer">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="drawLeft" parent="DataDrawer">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <param id="what"/>
+            <param id="dySym"/>
+            <param id="weathernow"/>
+            <param id="weatherid"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="drawRight" parent="DataDrawer">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <param id="what"/>
+            <param id="dySym"/>
+            <param id="wmin"/>
+            <param id="wmax"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="drawHR" parent="DataDrawer">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <param id="dySym"/>
+            <param id="liveHR"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="drawDay" parent="DataDrawer">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="UpdateService">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onTemporalEvent" parent="UpdateService">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onWakeTime" parent="UpdateService">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="updateCalendar" parent="UpdateService">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onWeb" parent="UpdateService">
+            <param id="responseCode"/>
+            <param id="data"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="Event">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="decodeCSV" parent="Event">
+            <param id="csv"/>
+            <param id="csvChars"/>
+            <param id="start"/>
+            <param id="end"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="formatDate" parent="Event">
+            <param id="today"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="Calendar">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="decodeFromCSV" parent="Calendar">
+            <param id="csv"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="getEventIfNotPastAlready" parent="Calendar">
+            <param id="index"/>
+            <param id="t"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="getNumEvents" parent="Calendar">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="getEvent" parent="Calendar">
+            <param id="index"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="checkForNewDay" parent="Calendar">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="updateDateString" parent="Calendar">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="demo" parent="Calendar">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="getLastTodayAllday" parent="Calendar">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="getLastTodayTimed" parent="Calendar">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="getLastEvTomorrow" parent="Calendar">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="CalendarActiveWatch">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onStart" parent="CalendarActiveWatch">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onStop" parent="CalendarActiveWatch">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="getInitialView" parent="CalendarActiveWatch">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onSettingsChanged" parent="CalendarActiveWatch">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onBackgroundData" parent="CalendarActiveWatch">
+            <param id="data"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="getServiceDelegate" parent="CalendarActiveWatch">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="readSettings" parent="CalendarActiveWatch">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="requestImmediateUpdate" parent="CalendarActiveWatch">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="requestFastUpdate" parent="CalendarActiveWatch">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="requestNormalUpdate" parent="CalendarActiveWatch">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="CalendarActiveView">
+            <param id="app"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onLayout" parent="CalendarActiveView">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="CalendarActiveView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onUpdate" parent="CalendarActiveView">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="CalendarActiveView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onExitSleep" parent="CalendarActiveView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onEnterSleep" parent="CalendarActiveView">
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

@@ -171,15 +171,18 @@ class Calendar
 		}
 	}
 	
-	function getUpcomingEvent( index, t ) {
+	function getEventIfNotPastAlready( index, t ) {
 		var ev = null;
 		if (index>=0 && index<events.size()) {
-			//if (!events[index].isPast(t)) {
 			if (events[index].tEnd>t) { // not past
 				ev = events[index];
 			}
 		}
 		return ev;
+	}
+	
+	function getNumEvents() {
+		return events.size();
 	}
 	
 	function getEvent( index ) {
@@ -249,62 +252,48 @@ class Calendar
 			}
 		}
 	}
-	
-	function cleanup() {
-	
-	var midnight = Time.today().value() + 24*60*60;
-	
-	for (var i = 0; i < events.size(); i++)
-	{	
-		if (events[i] != null) {
-			// check all events for the last one of today
-			if ( events[i].tStart >= midnight ) {
-				events[i].lastone = 1;
-				return i;
-			}
-		} 		
-	}
-	
-	return 7; // return larger than max number of events in case none was found
 		
-	}
-	
-	function cleanup_tomorrow(lastev) {
-	
-	var midnight = Time.today().value() + 24*60*60;
-	var tomorrow_night = Time.today().value() + 48*60*60;
-	var got_smth_tomorrow = false;
-	
-	for (var i = 0; i < events.size(); i++)
-	{	
-		// check all events for anything tomorrow
-		if ( events[i].tStart >= midnight && events[i].tStart < tomorrow_night ) {
-			got_smth_tomorrow = true;
-		}
-		
-		if ( events[i].tStart >= tomorrow_night && got_smth_tomorrow ) {
-			return i;
-		} 		
-	}
-	
-	return lastev; // return lastev when there are no events tomorrow
-
-	}
-	
-	function getLastAllday() {
-	var lastallday = 6;
-	
-	var midnight = Time.today().value() + 24*60*60;
-	
-	for (var i = 0; i < events.size(); i++)
-	{
-		if (events[i].tStart < midnight && events[i].allday)
+	function getLastTodayAllday() {
+		// find last allday event of today. If none, return null
+		var lastTodayAllday = null;
+		var timeEndOfToday = Time.today().value() + 24*60*60;
+		for (var i = 0; i < events.size(); i++)
 		{
-			lastallday = i;
-		}	
+			if (events[i].tStart < timeEndOfToday && events[i].allday)
+			{
+				lastTodayAllday = i;
+			}	
+		}
+		return lastTodayAllday;		
 	}
-	return lastallday + 1;
-		
+	
+	function getLastTodayTimed() {
+		// find last timed event of today. If none, return null
+		var lastTodayTimed = null;
+		var timeEndOfToday = Time.today().value() + 24*60*60;
+		for (var i = 0; i < events.size(); i++)
+		{
+			if (events[i].tStart < timeEndOfToday && !events[i].allday)
+			{
+				lastTodayTimed = i;
+			}	
+		}
+		return lastTodayTimed;
+	}
+	
+	function getLastEvTomorrow() {
+		// find last event of tommorow. If none, return null
+		var lastEvTomorrow = null;
+		var timeStartOfTomorrow = Time.today().value() + 24*60*60;
+		var timeEndOfTomorrow   = Time.today().value() + 48*60*60;
+		for (var i = 0; i < events.size(); i++)
+		{
+			if (events[i].tStart >= timeStartOfTomorrow && events[i].tStart < timeEndOfTomorrow)
+			{
+				lastEvTomorrow = i;
+			}	
+		}
+		return lastEvTomorrow;
 	}
 
 }
