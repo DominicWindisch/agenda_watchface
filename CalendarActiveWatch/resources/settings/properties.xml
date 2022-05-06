@@ -1,0 +1,19 @@
+<properties>
+
+	<property id="ClockFont" type="number">0</property>
+    <property id="ClockColor" type="number">0xFFFFFF</property>
+    <property id="InfoColor" type="number">0x55AAFF</property>
+    <property id="LeftDataField" type="number">0</property>
+    <property id="RightDataField" type="number">1</property>
+    <property id="AgendaStyle" type="boolean">false</property>
+	<property id="OneLineStyle" type="boolean">false</property>
+	<property id="AlignLeft" type="boolean">false</property>
+	<property id="EnglishMonth" type="boolean">false</property>
+	<property id="UpdateRate" type="number">5</property>
+	<property id="Demo" type="boolean">false</property>
+	<property id="LastRequest" type="string"></property>
+	<property id="LastChanged" type="string"></property>
+	<property id="Code" type="string"></property>
+	<property id="Weekday" type="boolean">false</property>
+	
+</properties>

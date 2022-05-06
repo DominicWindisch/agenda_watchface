@@ -1,0 +1,82 @@
+ToDo:
+
+- klare Trennung: heute, morgen, ... -> Farbe, Trennlinie
+- d.h. auch "heute keine Ereignisse" o.ä.
+- ganztägige Events nahtloser, ggf. in anderer Farbgebung
+	- statt:
+				Mo 07:00 Termin 1
+				Mo 09:00 Termin 2
+					  Di Ganztägiges Ereignis
+				Di 07:00 Termin 3
+				
+	zu:			Mo 07:00 Termin 1
+				Mo 09:00 Termin 2
+				Di ganzt Ganztägiges Ereignis
+				Di 07:00 Termin 3
+				
+- linkes & rechtes Datenfeld über Uhr steuerbar + weitere Daten (Bodybattery, Temperatursensor, ...?)
+- anzahl der benachrichtigungen??
+- nächstes event in t minuten -> hervorheben
+- timer in ein datenfeld wenn er denn läuft 
+- onUpdate -> live Puls
+
+
+
+
+
+JSON Format todo:
+
+event types: 
+0 - all day, today
+1 - running, today
+2 - upcomming, today
+3 - all day, next days
+4 - upcomming, next days
+5 - empty
+
+{ events:
+	{
+		type = 2,
+		timestr = "heute, 16:00",
+		title = "Wichtiger Termin"
+	},
+	{
+		type = 2,
+		timestr = "heute, 17:00",
+		title = "Später erst!"
+	},
+	{ 
+		type = 3,
+		timestr = "morgen",
+		title = "Geburtstag von X"
+	},
+	{
+		type = 4,
+		timestr = "morgen, 09:00",
+		title = "Frühstück"
+	},
+	{
+		type = 5,
+		timestr = "",
+		title = ""
+	},
+	{
+		type = 5,
+		timestr = "",
+		title = ""
+	},
+	datafields:
+	{
+		pos = 0, //right
+		type = 0, //from phone
+		data = "21°C",
+		icon = 0 // none
+	},
+	{
+		pos = left, //left
+		type = 1, //from watch
+		data = 0 // 0 - steps, 1 - calories, 2 - ...
+		icon = 0 // 0 - steps, ...
+	}
+}
+

@@ -1,0 +1,111 @@
+<settings>
+
+    <setting propertyKey="@Properties.ClockFont" title="@Strings.FontTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.Font_System</listEntry>
+            <listEntry value="1">@Strings.Font_Aileron</listEntry>
+            <listEntry value="2">@Strings.Font_Aleo</listEntry>
+            <listEntry value="3">@Strings.Font_Enigmatic</listEntry>
+            <listEntry value="4">@Strings.Font_Enigmatic_Bold</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.ClockColor" title="@Strings.ClockColorTitle">
+        <settingConfig type="list">
+            <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
+            <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
+            <listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
+            <listEntry value="0xFFAA00">@Strings.ColorOrange</listEntry>
+            <listEntry value="0xFFAA55">@Strings.ColorLightOrange</listEntry>
+            <listEntry value="0xFF0000">@Strings.ColorRed</listEntry>
+            <listEntry value="0x0000FF">@Strings.ColorBlue</listEntry>
+            <listEntry value="0x00AAFF">@Strings.ColorCyan</listEntry>
+            <listEntry value="0x55AAFF">@Strings.ColorLightCyan</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.InfoColor" title="@Strings.InfoColorTitle">
+        <settingConfig type="list">
+            <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
+            <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
+            <listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
+            <listEntry value="0xFFAA00">@Strings.ColorOrange</listEntry>
+            <listEntry value="0xFFAA55">@Strings.ColorLightOrange</listEntry>
+            <listEntry value="0xFF0000">@Strings.ColorRed</listEntry>
+            <listEntry value="0x0000FF">@Strings.ColorBlue</listEntry>
+            <listEntry value="0x00AAFF">@Strings.ColorCyan</listEntry>
+            <listEntry value="0x55AAFF">@Strings.ColorLightCyan</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.LeftDataField" title="@Strings.LeftDataFieldTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.Steps</listEntry>
+            <listEntry value="1">@Strings.Calories</listEntry>
+            <listEntry value="2">@Strings.ActivityMinutesDay</listEntry>
+            <listEntry value="3">@Strings.FloorsClimbed</listEntry>
+            <listEntry value="4">@Strings.Distance</listEntry>
+            <listEntry value="5">@Strings.MetersClimbed</listEntry>
+            <listEntry value="6">@Strings.FreeMemory</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.RightDataField" title="@Strings.RightDataFieldTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.Steps</listEntry>
+            <listEntry value="1">@Strings.Calories</listEntry>
+            <listEntry value="2">@Strings.ActivityMinutesDay</listEntry>
+            <listEntry value="3">@Strings.FloorsClimbed</listEntry>
+            <listEntry value="4">@Strings.Distance</listEntry>
+            <listEntry value="5">@Strings.MetersClimbed</listEntry>
+            <listEntry value="6">@Strings.FreeMemory</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.Weekday" title="@Strings.WeekdayTitle">
+        <settingConfig type="boolean"/>
+    </setting>
+
+    <setting propertyKey="@Properties.AgendaStyle" title="@Strings.AgendaStyleTitle">
+        <settingConfig type="boolean"/>
+    </setting>
+
+    <setting propertyKey="@Properties.OneLineStyle" title="@Strings.OneLineStyleTitle">
+        <settingConfig type="boolean"/>
+    </setting>
+
+    <setting propertyKey="@Properties.AlignLeft" title="@Strings.AlignLeftTitle">
+        <settingConfig type="boolean"/>
+    </setting>
+
+    <setting propertyKey="@Properties.EnglishMonth" title="@Strings.EnglishMonth">
+        <settingConfig type="boolean"/>
+    </setting>
+    
+    <setting propertyKey="@Properties.UpdateRate" title="@Strings.UpdateRateTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.RateManual</listEntry>
+            <listEntry value="5">@Strings.Rate5Minutes</listEntry>
+            <listEntry value="30">@Strings.Rate30Minutes</listEntry>
+            <listEntry value="240">@Strings.Rate240Minutes</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.Demo" title="@Strings.DemoTitle">
+        <settingConfig type="boolean"/>
+    </setting>
+
+    <setting propertyKey="@Properties.LastRequest" title="@Strings.LastRequestTitle">
+        <settingConfig type="alphaNumeric" readonly="true"/>
+    </setting>
+
+    <setting propertyKey="@Properties.LastChanged" title="@Strings.LastChangedTitle">
+        <settingConfig type="alphaNumeric" readonly="true"/>
+    </setting>
+
+    <setting propertyKey="@Properties.Code" title="@Strings.CodeTitle">
+        <settingConfig type="alphaNumeric" readonly="true"/>
+    </setting>
+
+
+</settings>

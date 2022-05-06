@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+<p>Android Connect IQ Partner SDK Version 1.4</p>
+
+<p>A Guide To Building Android Companion Mobile Applications for Monkey C
+Applications</p>
+
+<h2 id="gettingstarted">Getting Started</h2>
+
+<h3 id="introduction">Introduction</h3>
+
+<p>The Mobile SDK allows you to create companion applications that run on a
+user&#8217;s phone and interact with your application on their wearable
+device. This allows for a more feature rich user experience where doing
+certain tasks on the wearable device might be tedious or resource
+intensive.</p>
+
+<h3 id="addingthemobilesdktoaproject">Adding the Mobile SDK to a project</h3>
+
+<p>The Mobile SDK is distributed separately from the Connect IQ SDK but can
+be found on the same download page. Inside the zip is a
+connectiq.jar file along with a sample project to help demonstrate the
+capabilities of the SDK. To begin using the Mobile SDK in your own
+project, copy the connectiq.jar file into the libs folder of your
+Android project.</p>
+
+<h3 id="additionalrequirements">Additional Requirements</h3>
+
+<p>In order for your companion application to communicate with a Connect IQ
+device the user must also install Garmin Connect Mobile onto their
+phone. All communication for companion applications running on Android
+goes through a Garmin Connect Mobile service to reach the device. When
+initializing the SDK with a wireless connection type this requirement is
+checked and initialization will fail if Garmin Connect Mobile is not
+installed. If true is passed to the auto UI parameter of initialize, a
+message is displayed to the user that they need to either install or
+upgrade Garmin Connect Mobile and provides them a way to go directly to
+the application in the Google Play Store. See <code>Displaying a UI message
+automatically when initialization fails</code> for more information.</p>
+
+<h3 id="interactingwiththesdk">Interacting with the SDK</h3>
+
+<p>All interactions between the companion application and the Connect IQ
+application are done via the <code>ConnectIQ</code> class. To use this class you must
+first obtain an instance of the class and then initialize it.</p>
+
+<pre><code class="java">  ConnectIQ connectIQ = ConnectIQ.getInstance(ConnectIQ.IQConnectType.&lt;protocol&gt;);
+</code></pre>
+
+<p><code>ConnectIQ.IQConnectType</code> provides two options:</p>
+
+<ul>
+<li>WIRELESS - For communicating with the Connect IQ simulator or real device via BLE. This is the default.</li>
+<li>TETHERED - For communicating with the Connect IQ simulator over the Android Debug Bridge.</li>
+</ul>
+
+<h3 id="initializingthesdk">Initializing the SDK</h3>
+
+<p>Initializing the SDK is an asynchronous process and requires a
+<code>ConnectIQListener</code> to handle returned states of the SDK. You must wait
+for the <code>onSdkReady()</code> call to be made before calling any additional API
+methods. Doing so beforehand will result in an <code>InvalidStateException</code>.</p>
+
+<pre><code class="java">connectIQ.initialize(context, true, new ConnectIQListener() {
+
+    // Called when the SDK has been successfully initialized
+    @Override
+    public void onSdkReady() {
+
+        // Do any post initialization setup.
+    }
+
+    // Called when the SDK has been shut down
+
+    @Override
+    public void onSdkShutDown() {
+
+        // Take care of any post shutdown requirements
+    }
+
+    // Called when initialization fails.
+    @Override
+    public void onInitializationError(IQSdkErrorStatus status) {
+
+        // A failure has occurred during initialization. Inspect
+        // the IQSdkErrorStatus value for more information regarding
+        // the failure.
+    }
+
+});
+</code></pre>
+
+<h3 id="displayingauimessageautomaticallywheninitializationfails">Displaying a UI message automatically when initialization fails</h3>
+
+<p>If initialization fails due to Garmin Connect Mobile not being installed
+on the user&#8217;s phone or if it needs to be upgraded, a message can be
+displayed prompting the user to take action. You can tell the SDK to
+display this message automatically by passing true as the second
+parameter to the <code>initialize()</code> method. By default, the UI will display a
+dialog message to the user asking them to take action. The strings that
+make up the dialogs are by default English only strings. These strings
+are fully customizable by simply adding some predefined strings to your
+projects <code>strings.xml</code> file.</p>
+
+<h4 id="customizablestrings">Customizable Strings</h4>
+
+<ul>
+<li><code>install_needed_title</code> &#8212; Dialog title for when Garmin Connect Mobile needs to be installed.</li>
+<li><code>install_needed_message</code> &#8212; Dialog message for when Garmin Connect Mobile needs to be installed.</li>
+<li><code>install_needed_yes</code> &#8212; Button text for user to confirm they want to visit the Google Play Store to install Garmin Connect Mobile.</li>
+<li><code>install_needed_cancel</code> &#8212; Button text for user to cancel the dialog and not install Garmin Connect Mobile.</li>
+<li><code>upgrade_needed_title</code> &#8212; Dialog title for when Garmin Connect Mobile needs to be upgraded to a version that supports the SDK.</li>
+<li><code>upgrade_needed_message</code> &#8212; Dialog message for when Garmin Connect Mobile needs to be upgraded to a version that supports the SDK.</li>
+<li><code>upgrade_needed_yes</code> &#8212; Button text for user to confirm they want to visit the Google Play Store to upgrade Garmin Connect Mobile.</li>
+<li><code>upgrade_needed_cancel</code> &#8212; Button text for a user to cancel the dialog and not upgrade Garmin Connect Mobile.</li>
+</ul>
+
+<h2 id="workingwithdevices">Working With Devices</h2>
+
+<h3 id="findingconnectiq-compatibledevices">Finding Connect IQ-compatible devices</h3>
+
+<p>Before you can interact with a Connect IQ device, you must obtain a
+reference to an <code>IQDevice</code> object instance representing it. This is done
+by one of two methods.</p>
+
+<p><code>getKnownDevices()</code> will return a list of any Connect IQ device that has
+been paired within Garmin Connect Mobile. These devices may or may not
+be connected at the time the API is called.</p>
+
+<pre><code class="java">List&lt;IQDevice&gt; paired = connectIQ.getKnownDevices();
+
+if (paired != null &amp;&amp; paired.size() &gt; 0) {
+    // get the status of the devices
+    for (IQDevice device : paired) {
+        IQDeviceStatus status = connectIQ.getStatus(device);
+        if (status == IQDeviceStatus.CONNECTED) {
+            // Work with the device
+        }
+    }
+}
+</code></pre>
+
+<p><code>getConnectedDevices()</code> will return a list of currently connected devices.
+Because these devices could become disconnected at any time, it is good
+practice to register to receive a notification when the device connects
+or disconnects. See the next section for more information.</p>
+
+<pre><code class="java">List&lt;IQDevice&gt; devices = connectIQ.getConnectedDevices();
+
+if (devices != null &amp;&amp; devices.size() &gt; 0) {
+
+    // Work with devices.
+}
+</code></pre>
+
+<h3 id="listeningfordeviceevents">Listening for device events</h3>
+
+<p>You can request to be notified when the status of a device changes by
+calling <code>registerForDeviceEvents(IQDevice, IQDeviceEventListener)</code>. Once
+registered any device status change will call the
+<code>IQDeviceEventListener.onDeviceStatusChanged()</code> with the new status. When
+you no longer need to receive updates for a device, you should call
+<code>unregisterForDeviceEvents(IQDevice)</code> to release any associated resources.</p>
+
+<pre><code class="java">// Register to receive status updates
+connectIQ.registerForDeviceEvents(device, new IQDeviceEventListener() {
+
+    @Override
+    public void onDeviceStatusChanged(IQDevice device, IQDeviceStatus newStatus) {
+
+        // Handle new status
+    }
+});
+
+// Get the current status
+IQDeviceStatus current = device.getStatus();
+
+// Unregister when we no longer need status updates
+connectIQ.unregisterForDeviceEvents(device);
+</code></pre>
+
+<h4 id="possibledevicestatuses">Possible Device statuses</h4>
+
+<ul>
+<li><code>CONNECTED</code> &#8212; The device is connected and can be communicated with.</li>
+<li><code>NOT_CONNECTED</code> &#8212; The device is paired with Garmin Connect Mobile but is not currently connected and cannot be communicated with.</li>
+<li><code>NOT_PAIRED</code> &#8212; The device is not paired with Garmin Connect Mobile and cannot be communicated with.</li>
+</ul>
+
+<h2 id="workingwithapps">Working With Apps</h2>
+
+<h3 id="obtaininganinstanceofiqapp">Obtaining an instance of IQApp</h3>
+
+<p>Apps are represented in the Mobile SDK as instances of the <code>IQApp</code> class.
+While you can create an <code>IQApp</code> instance on your own, it is recommended to
+obtain a fully populated <code>IQApp</code> instance via the <code>getApplicationInfo()</code>
+method. You can determine if your Connect IQ application is installed on
+the user&#8217;s device by passing the Applications UUID, the <code>IQDevice</code>, and an
+<code>IQApplicationInfoListener</code> into a <code>getApplicationInfo()</code> call.
+<code>IQApplicationInfoListener.onApplicationInfoReceived( IQApp )</code> will be
+called if the application is installed on the watch, and
+<code>IQApplicationInfoListener.onApplicationNotInstalled( String )</code> if the app
+does not exist on the watch. <code>onApplicationInfoReceived</code> will be called
+with an IQApp object that can be inspected via the <code>getStatus()</code> method to
+determine the status of your application on the device. If the status is
+<code>INSTALLED</code>, the version number will also be populated so you can
+determine if the user has the latest version of your application.</p>
+
+<pre><code class="java">connectIQ.getApplicationInfo(MY_APPLICATION_ID, device, new IQApplicationInfoListener() {
+    @Override
+    public void onApplicationInfoReceived( IQApp app ) {
+        if (app != null) {
+            if (app.getStatus() == INSTALLED) {
+                if (app.getVersion() &lt; MY_CURRENT_VERSION) {
+                    // Prompt the user to upgrade
+                }
+            }
+        }
+    }
+    @Override
+    public void onAPplicationNotInstalled( String applicationId ) {
+        // Prompt user with information
+        AlertDialog.Builder dialog = new AlertDialog.Builder( this );
+        dialog.setTitle( &quot;Missing Application&quot; );
+        dialog.setMessage( &quot;Corresponding IQ application not installed&quot; );
+        dialog.setPositiveButton( android.R.string.ok, null ); dialog.create().show();
+    }
+});
+</code></pre>
+
+<h4 id="possibleapplicationstatuses">Possible Application Statuses</h4>
+
+<ul>
+<li>INSTALLED &#8212; The application is installed on the device and the version information has been populated.</li>
+<li>NOT_INSTALLED &#8212; The application is not currently installed on the device but is supported.</li>
+<li>NOT_SUPPORTED &#8212; The application is not installed on the device and is not supported by the device.</li>
+</ul>
+
+<h3 id="openinganapponthedevice">Opening an App on the Device</h3>
+
+<p>You may wish to prompt the user to open a Connect IQ application on their
+device. To do this you can use the <code>openApplication</code> API. A response from
+the device will be returned to your <code>IQOpenApplicationListener</code>.</p>
+
+<pre><code class="java">connectIQ.openApplication(device, app, new IQOpenApplicationListener() {
+
+    @Override
+    public void onOpenApplicationResponse(IQDevice device, IQApp app, IQOpenApplicationStatus status) {
+        // Handle the response here
+    }
+
+});
+</code></pre>
+
+<h4 id="possibleopenapplicationstatuses">Possible Open Application Statuses</h4>
+
+<ul>
+<li>PROMPT_SHOWN_ON_DEVICE</li>
+<li>PROMPT_NOT_SHOWN_ON_DEVICE</li>
+<li>APP_IS_NOT_INSTALLED</li>
+<li>APP_IS_ALREADY_RUNNING</li>
+<li>UNKNOWN_FAILURE</li>
+</ul>
+
+<h3 id="openingtheconnectiqstore">Opening the Connect IQ store</h3>
+
+<p>If the user does not have your applications installed (status of
+<code>NOT_INSTALLED</code>), or needs to upgrade to the latest version, you can open
+the Connect IQ store directly to your application. Simply call
+<code>openStore()</code> passing in a String containing the public UUID associated with your
+application in the store. Note, this will not work if you are using the TETHERED
+connection option.</p>
+
+<pre><code class="java">connectIQ.openStore( MY_STORE_ID );
+</code></pre>
+
+<h3 id="sendingmessages">Sending messages</h3>
+
+<p>You can send messages to your Connect IQ application on a connected
+device using any of the Java equivalent Monkey C data types (see
+<em>Supported Data Types</em> table below). Calling <code>sendMessage()</code> will deliver
+the message to your applications mailbox.</p>
+
+<pre><code class="java">List&lt;Object&gt; message = new ArrayList&lt;String&gt;() {&quot;hello pi&quot;, 3.14159};
+
+connectIQ.sendMessage(device, app, message, new IQSendMessageListener() {
+
+    @Override
+    public void onMessageStatus( IQDevice device, IQApp app, IQMessageStatus status ) {
+        Toast.makeText( this, status.name(), Toast.LENGTH_LONG ).show();
+        if (status != IQMessageStatus.SUCCESS) {
+            // Evalute status for cause of the failure
+        }
+    }
+});
+</code></pre>
+
+<h3 id="receivingmessages">Receiving messages</h3>
+
+<p>In order to receive data messages from a Connect IQ application, you
+must first register to receive application events. Once registered via
+<code>registerForAppEvents()</code>, when a new message arrives from the Connect IQ
+application, it will be delivered to the <code>onMessageReceived()</code> method of
+the listener passed when registering. When you no longer wish to receive
+incoming messages, you should call <code>unregisterForAppEvents()</code> to release
+any associated resources.</p>
+
+<p>A companion app may register to receive messages from multiple apps across
+ many devices. However, multiple companion apps cannot be registered to receive
+messages from the same ConnectIQ application. The SDK will override any previous
+ registrations with each call to <code>registerForAppEvents()</code>.</p>
+
+<pre><code class="java">// Register to receive messages from our application
+connectIQ.registerForAppEvents(device, app, new IQApplicationEventListener() {
+
+    @Override
+    public void onMessageReceived(IQDevice device, IQApp app, List&lt;Object&gt; messageData, IQMessageStatus status) {
+        // First inspect the status to make sure this
+        // was a SUCCESS. If not then the status will indicate why there
+        // was an issue receiving the message from the Connect IQ application.
+        if (status == IQMessageStatus.SUCCESS) {
+            // Handle the message.
+        }
+    }
+});
+
+// unregister when we no longer care about messages coming from our app.
+connectIQ.unregisterForAppEvents(device, app);
+</code></pre>
+
+<h2 id="supporteddatatypes">Supported Data Types</h2>
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">Java Data Type</th>
+	<th style="text-align:left;">Monkey C Type</th>
+	<th style="text-align:left;">Notes</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">int, Integer</td>
+	<td style="text-align:left;">Integer</td>
+	<td style="text-align:left;"></td>
+</tr>
+<tr>
+	<td style="text-align:left;">long, Long</td>
+	<td style="text-align:left;">Integer, Long</td>
+	<td style="text-align:left;">Note: If the value of the long is small enough to be represented as an integer, it will be converted to save space.</td>
+</tr>
+<tr>
+	<td style="text-align:left;">float, Float</td>
+	<td style="text-align:left;">Float</td>
+	<td style="text-align:left;"></td>
+</tr>
+<tr>
+	<td style="text-align:left;">double, Double</td>
+	<td style="text-align:left;">Float, Double</td>
+	<td style="text-align:left;">Note: If the value of the double is within 5 matching significant fractional digits of the nearest float, it will be converted to a float to save space.</td>
+</tr>
+<tr>
+	<td style="text-align:left;">boolean, Boolean</td>
+	<td style="text-align:left;">Boolean</td>
+</tr>
+<tr>
+	<td style="text-align:left;">char</td>
+	<td style="text-align:left;">Char</td>
+	<td style="text-align:left;"></td>
+</tr>
+<tr>
+	<td style="text-align:left;">String</td>
+	<td style="text-align:left;">String</td>
+	<td style="text-align:left;"></td>
+</tr>
+<tr>
+	<td style="text-align:left;">List&lt;?&gt;</td>
+	<td style="text-align:left;">Array[]</td>
+	<td style="text-align:left;">Note: List must contain only supported data types. If the list contains unsupported data types, an exception will be thrown.</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Map&lt;?,?&gt;</td>
+	<td style="text-align:left;">Dictionary</td>
+	<td style="text-align:left;">Note: Map keys and values must be supported data types. If the map contains unsupported data types, an exception will be thrown.</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>

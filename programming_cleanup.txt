@@ -1,0 +1,5 @@
+symbols font with weather icons??
+
+
+
+https://developer.garmin.com/connect-iq/programmers-guide/resource-compiler/

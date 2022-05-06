@@ -1,0 +1,71 @@
+<resources>
+<strings>
+
+    <string id="AppName">Calendar Active Watch</string>
+
+	<string id="CodeTitle">Code zur Nutzung in qooApps Companion App</string>
+	<string id="FontTitle">Uhrenschrift</string>
+		<string id="Font_System">System Schrift</string>
+		<string id="Font_Aileron">Schrift Aileron</string>
+		<string id="Font_Aleo">Schrift Aleo</string>
+		<string id="Font_Enigmatic">Schrift Enigmatic</string>
+		<string id="Font_Enigmatic_Bold">Schrift Enigmatic fett</string>
+    
+    <string id="ClockColorTitle">Uhrenfarbe</string>
+    <string id="InfoColorTitle">Infofarbe</string>
+	    <string id="ColorBlack">Schwarz</string>
+	    <string id="ColorDarkGray">Dunkelgrau</string>
+	    <string id="ColorLightGray">Hellgrau</string>
+	    <string id="ColorWhite">Weiß</string>
+	    <string id="ColorBlue">Blau</string>
+	    <string id="ColorCyan">Blaugrün</string>
+	    <string id="ColorLightCyan">Helles Blaugrün</string>
+	    <string id="ColorRed">Rot</string>
+	    <string id="ColorOrange">Orange</string>
+	    <string id="ColorLightOrange">Helles Orange</string>
+
+	<string id="WeekdayTitle">Zeige Wochentag</string>
+	<string id="AgendaStyleTitle">Zeige Tagesplanung</string>
+	<string id="OneLineStyleTitle">Termine kompakt</string>
+	<string id="AlignLeftTitle">Links ausrichten</string>
+	<string id="EnglishMonth">Englische Monatsnamen</string>
+	<string id="UpdateRateTitle">Update Rate</string>
+    	<string id="RateManual">manuell</string>
+		<string id="Rate5Minutes">5min</string>
+		<string id="Rate30Minutes">30min</string>
+		<string id="Rate240Minutes">4 Stunden</string>
+	<string id="LastChangedTitle">Letzte Aktualisierung</string>
+	<string id="LastRequestTitle">Letzte Onlineanfrage</string>
+	<string id="DemoTitle">Test Modus</string>
+	
+	
+	<string id="LeftDataFieldTitle">Linkes Datenanzeige</string>
+    <string id="RightDataFieldTitle">Rechte Datenanzeige</string>
+    	<string id="Steps">Schritte</string>
+    	<string id="Calories">Kalorien</string>
+        <string id="ActivityMinutesDay">Aktive Minuten am Tag</string>
+        <string id="FloorsClimbed">gestiegene Etagen</string>
+        <string id="Distance">Strecke</string>
+        <string id="MetersClimbed">gestiegene Höhe</string>
+        <string id="FreeMemory">Freier Speicher</string>
+
+	<string id="WaitInfo_01">Warte auf Code...</string>
+	<string id="WaitInfo_02">Benötigt das Smartphone</string>
+	<string id="WaitInfo_03">online und verbunden, es</string>
+	<string id="WaitInfo_04">kann ~10min dauern.</string>
+	
+	<string id="CodeInfo_01">Privater Code:</string>
+	<string id="CodeInfo_02">Zur Nutzung in qooApps</string>
+	<string id="CodeInfo_03">Connect Companion App</string>
+	<string id="CodeInfo_r2">Zur Nutzung in</string>
+	<string id="CodeInfo_r3">qooApps Connect</string>
+	<string id="CodeInfo_r4">Companion App</string>
+	
+	    
+	<string id="DemoEvent_01">Team Meeting</string>
+	<string id="DemoEvent_02">Meet Matze</string>
+	<string id="DemoEvent_03">Dentist</string>
+	<string id="DemoEvent_04">Meeting with Kate</string>
+	    
+</strings>
+</resources>
