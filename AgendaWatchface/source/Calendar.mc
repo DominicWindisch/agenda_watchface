@@ -273,7 +273,7 @@ class Calendar
 		var timeEndOfToday = Time.today().value() + 24*60*60;
 		for (var i = 0; i < events.size(); i++)
 		{
-			if (events[i].tStart < timeEndOfToday && !events[i].allday)
+			if (events[i].tEnd > Time.now().value() && events[i].tStart < timeEndOfToday && !events[i].allday)
 			{
 				lastTodayTimed = i;
 			}	
