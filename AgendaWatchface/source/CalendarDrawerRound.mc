@@ -16,8 +16,11 @@ class CalendarDrawerRound {
 	var dataDrawer;
 	var liveHR = 0;
 	
-	function resetLiveHR() {
+	function startLiveHR() {
 		liveHR = 0;
+	}
+	function stopLiveHR() {
+		liveHR = 999;
 	}
 	
     function initialize( calendar, dc, type ) {

@@ -58,15 +58,17 @@ class CalendarActiveView extends Ui.WatchFace {
 	}
 	
     function onHide() {
+    	if (drawer!=null){drawer.stopLiveHR();}
     }
 
     function onExitSleep() {
-    	if (drawer!=null){drawer.resetLiveHR();}
+    	if (drawer!=null){drawer.startLiveHR();}
     	c.updateDateString();
     	a.requestImmediateUpdate();
     }
 
     function onEnterSleep() {
+    	if (drawer!=null){drawer.stopLiveHR();}
     }
 
 }
