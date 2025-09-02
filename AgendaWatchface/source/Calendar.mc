@@ -15,11 +15,11 @@ class Calendar
 	{
 		var tStart = 0; // timestamp unix
 		var tEnd = 0; // timestamp unix
+		var day = "";
 		var time = "";	
 		var desc = "";
 		var loc = null;
 		var allday = false;
-		var lastone = 0; //indicating last event for today
 		
 	// initialize
 	//
@@ -31,7 +31,6 @@ class Calendar
 		{
 			var i; // index
 			var arg_i = 0;
-			System.println("Decoding CSV!");
 		
 			// read all args: 
 			for ( i = start; i < end; i++ )
@@ -76,36 +75,22 @@ class Calendar
 		{
 			var duration = tStart - today;
 			var timeinfo = Gregorian.info( new Time.Moment(tStart), Time.FORMAT_MEDIUM); // all as numbers
-			var timeString;
+			var timeString = Lang.format("$1$:$2$", [timeinfo.hour.format("%02d"), timeinfo.min.format("%02d")]);
 			
-			     
-		        timeString = Lang.format("$1$:$2$", [timeinfo.hour.format("%02d"), timeinfo.min.format("%02d")]);
-		    
+			// Set the day part
+			if ( duration>=0 && duration < 24*60*60 ) { // Event is today
+		        day = ""; // Remove the day part to save space
+		    } else if ( duration>=0 && duration < 7*24*60*60 ) { // Event is within the next 7 days
+		        day = timeinfo.day_of_week;
+		    } else { // Event is further out
+		        day = Lang.format("$1$ $2$", [timeinfo.day.format("%02d"), timeinfo.month]);
+		    }
 			
-			if ( duration>=0 && duration < 24*60*60 ) // today
-			{
-				if (allday) {
-					time = "";
-				} else {
-					time = timeString;
-				}
-			}
-			else
-			if ( duration>=0 && duration < 7*24*60*60 ) // week
-			{
-				if (allday) {
-					time = "" + timeinfo.day_of_week + "       ";
-				} else {
-					time = "" + timeinfo.day_of_week + " " + timeString;
-				}
-			}
-			else // after week or in the past
-			{
-				if (allday) {
-					time = "" + timeinfo.day.format("%02d") + " " + timeinfo.month + "       ";
-				} else {
-					time = "" + timeinfo.day.format("%02d") + " " + timeinfo.month + " " + timeString;
-				}
+			// Set the time part
+			if (allday) {
+				time = ""; // Leave it blank for all-day events
+			} else {
+				time = timeString;
 			}
 		}
 		
@@ -172,6 +157,69 @@ class Calendar
 			valid = true;
 		}
 	}
+
+	// --- NEW HELPER FUNCTIONS ---
+
+    function getTodaysAllDayEvents(now as Lang.Number) as Lang.Array<Event> {
+        var result = new Lang.Array<Event>[0];
+        var timeEndOfToday = Time.today().value() + 24*60*60;
+        for(var i = 0; i < events.size(); i++) {
+            var ev = events[i];
+            if(ev.tEnd > now && ev.tStart < timeEndOfToday && ev.allday) {
+                result.add(ev);
+            }
+        }
+        return result;
+    }
+
+    function getTodaysTimedEvents(now as Lang.Number) as Lang.Array<Event> {
+        var result = new Lang.Array<Event>[0];
+        var timeEndOfToday = Time.today().value() + 24*60*60;
+        for(var i = 0; i < events.size(); i++) {
+            var ev = events[i];
+            if(ev.tEnd > now && ev.tStart < timeEndOfToday && !ev.allday) {
+                result.add(ev);
+            }
+        }
+        return result;
+    }
+
+    function getTomorrowsEvents(now as Lang.Number) as Lang.Array<Event> {
+        var result = new Lang.Array<Event>[0];
+        var timeStartOfTomorrow = Time.today().value() + 24*60*60;
+		var timeEndOfTomorrow   = Time.today().value() + 48*60*60;
+        for(var i = 0; i < events.size(); i++) {
+            var ev = events[i];
+            if(ev.tEnd > now && ev.tStart >= timeStartOfTomorrow && ev.tStart < timeEndOfTomorrow) {
+                result.add(ev);
+            }
+        }
+        return result;
+    }
+
+    function getFutureEvents(now as Lang.Number) as Lang.Array<Event> {
+        var result = new Lang.Array<Event>[0];
+		var timeEndOfTomorrow   = Time.today().value() + 48*60*60;
+        for(var i = 0; i < events.size(); i++) {
+            var ev = events[i];
+            if(ev.tEnd > now && ev.tStart >= timeEndOfTomorrow) {
+                result.add(ev);
+            }
+        }
+        return result;
+    }
+    
+    function hasAnyEventsToday() as Lang.Boolean {
+        var timeEndOfToday = Time.today().value() + 24*60*60;
+        for(var i = 0; i < events.size(); i++) {
+            if(events[i].tStart < timeEndOfToday) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+	// --- END NEW HELPER FUNCTIONS ---
 	
 	function getEventIfNotPastAlready( index as Lang.Number, t as Lang.Number) {
 		var ev = null;
@@ -254,48 +302,5 @@ class Calendar
 			}
 		}
 	}
-		
-	function getLastTodayAllday() {
-		// find last allday event of today. If none, return null
-		var lastTodayAllday = null;
-		var timeEndOfToday = Time.today().value() + 24*60*60;
-		for (var i = 0; i < events.size(); i++)
-		{
-			if (events[i].tStart < timeEndOfToday && events[i].allday)
-			{
-				lastTodayAllday = i;
-			}	
-		}
-		return lastTodayAllday;		
-	}
-	
-	function getLastTodayTimed() {
-		// find last timed event of today. If none, return null
-		var lastTodayTimed = null;
-		var timeEndOfToday = Time.today().value() + 24*60*60;
-		for (var i = 0; i < events.size(); i++)
-		{
-			if (events[i].tEnd > Time.now().value() && events[i].tStart < timeEndOfToday && !events[i].allday)
-			{
-				lastTodayTimed = i;
-			}	
-		}
-		return lastTodayTimed;
-	}
-	
-	function getLastEvTomorrow() {
-		// find last event of tommorow. If none, return null
-		var lastEvTomorrow = null;
-		var timeStartOfTomorrow = Time.today().value() + 24*60*60;
-		var timeEndOfTomorrow   = Time.today().value() + 48*60*60;
-		for (var i = 0; i < events.size(); i++)
-		{
-			if (events[i].tStart >= timeStartOfTomorrow && events[i].tStart < timeEndOfTomorrow)
-			{
-				lastEvTomorrow = i;
-			}	
-		}
-		return lastEvTomorrow;
-	}
-
 }
+

@@ -29,7 +29,7 @@ class CalendarActiveView extends Ui.WatchFace {
 		if (GlobalState.runParseTestInSim) {
             // Data from your JSON payload:
             GlobalState.code = "446-750-516";
-            GlobalState.calendar_raw = "29279400;29280240;d;Leerung Gelbe Tonne, Bio-Tonne;;1;\n29279400;29280390;d;SD  (09:00-16:30);;1;\n29280060;29280300;;Glasfaser Begehung;;1;\n29280210;29280300;;Arbeitsberatung // techn. dep. m;;1;\n29282895;29282955;;Betriebsausweis tauschen;;1;\n29285760;29286180;;Zugfahrt;;1;\n29285850;29285910;;Mittagessen;;1;\n29286600;29288040;d;Ponylino;;1;\n29289480;29290320;d;Leerung Bio-Tonne;;1;\n29290920;29291760;d;Leerung Restabfall, Blaue Tonne;;1;\n29290920;29292060;d;SD  (11:30-19:00);;1;\n29292360;29293380;d;ZD  (09:30-17:00);;1;\n";
+            GlobalState.calendar_raw = "29279400;29280240;d;Leerung Gelbe Tonne, Bio-Tonne;;1;\n29280210;29280300;;Arbeitsberatung // techn. dep. m;;1;\n29282895;29282955;;Betriebsausweis tauschen;;1;\n29285760;29286180;;Zugfahrt;;1;\n29285850;29285910;;Mittagessen;;1;\n29286600;29288040;d;Ponylino;;1;\n29289480;29290320;d;Leerung Bio-Tonne;;1;\n29290920;29291760;d;Leerung Restabfall, Blaue Tonne;;1;\n29290920;29292060;d;SD  (11:30-19:00);;1;\n29292360;29293380;d;ZD  (09:30-17:00);;1;\n";
             GlobalState.calendar_updated = "2025-09-02 09:45:00";
             GlobalState.weathermin = "16.1";
             GlobalState.weathermax = "20.5";

@@ -110,7 +110,7 @@ class DataDrawer {
 		}
 		else
 		{
-			if (ActivityMonitor has :getHeartRateHistory) 
+			/*if (ActivityMonitor has :getHeartRateHistory) 
 			{
 				var hrIterator = ActivityMonitor.getHeartRateHistory(1, true);
 				var sample = hrIterator.next();
@@ -119,7 +119,25 @@ class DataDrawer {
 			        	hr = ""+ sample.heartRate;
 			        }
 			    }
-		    }
+		    }*/
+			if (Toybox.SensorHistory has :getBodyBatteryHistory) {
+
+				// 2. Request the most recent sample (limit = 1)
+				var bbIterator = Toybox.SensorHistory.getBodyBatteryHistory({
+					:period => 1,
+					:order => Toybox.SensorHistory.ORDER_NEWEST_FIRST
+				});
+
+				// 3. Get the sample from the iterator
+				if (bbIterator != null) {
+					var sample = bbIterator.next();
+					
+					// 4. The value is in the .data field
+					if (sample != null && sample.data != null) {
+						hr = "" + sample.data.format("%d");
+					}
+				}
+			}
 	    }
 	
 		x += -(dc.getTextWidthInPixels(hr,Gfx.FONT_MEDIUM) + 11)/2 + 11; // 11=size of icon
