@@ -28,8 +28,7 @@ class UpdateService extends Toybox.System.ServiceDelegate {
 	    if (System.getDeviceSettings().phoneConnected) {
 		    
 			Comm.makeWebRequest(
-				"test.json"/*
-	        	"http://localhost:8080/Download/myevents.json"*/, 
+	        	"http://localhost:8080/Download/myevents.json",
 	        	null, 
 	        	{ :method => Comm.HTTP_REQUEST_METHOD_GET, 
 	        	  :headers => {"authorization" => "Basic bW5vZWM6bWhrb2lzaGlhdA=="}, 

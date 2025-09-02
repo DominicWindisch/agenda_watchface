@@ -9,19 +9,19 @@
 <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="4" lineNum="17" parent="globals/UpdateService" pc="268435513" symbol="onTemporalEvent"/>
 <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="4" lineNum="18" parent="globals/UpdateService" pc="268435515" symbol="onTemporalEvent"/>
 <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="4" lineNum="19" parent="globals/UpdateService" pc="268435536" symbol="onTemporalEvent"/>
-<entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="5" lineNum="45" parent="globals/UpdateService" pc="268435549" symbol="onWeb"/>
-<entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="5" lineNum="47" parent="globals/UpdateService" pc="268435553" symbol="onWeb"/>
-<entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="5" lineNum="48" parent="globals/UpdateService" pc="268435570" symbol="onWeb"/>
-<entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="5" lineNum="50" parent="globals/UpdateService" pc="268435606" symbol="onWeb"/>
-<entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="5" lineNum="51" parent="globals/UpdateService" pc="268435620" symbol="onWeb"/>
-<entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="5" lineNum="55" parent="globals/UpdateService" pc="268435627" symbol="onWeb"/>
-<entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="5" lineNum="57" parent="globals/UpdateService" pc="268435648" symbol="onWeb"/>
+<entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="5" lineNum="44" parent="globals/UpdateService" pc="268435549" symbol="onWeb"/>
+<entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="5" lineNum="46" parent="globals/UpdateService" pc="268435553" symbol="onWeb"/>
+<entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="5" lineNum="47" parent="globals/UpdateService" pc="268435570" symbol="onWeb"/>
+<entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="5" lineNum="49" parent="globals/UpdateService" pc="268435606" symbol="onWeb"/>
+<entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="5" lineNum="50" parent="globals/UpdateService" pc="268435620" symbol="onWeb"/>
+<entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="5" lineNum="54" parent="globals/UpdateService" pc="268435627" symbol="onWeb"/>
+<entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="5" lineNum="56" parent="globals/UpdateService" pc="268435648" symbol="onWeb"/>
 <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="6" lineNum="13" parent="globals/UpdateService" pc="268435667" symbol="initialize"/>
 <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="6" lineNum="14" parent="globals/UpdateService" pc="268435669" symbol="initialize"/>
 <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="7" lineNum="27" parent="globals/UpdateService" pc="268435692" symbol="updateCalendar"/>
 <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="7" lineNum="28" parent="globals/UpdateService" pc="268435694" symbol="updateCalendar"/>
 <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="7" lineNum="30" parent="globals/UpdateService" pc="268435718" symbol="updateCalendar"/>
-<entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="7" lineNum="41" parent="globals/UpdateService" pc="268435818" symbol="updateCalendar"/>
+<entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\UpdateService.mc" id="7" lineNum="40" parent="globals/UpdateService" pc="268435818" symbol="updateCalendar"/>
 <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\GlobalState.mc" id="8" lineNum="73" parent="globals/GlobalState" pc="268435854" symbol="readSettings"/>
 <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\GlobalState.mc" id="8" lineNum="75" parent="globals/GlobalState" pc="268435864" symbol="readSettings"/>
 <entry filename="D:\\git\\agenda_watchface\\AgendaWatchface\\source\\GlobalState.mc" id="8" lineNum="76" parent="globals/GlobalState" pc="268435874" symbol="readSettings"/>
@@ -1027,15 +1027,15 @@
 <dataEntry label="globals/UpdateService" offset="174" parentId="globals" symbolId="UpdateService" type="class"/>
 <dataEntry label="globals/GlobalState" offset="253" parentId="globals" symbolId="GlobalState" type="module"/>
 <dataEntry label="globals/CalendarActiveWatch" offset="484" parentId="globals" symbolId="CalendarActiveWatch" type="class"/>
-<dataEntry label="globals/CalendarActiveView" offset="1552" parentId="globals" symbolId="CalendarActiveView" type="class"/>
-<dataEntry label="globals/Rez" offset="1671" parentId="globals" symbolId="Rez" type="module"/>
-<dataEntry label="globals/Calendar" offset="1726" parentId="globals" symbolId="Calendar" type="class"/>
-<dataEntry label="globals/DataDrawer" offset="1901" parentId="globals" symbolId="DataDrawer" type="class"/>
-<dataEntry label="globals/CalendarDrawerRound" offset="2028" parentId="globals" symbolId="CalendarDrawerRound" type="class"/>
-<dataEntry label="globals/Rez/Drawables" offset="2203" parentId="Rez" symbolId="Drawables" type="module"/>
-<dataEntry label="globals/Rez/Fonts" offset="2242" parentId="Rez" symbolId="Fonts" type="module"/>
-<dataEntry label="globals/Rez/Strings" offset="2289" parentId="Rez" symbolId="Strings" type="module"/>
-<dataEntry label="globals/Calendar/Event" offset="2768" parentId="Calendar" symbolId="Event" type="class"/>
+<dataEntry label="globals/CalendarActiveView" offset="1587" parentId="globals" symbolId="CalendarActiveView" type="class"/>
+<dataEntry label="globals/Rez" offset="1706" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/Calendar" offset="1761" parentId="globals" symbolId="Calendar" type="class"/>
+<dataEntry label="globals/DataDrawer" offset="1936" parentId="globals" symbolId="DataDrawer" type="class"/>
+<dataEntry label="globals/CalendarDrawerRound" offset="2063" parentId="globals" symbolId="CalendarDrawerRound" type="class"/>
+<dataEntry label="globals/Rez/Drawables" offset="2238" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Fonts" offset="2277" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="2324" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry label="globals/Calendar/Event" offset="2803" parentId="Calendar" symbolId="Event" type="class"/>
 </dataEntryOffsetMappings>
 <functions>
 <functionEntry accessMode="public" endPc="268435478" name="&lt;init&gt;" parent="UpdateService" startPc="268435460">
