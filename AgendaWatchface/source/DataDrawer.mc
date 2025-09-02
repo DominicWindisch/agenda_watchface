@@ -7,6 +7,7 @@ using Toybox.Activity;
 using Toybox.Time;
 using Toybox.Time.Gregorian;
 
+(:foreground)
 class DataDrawer {
 
 	var fontSymbols;
@@ -121,12 +122,12 @@ class DataDrawer {
 		    }
 	    }
 	
-		x += -(dc.getTextWidthInPixels(hr,Gfx.FONT_NUMBER_MILD) + 11)/2 + 11; // 11=size of icon
+		x += -(dc.getTextWidthInPixels(hr,Gfx.FONT_MEDIUM) + 11)/2 + 11; // 11=size of icon
 		if (liveHR%2 == 0)
 		{	// blink when live
 			dc.drawText(x, y+dySym, fontSymbols, "E", Gfx.TEXT_JUSTIFY_RIGHT);
 		}
-		dc.drawText(x, y, Gfx.FONT_NUMBER_MILD, hr, Gfx.TEXT_JUSTIFY_LEFT);
+		dc.drawText(x, y, Gfx.FONT_MEDIUM, hr, Gfx.TEXT_JUSTIFY_LEFT);
 	}
 
 	function drawDay( dc, x, y ) {

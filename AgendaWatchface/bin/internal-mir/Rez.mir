@@ -1,0 +1,155 @@
+[ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [WatchUi,3,13,20]; @symbol_usingAlias = [Ui,3,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Graphics,4,13,21]; ]
+using Toybox.Graphics;
+[ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Graphics,5,13,21]; @symbol_usingAlias = [Gfx,5,25,28]; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 7; @symbol_moduledef = [Rez,7,7,10]; ]
+module Rez {
+    [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 8; @symbol_moduledef = [Drawables,8,11,20]; ]
+    module Drawables {
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 9; @position = 27; initialized = true; @symbol_vardef = [LauncherIcon,9,27,39]; @symbol_type<0> = [ResourceId,9,43,53]; ]
+        var LauncherIcon as ResourceId;
+    }
+    [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 12; @symbol_moduledef = [Fonts,12,11,16]; ]
+    module Fonts {
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 12; ]
+        <init> {
+        }
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 13; @position = 27; initialized = true; @symbol_vardef = [symbols,13,27,34]; @symbol_type<0> = [ResourceId,13,38,48]; ]
+        var symbols as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 14; @position = 27; initialized = true; @symbol_vardef = [weathericons,14,27,39]; @symbol_type<0> = [ResourceId,14,43,53]; ]
+        var weathericons as ResourceId;
+    }
+    [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 17; @symbol_moduledef = [Strings,17,11,18]; ]
+    module Strings {
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 17; ]
+        <init> {
+        }
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 18; @position = 27; initialized = true; @symbol_vardef = [Font_Aileron,18,27,39]; @symbol_type<0> = [ResourceId,18,43,53]; ]
+        var Font_Aileron as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 19; @position = 27; initialized = true; @symbol_vardef = [AlignLeftTitle,19,27,41]; @symbol_type<0> = [ResourceId,19,45,55]; ]
+        var AlignLeftTitle as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 20; @position = 27; initialized = true; @symbol_vardef = [WaitInfo_03,20,27,38]; @symbol_type<0> = [ResourceId,20,42,52]; ]
+        var WaitInfo_03 as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 21; @position = 27; initialized = true; @symbol_vardef = [WaitInfo_02,21,27,38]; @symbol_type<0> = [ResourceId,21,42,52]; ]
+        var WaitInfo_02 as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 22; @position = 27; initialized = true; @symbol_vardef = [WaitInfo_01,22,27,38]; @symbol_type<0> = [ResourceId,22,42,52]; ]
+        var WaitInfo_01 as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 23; @position = 27; initialized = true; @symbol_vardef = [ColorRed,23,27,35]; @symbol_type<0> = [ResourceId,23,39,49]; ]
+        var ColorRed as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 24; @position = 27; initialized = true; @symbol_vardef = [LastRequestTitle,24,27,43]; @symbol_type<0> = [ResourceId,24,47,57]; ]
+        var LastRequestTitle as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 25; @position = 27; initialized = true; @symbol_vardef = [CodeInfo_02,25,27,38]; @symbol_type<0> = [ResourceId,25,42,52]; ]
+        var CodeInfo_02 as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 26; @position = 27; initialized = true; @symbol_vardef = [CodeInfo_r4,26,27,38]; @symbol_type<0> = [ResourceId,26,42,52]; ]
+        var CodeInfo_r4 as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 27; @position = 27; initialized = true; @symbol_vardef = [CodeInfo_03,27,27,38]; @symbol_type<0> = [ResourceId,27,42,52]; ]
+        var CodeInfo_03 as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 28; @position = 27; initialized = true; @symbol_vardef = [CodeInfo_r2,28,27,38]; @symbol_type<0> = [ResourceId,28,42,52]; ]
+        var CodeInfo_r2 as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 29; @position = 27; initialized = true; @symbol_vardef = [Font_Aleo,29,27,36]; @symbol_type<0> = [ResourceId,29,40,50]; ]
+        var Font_Aleo as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 30; @position = 27; initialized = true; @symbol_vardef = [CodeInfo_01,30,27,38]; @symbol_type<0> = [ResourceId,30,42,52]; ]
+        var CodeInfo_01 as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 31; @position = 27; initialized = true; @symbol_vardef = [CodeInfo_r3,31,27,38]; @symbol_type<0> = [ResourceId,31,42,52]; ]
+        var CodeInfo_r3 as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 32; @position = 27; initialized = true; @symbol_vardef = [WeekdayTitle,32,27,39]; @symbol_type<0> = [ResourceId,32,43,53]; ]
+        var WeekdayTitle as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 33; @position = 27; initialized = true; @symbol_vardef = [ColorWhite,33,27,37]; @symbol_type<0> = [ResourceId,33,41,51]; ]
+        var ColorWhite as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 34; @position = 27; initialized = true; @symbol_vardef = [Distance,34,27,35]; @symbol_type<0> = [ResourceId,34,39,49]; ]
+        var Distance as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 35; @position = 27; initialized = true; @symbol_vardef = [FontTitle,35,27,36]; @symbol_type<0> = [ResourceId,35,40,50]; ]
+        var FontTitle as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 36; @position = 27; initialized = true; @symbol_vardef = [DemoEvent_01,36,27,39]; @symbol_type<0> = [ResourceId,36,43,53]; ]
+        var DemoEvent_01 as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 37; @position = 27; initialized = true; @symbol_vardef = [ColorLightCyan,37,27,41]; @symbol_type<0> = [ResourceId,37,45,55]; ]
+        var ColorLightCyan as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 38; @position = 27; initialized = true; @symbol_vardef = [LastChangedTitle,38,27,43]; @symbol_type<0> = [ResourceId,38,47,57]; ]
+        var LastChangedTitle as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 39; @position = 27; initialized = true; @symbol_vardef = [DemoEvent_03,39,27,39]; @symbol_type<0> = [ResourceId,39,43,53]; ]
+        var DemoEvent_03 as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 40; @position = 27; initialized = true; @symbol_vardef = [DemoEvent_02,40,27,39]; @symbol_type<0> = [ResourceId,40,43,53]; ]
+        var DemoEvent_02 as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 41; @position = 27; initialized = true; @symbol_vardef = [DemoEvent_04,41,27,39]; @symbol_type<0> = [ResourceId,41,43,53]; ]
+        var DemoEvent_04 as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 42; @position = 27; initialized = true; @symbol_vardef = [RateManual,42,27,37]; @symbol_type<0> = [ResourceId,42,41,51]; ]
+        var RateManual as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 43; @position = 27; initialized = true; @symbol_vardef = [ColorOrange,43,27,38]; @symbol_type<0> = [ResourceId,43,42,52]; ]
+        var ColorOrange as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 44; @position = 27; initialized = true; @symbol_vardef = [Rate30Minutes,44,27,40]; @symbol_type<0> = [ResourceId,44,44,54]; ]
+        var Rate30Minutes as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 45; @position = 27; initialized = true; @symbol_vardef = [InfoColorTitle,45,27,41]; @symbol_type<0> = [ResourceId,45,45,55]; ]
+        var InfoColorTitle as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 46; @position = 27; initialized = true; @symbol_vardef = [WaitInfo_04,46,27,38]; @symbol_type<0> = [ResourceId,46,42,52]; ]
+        var WaitInfo_04 as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 47; @position = 27; initialized = true; @symbol_vardef = [Steps,47,27,32]; @symbol_type<0> = [ResourceId,47,36,46]; ]
+        var Steps as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 48; @position = 27; initialized = true; @symbol_vardef = [ColorBlue,48,27,36]; @symbol_type<0> = [ResourceId,48,40,50]; ]
+        var ColorBlue as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 49; @position = 27; initialized = true; @symbol_vardef = [Font_Enigmatic_Bold,49,27,46]; @symbol_type<0> = [ResourceId,49,50,60]; ]
+        var Font_Enigmatic_Bold as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 50; @position = 27; initialized = true; @symbol_vardef = [Rate240Minutes,50,27,41]; @symbol_type<0> = [ResourceId,50,45,55]; ]
+        var Rate240Minutes as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 51; @position = 27; initialized = true; @symbol_vardef = [AgendaStyleTitle,51,27,43]; @symbol_type<0> = [ResourceId,51,47,57]; ]
+        var AgendaStyleTitle as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 52; @position = 27; initialized = true; @symbol_vardef = [ColorLightOrange,52,27,43]; @symbol_type<0> = [ResourceId,52,47,57]; ]
+        var ColorLightOrange as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 53; @position = 27; initialized = true; @symbol_vardef = [MetersClimbed,53,27,40]; @symbol_type<0> = [ResourceId,53,44,54]; ]
+        var MetersClimbed as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 54; @position = 27; initialized = true; @symbol_vardef = [AppName,54,27,34]; @symbol_type<0> = [ResourceId,54,38,48]; ]
+        var AppName as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 55; @position = 27; initialized = true; @symbol_vardef = [Rate5Minutes,55,27,39]; @symbol_type<0> = [ResourceId,55,43,53]; ]
+        var Rate5Minutes as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 56; @position = 27; initialized = true; @symbol_vardef = [FreeMemory,56,27,37]; @symbol_type<0> = [ResourceId,56,41,51]; ]
+        var FreeMemory as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 57; @position = 27; initialized = true; @symbol_vardef = [EnglishMonth,57,27,39]; @symbol_type<0> = [ResourceId,57,43,53]; ]
+        var EnglishMonth as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 58; @position = 27; initialized = true; @symbol_vardef = [DemoTitle,58,27,36]; @symbol_type<0> = [ResourceId,58,40,50]; ]
+        var DemoTitle as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 59; @position = 27; initialized = true; @symbol_vardef = [UpdateRateTitle,59,27,42]; @symbol_type<0> = [ResourceId,59,46,56]; ]
+        var UpdateRateTitle as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 60; @position = 27; initialized = true; @symbol_vardef = [Font_System,60,27,38]; @symbol_type<0> = [ResourceId,60,42,52]; ]
+        var Font_System as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 61; @position = 27; initialized = true; @symbol_vardef = [Font_Enigmatic,61,27,41]; @symbol_type<0> = [ResourceId,61,45,55]; ]
+        var Font_Enigmatic as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 62; @position = 27; initialized = true; @symbol_vardef = [RightDataFieldTitle,62,27,46]; @symbol_type<0> = [ResourceId,62,50,60]; ]
+        var RightDataFieldTitle as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 63; @position = 27; initialized = true; @symbol_vardef = [ColorLightGray,63,27,41]; @symbol_type<0> = [ResourceId,63,45,55]; ]
+        var ColorLightGray as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 64; @position = 27; initialized = true; @symbol_vardef = [FloorsClimbed,64,27,40]; @symbol_type<0> = [ResourceId,64,44,54]; ]
+        var FloorsClimbed as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 65; @position = 27; initialized = true; @symbol_vardef = [ColorDarkGray,65,27,40]; @symbol_type<0> = [ResourceId,65,44,54]; ]
+        var ColorDarkGray as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 66; @position = 27; initialized = true; @symbol_vardef = [ColorBlack,66,27,37]; @symbol_type<0> = [ResourceId,66,41,51]; ]
+        var ColorBlack as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 67; @position = 27; initialized = true; @symbol_vardef = [LeftDataFieldTitle,67,27,45]; @symbol_type<0> = [ResourceId,67,49,59]; ]
+        var LeftDataFieldTitle as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 68; @position = 27; initialized = true; @symbol_vardef = [ClockColorTitle,68,27,42]; @symbol_type<0> = [ResourceId,68,46,56]; ]
+        var ClockColorTitle as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 69; @position = 27; initialized = true; @symbol_vardef = [CodeTitle,69,27,36]; @symbol_type<0> = [ResourceId,69,40,50]; ]
+        var CodeTitle as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 70; @position = 27; initialized = true; @symbol_vardef = [Calories,70,27,35]; @symbol_type<0> = [ResourceId,70,39,49]; ]
+        var Calories as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 71; @position = 27; initialized = true; @symbol_vardef = [ActivityMinutesDay,71,27,45]; @symbol_type<0> = [ResourceId,71,49,59]; ]
+        var ActivityMinutesDay as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 72; @position = 27; initialized = true; @symbol_vardef = [ColorCyan,72,27,36]; @symbol_type<0> = [ResourceId,72,40,50]; ]
+        var ColorCyan as ResourceId;
+        [ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 73; @position = 27; initialized = true; @symbol_vardef = [OneLineStyleTitle,73,27,44]; @symbol_type<0> = [ResourceId,73,48,58]; ]
+        var OneLineStyleTitle as ResourceId;
+    }
+}
+[ @file = "d:\git\agenda_watchface\AgendaWatchface\bin\gen\006-B3225-00\source\Rez.mcgen"; @line = 1; ]
+<init> {
+}

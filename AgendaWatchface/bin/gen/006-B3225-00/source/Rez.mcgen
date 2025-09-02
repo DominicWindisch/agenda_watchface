@@ -1,0 +1,75 @@
+import Toybox.Lang;
+using Toybox.WatchUi;
+using Toybox.WatchUi as Ui;
+using Toybox.Graphics;
+using Toybox.Graphics as Gfx;
+
+module Rez {
+    module Drawables {
+        (:initialized) var LauncherIcon as ResourceId;
+    } // Drawables
+
+    module Fonts {
+        (:initialized) var symbols as ResourceId;
+        (:initialized) var weathericons as ResourceId;
+    } // Fonts
+
+    module Strings {
+        (:initialized) var Font_Aileron as ResourceId;
+        (:initialized) var AlignLeftTitle as ResourceId;
+        (:initialized) var WaitInfo_03 as ResourceId;
+        (:initialized) var WaitInfo_02 as ResourceId;
+        (:initialized) var WaitInfo_01 as ResourceId;
+        (:initialized) var ColorRed as ResourceId;
+        (:initialized) var LastRequestTitle as ResourceId;
+        (:initialized) var CodeInfo_02 as ResourceId;
+        (:initialized) var CodeInfo_r4 as ResourceId;
+        (:initialized) var CodeInfo_03 as ResourceId;
+        (:initialized) var CodeInfo_r2 as ResourceId;
+        (:initialized) var Font_Aleo as ResourceId;
+        (:initialized) var CodeInfo_01 as ResourceId;
+        (:initialized) var CodeInfo_r3 as ResourceId;
+        (:initialized) var WeekdayTitle as ResourceId;
+        (:initialized) var ColorWhite as ResourceId;
+        (:initialized) var Distance as ResourceId;
+        (:initialized) var FontTitle as ResourceId;
+        (:initialized) var DemoEvent_01 as ResourceId;
+        (:initialized) var ColorLightCyan as ResourceId;
+        (:initialized) var LastChangedTitle as ResourceId;
+        (:initialized) var DemoEvent_03 as ResourceId;
+        (:initialized) var DemoEvent_02 as ResourceId;
+        (:initialized) var DemoEvent_04 as ResourceId;
+        (:initialized) var RateManual as ResourceId;
+        (:initialized) var ColorOrange as ResourceId;
+        (:initialized) var Rate30Minutes as ResourceId;
+        (:initialized) var InfoColorTitle as ResourceId;
+        (:initialized) var WaitInfo_04 as ResourceId;
+        (:initialized) var Steps as ResourceId;
+        (:initialized) var ColorBlue as ResourceId;
+        (:initialized) var Font_Enigmatic_Bold as ResourceId;
+        (:initialized) var Rate240Minutes as ResourceId;
+        (:initialized) var AgendaStyleTitle as ResourceId;
+        (:initialized) var ColorLightOrange as ResourceId;
+        (:initialized) var MetersClimbed as ResourceId;
+        (:initialized) var AppName as ResourceId;
+        (:initialized) var Rate5Minutes as ResourceId;
+        (:initialized) var FreeMemory as ResourceId;
+        (:initialized) var EnglishMonth as ResourceId;
+        (:initialized) var DemoTitle as ResourceId;
+        (:initialized) var UpdateRateTitle as ResourceId;
+        (:initialized) var Font_System as ResourceId;
+        (:initialized) var Font_Enigmatic as ResourceId;
+        (:initialized) var RightDataFieldTitle as ResourceId;
+        (:initialized) var ColorLightGray as ResourceId;
+        (:initialized) var FloorsClimbed as ResourceId;
+        (:initialized) var ColorDarkGray as ResourceId;
+        (:initialized) var ColorBlack as ResourceId;
+        (:initialized) var LeftDataFieldTitle as ResourceId;
+        (:initialized) var ClockColorTitle as ResourceId;
+        (:initialized) var CodeTitle as ResourceId;
+        (:initialized) var Calories as ResourceId;
+        (:initialized) var ActivityMinutesDay as ResourceId;
+        (:initialized) var ColorCyan as ResourceId;
+        (:initialized) var OneLineStyleTitle as ResourceId;
+    } // Strings
+} // Rez

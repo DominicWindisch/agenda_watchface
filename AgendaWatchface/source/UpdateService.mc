@@ -15,21 +15,21 @@ class UpdateService extends Toybox.System.ServiceDelegate {
 	}
 	
 	function onTemporalEvent() {
-	    var t = Time.Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
-    	var ts = Lang.format( "$1$:$2$ ", [t.hour,t.min.format("%02d")]) ;
+		System.println("UpdateService: onTemporalEvent triggered.");
 	    updateCalendar();
     }
 
     function onWakeTime() {
-    	var t = Time.Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
-    	var ts = Lang.format( "$1$:$2$ ", [t.hour,t.min.format("%02d")]) ;
+
     	updateCalendar();
     }
     
     function updateCalendar() {
 	    if (System.getDeviceSettings().phoneConnected) {
-		    Comm.makeWebRequest(
-	        	"http://localhost:8080/Download/myevents.json", 
+		    
+			Comm.makeWebRequest(
+				"test.json"/*
+	        	"http://localhost:8080/Download/myevents.json"*/, 
 	        	null, 
 	        	{ :method => Comm.HTTP_REQUEST_METHOD_GET, 
 	        	  :headers => {"authorization" => "Basic bW5vZWM6bWhrb2lzaGlhdA=="}, 
@@ -42,8 +42,8 @@ class UpdateService extends Toybox.System.ServiceDelegate {
         }
     }
     
-    function onWeb(responseCode, data) {
-        var ts;
+    function onWeb(responseCode as $.Toybox.Lang.Number, data as Null or $.Toybox.Lang.Dictionary or $.Toybox.Lang.String or $.Toybox.PersistedContent.Iterator) as Void {
+		var ts;
         if (responseCode!=200 || data==null) {
             ts = { "error" => "Error: " + responseCode.toString() };
         }

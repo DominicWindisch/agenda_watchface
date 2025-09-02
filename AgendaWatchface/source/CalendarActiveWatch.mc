@@ -2,71 +2,22 @@ using Toybox.Application as App;
 using Toybox.System as Sys;
 using Toybox.WatchUi as Ui;
 using Toybox.Time;
+using Toybox.Background;
 
-// globals:
-var code = "";
-var calendar_raw = null;
-var calendar_dirty = false;
-var calendar_updated = "";
-var weathermin = "";
-var weathermax = "";
-var weathernow = "";
-var weatherid = 0;
-var phoneBattery = -1;
-
-var calendar_agendastyle = false;
-var calendar_onelinestyle = false;
-var calendar_alignleft = false;
-var calendar_updaterate = 5;
-var calendar_clockcolor = 0xffffff;
-var calendar_infocolor = 0x55aaff;
-var watch_leftdatafield = 0;
-var watch_rightdatafield = 1;
-var calendar_demo = false;
-var watch_weekday = false;
-var english_month = false;
-var liveHR = false;
-
-// properties:
-var settings_dirty = false;
-
+(:foreground)
 class CalendarActiveWatch extends App.AppBase {
 
     function initialize() {
         AppBase.initialize();
-        
-        var temp;
-        //read last values from the Object Store
-        temp=App.Storage.getValue("Code");
-        if(temp!=null && temp instanceof String) {code=temp;}
-        
-        temp=App.Storage.getValue("calendar_updated");
-        if(temp!=null && temp instanceof String) {calendar_updated=temp;}
+        GlobalState.loadInitialState();
 
-        temp=App.Storage.getValue("calendar_raw");
-        if(temp!=null) {
-        	if (temp instanceof String || temp instanceof Dictionary) {
-        		calendar_raw = temp;
-        		calendar_dirty = true;
-        	}
+        // If we are in the simulator, set the flag to run our parse test.
+        // The ':ServiceDelegate' check is a reliable way to detect the simulator environment.
+        if (System has :ServiceDelegate) {
+            GlobalState.runParseTestInSim = true;
+			System.println("Its a simulation!");
         }
-        
-        temp=App.Storage.getValue("weathermin");
-        if(temp!=null && temp instanceof String) {weathermin=temp;}
-        temp=App.Storage.getValue("weathermax");
-        if(temp!=null && temp instanceof String) {weathermax=temp;}
-        temp=App.Storage.getValue("weathernow");
-        if(temp!=null && temp instanceof String) {weathernow=temp;}
-        temp=App.Storage.getValue("weatherid");
-        if(temp!=null && temp instanceof Number) {weatherid=temp;}
-        temp=App.Storage.getValue("phoneBattery");
-        if(temp!=null && temp instanceof Number) {phoneBattery=temp;}
-        
-        readSettings();
-        
-        if (calendar_demo) {
-        	calendar_dirty = true;
-        }
+		System.println("Initialized");
     }
     
     // onStart() is called on application start up
@@ -79,149 +30,108 @@ class CalendarActiveWatch extends App.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() {
-    	requestImmediateUpdate();
-        return [ new CalendarActiveView(me) ];
+        requestImmediateUpdate();
+        return [ new CalendarActiveView(self) ];
     }
 
     // New app settings have been received so trigger a UI update
     function onSettingsChanged() {
-    	readSettings();
-    	requestImmediateUpdate();
-    	settings_dirty = true;
+        GlobalState.readSettings();
+        requestImmediateUpdate();
+        GlobalState.settings_dirty = true;
         Ui.requestUpdate();
     }
     
     function onBackgroundData(data) {
-    	if (data!=null && (data instanceof Dictionary)) 
-    	{
-    		var t = Time.Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
-       		var ts = Lang.format( "$3$ $4$ $5$ - $1$:$2$ ", [t.hour,t.min.format("%02d"),t.day,t.month,t.year]) ;
-       		var tm = Time.now().value();
-			
+        if (data != null && (data instanceof Dictionary)) {
+            var t = Time.Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
+            var ts = Lang.format( "$3$ $4$ $5$ - $1$:$2$ ", [t.hour, t.min.format("%02d"), t.day, t.month, t.year]);
+            var tm = Time.now().value();
+            
             if (data.hasKey("code")) {
-            	code = data["code"];
-            	//Sys.println("onData code=" + code );
-            	App.Storage.setValue("Code",code);
+                GlobalState.code = data["code"];
+                App.Storage.setValue("Code", GlobalState.code);
 
-				var hasCalendar = false;
-				if (data.hasKey("calendar")) {
-	            // the calendar data:
-	        		var calendar = data["calendar"];
-	        		var updated = data["modified"];
-		         	
-		         	if (!(updated instanceof String) || updated!=calendar_updated)
-		        	{
-			        	// JSON or CSV feedback:
-		        		if (calendar instanceof String) {
-			        		hasCalendar = true;
-			        			
-		        			calendar_raw = calendar;
-		        			calendar_updated = updated;
-		        			calendar_dirty = true;
-		        			App.Storage.setValue("calendar_raw",calendar_raw);
-		        			App.Storage.setValue("calendar_updated",calendar_updated);
-		        			App.Storage.setValue("LastChanged", ts );
-		        			App.Storage.setValue("LastChangedM", tm );
-		        		}
-	        		}
-	            }
-	            
-	            if (!hasCalendar) {
-	            // new code, maybe old code was removed:
-	            	calendar_raw = null;
-	        		calendar_dirty = true;
-	        		App.Storage.setValue("calendar_raw",calendar_raw);
-	        		App.Storage.setValue("calendar_updated","");
-	            }
-	        
-	            if (data.hasKey("weathermin")) {
-	            	weathermin = data["weathermin"];
-	            	App.Storage.setValue("weathermin",weathermin);
-	            } else {
-	            	weathermin = "";
-	            }
-	            if (data.hasKey("weathermax")) {
-	            	weathermax = data["weathermax"];
-	            	App.Storage.setValue("weathermax",weathermax);
-	            } else {
-	            	weathermax = "";
-	            }
-	            if (data.hasKey("weathernow")) {
-	            	weathernow = data["weathernow"];
-	            	App.Storage.setValue("weathernow",weathernow);
-	            } else {
-	            	weathernow = "";
-	            }
-	            if (data.hasKey("weatherid")) {
-	            	weatherid = data["weatherid"];
-	            	App.Storage.setValue("weatherid",weatherid);
-	            } else {
-	            	weatherid = 0;
-	            }
-	            if (data.hasKey("phoneBattery")) {
-	            	phoneBattery = data["phoneBattery"];
-	            	App.Storage.setValue("phoneBattery",phoneBattery);
-	            } else {
-	            	phoneBattery = -1;
-	            }
-	            
-	            if (data.hasKey("error")) {
-	            	ts = ts + " " + data["error"];
-	            }
-			}    
-            App.Storage.setValue("LastRequest", ts );
-            App.Storage.setValue("LastRequestM", tm );
+                var hasCalendar = false;
+                if (data.hasKey("calendar")) {
+                    var calendar = data["calendar"];
+                    var updated = data["modified"];
+                    
+                    if (!(updated instanceof String) || updated != GlobalState.calendar_updated) {
+                        if (calendar instanceof String) {
+                            hasCalendar = true;
+                            GlobalState.calendar_raw = calendar;
+                            GlobalState.calendar_updated = updated;
+                            GlobalState.calendar_dirty = true;
+                            App.Storage.setValue("calendar_raw", GlobalState.calendar_raw);
+                            App.Storage.setValue("calendar_updated", GlobalState.calendar_updated);
+                            App.Storage.setValue("LastChanged", ts);
+                            App.Storage.setValue("LastChangedM", tm);
+                        }
+                    }
+                }
+                
+                if (!hasCalendar) {
+                    GlobalState.calendar_raw = null;
+                    GlobalState.calendar_dirty = true;
+                    App.Storage.setValue("calendar_raw", null);
+                    App.Storage.setValue("calendar_updated", "");
+                }
+            
+                GlobalState.weathermin = data.hasKey("weathermin") ? data["weathermin"] : "";
+                App.Storage.setValue("weathermin", GlobalState.weathermin);
+
+                GlobalState.weathermax = data.hasKey("weathermax") ? data["weathermax"] : "";
+                App.Storage.setValue("weathermax", GlobalState.weathermax);
+
+                GlobalState.weathernow = data.hasKey("weathernow") ? data["weathernow"] : "";
+                App.Storage.setValue("weathernow", GlobalState.weathernow);
+
+                GlobalState.weatherid = data.hasKey("weatherid") ? data["weatherid"] : 0;
+                App.Storage.setValue("weatherid", GlobalState.weatherid);
+
+                GlobalState.phoneBattery = data.hasKey("phoneBattery") ? data["phoneBattery"] : -1;
+                App.Storage.setValue("phoneBattery", GlobalState.phoneBattery);
+                
+                if (data.hasKey("error")) {
+                    ts = ts + " " + data["error"];
+                }
+            }    
+            App.Storage.setValue("LastRequest", ts);
+            App.Storage.setValue("LastRequestM", tm);
             Ui.requestUpdate();
-	    }
-	    requestNormalUpdate();
+        }
+        requestNormalUpdate();
     }    
 
     function getServiceDelegate(){
-    	return [new UpdateService()];
-    }
-    
-    function readSettings()  {
-    	calendar_agendastyle = false;//App.getApp().getProperty("AgendaStyle");
-    	calendar_onelinestyle = true;//App.getApp().getProperty("OneLineStyle");
-    	calendar_alignleft = true;//App.getApp().getProperty("AlignLeft");
-    	calendar_clockcolor = 0xFFFFFF;//App.AppBase.getProperty("ClockColor");
-    	calendar_infocolor = 0x55AAFF;//App.AppBase.getProperty("InfoColor");
-    	watch_leftdatafield = 0;//App.AppBase.getProperty("LeftDataField");
-    	watch_rightdatafield = 3;//App.AppBase.getProperty("RightDataField");
-    	calendar_demo = false; //App.getApp().getProperty("Demo");
-    	calendar_updaterate = 5;//App.getApp().getProperty("UpdateRate");
-    	watch_weekday = false;//App.AppBase.getProperty("Weekday");    	
-    	english_month = false;//App.getApp().getProperty("EnglishMonth"); 
+        return [new UpdateService()];
     }
     
     function requestImmediateUpdate() {
-    	var lastTime = Background.getLastTemporalEventTime();
-		if (lastTime != null) {
-		    // Events scheduled for a time in the past trigger immediately
-		    var nextTime = lastTime.add(new Time.Duration(5 * 60));
-		    Background.deleteTemporalEvent();
-        	Background.registerForTemporalEvent(nextTime);
-		} else {
-		    Background.deleteTemporalEvent();
-        	Background.registerForTemporalEvent(Time.now());
-		}
+        var lastTime = Background.getLastTemporalEventTime();
+        if (lastTime != null) {
+            // Events scheduled for a time in the past trigger immediately
+            var nextTime = lastTime.add(new Time.Duration(5 * 60)); 
+            Background.deleteTemporalEvent();
+            Background.registerForTemporalEvent(nextTime);
+        } else {
+            Background.deleteTemporalEvent();
+            Background.registerForTemporalEvent(Time.now());
+        }
     }
     
     function requestFastUpdate() {
-		Background.deleteTemporalEvent();
-    	Background.registerForTemporalEvent(new Time.Duration(5 * 60));
+        Background.deleteTemporalEvent();
+        Background.registerForTemporalEvent(new Time.Duration(5 * 60));
     }
     
     function requestNormalUpdate() {
-    	Background.deleteWakeEvent();
         Background.deleteTemporalEvent();
-        if (calendar_updaterate instanceof Number) { 
-    		if (calendar_updaterate>=5) {
-        		Background.registerForTemporalEvent( new Time.Duration(calendar_updaterate*60) );
-        	} else {
-    			Background.registerForWakeEvent();
-    		}
-    	}	
-   	}
+        if (GlobalState.calendar_updaterate instanceof Number) { 
+            if (GlobalState.calendar_updaterate >= 5) {
+                Background.registerForTemporalEvent(new Time.Duration(GlobalState.calendar_updaterate * 60));
+            }
+        }
+    }
 }
-

@@ -1,0 +1,18 @@
+{
+    "Comm": {
+        "test.json": {
+            "responseCode": 200,
+            "response": {
+                "code": "TEST_OK",
+                "modified": "1725259680",
+                "calendar": "28753760;28755200;true;Simulated All-Day Event;\n28754420;28754480;;Team Meeting;Office\n28755740;28755830;;Project Deadline;\n",
+                "weathermin": "8",
+                "weathermax": "17",
+                "weathernow": "15",
+                "weatherid": 801,
+                "phoneBattery": 88
+            }
+        }
+    }
+}
+

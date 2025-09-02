@@ -5,6 +5,7 @@ using Toybox.Lang as Lang;
 using Toybox.Time;
 using Toybox.Time.Gregorian;
 
+(:foreground)
 class Calendar
 {
 	
@@ -26,10 +27,11 @@ class Calendar
 		}
 		
 	// decode from csv:
-		function decodeCSV( csv, csvChars, start, end ) 
+		function decodeCSV( csv, csvChars as Lang.Array<Lang.Char>, start as Lang.Number, end as Lang.Number ) 
 		{
 			var i; // index
 			var arg_i = 0;
+			System.println("Decoding CSV!");
 		
 			// read all args: 
 			for ( i = start; i < end; i++ )
@@ -83,16 +85,16 @@ class Calendar
 			if ( duration>=0 && duration < 24*60*60 ) // today
 			{
 				if (allday) {
-					time = timeinfo.day_of_week + " ganzt.";
+					time = "";
 				} else {
-					time = timeinfo.day_of_week + " " + timeString;
+					time = timeString;
 				}
 			}
 			else
 			if ( duration>=0 && duration < 7*24*60*60 ) // week
 			{
 				if (allday) {
-					time = "" + timeinfo.day_of_week + " ganzt.";
+					time = "" + timeinfo.day_of_week + "       ";
 				} else {
 					time = "" + timeinfo.day_of_week + " " + timeString;
 				}
@@ -100,7 +102,7 @@ class Calendar
 			else // after week or in the past
 			{
 				if (allday) {
-					time = "" + timeinfo.day.format("%02d") + " " + timeinfo.month;
+					time = "" + timeinfo.day.format("%02d") + " " + timeinfo.month + "       ";
 				} else {
 					time = "" + timeinfo.day.format("%02d") + " " + timeinfo.month + " " + timeString;
 				}
@@ -114,7 +116,7 @@ class Calendar
 	
 	// 
 	var valid = false;
-	var events = new [0];
+	var events = new Lang.Array<Calendar.Event>[0];
 	var today = 0;
 	var dateString = "";
 	var dateShortString = "";
@@ -126,7 +128,7 @@ class Calendar
   	}
 	
 	// input Items as list like: "111000 Birthday;132000 Meeting;"
-	function decodeFromCSV( csv )
+	function decodeFromCSV( csv as Lang.String)
 	{
 		if ( csv != null )
 		{
@@ -136,7 +138,7 @@ class Calendar
 			var i; // index
 			var e; // event
 			
-			events = new [0]; // clear array
+			events = new Lang.Array<Calendar.Event>[0]; // clear array
 			if ( n > 0 )
 			{
 				today = Time.today().value(); // update this, because we format new data in the following:
@@ -145,7 +147,7 @@ class Calendar
 				for ( i = 0; i < n; i++ )
 				{
 					var c = csvChars[i].toNumber(); 
-					if ( csvChars[i].toNumber()==10 ) // New Line
+					if ( c.toNumber()==10 ) // New Line
 					{	
 						if ( (start+1) < i ) 
 						{
@@ -171,7 +173,7 @@ class Calendar
 		}
 	}
 	
-	function getEventIfNotPastAlready( index, t ) {
+	function getEventIfNotPastAlready( index as Lang.Number, t as Lang.Number) {
 		var ev = null;
 		if (index>=0 && index<events.size()) {
 			if (events[index].tEnd>t) { // not past
@@ -223,7 +225,7 @@ class Calendar
 	function demo() {
 		// fill some random data:
 		valid = false;
-		events = new [0]; // clear array
+		events = new Lang.Array<Calendar.Event>[0]; // clear array
 		
 		var e = new Calendar.Event();
 		var t = Math.rand() % 4;
@@ -239,16 +241,16 @@ class Calendar
 		
 		for ( var d = 1; d<=3; d++ ) {
 			for ( var h = 9; h < 18; h+=6 )  {
-				var e = new Calendar.Event();
-				var t = Math.rand() % 4;
-				e.tStart = today + 3600*(h+d*24+Math.rand()%3);
-				e.tEnd = e.tStart + 3600;
-				if (t==0) { e.desc = Ui.loadResource(Rez.Strings.DemoEvent_01); e.loc = "Room 120"; } else
-				if (t==1) { e.desc = Ui.loadResource(Rez.Strings.DemoEvent_02); } else
-				if (t==2) { e.desc = Ui.loadResource(Rez.Strings.DemoEvent_03); } else
-				{ e.desc = Ui.loadResource(Rez.Strings.DemoEvent_04); }
-				e.formatDate(today);
-				events.add( e );
+				var curr_e = new Calendar.Event();
+				var curr_t = Math.rand() % 4;
+				curr_e.tStart = today + 3600*(h+d*24+Math.rand()%3);
+				curr_e.tEnd = curr_e.tStart + 3600;
+				if (curr_t==0) { curr_e.desc = Ui.loadResource(Rez.Strings.DemoEvent_01); e.loc = "Room 120"; } else
+				if (curr_t==1) { curr_e.desc = Ui.loadResource(Rez.Strings.DemoEvent_02); } else
+				if (curr_t==2) { curr_e.desc = Ui.loadResource(Rez.Strings.DemoEvent_03); } else
+				{ curr_e.desc = Ui.loadResource(Rez.Strings.DemoEvent_04); }
+				curr_e.formatDate(today);
+				events.add( curr_e );
 			}
 		}
 	}
