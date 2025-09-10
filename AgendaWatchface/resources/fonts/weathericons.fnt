@@ -14,3 +14,4 @@ char id=73   x=165   y=0     width=30    height=29    xoffset=2     yoffset=3   
 char id=74   x=196   y=0     width=29    height=29    xoffset=2     yoffset=3     xadvance=33    page=0  chnl=15
 char id=75   x=0     y=30    width=29    height=24    xoffset=2     yoffset=6     xadvance=33    page=0  chnl=15
 char id=45   x=134   y=30    width=30    height=25    xoffset=2     yoffset=4     xadvance=33    page=0  chnl=15
+char id=76   x=101   y=32    width=12    height=25    xoffset=1     yoffset=1     xadvance=15    page=0  chnl=15

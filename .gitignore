@@ -1,0 +1,5 @@
+!/AgendaWatchface/bin/*.prg
+!/AgendaWatchface/bin/*-settings.json
+!/AgendaWatchface/bin/*.prg.debug.xml
+/AgendaWatchface/bin
+

@@ -32,40 +32,13 @@ D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveWatch_mc_10_26_21_4
         symbol [ loadInitialState %tmp.6 12 20 36 ];
         %tmp.6 = getv function %tmp.5 :loadInitialState;
         invoke %tmp.5 %tmp.6();
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveWatch.mc" 16 8 ]
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveWatch_mc_16_8_19_8_if_stmt:
-        symbol [ System %tmp.8 16 12 18 ];
-        %tmp.8 = getv ? :System;
-        %tmp.10 = const :ServiceDelegate;
-        symbol [ ServiceDelegate %tmp.10 16 24 39 const ];
-        %tmp.11 = canhazplz %tmp.8 %tmp.10;
-        bf %tmp.11 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveWatch_mc_16_8_19_8_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveWatch_mc_16_8_19_8_if_true:
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveWatch_mc_16_41_19_8_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveWatch.mc" 17 12 ]
-        symbol [ GlobalState %tmp.12 17 12 23 ];
-        %tmp.12 = getv self :GlobalState;
-        %tmp.13 = true;
-        symbol [ runParseTestInSim ? 17 24 41 ];
-        putv %tmp.12 :runParseTestInSim %tmp.13;
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveWatch.mc" 18 3 ]
-        symbol [ System %tmp.15 18 3 9 ];
-        %tmp.15 = getv ? :System;
-        %tmp.16 = as %tmp.15 { (interface { var ServiceDelegate; }) };
-        symbol [ println %tmp.17 18 10 17 ];
-        %tmp.17 = getv function %tmp.16 :println;
-        %tmp.18 = "Its a simulation!";
-        invoke %tmp.16 %tmp.17(%tmp.18);
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveWatch_mc_16_41_19_8_stop:
-        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveWatch_mc_16_8_19_8_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveWatch_mc_16_8_19_8_if_end:
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveWatch.mc" 20 2 ]
-        symbol [ System %tmp.20 20 2 8 ];
-        %tmp.20 = getv ? :System;
-        symbol [ println %tmp.21 20 9 16 ];
-        %tmp.21 = getv function %tmp.20 :println;
-        %tmp.22 = "Initialized";
-        invoke %tmp.20 %tmp.21(%tmp.22);
+        symbol [ System %tmp.8 20 2 8 ];
+        %tmp.8 = getv ? :System;
+        symbol [ println %tmp.9 20 9 16 ];
+        %tmp.9 = getv function %tmp.8 :println;
+        %tmp.10 = "Initialized";
+        invoke %tmp.8 %tmp.9(%tmp.10);
 D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveWatch_mc_10_26_21_4_stop:
     }
     [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveWatch.mc"; @line = 24; @symbol_functiondef = [onStart,24,13,20]; @symbol_param<0> = [state,24,21,26]; ]

@@ -283,7 +283,8 @@ class CalendarDrawerRound {
         if (todaysAllDay.size() == 0 && todaysTimed.size() == 0) {
             var msg = c.hasAnyEventsToday() ? "Keine Termine mehr heute" : "Heute keine Termine";
             dc.setColor(0xffffff, Gfx.COLOR_TRANSPARENT);
-            dc.drawText(w/2, y, Gfx.FONT_XTINY, msg, Gfx.TEXT_JUSTIFY_CENTER);
+			var descriptionStartX = getDxFromY(y) + 5; // 5px gap
+        	dc.drawText(descriptionStartX, y, Gfx.FONT_XTINY, msg, Gfx.TEXT_JUSTIFY_LEFT);
             y += dyLine;
             itemsDrawn++;
         }
@@ -303,7 +304,9 @@ class CalendarDrawerRound {
             var yBeforeTomorrow = y;
             if (tomorrowsEvents.size() == 0) {
                 dc.setColor(0xaaaaaa, Gfx.COLOR_TRANSPARENT);
-                dc.drawText(w/2, y, Gfx.FONT_XTINY, "Morgen keine Termine", Gfx.TEXT_JUSTIFY_CENTER);
+				var msg = "Morgen keine Termine";
+				var descriptionStartX = getDxFromY(y) + 5; // 5px gap
+        		dc.drawText(descriptionStartX, y, Gfx.FONT_XTINY, msg, Gfx.TEXT_JUSTIFY_LEFT);
                 y += dyLine;
                 itemsDrawn++;
             } else {

@@ -13,10 +13,10 @@ class CalendarActiveWatch extends App.AppBase {
 
         // If we are in the simulator, set the flag to run our parse test.
         // The ':ServiceDelegate' check is a reliable way to detect the simulator environment.
-        if (System has :ServiceDelegate) {
+        /*if (System has :ServiceDelegate) {
             GlobalState.runParseTestInSim = true;
 			System.println("Its a simulation!");
-        }
+        }*/
 		System.println("Initialized");
     }
     

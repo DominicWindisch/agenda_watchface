@@ -1,5 +1,5 @@
 <fonts>
 	<font id="symbols" filename="symbols.fnt" filter="ABCDEFGHIJK" antialias="true"/>
-	<font id="weathericons" filename="weathericons.fnt" filter="ABCDEFGHIJK-" antialias="true"/>
+	<font id="weathericons" filename="weathericons.fnt" filter="ABCDEFGHIJKL-" antialias="true"/>
 
 </fonts> 

@@ -140,10 +140,17 @@ class DataDrawer {
 			}
 	    }
 	
-		x += -(dc.getTextWidthInPixels(hr,Gfx.FONT_MEDIUM) + 11)/2 + 11; // 11=size of icon
-		if (liveHR%2 == 0)
+		
+		if (liveHR < 5)
 		{	// blink when live
-			dc.drawText(x, y+dySym, fontSymbols, "E", Gfx.TEXT_JUSTIFY_RIGHT);
+			x += -(dc.getTextWidthInPixels(hr,Gfx.FONT_MEDIUM) + 11)/2 + 11; // 11=size of icon
+			if (liveHR %2 == 0) {
+				dc.drawText(x, y+dySym, fontSymbols, "E", Gfx.TEXT_JUSTIFY_RIGHT);
+			}
+		} else if (liveHR >= 5 ) {
+			var fullWidth = dc.getTextWidthInPixels(hr,Gfx.FONT_MEDIUM) + dc.getTextWidthInPixels("L", fontWeather) + 2;
+			x += -fullWidth / 2 + 16; // 14 width + 2 gap
+			dc.drawText(x, y+3, fontWeather, "L", Gfx.TEXT_JUSTIFY_RIGHT);
 		}
 		dc.drawText(x, y, Gfx.FONT_MEDIUM, hr, Gfx.TEXT_JUSTIFY_LEFT);
 	}

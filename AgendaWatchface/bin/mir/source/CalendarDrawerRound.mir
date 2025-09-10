@@ -1678,9 +1678,9 @@ D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_200_60_230
     }
     [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc"; @line = 232; @symbol_functiondef = [drawCalendar,232,10,22]; @symbol_param<0> = [dc,232,23,25]; @symbol_param<1> = [y,232,26,27]; ]
     function drawCalendar(dc, y) {
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_start:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_start:
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 233 2 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_stop" ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_stop" ]
         %now.1 = local;
         symbol [ now %now.1 233 6 9 ];
         symbol [ Time %tmp.1 233 12 16 ];
@@ -1694,28 +1694,28 @@ D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385
         lputv %now.1 %tmp.5;
         symbol [ now %now.1 233 6 9 ];
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 234 2 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_stop" ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_stop" ]
         %maxitems.2 = local;
         symbol [ maxitems %maxitems.2 234 6 14 ];
         %tmp.6 = 6;
         lputv %maxitems.2 %tmp.6;
         symbol [ maxitems %maxitems.2 234 6 14 ];
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 235 2 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_stop" ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_stop" ]
         %itemsDrawn.3 = local;
         symbol [ itemsDrawn %itemsDrawn.3 235 6 16 ];
         %tmp.7 = 0;
         lputv %itemsDrawn.3 %tmp.7;
         symbol [ itemsDrawn %itemsDrawn.3 235 6 16 ];
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 236 2 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_stop" ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_stop" ]
         %dyLine.4 = local;
         symbol [ dyLine %dyLine.4 236 6 12 ];
         %tmp.8 = 16;
         lputv %dyLine.4 %tmp.8;
         symbol [ dyLine %dyLine.4 236 6 12 ];
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 239 8 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_stop" ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_stop" ]
         %yCalendarStart.5 = local;
         symbol [ yCalendarStart %yCalendarStart.5 239 12 26 ];
         %tmp.9 = lgetv %y;
@@ -1723,40 +1723,40 @@ D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385
         lputv %yCalendarStart.5 %tmp.9;
         symbol [ yCalendarStart %yCalendarStart.5 239 12 26 ];
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 240 8 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_stop" ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_stop" ]
         %yAfterToday.6 = local;
         symbol [ yAfterToday %yAfterToday.6 240 12 23 ];
         %tmp.10 = 0.0;
         lputv %yAfterToday.6 %tmp.10;
         symbol [ yAfterToday %yAfterToday.6 240 12 23 ];
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_stop" ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_stop" ]
         %yAfterTomorrow.7 = local;
         symbol [ yAfterTomorrow %yAfterTomorrow.7 240 31 45 ];
         %tmp.11 = 0.0;
         lputv %yAfterTomorrow.7 %tmp.11;
         symbol [ yAfterTomorrow %yAfterTomorrow.7 240 31 45 ];
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_stop" ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_stop" ]
         %yAfterFuture.8 = local;
         symbol [ yAfterFuture %yAfterFuture.8 240 53 65 ];
         %tmp.12 = 0.0;
         lputv %yAfterFuture.8 %tmp.12;
         symbol [ yAfterFuture %yAfterFuture.8 240 53 65 ];
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 241 8 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_stop" ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_stop" ]
         %separatorY.9 = local;
         symbol [ separatorY %separatorY.9 241 12 22 ];
         %tmp.13 = 0.0;
         lputv %separatorY.9 %tmp.13;
         symbol [ separatorY %separatorY.9 241 12 22 ];
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 242 8 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_stop" ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_stop" ]
         %hasFutureEvents.10 = local;
         symbol [ hasFutureEvents %hasFutureEvents.10 242 12 27 ];
         %tmp.14 = false;
         lputv %hasFutureEvents.10 %tmp.14;
         symbol [ hasFutureEvents %hasFutureEvents.10 242 12 27 ];
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 245 2 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_stop" ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_stop" ]
         %lastUpdt.11 = local;
         symbol [ lastUpdt %lastUpdt.11 245 6 14 ];
         symbol [ App %tmp.15 245 17 20 ];
@@ -1770,7 +1770,7 @@ D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385
         lputv %lastUpdt.11 %tmp.19;
         symbol [ lastUpdt %lastUpdt.11 245 6 14 ];
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 246 2 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_stop" ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_stop" ]
         %lastReq.12 = local;
         symbol [ lastReq %lastReq.12 246 6 13 ];
         symbol [ App %tmp.20 246 16 19 ];
@@ -1784,14 +1784,14 @@ D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385
         lputv %lastReq.12 %tmp.24;
         symbol [ lastReq %lastReq.12 246 6 13 ];
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 247 2 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_stop" ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_stop" ]
         %maxUpdateDelay.13 = local;
         symbol [ maxUpdateDelay %maxUpdateDelay.13 247 6 20 ];
         %tmp.25 = 900;
         lputv %maxUpdateDelay.13 %tmp.25;
         symbol [ maxUpdateDelay %maxUpdateDelay.13 247 6 20 ];
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 248 2 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_stop" ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_stop" ]
         %lastUpdtTime.14 = local;
         symbol [ lastUpdtTime %lastUpdtTime.14 248 6 18 ];
 D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_248_21_248_53_begin:
@@ -1814,7 +1814,7 @@ D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_248_21_248
         lputv %lastUpdtTime.14 %tmp.32;
         symbol [ lastUpdtTime %lastUpdtTime.14 248 6 18 ];
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 249 5 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_stop" ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_stop" ]
         %lastReqTime.15 = local;
         symbol [ lastReqTime %lastReqTime.15 249 9 20 ];
 D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_249_23_249_70_begin:
@@ -1840,7 +1840,7 @@ D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_249_23_249
         lputv %lastReqTime.15 %tmp.41;
         symbol [ lastReqTime %lastReqTime.15 249 9 20 ];
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 250 2 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_stop" ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_stop" ]
         %noConnection.16 = local;
         symbol [ noConnection %noConnection.16 250 6 18 ];
         %tmp.42 = lgetv %lastReqTime.15;
@@ -1910,7 +1910,7 @@ D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_252_20_257
         goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_252_2_257_2_if_end;
 D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_252_2_257_2_if_end:
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 260 8 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_stop" ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_stop" ]
         %todaysAllDay.17 = local;
         symbol [ todaysAllDay %todaysAllDay.17 260 12 24 ];
         symbol [ c %tmp.73 260 27 28 ];
@@ -1923,7 +1923,7 @@ D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_252_2_257_
         lputv %todaysAllDay.17 %tmp.76;
         symbol [ todaysAllDay %todaysAllDay.17 260 12 24 ];
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 261 8 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_stop" ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_stop" ]
         %todaysTimed.18 = local;
         symbol [ todaysTimed %todaysTimed.18 261 12 23 ];
         symbol [ c %tmp.78 261 26 27 ];
@@ -2229,7 +2229,7 @@ D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_278_8_282_
         goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_278_8_282_8_for_test;
 D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_278_8_282_8_for_end:
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 283 8 ]
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_283_8_289_8_if_stmt:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_283_8_290_8_if_stmt:
 D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_283_12_283_62_begin:
         %tmp.201 = lgetv %todaysAllDay.17;
         symbol [ todaysAllDay %tmp.201 283 12 24 ];
@@ -2238,7 +2238,7 @@ D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_283_12_283
         %tmp.203 = invoke %tmp.201 %tmp.202();
         %tmp.204 = 0;
         %tmp.205 = eq %tmp.203 %tmp.204;
-        bf %tmp.205 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_283_8_289_8_if_end;
+        bf %tmp.205 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_283_8_290_8_if_end;
 D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_283_40_283_62_true:
         %tmp.206 = lgetv %todaysTimed.18;
         symbol [ todaysTimed %tmp.206 283 40 51 ];
@@ -2250,11 +2250,11 @@ D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_283_40_283
         push %tmp.210;
 D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_283_40_283_62_end:
         %tmp.211 = phi [%tmp.205 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_283_12_283_62_begin] [%tmp.210 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_283_40_283_62_true] [%tmp.211 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_283_40_283_62_end];
-        bf %tmp.211 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_283_8_289_8_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_283_8_289_8_if_true:
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_283_65_289_8_start:
+        bf %tmp.211 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_283_8_290_8_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_283_8_290_8_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_283_65_290_8_start:
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 284 12 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_283_65_289_8_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_283_65_289_8_stop" ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_283_65_290_8_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_283_65_290_8_stop" ]
         %msg.24 = local;
         symbol [ msg %msg.24 284 16 19 ];
 D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_284_22_284_75_begin:
@@ -2286,784 +2286,816 @@ D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_284_22_284
         symbol [ COLOR_TRANSPARENT %tmp.223 285 38 55 ];
         %tmp.223 = getv %tmp.222 :COLOR_TRANSPARENT;
         invoke %tmp.219 %tmp.220(%tmp.221, %tmp.223);
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 286 12 ]
-        %tmp.224 = lgetv %dc;
-        symbol [ dc %tmp.224 286 12 14 ];
-        symbol [ drawText %tmp.225 286 15 23 ];
-        %tmp.225 = getv function %tmp.224 :drawText;
-        symbol [ w %tmp.227 286 24 25 ];
-        %tmp.227 = getv ? :w;
-        %tmp.228 = 2;
-        %tmp.229 = div %tmp.227 %tmp.228;
-        %tmp.230 = lgetv %y;
-        symbol [ y %tmp.230 286 29 30 ];
-        symbol [ Gfx %tmp.231 286 32 35 ];
-        %tmp.231 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.232 286 36 46 ];
-        %tmp.232 = getv %tmp.231 :FONT_XTINY;
-        %tmp.233 = lgetv %msg.24;
-        symbol [ msg %tmp.233 286 48 51 ];
-        symbol [ Gfx %tmp.234 286 53 56 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 286 3 ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_283_65_290_8_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_283_65_290_8_stop" ]
+        %descriptionStartX.25 = local;
+        symbol [ descriptionStartX %descriptionStartX.25 286 7 24 ];
+        %tmp.224 = self;
+        symbol [ getDxFromY %tmp.225 286 27 37 ];
+        %tmp.225 = getv function %tmp.224 :getDxFromY;
+        %tmp.226 = lgetv %y;
+        symbol [ y %tmp.226 286 38 39 ];
+        %tmp.227 = invoke %tmp.224 %tmp.225(%tmp.226);
+        %tmp.228 = 5;
+        %tmp.229 = add %tmp.227 %tmp.228;
+        lputv %descriptionStartX.25 %tmp.229;
+        symbol [ descriptionStartX %descriptionStartX.25 286 7 24 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 287 9 ]
+        %tmp.230 = lgetv %dc;
+        symbol [ dc %tmp.230 287 9 11 ];
+        symbol [ drawText %tmp.231 287 12 20 ];
+        %tmp.231 = getv function %tmp.230 :drawText;
+        %tmp.232 = lgetv %descriptionStartX.25;
+        symbol [ descriptionStartX %tmp.232 287 21 38 ];
+        %tmp.233 = lgetv %y;
+        symbol [ y %tmp.233 287 40 41 ];
+        symbol [ Gfx %tmp.234 287 43 46 ];
         %tmp.234 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.235 286 57 76 ];
-        %tmp.235 = getv %tmp.234 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.224 %tmp.225(%tmp.229, %tmp.230, %tmp.232, %tmp.233, %tmp.235);
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 287 12 ]
-        %tmp.236 = lgetv %y;
-        symbol [ y %tmp.236 287 12 13 ];
-        %tmp.237 = lgetv %dyLine.4;
-        symbol [ dyLine %tmp.237 287 17 23 ];
-        %tmp.238 = add %tmp.236 %tmp.237;
-        lputv %y %tmp.238;
-        symbol [ y %y 287 12 13 ];
+        symbol [ FONT_XTINY %tmp.235 287 47 57 ];
+        %tmp.235 = getv %tmp.234 :FONT_XTINY;
+        %tmp.236 = lgetv %msg.24;
+        symbol [ msg %tmp.236 287 59 62 ];
+        symbol [ Gfx %tmp.237 287 64 67 ];
+        %tmp.237 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.238 287 68 85 ];
+        %tmp.238 = getv %tmp.237 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.230 %tmp.231(%tmp.232, %tmp.233, %tmp.235, %tmp.236, %tmp.238);
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 288 12 ]
-        %tmp.241 = lgetv %itemsDrawn.3;
-        symbol [ itemsDrawn %tmp.241 288 12 22 ];
-        %tmp.242 = add %tmp.241 1;
-        lputv %itemsDrawn.3 %tmp.242;
-        symbol [ itemsDrawn %itemsDrawn.3 288 12 22 ];
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_283_65_289_8_stop:
-        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_283_8_289_8_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_283_8_289_8_if_end:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 290 8 ]
-        %tmp.243 = lgetv %y;
-        symbol [ y %tmp.243 290 22 23 ];
-        lputv %yAfterToday.6 %tmp.243;
-        symbol [ yAfterToday %yAfterToday.6 290 8 19 ];
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 293 8 ]
-        %tmp.244 = lgetv %y;
-        symbol [ y %tmp.244 293 8 9 ];
-        %tmp.245 = 4;
-        %tmp.246 = add %tmp.244 %tmp.245;
-        lputv %y %tmp.246;
-        symbol [ y %y 293 8 9 ];
+        %tmp.239 = lgetv %y;
+        symbol [ y %tmp.239 288 12 13 ];
+        %tmp.240 = lgetv %dyLine.4;
+        symbol [ dyLine %tmp.240 288 17 23 ];
+        %tmp.241 = add %tmp.239 %tmp.240;
+        lputv %y %tmp.241;
+        symbol [ y %y 288 12 13 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 289 12 ]
+        %tmp.244 = lgetv %itemsDrawn.3;
+        symbol [ itemsDrawn %tmp.244 289 12 22 ];
+        %tmp.245 = add %tmp.244 1;
+        lputv %itemsDrawn.3 %tmp.245;
+        symbol [ itemsDrawn %itemsDrawn.3 289 12 22 ];
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_283_65_290_8_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_283_8_290_8_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_283_8_290_8_if_end:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 291 8 ]
+        %tmp.246 = lgetv %y;
+        symbol [ y %tmp.246 291 22 23 ];
+        lputv %yAfterToday.6 %tmp.246;
+        symbol [ yAfterToday %yAfterToday.6 291 8 19 ];
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 294 8 ]
         %tmp.247 = lgetv %y;
-        symbol [ y %tmp.247 294 21 22 ];
-        lputv %separatorY.9 %tmp.247;
-        symbol [ separatorY %separatorY.9 294 8 18 ];
+        symbol [ y %tmp.247 294 8 9 ];
+        %tmp.248 = 4;
+        %tmp.249 = add %tmp.247 %tmp.248;
+        lputv %y %tmp.249;
+        symbol [ y %y 294 8 9 ];
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 295 8 ]
-        %tmp.248 = lgetv %dc;
-        symbol [ dc %tmp.248 295 8 10 ];
-        symbol [ setColor %tmp.249 295 11 19 ];
-        %tmp.249 = getv function %tmp.248 :setColor;
-        %tmp.250 = 0xaaaaaa;
-        symbol [ Gfx %tmp.251 295 29 32 ];
-        %tmp.251 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.252 295 33 50 ];
-        %tmp.252 = getv %tmp.251 :COLOR_TRANSPARENT;
-        invoke %tmp.248 %tmp.249(%tmp.250, %tmp.252);
+        %tmp.250 = lgetv %y;
+        symbol [ y %tmp.250 295 21 22 ];
+        lputv %separatorY.9 %tmp.250;
+        symbol [ separatorY %separatorY.9 295 8 18 ];
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 296 8 ]
-        %tmp.253 = lgetv %dc;
-        symbol [ dc %tmp.253 296 8 10 ];
-        symbol [ setPenWidth %tmp.254 296 11 22 ];
-        %tmp.254 = getv function %tmp.253 :setPenWidth;
-        %tmp.255 = 2;
-        invoke %tmp.253 %tmp.254(%tmp.255);
+        %tmp.251 = lgetv %dc;
+        symbol [ dc %tmp.251 296 8 10 ];
+        symbol [ setColor %tmp.252 296 11 19 ];
+        %tmp.252 = getv function %tmp.251 :setColor;
+        %tmp.253 = 0xaaaaaa;
+        symbol [ Gfx %tmp.254 296 29 32 ];
+        %tmp.254 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.255 296 33 50 ];
+        %tmp.255 = getv %tmp.254 :COLOR_TRANSPARENT;
+        invoke %tmp.251 %tmp.252(%tmp.253, %tmp.255);
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 297 8 ]
         %tmp.256 = lgetv %dc;
         symbol [ dc %tmp.256 297 8 10 ];
-        symbol [ drawLine %tmp.257 297 11 19 ];
-        %tmp.257 = getv function %tmp.256 :drawLine;
-        %tmp.258 = 0;
-        %tmp.259 = lgetv %y;
-        symbol [ y %tmp.259 297 22 23 ];
-        symbol [ w %tmp.261 297 24 25 ];
-        %tmp.261 = getv ? :w;
-        %tmp.262 = lgetv %y;
-        symbol [ y %tmp.262 297 26 27 ];
-        invoke %tmp.256 %tmp.257(%tmp.258, %tmp.259, %tmp.261, %tmp.262);
+        symbol [ setPenWidth %tmp.257 297 11 22 ];
+        %tmp.257 = getv function %tmp.256 :setPenWidth;
+        %tmp.258 = 2;
+        invoke %tmp.256 %tmp.257(%tmp.258);
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 298 8 ]
-        %tmp.263 = lgetv %y;
-        symbol [ y %tmp.263 298 8 9 ];
-        %tmp.264 = 0;
-        %tmp.265 = add %tmp.263 %tmp.264;
-        lputv %y %tmp.265;
-        symbol [ y %y 298 8 9 ];
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 301 8 ]
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_301_8_323_8_if_stmt:
-        %tmp.266 = lgetv %itemsDrawn.3;
-        symbol [ itemsDrawn %tmp.266 301 12 22 ];
-        %tmp.267 = lgetv %maxitems.2;
-        symbol [ maxitems %tmp.267 301 25 33 ];
-        %tmp.268 = lt %tmp.266 %tmp.267;
-        bf %tmp.268 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_301_8_323_8_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_301_8_323_8_if_true:
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_301_35_323_8_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 302 12 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_301_35_323_8_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_301_35_323_8_stop" ]
-        %tomorrowsEvents.25 = local;
-        symbol [ tomorrowsEvents %tomorrowsEvents.25 302 16 31 ];
-        symbol [ c %tmp.270 302 34 35 ];
-        %tmp.270 = getv ? :c;
-        symbol [ getTomorrowsEvents %tmp.271 302 36 54 ];
-        %tmp.271 = getv function %tmp.270 :getTomorrowsEvents;
-        %tmp.272 = lgetv %now.1;
-        symbol [ now %tmp.272 302 55 58 ];
-        %tmp.273 = invoke %tmp.270 %tmp.271(%tmp.272);
-        lputv %tomorrowsEvents.25 %tmp.273;
-        symbol [ tomorrowsEvents %tomorrowsEvents.25 302 16 31 ];
+        %tmp.259 = lgetv %dc;
+        symbol [ dc %tmp.259 298 8 10 ];
+        symbol [ drawLine %tmp.260 298 11 19 ];
+        %tmp.260 = getv function %tmp.259 :drawLine;
+        %tmp.261 = 0;
+        %tmp.262 = lgetv %y;
+        symbol [ y %tmp.262 298 22 23 ];
+        symbol [ w %tmp.264 298 24 25 ];
+        %tmp.264 = getv ? :w;
+        %tmp.265 = lgetv %y;
+        symbol [ y %tmp.265 298 26 27 ];
+        invoke %tmp.259 %tmp.260(%tmp.261, %tmp.262, %tmp.264, %tmp.265);
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 299 8 ]
+        %tmp.266 = lgetv %y;
+        symbol [ y %tmp.266 299 8 9 ];
+        %tmp.267 = 0;
+        %tmp.268 = add %tmp.266 %tmp.267;
+        lputv %y %tmp.268;
+        symbol [ y %y 299 8 9 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 302 8 ]
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_302_8_326_8_if_stmt:
+        %tmp.269 = lgetv %itemsDrawn.3;
+        symbol [ itemsDrawn %tmp.269 302 12 22 ];
+        %tmp.270 = lgetv %maxitems.2;
+        symbol [ maxitems %tmp.270 302 25 33 ];
+        %tmp.271 = lt %tmp.269 %tmp.270;
+        bf %tmp.271 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_302_8_326_8_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_302_8_326_8_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_302_35_326_8_start:
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 303 12 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_301_35_323_8_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_301_35_323_8_stop" ]
-        %yBeforeTomorrow.26 = local;
-        symbol [ yBeforeTomorrow %yBeforeTomorrow.26 303 16 31 ];
-        %tmp.274 = lgetv %y;
-        symbol [ y %tmp.274 303 34 35 ];
-        lputv %yBeforeTomorrow.26 %tmp.274;
-        symbol [ yBeforeTomorrow %yBeforeTomorrow.26 303 16 31 ];
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_302_35_326_8_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_302_35_326_8_stop" ]
+        %tomorrowsEvents.26 = local;
+        symbol [ tomorrowsEvents %tomorrowsEvents.26 303 16 31 ];
+        symbol [ c %tmp.273 303 34 35 ];
+        %tmp.273 = getv ? :c;
+        symbol [ getTomorrowsEvents %tmp.274 303 36 54 ];
+        %tmp.274 = getv function %tmp.273 :getTomorrowsEvents;
+        %tmp.275 = lgetv %now.1;
+        symbol [ now %tmp.275 303 55 58 ];
+        %tmp.276 = invoke %tmp.273 %tmp.274(%tmp.275);
+        lputv %tomorrowsEvents.26 %tmp.276;
+        symbol [ tomorrowsEvents %tomorrowsEvents.26 303 16 31 ];
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 304 12 ]
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_304_12_315_12_if_stmt:
-        %tmp.275 = lgetv %tomorrowsEvents.25;
-        symbol [ tomorrowsEvents %tmp.275 304 16 31 ];
-        symbol [ size %tmp.276 304 32 36 ];
-        %tmp.276 = getv function %tmp.275 :size;
-        %tmp.277 = invoke %tmp.275 %tmp.276();
-        %tmp.278 = 0;
-        %tmp.279 = eq %tmp.277 %tmp.278;
-        bf %tmp.279 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_304_12_315_12_if_else_false;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_304_12_315_12_if_true:
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_304_45_309_12_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 305 16 ]
-        %tmp.280 = lgetv %dc;
-        symbol [ dc %tmp.280 305 16 18 ];
-        symbol [ setColor %tmp.281 305 19 27 ];
-        %tmp.281 = getv function %tmp.280 :setColor;
-        %tmp.282 = 0xaaaaaa;
-        symbol [ Gfx %tmp.283 305 38 41 ];
-        %tmp.283 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.284 305 42 59 ];
-        %tmp.284 = getv %tmp.283 :COLOR_TRANSPARENT;
-        invoke %tmp.280 %tmp.281(%tmp.282, %tmp.284);
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_302_35_326_8_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_302_35_326_8_stop" ]
+        %yBeforeTomorrow.27 = local;
+        symbol [ yBeforeTomorrow %yBeforeTomorrow.27 304 16 31 ];
+        %tmp.277 = lgetv %y;
+        symbol [ y %tmp.277 304 34 35 ];
+        lputv %yBeforeTomorrow.27 %tmp.277;
+        symbol [ yBeforeTomorrow %yBeforeTomorrow.27 304 16 31 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 305 12 ]
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_305_12_318_12_if_stmt:
+        %tmp.278 = lgetv %tomorrowsEvents.26;
+        symbol [ tomorrowsEvents %tmp.278 305 16 31 ];
+        symbol [ size %tmp.279 305 32 36 ];
+        %tmp.279 = getv function %tmp.278 :size;
+        %tmp.280 = invoke %tmp.278 %tmp.279();
+        %tmp.281 = 0;
+        %tmp.282 = eq %tmp.280 %tmp.281;
+        bf %tmp.282 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_305_12_318_12_if_else_false;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_305_12_318_12_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_305_45_312_12_start:
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 306 16 ]
-        %tmp.285 = lgetv %dc;
-        symbol [ dc %tmp.285 306 16 18 ];
-        symbol [ drawText %tmp.286 306 19 27 ];
-        %tmp.286 = getv function %tmp.285 :drawText;
-        symbol [ w %tmp.288 306 28 29 ];
-        %tmp.288 = getv ? :w;
-        %tmp.289 = 2;
-        %tmp.290 = div %tmp.288 %tmp.289;
+        %tmp.283 = lgetv %dc;
+        symbol [ dc %tmp.283 306 16 18 ];
+        symbol [ setColor %tmp.284 306 19 27 ];
+        %tmp.284 = getv function %tmp.283 :setColor;
+        %tmp.285 = 0xaaaaaa;
+        symbol [ Gfx %tmp.286 306 38 41 ];
+        %tmp.286 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.287 306 42 59 ];
+        %tmp.287 = getv %tmp.286 :COLOR_TRANSPARENT;
+        invoke %tmp.283 %tmp.284(%tmp.285, %tmp.287);
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 307 4 ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_305_45_312_12_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_305_45_312_12_stop" ]
+        %msg.28 = local;
+        symbol [ msg %msg.28 307 8 11 ];
+        %tmp.288 = "Morgen keine Termine";
+        lputv %msg.28 %tmp.288;
+        symbol [ msg %msg.28 307 8 11 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 308 4 ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_305_45_312_12_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_305_45_312_12_stop" ]
+        %descriptionStartX.29 = local;
+        symbol [ descriptionStartX %descriptionStartX.29 308 8 25 ];
+        %tmp.289 = self;
+        symbol [ getDxFromY %tmp.290 308 28 38 ];
+        %tmp.290 = getv function %tmp.289 :getDxFromY;
         %tmp.291 = lgetv %y;
-        symbol [ y %tmp.291 306 33 34 ];
-        symbol [ Gfx %tmp.292 306 36 39 ];
-        %tmp.292 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.293 306 40 50 ];
-        %tmp.293 = getv %tmp.292 :FONT_XTINY;
-        %tmp.294 = "Morgen keine Termine";
-        symbol [ Gfx %tmp.295 306 76 79 ];
-        %tmp.295 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.296 306 80 99 ];
-        %tmp.296 = getv %tmp.295 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.285 %tmp.286(%tmp.290, %tmp.291, %tmp.293, %tmp.294, %tmp.296);
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 307 16 ]
-        %tmp.297 = lgetv %y;
-        symbol [ y %tmp.297 307 16 17 ];
-        %tmp.298 = lgetv %dyLine.4;
-        symbol [ dyLine %tmp.298 307 21 27 ];
-        %tmp.299 = add %tmp.297 %tmp.298;
-        lputv %y %tmp.299;
-        symbol [ y %y 307 16 17 ];
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 308 16 ]
-        %tmp.302 = lgetv %itemsDrawn.3;
-        symbol [ itemsDrawn %tmp.302 308 16 26 ];
-        %tmp.303 = add %tmp.302 1;
-        lputv %itemsDrawn.3 %tmp.303;
-        symbol [ itemsDrawn %itemsDrawn.3 308 16 26 ];
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_304_45_309_12_stop:
-        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_304_12_315_12_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_304_12_315_12_if_else_false:
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_309_19_315_12_start:
+        symbol [ y %tmp.291 308 39 40 ];
+        %tmp.292 = invoke %tmp.289 %tmp.290(%tmp.291);
+        %tmp.293 = 5;
+        %tmp.294 = add %tmp.292 %tmp.293;
+        lputv %descriptionStartX.29 %tmp.294;
+        symbol [ descriptionStartX %descriptionStartX.29 308 8 25 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 309 10 ]
+        %tmp.295 = lgetv %dc;
+        symbol [ dc %tmp.295 309 10 12 ];
+        symbol [ drawText %tmp.296 309 13 21 ];
+        %tmp.296 = getv function %tmp.295 :drawText;
+        %tmp.297 = lgetv %descriptionStartX.29;
+        symbol [ descriptionStartX %tmp.297 309 22 39 ];
+        %tmp.298 = lgetv %y;
+        symbol [ y %tmp.298 309 41 42 ];
+        symbol [ Gfx %tmp.299 309 44 47 ];
+        %tmp.299 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.300 309 48 58 ];
+        %tmp.300 = getv %tmp.299 :FONT_XTINY;
+        %tmp.301 = lgetv %msg.28;
+        symbol [ msg %tmp.301 309 60 63 ];
+        symbol [ Gfx %tmp.302 309 65 68 ];
+        %tmp.302 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.303 309 69 86 ];
+        %tmp.303 = getv %tmp.302 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.295 %tmp.296(%tmp.297, %tmp.298, %tmp.300, %tmp.301, %tmp.303);
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 310 16 ]
-        for @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_310_16_314_16_for_test @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_310_16_314_16_for_incr @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_310_16_314_16_for_end;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_310_16_314_16_for_init:
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_310_16_314_16_for_begin" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_310_16_314_16_for_end" ]
-        %i.27 = local;
-        symbol [ i %i.27 310 25 26 ];
-        %tmp.304 = 0;
-        lputv %i.27 %tmp.304;
-        symbol [ i %i.27 310 25 26 ];
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_310_16_314_16_for_test:
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_310_32_310_75_begin:
-        %tmp.305 = lgetv %i.27;
-        symbol [ i %tmp.305 310 32 33 ];
-        %tmp.306 = lgetv %tomorrowsEvents.25;
-        symbol [ tomorrowsEvents %tmp.306 310 36 51 ];
-        symbol [ size %tmp.307 310 52 56 ];
-        %tmp.307 = getv function %tmp.306 :size;
-        %tmp.308 = invoke %tmp.306 %tmp.307();
-        %tmp.309 = lt %tmp.305 %tmp.308;
-        %tmp.310 = dup %tmp.309;
-        bf %tmp.310 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_310_62_310_75_end;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_310_62_310_75_true:
-        %tmp.311 = lgetv %itemsDrawn.3;
-        symbol [ itemsDrawn %tmp.311 310 62 72 ];
-        %tmp.312 = lgetv %maxitems.2;
-        symbol [ maxitems %tmp.312 310 75 83 ];
-        %tmp.313 = lt %tmp.311 %tmp.312;
-        %tmp.314 = and %tmp.309 %tmp.313;
-        push %tmp.314;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_310_62_310_75_end:
-        %tmp.315 = phi [%tmp.310 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_310_32_310_75_begin] [%tmp.314 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_310_62_310_75_true] [%tmp.315 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_310_62_310_75_end];
-        bf %tmp.315 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_310_16_314_16_for_end;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_310_16_314_16_for_begin:
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_310_90_314_16_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 311 20 ]
-        %tmp.316 = self;
-        symbol [ drawEvent %tmp.317 311 20 29 ];
-        %tmp.317 = getv function %tmp.316 :drawEvent;
-        %tmp.318 = lgetv %dc;
-        symbol [ dc %tmp.318 311 30 32 ];
-        %tmp.319 = lgetv %tomorrowsEvents.25;
-        symbol [ tomorrowsEvents %tmp.319 311 34 49 ];
-        %tmp.320 = lgetv %i.27;
-        symbol [ i %tmp.320 311 50 51 ];
-        %tmp.321 = agetv %tmp.319 %tmp.320;
-        %tmp.322 = lgetv %y;
-        symbol [ y %tmp.322 311 54 55 ];
+        %tmp.304 = lgetv %y;
+        symbol [ y %tmp.304 310 16 17 ];
+        %tmp.305 = lgetv %dyLine.4;
+        symbol [ dyLine %tmp.305 310 21 27 ];
+        %tmp.306 = add %tmp.304 %tmp.305;
+        lputv %y %tmp.306;
+        symbol [ y %y 310 16 17 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 311 16 ]
+        %tmp.309 = lgetv %itemsDrawn.3;
+        symbol [ itemsDrawn %tmp.309 311 16 26 ];
+        %tmp.310 = add %tmp.309 1;
+        lputv %itemsDrawn.3 %tmp.310;
+        symbol [ itemsDrawn %itemsDrawn.3 311 16 26 ];
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_305_45_312_12_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_305_12_318_12_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_305_12_318_12_if_else_false:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_312_19_318_12_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 313 16 ]
+        for @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_313_16_317_16_for_test @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_313_16_317_16_for_incr @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_313_16_317_16_for_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_313_16_317_16_for_init:
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_313_16_317_16_for_begin" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_313_16_317_16_for_end" ]
+        %i.30 = local;
+        symbol [ i %i.30 313 25 26 ];
+        %tmp.311 = 0;
+        lputv %i.30 %tmp.311;
+        symbol [ i %i.30 313 25 26 ];
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_313_16_317_16_for_test:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_313_32_313_75_begin:
+        %tmp.312 = lgetv %i.30;
+        symbol [ i %tmp.312 313 32 33 ];
+        %tmp.313 = lgetv %tomorrowsEvents.26;
+        symbol [ tomorrowsEvents %tmp.313 313 36 51 ];
+        symbol [ size %tmp.314 313 52 56 ];
+        %tmp.314 = getv function %tmp.313 :size;
+        %tmp.315 = invoke %tmp.313 %tmp.314();
+        %tmp.316 = lt %tmp.312 %tmp.315;
+        %tmp.317 = dup %tmp.316;
+        bf %tmp.317 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_313_62_313_75_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_313_62_313_75_true:
+        %tmp.318 = lgetv %itemsDrawn.3;
+        symbol [ itemsDrawn %tmp.318 313 62 72 ];
+        %tmp.319 = lgetv %maxitems.2;
+        symbol [ maxitems %tmp.319 313 75 83 ];
+        %tmp.320 = lt %tmp.318 %tmp.319;
+        %tmp.321 = and %tmp.316 %tmp.320;
+        push %tmp.321;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_313_62_313_75_end:
+        %tmp.322 = phi [%tmp.317 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_313_32_313_75_begin] [%tmp.321 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_313_62_313_75_true] [%tmp.322 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_313_62_313_75_end];
+        bf %tmp.322 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_313_16_317_16_for_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_313_16_317_16_for_begin:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_313_90_317_16_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 314 20 ]
         %tmp.323 = self;
-        symbol [ getDxFromY %tmp.324 311 57 67 ];
-        %tmp.324 = getv function %tmp.323 :getDxFromY;
-        %tmp.325 = lgetv %y;
-        symbol [ y %tmp.325 311 68 69 ];
-        %tmp.326 = invoke %tmp.323 %tmp.324(%tmp.325);
-        %tmp.327 = 0xaaaaaa;
-        invoke %tmp.316 %tmp.317(%tmp.318, %tmp.321, %tmp.322, %tmp.326, %tmp.327);
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 312 20 ]
-        %tmp.328 = lgetv %y;
-        symbol [ y %tmp.328 312 20 21 ];
-        %tmp.329 = lgetv %dyLine.4;
-        symbol [ dyLine %tmp.329 312 25 31 ];
-        %tmp.330 = add %tmp.328 %tmp.329;
-        lputv %y %tmp.330;
-        symbol [ y %y 312 20 21 ];
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 313 20 ]
-        %tmp.333 = lgetv %itemsDrawn.3;
-        symbol [ itemsDrawn %tmp.333 313 20 30 ];
-        %tmp.334 = add %tmp.333 1;
-        lputv %itemsDrawn.3 %tmp.334;
-        symbol [ itemsDrawn %itemsDrawn.3 313 20 30 ];
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_310_90_314_16_stop:
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_310_16_314_16_for_incr:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 310 ]
-        %tmp.337 = lgetv %i.27;
-        symbol [ i %tmp.337 310 85 86 ];
-        %tmp.338 = add %tmp.337 1;
-        lputv %i.27 %tmp.338;
-        symbol [ i %i.27 310 85 86 ];
-        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_310_16_314_16_for_test;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_310_16_314_16_for_end:
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_309_19_315_12_stop:
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_304_12_315_12_if_end:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 316 3 ]
-        %tmp.339 = lgetv %y;
-        symbol [ y %tmp.339 316 3 4 ];
-        %tmp.340 = 4;
-        %tmp.341 = add %tmp.339 %tmp.340;
-        lputv %y %tmp.341;
-        symbol [ y %y 316 3 4 ];
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 317 3 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_301_35_323_8_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_301_35_323_8_stop" ]
-        %dashLength.28 = local;
-        symbol [ dashLength %dashLength.28 317 7 17 ];
-        %tmp.342 = 2;
-        lputv %dashLength.28 %tmp.342;
-        symbol [ dashLength %dashLength.28 317 7 17 ];
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 318 12 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_301_35_323_8_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_301_35_323_8_stop" ]
-        %gapLength.29 = local;
-        symbol [ gapLength %gapLength.29 318 16 25 ];
-        %tmp.343 = 2;
-        lputv %gapLength.29 %tmp.343;
-        symbol [ gapLength %gapLength.29 318 16 25 ];
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 319 12 ]
-        for @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_319_12_321_12_for_test @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_319_12_321_12_for_incr @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_319_12_321_12_for_end;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_319_12_321_12_for_init:
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_319_12_321_12_for_begin" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_319_12_321_12_for_end" ]
-        %x.30 = local;
-        symbol [ x %x.30 319 21 22 ];
-        %tmp.344 = 0;
-        lputv %x.30 %tmp.344;
-        symbol [ x %x.30 319 21 22 ];
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_319_12_321_12_for_test:
-        %tmp.345 = lgetv %x.30;
-        symbol [ x %tmp.345 319 28 29 ];
-        symbol [ w %tmp.347 319 32 33 ];
-        %tmp.347 = getv ? :w;
-        %tmp.348 = lt %tmp.345 %tmp.347;
-        bf %tmp.348 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_319_12_321_12_for_end;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_319_12_321_12_for_begin:
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_319_66_321_12_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 320 16 ]
-        %tmp.349 = lgetv %dc;
-        symbol [ dc %tmp.349 320 16 18 ];
-        symbol [ drawLine %tmp.350 320 19 27 ];
-        %tmp.350 = getv function %tmp.349 :drawLine;
-        %tmp.351 = lgetv %x.30;
-        symbol [ x %tmp.351 320 28 29 ];
-        %tmp.352 = lgetv %y;
-        symbol [ y %tmp.352 320 31 32 ];
-        %tmp.353 = lgetv %x.30;
-        symbol [ x %tmp.353 320 34 35 ];
-        %tmp.354 = lgetv %dashLength.28;
-        symbol [ dashLength %tmp.354 320 38 48 ];
-        %tmp.355 = add %tmp.353 %tmp.354;
-        %tmp.356 = lgetv %y;
-        symbol [ y %tmp.356 320 50 51 ];
-        invoke %tmp.349 %tmp.350(%tmp.351, %tmp.352, %tmp.355, %tmp.356);
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_319_66_321_12_stop:
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_319_12_321_12_for_incr:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 319 ]
-        %tmp.357 = lgetv %x.30;
-        symbol [ x %tmp.357 319 35 36 ];
-        %tmp.358 = lgetv %dashLength.28;
-        symbol [ dashLength %tmp.358 319 41 51 ];
-        %tmp.359 = lgetv %gapLength.29;
-        symbol [ gapLength %tmp.359 319 54 63 ];
-        %tmp.360 = add %tmp.358 %tmp.359;
-        %tmp.361 = add %tmp.357 %tmp.360;
-        lputv %x.30 %tmp.361;
-        symbol [ x %x.30 319 35 36 ];
-        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_319_12_321_12_for_test;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_319_12_321_12_for_end:
+        symbol [ drawEvent %tmp.324 314 20 29 ];
+        %tmp.324 = getv function %tmp.323 :drawEvent;
+        %tmp.325 = lgetv %dc;
+        symbol [ dc %tmp.325 314 30 32 ];
+        %tmp.326 = lgetv %tomorrowsEvents.26;
+        symbol [ tomorrowsEvents %tmp.326 314 34 49 ];
+        %tmp.327 = lgetv %i.30;
+        symbol [ i %tmp.327 314 50 51 ];
+        %tmp.328 = agetv %tmp.326 %tmp.327;
+        %tmp.329 = lgetv %y;
+        symbol [ y %tmp.329 314 54 55 ];
+        %tmp.330 = self;
+        symbol [ getDxFromY %tmp.331 314 57 67 ];
+        %tmp.331 = getv function %tmp.330 :getDxFromY;
+        %tmp.332 = lgetv %y;
+        symbol [ y %tmp.332 314 68 69 ];
+        %tmp.333 = invoke %tmp.330 %tmp.331(%tmp.332);
+        %tmp.334 = 0xaaaaaa;
+        invoke %tmp.323 %tmp.324(%tmp.325, %tmp.328, %tmp.329, %tmp.333, %tmp.334);
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 315 20 ]
+        %tmp.335 = lgetv %y;
+        symbol [ y %tmp.335 315 20 21 ];
+        %tmp.336 = lgetv %dyLine.4;
+        symbol [ dyLine %tmp.336 315 25 31 ];
+        %tmp.337 = add %tmp.335 %tmp.336;
+        lputv %y %tmp.337;
+        symbol [ y %y 315 20 21 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 316 20 ]
+        %tmp.340 = lgetv %itemsDrawn.3;
+        symbol [ itemsDrawn %tmp.340 316 20 30 ];
+        %tmp.341 = add %tmp.340 1;
+        lputv %itemsDrawn.3 %tmp.341;
+        symbol [ itemsDrawn %itemsDrawn.3 316 20 30 ];
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_313_90_317_16_stop:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_313_16_317_16_for_incr:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 313 ]
+        %tmp.344 = lgetv %i.30;
+        symbol [ i %tmp.344 313 85 86 ];
+        %tmp.345 = add %tmp.344 1;
+        lputv %i.30 %tmp.345;
+        symbol [ i %i.30 313 85 86 ];
+        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_313_16_317_16_for_test;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_313_16_317_16_for_end:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_312_19_318_12_stop:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_305_12_318_12_if_end:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 319 3 ]
+        %tmp.346 = lgetv %y;
+        symbol [ y %tmp.346 319 3 4 ];
+        %tmp.347 = 4;
+        %tmp.348 = add %tmp.346 %tmp.347;
+        lputv %y %tmp.348;
+        symbol [ y %y 319 3 4 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 320 3 ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_302_35_326_8_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_302_35_326_8_stop" ]
+        %dashLength.31 = local;
+        symbol [ dashLength %dashLength.31 320 7 17 ];
+        %tmp.349 = 2;
+        lputv %dashLength.31 %tmp.349;
+        symbol [ dashLength %dashLength.31 320 7 17 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 321 12 ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_302_35_326_8_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_302_35_326_8_stop" ]
+        %gapLength.32 = local;
+        symbol [ gapLength %gapLength.32 321 16 25 ];
+        %tmp.350 = 2;
+        lputv %gapLength.32 %tmp.350;
+        symbol [ gapLength %gapLength.32 321 16 25 ];
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 322 12 ]
-        %tmp.362 = lgetv %y;
-        symbol [ y %tmp.362 322 12 13 ];
-        %tmp.363 = 1;
-        %tmp.364 = add %tmp.362 %tmp.363;
-        lputv %y %tmp.364;
-        symbol [ y %y 322 12 13 ];
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_301_35_323_8_stop:
-        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_301_8_323_8_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_301_8_323_8_if_end:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 324 8 ]
-        %tmp.365 = lgetv %y;
-        symbol [ y %tmp.365 324 25 26 ];
-        lputv %yAfterTomorrow.7 %tmp.365;
-        symbol [ yAfterTomorrow %yAfterTomorrow.7 324 8 22 ];
+        for @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_322_12_324_12_for_test @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_322_12_324_12_for_incr @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_322_12_324_12_for_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_322_12_324_12_for_init:
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_322_12_324_12_for_begin" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_322_12_324_12_for_end" ]
+        %x.33 = local;
+        symbol [ x %x.33 322 21 22 ];
+        %tmp.351 = 0;
+        lputv %x.33 %tmp.351;
+        symbol [ x %x.33 322 21 22 ];
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_322_12_324_12_for_test:
+        %tmp.352 = lgetv %x.33;
+        symbol [ x %tmp.352 322 28 29 ];
+        symbol [ w %tmp.354 322 32 33 ];
+        %tmp.354 = getv ? :w;
+        %tmp.355 = lt %tmp.352 %tmp.354;
+        bf %tmp.355 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_322_12_324_12_for_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_322_12_324_12_for_begin:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_322_66_324_12_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 323 16 ]
+        %tmp.356 = lgetv %dc;
+        symbol [ dc %tmp.356 323 16 18 ];
+        symbol [ drawLine %tmp.357 323 19 27 ];
+        %tmp.357 = getv function %tmp.356 :drawLine;
+        %tmp.358 = lgetv %x.33;
+        symbol [ x %tmp.358 323 28 29 ];
+        %tmp.359 = lgetv %y;
+        symbol [ y %tmp.359 323 31 32 ];
+        %tmp.360 = lgetv %x.33;
+        symbol [ x %tmp.360 323 34 35 ];
+        %tmp.361 = lgetv %dashLength.31;
+        symbol [ dashLength %tmp.361 323 38 48 ];
+        %tmp.362 = add %tmp.360 %tmp.361;
+        %tmp.363 = lgetv %y;
+        symbol [ y %tmp.363 323 50 51 ];
+        invoke %tmp.356 %tmp.357(%tmp.358, %tmp.359, %tmp.362, %tmp.363);
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_322_66_324_12_stop:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_322_12_324_12_for_incr:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 322 ]
+        %tmp.364 = lgetv %x.33;
+        symbol [ x %tmp.364 322 35 36 ];
+        %tmp.365 = lgetv %dashLength.31;
+        symbol [ dashLength %tmp.365 322 41 51 ];
+        %tmp.366 = lgetv %gapLength.32;
+        symbol [ gapLength %tmp.366 322 54 63 ];
+        %tmp.367 = add %tmp.365 %tmp.366;
+        %tmp.368 = add %tmp.364 %tmp.367;
+        lputv %x.33 %tmp.368;
+        symbol [ x %x.33 322 35 36 ];
+        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_322_12_324_12_for_test;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_322_12_324_12_for_end:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 325 12 ]
+        %tmp.369 = lgetv %y;
+        symbol [ y %tmp.369 325 12 13 ];
+        %tmp.370 = 1;
+        %tmp.371 = add %tmp.369 %tmp.370;
+        lputv %y %tmp.371;
+        symbol [ y %y 325 12 13 ];
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_302_35_326_8_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_302_8_326_8_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_302_8_326_8_if_end:
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 327 8 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_stop" ]
-        %futureEvents.31 = local;
-        symbol [ futureEvents %futureEvents.31 327 12 24 ];
-        symbol [ c %tmp.367 327 27 28 ];
-        %tmp.367 = getv ? :c;
-        symbol [ getFutureEvents %tmp.368 327 29 44 ];
-        %tmp.368 = getv function %tmp.367 :getFutureEvents;
-        %tmp.369 = lgetv %now.1;
-        symbol [ now %tmp.369 327 45 48 ];
-        %tmp.370 = invoke %tmp.367 %tmp.368(%tmp.369);
-        lputv %futureEvents.31 %tmp.370;
-        symbol [ futureEvents %futureEvents.31 327 12 24 ];
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 328 8 ]
-        %tmp.371 = lgetv %futureEvents.31;
-        symbol [ futureEvents %tmp.371 328 26 38 ];
-        symbol [ size %tmp.372 328 39 43 ];
-        %tmp.372 = getv function %tmp.371 :size;
-        %tmp.373 = invoke %tmp.371 %tmp.372();
-        %tmp.374 = 0;
-        %tmp.375 = gt %tmp.373 %tmp.374;
-        lputv %hasFutureEvents.10 %tmp.375;
-        symbol [ hasFutureEvents %hasFutureEvents.10 328 8 23 ];
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 329 8 ]
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_329_8_335_8_if_stmt:
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_329_12_329_37_begin:
-        %tmp.376 = lgetv %itemsDrawn.3;
-        symbol [ itemsDrawn %tmp.376 329 12 22 ];
-        %tmp.377 = lgetv %maxitems.2;
-        symbol [ maxitems %tmp.377 329 25 33 ];
-        %tmp.378 = lt %tmp.376 %tmp.377;
-        bf %tmp.378 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_329_8_335_8_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_329_37_329_37_true:
-        %tmp.379 = lgetv %hasFutureEvents.10;
-        symbol [ hasFutureEvents %tmp.379 329 37 52 ];
-        push %tmp.379;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_329_37_329_37_end:
-        %tmp.380 = phi [%tmp.378 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_329_12_329_37_begin] [%tmp.379 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_329_37_329_37_true] [%tmp.380 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_329_37_329_37_end];
-        bf %tmp.380 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_329_8_335_8_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_329_8_335_8_if_true:
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_329_54_335_8_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 330 12 ]
-        for @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_330_12_334_12_for_test @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_330_12_334_12_for_incr @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_330_12_334_12_for_end;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_330_12_334_12_for_init:
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_330_12_334_12_for_begin" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_330_12_334_12_for_end" ]
-        %i.32 = local;
-        symbol [ i %i.32 330 21 22 ];
+        %tmp.372 = lgetv %y;
+        symbol [ y %tmp.372 327 25 26 ];
+        lputv %yAfterTomorrow.7 %tmp.372;
+        symbol [ yAfterTomorrow %yAfterTomorrow.7 327 8 22 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 330 8 ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_stop" ]
+        %futureEvents.34 = local;
+        symbol [ futureEvents %futureEvents.34 330 12 24 ];
+        symbol [ c %tmp.374 330 27 28 ];
+        %tmp.374 = getv ? :c;
+        symbol [ getFutureEvents %tmp.375 330 29 44 ];
+        %tmp.375 = getv function %tmp.374 :getFutureEvents;
+        %tmp.376 = lgetv %now.1;
+        symbol [ now %tmp.376 330 45 48 ];
+        %tmp.377 = invoke %tmp.374 %tmp.375(%tmp.376);
+        lputv %futureEvents.34 %tmp.377;
+        symbol [ futureEvents %futureEvents.34 330 12 24 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 331 8 ]
+        %tmp.378 = lgetv %futureEvents.34;
+        symbol [ futureEvents %tmp.378 331 26 38 ];
+        symbol [ size %tmp.379 331 39 43 ];
+        %tmp.379 = getv function %tmp.378 :size;
+        %tmp.380 = invoke %tmp.378 %tmp.379();
         %tmp.381 = 0;
-        lputv %i.32 %tmp.381;
-        symbol [ i %i.32 330 21 22 ];
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_330_12_334_12_for_test:
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_330_28_330_68_begin:
-        %tmp.382 = lgetv %i.32;
-        symbol [ i %tmp.382 330 28 29 ];
-        %tmp.383 = lgetv %futureEvents.31;
-        symbol [ futureEvents %tmp.383 330 32 44 ];
-        symbol [ size %tmp.384 330 45 49 ];
-        %tmp.384 = getv function %tmp.383 :size;
-        %tmp.385 = invoke %tmp.383 %tmp.384();
-        %tmp.386 = lt %tmp.382 %tmp.385;
-        %tmp.387 = dup %tmp.386;
-        bf %tmp.387 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_330_55_330_68_end;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_330_55_330_68_true:
-        %tmp.388 = lgetv %itemsDrawn.3;
-        symbol [ itemsDrawn %tmp.388 330 55 65 ];
-        %tmp.389 = lgetv %maxitems.2;
-        symbol [ maxitems %tmp.389 330 68 76 ];
-        %tmp.390 = lt %tmp.388 %tmp.389;
-        %tmp.391 = and %tmp.386 %tmp.390;
-        push %tmp.391;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_330_55_330_68_end:
-        %tmp.392 = phi [%tmp.387 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_330_28_330_68_begin] [%tmp.391 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_330_55_330_68_true] [%tmp.392 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_330_55_330_68_end];
-        bf %tmp.392 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_330_12_334_12_for_end;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_330_12_334_12_for_begin:
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_330_83_334_12_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 331 16 ]
-        %tmp.393 = self;
-        symbol [ drawEvent %tmp.394 331 16 25 ];
-        %tmp.394 = getv function %tmp.393 :drawEvent;
-        %tmp.395 = lgetv %dc;
-        symbol [ dc %tmp.395 331 26 28 ];
-        %tmp.396 = lgetv %futureEvents.31;
-        symbol [ futureEvents %tmp.396 331 30 42 ];
-        %tmp.397 = lgetv %i.32;
-        symbol [ i %tmp.397 331 43 44 ];
-        %tmp.398 = agetv %tmp.396 %tmp.397;
-        %tmp.399 = lgetv %y;
-        symbol [ y %tmp.399 331 47 48 ];
+        %tmp.382 = gt %tmp.380 %tmp.381;
+        lputv %hasFutureEvents.10 %tmp.382;
+        symbol [ hasFutureEvents %hasFutureEvents.10 331 8 23 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 332 8 ]
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_332_8_338_8_if_stmt:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_332_12_332_37_begin:
+        %tmp.383 = lgetv %itemsDrawn.3;
+        symbol [ itemsDrawn %tmp.383 332 12 22 ];
+        %tmp.384 = lgetv %maxitems.2;
+        symbol [ maxitems %tmp.384 332 25 33 ];
+        %tmp.385 = lt %tmp.383 %tmp.384;
+        bf %tmp.385 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_332_8_338_8_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_332_37_332_37_true:
+        %tmp.386 = lgetv %hasFutureEvents.10;
+        symbol [ hasFutureEvents %tmp.386 332 37 52 ];
+        push %tmp.386;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_332_37_332_37_end:
+        %tmp.387 = phi [%tmp.385 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_332_12_332_37_begin] [%tmp.386 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_332_37_332_37_true] [%tmp.387 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_332_37_332_37_end];
+        bf %tmp.387 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_332_8_338_8_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_332_8_338_8_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_332_54_338_8_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 333 12 ]
+        for @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_333_12_337_12_for_test @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_333_12_337_12_for_incr @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_333_12_337_12_for_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_333_12_337_12_for_init:
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_333_12_337_12_for_begin" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_333_12_337_12_for_end" ]
+        %i.35 = local;
+        symbol [ i %i.35 333 21 22 ];
+        %tmp.388 = 0;
+        lputv %i.35 %tmp.388;
+        symbol [ i %i.35 333 21 22 ];
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_333_12_337_12_for_test:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_333_28_333_68_begin:
+        %tmp.389 = lgetv %i.35;
+        symbol [ i %tmp.389 333 28 29 ];
+        %tmp.390 = lgetv %futureEvents.34;
+        symbol [ futureEvents %tmp.390 333 32 44 ];
+        symbol [ size %tmp.391 333 45 49 ];
+        %tmp.391 = getv function %tmp.390 :size;
+        %tmp.392 = invoke %tmp.390 %tmp.391();
+        %tmp.393 = lt %tmp.389 %tmp.392;
+        %tmp.394 = dup %tmp.393;
+        bf %tmp.394 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_333_55_333_68_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_333_55_333_68_true:
+        %tmp.395 = lgetv %itemsDrawn.3;
+        symbol [ itemsDrawn %tmp.395 333 55 65 ];
+        %tmp.396 = lgetv %maxitems.2;
+        symbol [ maxitems %tmp.396 333 68 76 ];
+        %tmp.397 = lt %tmp.395 %tmp.396;
+        %tmp.398 = and %tmp.393 %tmp.397;
+        push %tmp.398;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_333_55_333_68_end:
+        %tmp.399 = phi [%tmp.394 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_333_28_333_68_begin] [%tmp.398 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_333_55_333_68_true] [%tmp.399 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_333_55_333_68_end];
+        bf %tmp.399 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_333_12_337_12_for_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_333_12_337_12_for_begin:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_333_83_337_12_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 334 16 ]
         %tmp.400 = self;
-        symbol [ getDxFromY %tmp.401 331 50 60 ];
-        %tmp.401 = getv function %tmp.400 :getDxFromY;
-        %tmp.402 = lgetv %y;
-        symbol [ y %tmp.402 331 61 62 ];
-        %tmp.403 = invoke %tmp.400 %tmp.401(%tmp.402);
-        %tmp.404 = 0x555555;
-        invoke %tmp.393 %tmp.394(%tmp.395, %tmp.398, %tmp.399, %tmp.403, %tmp.404);
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 332 16 ]
-        %tmp.405 = lgetv %y;
-        symbol [ y %tmp.405 332 16 17 ];
-        %tmp.406 = lgetv %dyLine.4;
-        symbol [ dyLine %tmp.406 332 21 27 ];
-        %tmp.407 = add %tmp.405 %tmp.406;
-        lputv %y %tmp.407;
-        symbol [ y %y 332 16 17 ];
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 333 16 ]
-        %tmp.410 = lgetv %itemsDrawn.3;
-        symbol [ itemsDrawn %tmp.410 333 16 26 ];
-        %tmp.411 = add %tmp.410 1;
-        lputv %itemsDrawn.3 %tmp.411;
-        symbol [ itemsDrawn %itemsDrawn.3 333 16 26 ];
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_330_83_334_12_stop:
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_330_12_334_12_for_incr:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 330 ]
-        %tmp.414 = lgetv %i.32;
-        symbol [ i %tmp.414 330 78 79 ];
-        %tmp.415 = add %tmp.414 1;
-        lputv %i.32 %tmp.415;
-        symbol [ i %i.32 330 78 79 ];
-        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_330_12_334_12_for_test;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_330_12_334_12_for_end:
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_329_54_335_8_stop:
-        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_329_8_335_8_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_329_8_335_8_if_end:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 336 8 ]
-        %tmp.416 = lgetv %y;
-        symbol [ y %tmp.416 336 23 24 ];
-        lputv %yAfterFuture.8 %tmp.416;
-        symbol [ yAfterFuture %yAfterFuture.8 336 8 20 ];
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 340 8 ]
-        %tmp.417 = lgetv %dc;
-        symbol [ dc %tmp.417 340 8 10 ];
-        symbol [ setPenWidth %tmp.418 340 11 22 ];
-        %tmp.418 = getv function %tmp.417 :setPenWidth;
-        %tmp.419 = 2;
-        invoke %tmp.417 %tmp.418(%tmp.419);
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 341 8 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_stop" ]
-        %radius.33 = local;
-        symbol [ radius %radius.33 341 12 18 ];
-        symbol [ w %tmp.421 341 22 23 ];
-        %tmp.421 = getv ? :w;
-        %tmp.422 = 2;
-        %tmp.423 = div %tmp.421 %tmp.422;
-        %tmp.424 = 1;
-        %tmp.425 = sub %tmp.423 %tmp.424;
-        lputv %radius.33 %tmp.425;
-        symbol [ radius %radius.33 341 12 18 ];
+        symbol [ drawEvent %tmp.401 334 16 25 ];
+        %tmp.401 = getv function %tmp.400 :drawEvent;
+        %tmp.402 = lgetv %dc;
+        symbol [ dc %tmp.402 334 26 28 ];
+        %tmp.403 = lgetv %futureEvents.34;
+        symbol [ futureEvents %tmp.403 334 30 42 ];
+        %tmp.404 = lgetv %i.35;
+        symbol [ i %tmp.404 334 43 44 ];
+        %tmp.405 = agetv %tmp.403 %tmp.404;
+        %tmp.406 = lgetv %y;
+        symbol [ y %tmp.406 334 47 48 ];
+        %tmp.407 = self;
+        symbol [ getDxFromY %tmp.408 334 50 60 ];
+        %tmp.408 = getv function %tmp.407 :getDxFromY;
+        %tmp.409 = lgetv %y;
+        symbol [ y %tmp.409 334 61 62 ];
+        %tmp.410 = invoke %tmp.407 %tmp.408(%tmp.409);
+        %tmp.411 = 0x555555;
+        invoke %tmp.400 %tmp.401(%tmp.402, %tmp.405, %tmp.406, %tmp.410, %tmp.411);
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 335 16 ]
+        %tmp.412 = lgetv %y;
+        symbol [ y %tmp.412 335 16 17 ];
+        %tmp.413 = lgetv %dyLine.4;
+        symbol [ dyLine %tmp.413 335 21 27 ];
+        %tmp.414 = add %tmp.412 %tmp.413;
+        lputv %y %tmp.414;
+        symbol [ y %y 335 16 17 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 336 16 ]
+        %tmp.417 = lgetv %itemsDrawn.3;
+        symbol [ itemsDrawn %tmp.417 336 16 26 ];
+        %tmp.418 = add %tmp.417 1;
+        lputv %itemsDrawn.3 %tmp.418;
+        symbol [ itemsDrawn %itemsDrawn.3 336 16 26 ];
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_333_83_337_12_stop:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_333_12_337_12_for_incr:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 333 ]
+        %tmp.421 = lgetv %i.35;
+        symbol [ i %tmp.421 333 78 79 ];
+        %tmp.422 = add %tmp.421 1;
+        lputv %i.35 %tmp.422;
+        symbol [ i %i.35 333 78 79 ];
+        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_333_12_337_12_for_test;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_333_12_337_12_for_end:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_332_54_338_8_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_332_8_338_8_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_332_8_338_8_if_end:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 339 8 ]
+        %tmp.423 = lgetv %y;
+        symbol [ y %tmp.423 339 23 24 ];
+        lputv %yAfterFuture.8 %tmp.423;
+        symbol [ yAfterFuture %yAfterFuture.8 339 8 20 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 343 8 ]
+        %tmp.424 = lgetv %dc;
+        symbol [ dc %tmp.424 343 8 10 ];
+        symbol [ setPenWidth %tmp.425 343 11 22 ];
+        %tmp.425 = getv function %tmp.424 :setPenWidth;
+        %tmp.426 = 2;
+        invoke %tmp.424 %tmp.425(%tmp.426);
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 344 8 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_stop" ]
-        %arcTodayStartY.34 = local;
-        symbol [ arcTodayStartY %arcTodayStartY.34 344 12 26 ];
-        %tmp.426 = lgetv %yCalendarStart.5;
-        symbol [ yCalendarStart %tmp.426 344 29 43 ];
-        lputv %arcTodayStartY.34 %tmp.426;
-        symbol [ arcTodayStartY %arcTodayStartY.34 344 12 26 ];
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 345 8 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_stop" ]
-        %arcTodayStopY.35 = local;
-        symbol [ arcTodayStopY %arcTodayStopY.35 345 12 25 ];
-        %tmp.427 = lgetv %separatorY.9;
-        symbol [ separatorY %tmp.427 345 28 38 ];
-        lputv %arcTodayStopY.35 %tmp.427;
-        symbol [ arcTodayStopY %arcTodayStopY.35 345 12 25 ];
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_stop" ]
+        %radius.36 = local;
+        symbol [ radius %radius.36 344 12 18 ];
+        symbol [ w %tmp.428 344 22 23 ];
+        %tmp.428 = getv ? :w;
+        %tmp.429 = 2;
+        %tmp.430 = div %tmp.428 %tmp.429;
+        %tmp.431 = 1;
+        %tmp.432 = sub %tmp.430 %tmp.431;
+        lputv %radius.36 %tmp.432;
+        symbol [ radius %radius.36 344 12 18 ];
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 347 8 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_stop" ]
-        %arcTomorrowStartY.36 = local;
-        symbol [ arcTomorrowStartY %arcTomorrowStartY.36 347 12 29 ];
-        %tmp.428 = lgetv %separatorY.9;
-        symbol [ separatorY %tmp.428 347 32 42 ];
-        lputv %arcTomorrowStartY.36 %tmp.428;
-        symbol [ arcTomorrowStartY %arcTomorrowStartY.36 347 12 29 ];
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_stop" ]
+        %arcTodayStartY.37 = local;
+        symbol [ arcTodayStartY %arcTodayStartY.37 347 12 26 ];
+        %tmp.433 = lgetv %yCalendarStart.5;
+        symbol [ yCalendarStart %tmp.433 347 29 43 ];
+        lputv %arcTodayStartY.37 %tmp.433;
+        symbol [ arcTodayStartY %arcTodayStartY.37 347 12 26 ];
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 348 8 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_stop" ]
-        %arcTomorrowStopY.37 = local;
-        symbol [ arcTomorrowStopY %arcTomorrowStopY.37 348 12 28 ];
-        %tmp.429 = lgetv %yAfterTomorrow.7;
-        symbol [ yAfterTomorrow %tmp.429 348 31 45 ];
-        lputv %arcTomorrowStopY.37 %tmp.429;
-        symbol [ arcTomorrowStopY %arcTomorrowStopY.37 348 12 28 ];
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_stop" ]
+        %arcTodayStopY.38 = local;
+        symbol [ arcTodayStopY %arcTodayStopY.38 348 12 25 ];
+        %tmp.434 = lgetv %separatorY.9;
+        symbol [ separatorY %tmp.434 348 28 38 ];
+        lputv %arcTodayStopY.38 %tmp.434;
+        symbol [ arcTodayStopY %arcTodayStopY.38 348 12 25 ];
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 350 8 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_stop" ]
-        %arcFutureStartY.38 = local;
-        symbol [ arcFutureStartY %arcFutureStartY.38 350 12 27 ];
-        %tmp.430 = lgetv %yAfterTomorrow.7;
-        symbol [ yAfterTomorrow %tmp.430 350 30 44 ];
-        lputv %arcFutureStartY.38 %tmp.430;
-        symbol [ arcFutureStartY %arcFutureStartY.38 350 12 27 ];
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_stop" ]
+        %arcTomorrowStartY.39 = local;
+        symbol [ arcTomorrowStartY %arcTomorrowStartY.39 350 12 29 ];
+        %tmp.435 = lgetv %separatorY.9;
+        symbol [ separatorY %tmp.435 350 32 42 ];
+        lputv %arcTomorrowStartY.39 %tmp.435;
+        symbol [ arcTomorrowStartY %arcTomorrowStartY.39 350 12 29 ];
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 351 8 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_stop" ]
-        %arcFutureStopY.39 = local;
-        symbol [ arcFutureStopY %arcFutureStopY.39 351 12 26 ];
-        %tmp.431 = lgetv %yAfterFuture.8;
-        symbol [ yAfterFuture %tmp.431 351 29 41 ];
-        lputv %arcFutureStopY.39 %tmp.431;
-        symbol [ arcFutureStopY %arcFutureStopY.39 351 12 26 ];
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_stop" ]
+        %arcTomorrowStopY.40 = local;
+        symbol [ arcTomorrowStopY %arcTomorrowStopY.40 351 12 28 ];
+        %tmp.436 = lgetv %yAfterTomorrow.7;
+        symbol [ yAfterTomorrow %tmp.436 351 31 45 ];
+        lputv %arcTomorrowStopY.40 %tmp.436;
+        symbol [ arcTomorrowStopY %arcTomorrowStopY.40 351 12 28 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 353 8 ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_stop" ]
+        %arcFutureStartY.41 = local;
+        symbol [ arcFutureStartY %arcFutureStartY.41 353 12 27 ];
+        %tmp.437 = lgetv %yAfterTomorrow.7;
+        symbol [ yAfterTomorrow %tmp.437 353 30 44 ];
+        lputv %arcFutureStartY.41 %tmp.437;
+        symbol [ arcFutureStartY %arcFutureStartY.41 353 12 27 ];
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 354 8 ]
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_354_8_358_8_if_stmt:
-        %tmp.432 = lgetv %hasFutureEvents.10;
-        symbol [ hasFutureEvents %tmp.432 354 12 27 ];
-        bf %tmp.432 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_354_8_358_8_if_else_false;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_354_8_358_8_if_true:
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_354_29_356_8_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 355 12 ]
-        symbol [ h %tmp.434 355 29 30 ];
-        %tmp.434 = getv ? :h;
-        lputv %arcFutureStopY.39 %tmp.434;
-        symbol [ arcFutureStopY %arcFutureStopY.39 355 12 26 ];
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_354_29_356_8_stop:
-        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_354_8_358_8_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_354_8_358_8_if_else_false:
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_356_15_358_8_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 357 12 ]
-        symbol [ h %tmp.436 357 31 32 ];
-        %tmp.436 = getv ? :h;
-        lputv %arcTomorrowStopY.37 %tmp.436;
-        symbol [ arcTomorrowStopY %arcTomorrowStopY.37 357 12 28 ];
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_356_15_358_8_stop:
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_354_8_358_8_if_end:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 361 8 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_stop" ]
-        %start.40 = local;
-        symbol [ start %start.40 361 12 17 ];
-        %tmp.437 = self;
-        symbol [ yToAngle %tmp.438 361 20 28 ];
-        %tmp.438 = getv function %tmp.437 :yToAngle;
-        %tmp.439 = lgetv %arcTodayStartY.34;
-        symbol [ arcTodayStartY %tmp.439 361 29 43 ];
-        %tmp.440 = invoke %tmp.437 %tmp.438(%tmp.439);
-        lputv %start.40 %tmp.440;
-        symbol [ start %start.40 361 12 17 ];
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 362 8 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_stop" ]
-        %stop.41 = local;
-        symbol [ stop %stop.41 362 12 16 ];
-        %tmp.441 = self;
-        symbol [ yToAngle %tmp.442 362 19 27 ];
-        %tmp.442 = getv function %tmp.441 :yToAngle;
-        %tmp.443 = lgetv %arcTodayStopY.35;
-        symbol [ arcTodayStopY %tmp.443 362 28 41 ];
-        %tmp.444 = invoke %tmp.441 %tmp.442(%tmp.443);
-        lputv %stop.41 %tmp.444;
-        symbol [ stop %stop.41 362 12 16 ];
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 363 8 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_stop" ]
-        %startR.42 = local;
-        symbol [ startR %startR.42 363 12 18 ];
-        %tmp.445 = self;
-        symbol [ yToAngleRight %tmp.446 363 21 34 ];
-        %tmp.446 = getv function %tmp.445 :yToAngleRight;
-        %tmp.447 = lgetv %arcTodayStartY.34;
-        symbol [ arcTodayStartY %tmp.447 363 35 49 ];
-        %tmp.448 = invoke %tmp.445 %tmp.446(%tmp.447);
-        lputv %startR.42 %tmp.448;
-        symbol [ startR %startR.42 363 12 18 ];
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_stop" ]
+        %arcFutureStopY.42 = local;
+        symbol [ arcFutureStopY %arcFutureStopY.42 354 12 26 ];
+        %tmp.438 = lgetv %yAfterFuture.8;
+        symbol [ yAfterFuture %tmp.438 354 29 41 ];
+        lputv %arcFutureStopY.42 %tmp.438;
+        symbol [ arcFutureStopY %arcFutureStopY.42 354 12 26 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 357 8 ]
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_357_8_361_8_if_stmt:
+        %tmp.439 = lgetv %hasFutureEvents.10;
+        symbol [ hasFutureEvents %tmp.439 357 12 27 ];
+        bf %tmp.439 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_357_8_361_8_if_else_false;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_357_8_361_8_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_357_29_359_8_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 358 12 ]
+        symbol [ h %tmp.441 358 29 30 ];
+        %tmp.441 = getv ? :h;
+        lputv %arcFutureStopY.42 %tmp.441;
+        symbol [ arcFutureStopY %arcFutureStopY.42 358 12 26 ];
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_357_29_359_8_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_357_8_361_8_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_357_8_361_8_if_else_false:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_359_15_361_8_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 360 12 ]
+        symbol [ h %tmp.443 360 31 32 ];
+        %tmp.443 = getv ? :h;
+        lputv %arcTomorrowStopY.40 %tmp.443;
+        symbol [ arcTomorrowStopY %arcTomorrowStopY.40 360 12 28 ];
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_359_15_361_8_stop:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_357_8_361_8_if_end:
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 364 8 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_stop" ]
-        %stopR.43 = local;
-        symbol [ stopR %stopR.43 364 12 17 ];
-        %tmp.449 = self;
-        symbol [ yToAngleRight %tmp.450 364 20 33 ];
-        %tmp.450 = getv function %tmp.449 :yToAngleRight;
-        %tmp.451 = lgetv %arcTodayStopY.35;
-        symbol [ arcTodayStopY %tmp.451 364 34 47 ];
-        %tmp.452 = invoke %tmp.449 %tmp.450(%tmp.451);
-        lputv %stopR.43 %tmp.452;
-        symbol [ stopR %stopR.43 364 12 17 ];
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_stop" ]
+        %start.43 = local;
+        symbol [ start %start.43 364 12 17 ];
+        %tmp.444 = self;
+        symbol [ yToAngle %tmp.445 364 20 28 ];
+        %tmp.445 = getv function %tmp.444 :yToAngle;
+        %tmp.446 = lgetv %arcTodayStartY.37;
+        symbol [ arcTodayStartY %tmp.446 364 29 43 ];
+        %tmp.447 = invoke %tmp.444 %tmp.445(%tmp.446);
+        lputv %start.43 %tmp.447;
+        symbol [ start %start.43 364 12 17 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 365 8 ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_stop" ]
+        %stop.44 = local;
+        symbol [ stop %stop.44 365 12 16 ];
+        %tmp.448 = self;
+        symbol [ yToAngle %tmp.449 365 19 27 ];
+        %tmp.449 = getv function %tmp.448 :yToAngle;
+        %tmp.450 = lgetv %arcTodayStopY.38;
+        symbol [ arcTodayStopY %tmp.450 365 28 41 ];
+        %tmp.451 = invoke %tmp.448 %tmp.449(%tmp.450);
+        lputv %stop.44 %tmp.451;
+        symbol [ stop %stop.44 365 12 16 ];
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 366 8 ]
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_366_8_370_8_if_stmt:
-        %tmp.453 = lgetv %start.40;
-        symbol [ start %tmp.453 366 12 17 ];
-        %tmp.454 = lgetv %stop.41;
-        symbol [ stop %tmp.454 366 21 25 ];
-        %tmp.455 = ne %tmp.453 %tmp.454;
-        bf %tmp.455 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_366_8_370_8_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_366_8_370_8_if_true:
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_366_27_370_8_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 367 12 ]
-        %tmp.456 = lgetv %dc;
-        symbol [ dc %tmp.456 367 12 14 ];
-        symbol [ setColor %tmp.457 367 15 23 ];
-        %tmp.457 = getv function %tmp.456 :setColor;
-        %tmp.458 = 0xaaaaaa;
-        symbol [ Gfx %tmp.459 367 34 37 ];
-        %tmp.459 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.460 367 38 55 ];
-        %tmp.460 = getv %tmp.459 :COLOR_TRANSPARENT;
-        invoke %tmp.456 %tmp.457(%tmp.458, %tmp.460);
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 368 12 ]
-        %tmp.461 = lgetv %dc;
-        symbol [ dc %tmp.461 368 12 14 ];
-        symbol [ drawArc %tmp.462 368 15 22 ];
-        %tmp.462 = getv function %tmp.461 :drawArc;
-        symbol [ w %tmp.464 368 24 25 ];
-        %tmp.464 = getv ? :w;
-        %tmp.465 = 2.0;
-        %tmp.466 = div %tmp.464 %tmp.465;
-        %tmp.467 = 0.5;
-        %tmp.468 = add %tmp.466 %tmp.467;
-        symbol [ h %tmp.470 368 39 40 ];
-        %tmp.470 = getv ? :h;
-        %tmp.471 = 2.0;
-        %tmp.472 = div %tmp.470 %tmp.471;
-        %tmp.473 = lgetv %radius.33;
-        symbol [ radius %tmp.473 368 47 53 ];
-        symbol [ Gfx %tmp.474 368 55 58 ];
-        %tmp.474 = getm $.Toybox.Graphics;
-        symbol [ ARC_COUNTER_CLOCKWISE %tmp.475 368 59 80 ];
-        %tmp.475 = getv %tmp.474 :ARC_COUNTER_CLOCKWISE;
-        %tmp.476 = lgetv %start.40;
-        symbol [ start %tmp.476 368 82 87 ];
-        %tmp.477 = lgetv %stop.41;
-        symbol [ stop %tmp.477 368 89 93 ];
-        invoke %tmp.461 %tmp.462(%tmp.468, %tmp.472, %tmp.473, %tmp.475, %tmp.476, %tmp.477);
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 369 12 ]
-        %tmp.478 = lgetv %dc;
-        symbol [ dc %tmp.478 369 12 14 ];
-        symbol [ drawArc %tmp.479 369 15 22 ];
-        %tmp.479 = getv function %tmp.478 :drawArc;
-        symbol [ w %tmp.481 369 24 25 ];
-        %tmp.481 = getv ? :w;
-        %tmp.482 = 2.0;
-        %tmp.483 = div %tmp.481 %tmp.482;
-        %tmp.484 = 0.5;
-        %tmp.485 = sub %tmp.483 %tmp.484;
-        symbol [ h %tmp.487 369 39 40 ];
-        %tmp.487 = getv ? :h;
-        %tmp.488 = 2.0;
-        %tmp.489 = div %tmp.487 %tmp.488;
-        %tmp.490 = lgetv %radius.33;
-        symbol [ radius %tmp.490 369 47 53 ];
-        symbol [ Gfx %tmp.491 369 55 58 ];
-        %tmp.491 = getm $.Toybox.Graphics;
-        symbol [ ARC_CLOCKWISE %tmp.492 369 59 72 ];
-        %tmp.492 = getv %tmp.491 :ARC_CLOCKWISE;
-        %tmp.493 = lgetv %startR.42;
-        symbol [ startR %tmp.493 369 74 80 ];
-        %tmp.494 = lgetv %stopR.43;
-        symbol [ stopR %tmp.494 369 82 87 ];
-        invoke %tmp.478 %tmp.479(%tmp.485, %tmp.489, %tmp.490, %tmp.492, %tmp.493, %tmp.494);
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_366_27_370_8_stop:
-        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_366_8_370_8_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_366_8_370_8_if_end:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 373 2 ]
-        %tmp.495 = self;
-        symbol [ yToAngle %tmp.496 373 10 18 ];
-        %tmp.496 = getv function %tmp.495 :yToAngle;
-        %tmp.497 = lgetv %arcTomorrowStartY.36;
-        symbol [ arcTomorrowStartY %tmp.497 373 19 36 ];
-        %tmp.498 = invoke %tmp.495 %tmp.496(%tmp.497);
-        lputv %start.40 %tmp.498;
-        symbol [ start %start.40 373 2 7 ];
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 374 2 ]
-        %tmp.499 = self;
-        symbol [ yToAngle %tmp.500 374 9 17 ];
-        %tmp.500 = getv function %tmp.499 :yToAngle;
-        %tmp.501 = lgetv %arcTomorrowStopY.37;
-        symbol [ arcTomorrowStopY %tmp.501 374 18 34 ];
-        %tmp.502 = invoke %tmp.499 %tmp.500(%tmp.501);
-        lputv %stop.41 %tmp.502;
-        symbol [ stop %stop.41 374 2 6 ];
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 375 2 ]
-        %tmp.503 = self;
-        symbol [ yToAngleRight %tmp.504 375 11 24 ];
-        %tmp.504 = getv function %tmp.503 :yToAngleRight;
-        %tmp.505 = lgetv %arcTomorrowStartY.36;
-        symbol [ arcTomorrowStartY %tmp.505 375 25 42 ];
-        %tmp.506 = invoke %tmp.503 %tmp.504(%tmp.505);
-        lputv %startR.42 %tmp.506;
-        symbol [ startR %startR.42 375 2 8 ];
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_stop" ]
+        %startR.45 = local;
+        symbol [ startR %startR.45 366 12 18 ];
+        %tmp.452 = self;
+        symbol [ yToAngleRight %tmp.453 366 21 34 ];
+        %tmp.453 = getv function %tmp.452 :yToAngleRight;
+        %tmp.454 = lgetv %arcTodayStartY.37;
+        symbol [ arcTodayStartY %tmp.454 366 35 49 ];
+        %tmp.455 = invoke %tmp.452 %tmp.453(%tmp.454);
+        lputv %startR.45 %tmp.455;
+        symbol [ startR %startR.45 366 12 18 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 367 8 ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_stop" ]
+        %stopR.46 = local;
+        symbol [ stopR %stopR.46 367 12 17 ];
+        %tmp.456 = self;
+        symbol [ yToAngleRight %tmp.457 367 20 33 ];
+        %tmp.457 = getv function %tmp.456 :yToAngleRight;
+        %tmp.458 = lgetv %arcTodayStopY.38;
+        symbol [ arcTodayStopY %tmp.458 367 34 47 ];
+        %tmp.459 = invoke %tmp.456 %tmp.457(%tmp.458);
+        lputv %stopR.46 %tmp.459;
+        symbol [ stopR %stopR.46 367 12 17 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 369 8 ]
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_369_8_373_8_if_stmt:
+        %tmp.460 = lgetv %start.43;
+        symbol [ start %tmp.460 369 12 17 ];
+        %tmp.461 = lgetv %stop.44;
+        symbol [ stop %tmp.461 369 21 25 ];
+        %tmp.462 = ne %tmp.460 %tmp.461;
+        bf %tmp.462 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_369_8_373_8_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_369_8_373_8_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_369_27_373_8_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 370 12 ]
+        %tmp.463 = lgetv %dc;
+        symbol [ dc %tmp.463 370 12 14 ];
+        symbol [ setColor %tmp.464 370 15 23 ];
+        %tmp.464 = getv function %tmp.463 :setColor;
+        %tmp.465 = 0xaaaaaa;
+        symbol [ Gfx %tmp.466 370 34 37 ];
+        %tmp.466 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.467 370 38 55 ];
+        %tmp.467 = getv %tmp.466 :COLOR_TRANSPARENT;
+        invoke %tmp.463 %tmp.464(%tmp.465, %tmp.467);
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 371 12 ]
+        %tmp.468 = lgetv %dc;
+        symbol [ dc %tmp.468 371 12 14 ];
+        symbol [ drawArc %tmp.469 371 15 22 ];
+        %tmp.469 = getv function %tmp.468 :drawArc;
+        symbol [ w %tmp.471 371 24 25 ];
+        %tmp.471 = getv ? :w;
+        %tmp.472 = 2.0;
+        %tmp.473 = div %tmp.471 %tmp.472;
+        %tmp.474 = 0.5;
+        %tmp.475 = add %tmp.473 %tmp.474;
+        symbol [ h %tmp.477 371 39 40 ];
+        %tmp.477 = getv ? :h;
+        %tmp.478 = 2.0;
+        %tmp.479 = div %tmp.477 %tmp.478;
+        %tmp.480 = lgetv %radius.36;
+        symbol [ radius %tmp.480 371 47 53 ];
+        symbol [ Gfx %tmp.481 371 55 58 ];
+        %tmp.481 = getm $.Toybox.Graphics;
+        symbol [ ARC_COUNTER_CLOCKWISE %tmp.482 371 59 80 ];
+        %tmp.482 = getv %tmp.481 :ARC_COUNTER_CLOCKWISE;
+        %tmp.483 = lgetv %start.43;
+        symbol [ start %tmp.483 371 82 87 ];
+        %tmp.484 = lgetv %stop.44;
+        symbol [ stop %tmp.484 371 89 93 ];
+        invoke %tmp.468 %tmp.469(%tmp.475, %tmp.479, %tmp.480, %tmp.482, %tmp.483, %tmp.484);
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 372 12 ]
+        %tmp.485 = lgetv %dc;
+        symbol [ dc %tmp.485 372 12 14 ];
+        symbol [ drawArc %tmp.486 372 15 22 ];
+        %tmp.486 = getv function %tmp.485 :drawArc;
+        symbol [ w %tmp.488 372 24 25 ];
+        %tmp.488 = getv ? :w;
+        %tmp.489 = 2.0;
+        %tmp.490 = div %tmp.488 %tmp.489;
+        %tmp.491 = 0.5;
+        %tmp.492 = sub %tmp.490 %tmp.491;
+        symbol [ h %tmp.494 372 39 40 ];
+        %tmp.494 = getv ? :h;
+        %tmp.495 = 2.0;
+        %tmp.496 = div %tmp.494 %tmp.495;
+        %tmp.497 = lgetv %radius.36;
+        symbol [ radius %tmp.497 372 47 53 ];
+        symbol [ Gfx %tmp.498 372 55 58 ];
+        %tmp.498 = getm $.Toybox.Graphics;
+        symbol [ ARC_CLOCKWISE %tmp.499 372 59 72 ];
+        %tmp.499 = getv %tmp.498 :ARC_CLOCKWISE;
+        %tmp.500 = lgetv %startR.45;
+        symbol [ startR %tmp.500 372 74 80 ];
+        %tmp.501 = lgetv %stopR.46;
+        symbol [ stopR %tmp.501 372 82 87 ];
+        invoke %tmp.485 %tmp.486(%tmp.492, %tmp.496, %tmp.497, %tmp.499, %tmp.500, %tmp.501);
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_369_27_373_8_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_369_8_373_8_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_369_8_373_8_if_end:
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 376 2 ]
-        %tmp.507 = self;
-        symbol [ yToAngleRight %tmp.508 376 10 23 ];
-        %tmp.508 = getv function %tmp.507 :yToAngleRight;
-        %tmp.509 = lgetv %arcTomorrowStopY.37;
-        symbol [ arcTomorrowStopY %tmp.509 376 24 40 ];
-        %tmp.510 = invoke %tmp.507 %tmp.508(%tmp.509);
-        lputv %stopR.43 %tmp.510;
-        symbol [ stopR %stopR.43 376 2 7 ];
+        %tmp.502 = self;
+        symbol [ yToAngle %tmp.503 376 10 18 ];
+        %tmp.503 = getv function %tmp.502 :yToAngle;
+        %tmp.504 = lgetv %arcTomorrowStartY.39;
+        symbol [ arcTomorrowStartY %tmp.504 376 19 36 ];
+        %tmp.505 = invoke %tmp.502 %tmp.503(%tmp.504);
+        lputv %start.43 %tmp.505;
+        symbol [ start %start.43 376 2 7 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 377 2 ]
+        %tmp.506 = self;
+        symbol [ yToAngle %tmp.507 377 9 17 ];
+        %tmp.507 = getv function %tmp.506 :yToAngle;
+        %tmp.508 = lgetv %arcTomorrowStopY.40;
+        symbol [ arcTomorrowStopY %tmp.508 377 18 34 ];
+        %tmp.509 = invoke %tmp.506 %tmp.507(%tmp.508);
+        lputv %stop.44 %tmp.509;
+        symbol [ stop %stop.44 377 2 6 ];
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 378 2 ]
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_378_2_384_2_if_stmt:
-        %tmp.511 = lgetv %start.40;
-        symbol [ start %tmp.511 378 6 11 ];
-        %tmp.512 = lgetv %stop.41;
-        symbol [ stop %tmp.512 378 15 19 ];
-        %tmp.513 = ne %tmp.511 %tmp.512;
-        bf %tmp.513 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_378_2_384_2_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_378_2_384_2_if_true:
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_378_21_384_2_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 379 3 ]
-        %tmp.514 = lgetv %dc;
-        symbol [ dc %tmp.514 379 3 5 ];
-        symbol [ setColor %tmp.515 379 6 14 ];
-        %tmp.515 = getv function %tmp.514 :setColor;
-        %tmp.516 = 0x888888;
-        symbol [ Gfx %tmp.517 379 25 28 ];
-        %tmp.517 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.518 379 29 46 ];
-        %tmp.518 = getv %tmp.517 :COLOR_TRANSPARENT;
-        invoke %tmp.514 %tmp.515(%tmp.516, %tmp.518);
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 380 3 ]
-        %tmp.519 = self;
-        symbol [ drawDottedArcs %tmp.520 380 3 17 ];
-        %tmp.520 = getv function %tmp.519 :drawDottedArcs;
+        %tmp.510 = self;
+        symbol [ yToAngleRight %tmp.511 378 11 24 ];
+        %tmp.511 = getv function %tmp.510 :yToAngleRight;
+        %tmp.512 = lgetv %arcTomorrowStartY.39;
+        symbol [ arcTomorrowStartY %tmp.512 378 25 42 ];
+        %tmp.513 = invoke %tmp.510 %tmp.511(%tmp.512);
+        lputv %startR.45 %tmp.513;
+        symbol [ startR %startR.45 378 2 8 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 379 2 ]
+        %tmp.514 = self;
+        symbol [ yToAngleRight %tmp.515 379 10 23 ];
+        %tmp.515 = getv function %tmp.514 :yToAngleRight;
+        %tmp.516 = lgetv %arcTomorrowStopY.40;
+        symbol [ arcTomorrowStopY %tmp.516 379 24 40 ];
+        %tmp.517 = invoke %tmp.514 %tmp.515(%tmp.516);
+        lputv %stopR.46 %tmp.517;
+        symbol [ stopR %stopR.46 379 2 7 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 381 2 ]
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_381_2_387_2_if_stmt:
+        %tmp.518 = lgetv %start.43;
+        symbol [ start %tmp.518 381 6 11 ];
+        %tmp.519 = lgetv %stop.44;
+        symbol [ stop %tmp.519 381 15 19 ];
+        %tmp.520 = ne %tmp.518 %tmp.519;
+        bf %tmp.520 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_381_2_387_2_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_381_2_387_2_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_381_21_387_2_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 382 3 ]
         %tmp.521 = lgetv %dc;
-        symbol [ dc %tmp.521 380 18 20 ];
-        symbol [ w %tmp.523 380 23 24 ];
-        %tmp.523 = getv ? :w;
-        %tmp.524 = 2.0;
-        %tmp.525 = div %tmp.523 %tmp.524;
-        symbol [ h %tmp.527 380 32 33 ];
-        %tmp.527 = getv ? :h;
-        %tmp.528 = 2.0;
-        %tmp.529 = div %tmp.527 %tmp.528;
-        %tmp.530 = lgetv %radius.33;
-        symbol [ radius %tmp.530 380 40 46 ];
-        %tmp.531 = lgetv %arcTomorrowStartY.36;
-        symbol [ arcTomorrowStartY %tmp.531 380 48 65 ];
-        %tmp.532 = lgetv %arcTomorrowStopY.37;
-        symbol [ arcTomorrowStopY %tmp.532 380 67 83 ];
-        invoke %tmp.519 %tmp.520(%tmp.521, %tmp.525, %tmp.529, %tmp.530, %tmp.531, %tmp.532);
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_378_21_384_2_stop:
-        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_378_2_384_2_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_378_2_384_2_if_end:
-D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_385_1_stop:
+        symbol [ dc %tmp.521 382 3 5 ];
+        symbol [ setColor %tmp.522 382 6 14 ];
+        %tmp.522 = getv function %tmp.521 :setColor;
+        %tmp.523 = 0x888888;
+        symbol [ Gfx %tmp.524 382 25 28 ];
+        %tmp.524 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.525 382 29 46 ];
+        %tmp.525 = getv %tmp.524 :COLOR_TRANSPARENT;
+        invoke %tmp.521 %tmp.522(%tmp.523, %tmp.525);
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 383 3 ]
+        %tmp.526 = self;
+        symbol [ drawDottedArcs %tmp.527 383 3 17 ];
+        %tmp.527 = getv function %tmp.526 :drawDottedArcs;
+        %tmp.528 = lgetv %dc;
+        symbol [ dc %tmp.528 383 18 20 ];
+        symbol [ w %tmp.530 383 23 24 ];
+        %tmp.530 = getv ? :w;
+        %tmp.531 = 2.0;
+        %tmp.532 = div %tmp.530 %tmp.531;
+        symbol [ h %tmp.534 383 32 33 ];
+        %tmp.534 = getv ? :h;
+        %tmp.535 = 2.0;
+        %tmp.536 = div %tmp.534 %tmp.535;
+        %tmp.537 = lgetv %radius.36;
+        symbol [ radius %tmp.537 383 40 46 ];
+        %tmp.538 = lgetv %arcTomorrowStartY.39;
+        symbol [ arcTomorrowStartY %tmp.538 383 48 65 ];
+        %tmp.539 = lgetv %arcTomorrowStopY.40;
+        symbol [ arcTomorrowStopY %tmp.539 383 67 83 ];
+        invoke %tmp.526 %tmp.527(%tmp.528, %tmp.532, %tmp.536, %tmp.537, %tmp.538, %tmp.539);
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_381_21_387_2_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_381_2_387_2_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_381_2_387_2_if_end:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_232_29_388_1_stop:
     }
 }
 [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc"; @line = 1; ]
