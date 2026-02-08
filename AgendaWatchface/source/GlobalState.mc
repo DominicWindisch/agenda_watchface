@@ -33,7 +33,6 @@ module GlobalState {
     var english_month = false;
     var liveHR = false; // Note: This might be better as a view-specific state
 
-    var displayLiveHR = false;       // true = Show Live HR, false = Show Body Battery
     var displayPhoneBattery = false; // true = Show Phone %, false = Show Watch %
     var currentBodyBattery = null;
 

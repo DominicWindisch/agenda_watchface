@@ -101,6 +101,19 @@ class CalendarActiveView extends Ui.WatchFace {
 
     function onEnterSleep() {
     	isAwake = false;
+
+		var watchBattery = System.getSystemStats().battery; //
+		var phoneBattery = GlobalState.phoneBattery; //
+
+		// Thresholds: Phone < 20% or Watch < 10%
+		if (phoneBattery >= 0 && phoneBattery < 20) {
+			// Auto-switch to Phone Battery view
+			GlobalState.displayPhoneBattery = true; //
+		} else if (watchBattery < 10) {
+			// Auto-switch to Watch Battery view
+			GlobalState.displayPhoneBattery = false; //
+		}
+
         Ui.requestUpdate();
     }
 

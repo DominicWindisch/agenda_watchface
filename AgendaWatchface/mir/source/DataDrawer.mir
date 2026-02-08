@@ -735,330 +735,227 @@ D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_95_17_98_68_stop:
 D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_95_2_98_68_if_end:
 D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_94_56_99_1_stop:
     }
-    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc"; @line = 101; @symbol_functiondef = [drawHR,101,10,16]; @symbol_param<0> = [dc,101,18,20]; @symbol_param<1> = [x,101,22,23]; @symbol_param<2> = [y,101,25,26]; @symbol_param<3> = [dySym,101,28,33]; @symbol_param<4> = [showLive,101,35,43]; ]
-    function drawHR(dc, x, y, dySym, showLive) {
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_101_46_142_4_start:
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc"; @line = 101; @symbol_functiondef = [drawBodyBattery,101,10,25]; @symbol_param<0> = [dc,101,27,29]; @symbol_param<1> = [x,101,31,32]; @symbol_param<2> = [y,101,34,35]; @symbol_param<3> = [dySym,101,37,42]; ]
+    function drawBodyBattery(dc, x, y, dySym) {
+D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_101_45_131_4_start:
 [ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 102 8 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_101_46_142_4_start" "D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_101_46_142_4_stop" ]
-        %hr.1 = local;
-        symbol [ hr %hr.1 102 12 14 ];
+        [ "D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_101_45_131_4_start" "D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_101_45_131_4_stop" ]
+        %bb.1 = local;
+        symbol [ bb %bb.1 102 12 14 ];
         %tmp.1 = "--";
-        lputv %hr.1 %tmp.1;
-        symbol [ hr %hr.1 102 12 14 ];
-[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 103 8 ]
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_103_8_127_8_if_stmt:
-        %tmp.2 = lgetv %showLive;
-        symbol [ showLive %tmp.2 103 12 20 ];
-        bf %tmp.2 @D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_103_8_127_8_if_else_false;
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_103_8_127_8_if_true:
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_103_22_109_8_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 105 12 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_103_22_109_8_start" "D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_103_22_109_8_stop" ]
-        %sample.2 = local;
-        symbol [ sample %sample.2 105 16 22 ];
-        symbol [ Activity %tmp.3 105 25 33 ];
-        %tmp.3 = getm $.Toybox.Activity;
-        symbol [ getActivityInfo %tmp.4 105 34 49 ];
-        %tmp.4 = getv function %tmp.3 :getActivityInfo;
-        %tmp.5 = invoke %tmp.3 %tmp.4();
-        symbol [ currentHeartRate %tmp.6 105 52 68 ];
-        %tmp.6 = getv %tmp.5 :currentHeartRate;
-        lputv %sample.2 %tmp.6;
-        symbol [ sample %sample.2 105 16 22 ];
-[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 106 12 ]
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_106_12_108_12_if_stmt:
-        %tmp.7 = null;
-        %tmp.8 = lgetv %sample.2;
-        symbol [ sample %tmp.8 106 24 30 ];
-        %tmp.9 = ne %tmp.7 %tmp.8;
-        bf %tmp.9 @D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_106_12_108_12_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_106_12_108_12_if_true:
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_106_32_108_12_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 107 16 ]
-        %tmp.10 = "";
-        %tmp.11 = lgetv %sample.2;
-        symbol [ sample %tmp.11 107 26 32 ];
-        %tmp.12 = as %tmp.11 { (!Null) };
-        %tmp.13 = add %tmp.10 %tmp.12;
-        lputv %hr.1 %tmp.13;
-        symbol [ hr %hr.1 107 16 18 ];
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_106_32_108_12_stop:
-        goto @D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_106_12_108_12_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_106_12_108_12_if_end:
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_103_22_109_8_stop:
-        goto @D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_103_8_127_8_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_103_8_127_8_if_else_false:
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_109_15_127_8_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 111 12 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_109_15_127_8_start" "D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_109_15_127_8_stop" ]
-        %val.3 = local;
-        symbol [ val %val.3 111 16 19 ];
-        symbol [ GlobalState %tmp.15 111 22 33 ];
-        %tmp.15 = getv ? :GlobalState;
-        symbol [ currentBodyBattery %tmp.16 111 34 52 ];
-        %tmp.16 = getv %tmp.15 :currentBodyBattery;
-        lputv %val.3 %tmp.16;
-        symbol [ val %val.3 111 16 19 ];
-[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 113 12 ]
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_113_12_126_12_if_stmt:
-        %tmp.17 = lgetv %val.3;
-        symbol [ val %tmp.17 113 16 19 ];
-        %tmp.18 = null;
-        %tmp.19 = ne %tmp.17 %tmp.18;
-        bf %tmp.19 @D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_113_12_126_12_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_113_12_126_12_if_true:
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_113_29_126_12_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 115 16 ]
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_115_16_125_16_if_stmt:
-        %tmp.20 = lgetv %val.3;
-        symbol [ val %tmp.20 115 20 23 ];
-        %tmp.21 = as %tmp.20 { (!Null) };
-        symbol [ Number %tmp.23 115 35 41 ];
-        %tmp.23 = getv ? :Number;
-        %tmp.24 = isa %tmp.21 %tmp.23;
-        bf %tmp.24 @D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_115_16_125_16_if_false;
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_115_16_125_16_if_true:
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_115_43_117_16_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 116 20 ]
-        %tmp.25 = lgetv %val.3;
-        symbol [ val %tmp.25 116 25 28 ];
-        %tmp.26 = as %tmp.25 { (Number) && (!Null) };
-        symbol [ format %tmp.27 116 29 35 ];
-        %tmp.27 = getv function %tmp.26 :format;
-        %tmp.28 = "%d";
-        %tmp.29 = invoke %tmp.26 %tmp.27(%tmp.28);
-        lputv %hr.1 %tmp.29;
-        symbol [ hr %hr.1 116 20 22 ];
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_115_43_117_16_stop:
-        goto @D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_115_16_125_16_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_115_16_125_16_if_false:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 119 21 ]
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_119_21_125_16_if_stmt:
-        %tmp.30 = lgetv %val.3;
-        symbol [ val %tmp.30 119 25 28 ];
-        %tmp.31 = as %tmp.30 { (!Number) && (!Null) };
-        symbol [ Float %tmp.33 119 40 45 ];
-        %tmp.33 = getv ? :Float;
-        %tmp.34 = isa %tmp.31 %tmp.33;
-        bf %tmp.34 @D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_119_21_125_16_if_else_false;
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_119_21_125_16_if_true:
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_119_47_121_16_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 120 20 ]
-        %tmp.35 = lgetv %val.3;
-        symbol [ val %tmp.35 120 25 28 ];
-        %tmp.36 = as %tmp.35 { (!Number) && (Float) && (!Null) };
-        symbol [ format %tmp.37 120 29 35 ];
-        %tmp.37 = getv function %tmp.36 :format;
-        %tmp.38 = "%.0f";
-        %tmp.39 = invoke %tmp.36 %tmp.37(%tmp.38);
-        lputv %hr.1 %tmp.39;
-        symbol [ hr %hr.1 120 20 22 ];
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_119_47_121_16_stop:
-        goto @D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_119_21_125_16_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_119_21_125_16_if_else_false:
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_123_21_125_16_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 124 20 ]
-        %tmp.40 = lgetv %val.3;
-        symbol [ val %tmp.40 124 25 28 ];
-        %tmp.41 = as %tmp.40 { (!Number) && (!Float) && (!Null) };
-        symbol [ toString %tmp.42 124 29 37 ];
-        %tmp.42 = getv function %tmp.41 :toString;
-        %tmp.43 = invoke %tmp.41 %tmp.42();
-        lputv %hr.1 %tmp.43;
-        symbol [ hr %hr.1 124 20 22 ];
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_123_21_125_16_stop:
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_119_21_125_16_if_end:
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_115_16_125_16_if_end:
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_113_29_126_12_stop:
-        goto @D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_113_12_126_12_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_113_12_126_12_if_end:
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_109_15_127_8_stop:
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_103_8_127_8_if_end:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 130 8 ]
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_130_8_139_8_if_stmt:
-        %tmp.44 = lgetv %showLive;
-        symbol [ showLive %tmp.44 130 12 20 ];
-        bf %tmp.44 @D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_130_8_139_8_if_else_false;
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_130_8_139_8_if_true:
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_130_22_134_8_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 132 12 ]
-        %tmp.45 = lgetv %x;
-        symbol [ x %tmp.45 132 12 13 ];
-        %tmp.46 = lgetv %dc;
-        symbol [ dc %tmp.46 132 19 21 ];
-        symbol [ getTextWidthInPixels %tmp.47 132 22 42 ];
-        %tmp.47 = getv function %tmp.46 :getTextWidthInPixels;
-        %tmp.48 = lgetv %hr.1;
-        symbol [ hr %tmp.48 132 43 45 ];
-        symbol [ Gfx %tmp.49 132 46 49 ];
-        %tmp.49 = getm $.Toybox.Graphics;
-        symbol [ FONT_MEDIUM %tmp.50 132 50 61 ];
-        %tmp.50 = getv %tmp.49 :FONT_MEDIUM;
-        %tmp.51 = invoke %tmp.46 %tmp.47(%tmp.48, %tmp.50);
-        %tmp.52 = 11;
+        lputv %bb.1 %tmp.1;
+        symbol [ bb %bb.1 102 12 14 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 104 2 ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_101_45_131_4_start" "D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_101_45_131_4_stop" ]
+        %val.2 = local;
+        symbol [ val %val.2 104 6 9 ];
+        symbol [ GlobalState %tmp.3 104 12 23 ];
+        %tmp.3 = getv ? :GlobalState;
+        symbol [ currentBodyBattery %tmp.4 104 24 42 ];
+        %tmp.4 = getv %tmp.3 :currentBodyBattery;
+        lputv %val.2 %tmp.4;
+        symbol [ val %val.2 104 6 9 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 106 2 ]
+D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_106_2_119_2_if_stmt:
+        %tmp.5 = lgetv %val.2;
+        symbol [ val %tmp.5 106 6 9 ];
+        %tmp.6 = null;
+        %tmp.7 = ne %tmp.5 %tmp.6;
+        bf %tmp.7 @D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_106_2_119_2_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_106_2_119_2_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_106_19_119_2_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 108 3 ]
+D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_108_3_118_3_if_stmt:
+        %tmp.8 = lgetv %val.2;
+        symbol [ val %tmp.8 108 7 10 ];
+        %tmp.9 = as %tmp.8 { (!Null) };
+        symbol [ Number %tmp.11 108 22 28 ];
+        %tmp.11 = getv ? :Number;
+        %tmp.12 = isa %tmp.9 %tmp.11;
+        bf %tmp.12 @D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_108_3_118_3_if_false;
+D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_108_3_118_3_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_108_30_110_3_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 109 4 ]
+        %tmp.13 = lgetv %val.2;
+        symbol [ val %tmp.13 109 9 12 ];
+        %tmp.14 = as %tmp.13 { (Number) && (!Null) };
+        symbol [ format %tmp.15 109 13 19 ];
+        %tmp.15 = getv function %tmp.14 :format;
+        %tmp.16 = "%d";
+        %tmp.17 = invoke %tmp.14 %tmp.15(%tmp.16);
+        lputv %bb.1 %tmp.17;
+        symbol [ bb %bb.1 109 4 6 ];
+D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_108_30_110_3_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_108_3_118_3_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_108_3_118_3_if_false:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 112 8 ]
+D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_112_8_118_3_if_stmt:
+        %tmp.18 = lgetv %val.2;
+        symbol [ val %tmp.18 112 12 15 ];
+        %tmp.19 = as %tmp.18 { (!Number) && (!Null) };
+        symbol [ Float %tmp.21 112 27 32 ];
+        %tmp.21 = getv ? :Float;
+        %tmp.22 = isa %tmp.19 %tmp.21;
+        bf %tmp.22 @D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_112_8_118_3_if_else_false;
+D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_112_8_118_3_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_112_34_114_3_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 113 4 ]
+        %tmp.23 = lgetv %val.2;
+        symbol [ val %tmp.23 113 9 12 ];
+        %tmp.24 = as %tmp.23 { (!Number) && (Float) && (!Null) };
+        symbol [ format %tmp.25 113 13 19 ];
+        %tmp.25 = getv function %tmp.24 :format;
+        %tmp.26 = "%.0f";
+        %tmp.27 = invoke %tmp.24 %tmp.25(%tmp.26);
+        lputv %bb.1 %tmp.27;
+        symbol [ bb %bb.1 113 4 6 ];
+D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_112_34_114_3_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_112_8_118_3_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_112_8_118_3_if_else_false:
+D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_116_8_118_3_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 117 4 ]
+        %tmp.28 = lgetv %val.2;
+        symbol [ val %tmp.28 117 9 12 ];
+        %tmp.29 = as %tmp.28 { (!Number) && (!Float) && (!Null) };
+        symbol [ toString %tmp.30 117 13 21 ];
+        %tmp.30 = getv function %tmp.29 :toString;
+        %tmp.31 = invoke %tmp.29 %tmp.30();
+        lputv %bb.1 %tmp.31;
+        symbol [ bb %bb.1 117 4 6 ];
+D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_116_8_118_3_stop:
+D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_112_8_118_3_if_end:
+D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_108_3_118_3_if_end:
+D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_106_19_119_2_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_106_2_119_2_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_106_2_119_2_if_end:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 125 2 ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_101_45_131_4_start" "D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_101_45_131_4_stop" ]
+        %fullWidth.3 = local;
+        symbol [ fullWidth %fullWidth.3 125 6 15 ];
+        %tmp.32 = lgetv %dc;
+        symbol [ dc %tmp.32 125 18 20 ];
+        symbol [ getTextWidthInPixels %tmp.33 125 21 41 ];
+        %tmp.33 = getv function %tmp.32 :getTextWidthInPixels;
+        %tmp.34 = lgetv %bb.1;
+        symbol [ bb %tmp.34 125 42 44 ];
+        symbol [ Gfx %tmp.35 125 45 48 ];
+        %tmp.35 = getm $.Toybox.Graphics;
+        symbol [ FONT_MEDIUM %tmp.36 125 49 60 ];
+        %tmp.36 = getv %tmp.35 :FONT_MEDIUM;
+        %tmp.37 = invoke %tmp.32 %tmp.33(%tmp.34, %tmp.36);
+        %tmp.38 = lgetv %dc;
+        symbol [ dc %tmp.38 125 64 66 ];
+        symbol [ getTextWidthInPixels %tmp.39 125 67 87 ];
+        %tmp.39 = getv function %tmp.38 :getTextWidthInPixels;
+        %tmp.40 = "L";
+        symbol [ fontWeather %tmp.42 125 93 104 ];
+        %tmp.42 = getv ? :fontWeather;
+        %tmp.43 = invoke %tmp.38 %tmp.39(%tmp.40, %tmp.42);
+        %tmp.44 = add %tmp.37 %tmp.43;
+        %tmp.45 = 2;
+        %tmp.46 = add %tmp.44 %tmp.45;
+        lputv %fullWidth.3 %tmp.46;
+        symbol [ fullWidth %fullWidth.3 125 6 15 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 126 2 ]
+        %tmp.47 = lgetv %x;
+        symbol [ x %tmp.47 126 2 3 ];
+        %tmp.48 = lgetv %fullWidth.3;
+        symbol [ fullWidth %tmp.48 126 8 17 ];
+        %tmp.49 = sub 0 %tmp.48;
+        %tmp.50 = 2;
+        %tmp.51 = div %tmp.49 %tmp.50;
+        %tmp.52 = 16;
         %tmp.53 = add %tmp.51 %tmp.52;
-        %tmp.54 = sub 0 %tmp.53;
-        %tmp.55 = 2;
-        %tmp.56 = div %tmp.54 %tmp.55;
-        %tmp.57 = 11;
-        %tmp.58 = add %tmp.56 %tmp.57;
-        %tmp.59 = add %tmp.45 %tmp.58;
-        lputv %x %tmp.59;
-        symbol [ x %x 132 12 13 ];
-[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 133 3 ]
-        %tmp.60 = lgetv %dc;
-        symbol [ dc %tmp.60 133 3 5 ];
-        symbol [ drawText %tmp.61 133 6 14 ];
-        %tmp.61 = getv function %tmp.60 :drawText;
-        %tmp.62 = lgetv %x;
-        symbol [ x %tmp.62 133 15 16 ];
-        %tmp.63 = lgetv %y;
-        symbol [ y %tmp.63 133 18 19 ];
-        %tmp.64 = lgetv %dySym;
-        symbol [ dySym %tmp.64 133 20 25 ];
-        %tmp.65 = add %tmp.63 %tmp.64;
-        symbol [ fontSymbols %tmp.67 133 27 38 ];
-        %tmp.67 = getv ? :fontSymbols;
-        %tmp.68 = "E";
-        symbol [ Gfx %tmp.69 133 45 48 ];
-        %tmp.69 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_RIGHT %tmp.70 133 49 67 ];
-        %tmp.70 = getv %tmp.69 :TEXT_JUSTIFY_RIGHT;
-        invoke %tmp.60 %tmp.61(%tmp.62, %tmp.65, %tmp.67, %tmp.68, %tmp.70);
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_130_22_134_8_stop:
-        goto @D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_130_8_139_8_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_130_8_139_8_if_else_false:
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_134_15_139_8_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 136 12 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_134_15_139_8_start" "D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_134_15_139_8_stop" ]
-        %fullWidth.4 = local;
-        symbol [ fullWidth %fullWidth.4 136 16 25 ];
-        %tmp.71 = lgetv %dc;
-        symbol [ dc %tmp.71 136 28 30 ];
-        symbol [ getTextWidthInPixels %tmp.72 136 31 51 ];
-        %tmp.72 = getv function %tmp.71 :getTextWidthInPixels;
-        %tmp.73 = lgetv %hr.1;
-        symbol [ hr %tmp.73 136 52 54 ];
-        symbol [ Gfx %tmp.74 136 55 58 ];
-        %tmp.74 = getm $.Toybox.Graphics;
-        symbol [ FONT_MEDIUM %tmp.75 136 59 70 ];
-        %tmp.75 = getv %tmp.74 :FONT_MEDIUM;
-        %tmp.76 = invoke %tmp.71 %tmp.72(%tmp.73, %tmp.75);
-        %tmp.77 = lgetv %dc;
-        symbol [ dc %tmp.77 136 74 76 ];
-        symbol [ getTextWidthInPixels %tmp.78 136 77 97 ];
-        %tmp.78 = getv function %tmp.77 :getTextWidthInPixels;
-        %tmp.79 = "L";
-        symbol [ fontWeather %tmp.81 136 103 114 ];
-        %tmp.81 = getv ? :fontWeather;
-        %tmp.82 = invoke %tmp.77 %tmp.78(%tmp.79, %tmp.81);
-        %tmp.83 = add %tmp.76 %tmp.82;
-        %tmp.84 = 2;
-        %tmp.85 = add %tmp.83 %tmp.84;
-        lputv %fullWidth.4 %tmp.85;
-        symbol [ fullWidth %fullWidth.4 136 16 25 ];
-[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 137 3 ]
-        %tmp.86 = lgetv %x;
-        symbol [ x %tmp.86 137 3 4 ];
-        %tmp.87 = lgetv %fullWidth.4;
-        symbol [ fullWidth %tmp.87 137 9 18 ];
-        %tmp.88 = sub 0 %tmp.87;
-        %tmp.89 = 2;
-        %tmp.90 = div %tmp.88 %tmp.89;
-        %tmp.91 = 16;
-        %tmp.92 = add %tmp.90 %tmp.91;
-        %tmp.93 = add %tmp.86 %tmp.92;
-        lputv %x %tmp.93;
-        symbol [ x %x 137 3 4 ];
-[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 138 3 ]
-        %tmp.94 = lgetv %dc;
-        symbol [ dc %tmp.94 138 3 5 ];
-        symbol [ drawText %tmp.95 138 6 14 ];
-        %tmp.95 = getv function %tmp.94 :drawText;
-        %tmp.96 = lgetv %x;
-        symbol [ x %tmp.96 138 15 16 ];
-        %tmp.97 = lgetv %y;
-        symbol [ y %tmp.97 138 18 19 ];
-        %tmp.98 = 3;
-        %tmp.99 = add %tmp.97 %tmp.98;
-        symbol [ fontWeather %tmp.101 138 23 34 ];
-        %tmp.101 = getv ? :fontWeather;
-        %tmp.102 = "L";
-        symbol [ Gfx %tmp.103 138 41 44 ];
-        %tmp.103 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_RIGHT %tmp.104 138 45 63 ];
-        %tmp.104 = getv %tmp.103 :TEXT_JUSTIFY_RIGHT;
-        invoke %tmp.94 %tmp.95(%tmp.96, %tmp.99, %tmp.101, %tmp.102, %tmp.104);
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_134_15_139_8_stop:
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_130_8_139_8_if_end:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 141 8 ]
-        %tmp.105 = lgetv %dc;
-        symbol [ dc %tmp.105 141 8 10 ];
-        symbol [ drawText %tmp.106 141 11 19 ];
-        %tmp.106 = getv function %tmp.105 :drawText;
-        %tmp.107 = lgetv %x;
-        symbol [ x %tmp.107 141 20 21 ];
-        %tmp.108 = lgetv %y;
-        symbol [ y %tmp.108 141 23 24 ];
-        symbol [ Gfx %tmp.109 141 26 29 ];
-        %tmp.109 = getm $.Toybox.Graphics;
-        symbol [ FONT_MEDIUM %tmp.110 141 30 41 ];
-        %tmp.110 = getv %tmp.109 :FONT_MEDIUM;
-        %tmp.111 = lgetv %hr.1;
-        symbol [ hr %tmp.111 141 43 45 ];
-        symbol [ Gfx %tmp.112 141 47 50 ];
-        %tmp.112 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_LEFT %tmp.113 141 51 68 ];
-        %tmp.113 = getv %tmp.112 :TEXT_JUSTIFY_LEFT;
-        invoke %tmp.105 %tmp.106(%tmp.107, %tmp.108, %tmp.110, %tmp.111, %tmp.113);
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_101_46_142_4_stop:
+        %tmp.54 = add %tmp.47 %tmp.53;
+        lputv %x %tmp.54;
+        symbol [ x %x 126 2 3 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 127 2 ]
+        %tmp.55 = lgetv %dc;
+        symbol [ dc %tmp.55 127 2 4 ];
+        symbol [ drawText %tmp.56 127 5 13 ];
+        %tmp.56 = getv function %tmp.55 :drawText;
+        %tmp.57 = lgetv %x;
+        symbol [ x %tmp.57 127 14 15 ];
+        %tmp.58 = lgetv %y;
+        symbol [ y %tmp.58 127 17 18 ];
+        %tmp.59 = 3;
+        %tmp.60 = add %tmp.58 %tmp.59;
+        symbol [ fontWeather %tmp.62 127 22 33 ];
+        %tmp.62 = getv ? :fontWeather;
+        %tmp.63 = "L";
+        symbol [ Gfx %tmp.64 127 40 43 ];
+        %tmp.64 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_RIGHT %tmp.65 127 44 62 ];
+        %tmp.65 = getv %tmp.64 :TEXT_JUSTIFY_RIGHT;
+        invoke %tmp.55 %tmp.56(%tmp.57, %tmp.60, %tmp.62, %tmp.63, %tmp.65);
+[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 130 8 ]
+        %tmp.66 = lgetv %dc;
+        symbol [ dc %tmp.66 130 8 10 ];
+        symbol [ drawText %tmp.67 130 11 19 ];
+        %tmp.67 = getv function %tmp.66 :drawText;
+        %tmp.68 = lgetv %x;
+        symbol [ x %tmp.68 130 20 21 ];
+        %tmp.69 = lgetv %y;
+        symbol [ y %tmp.69 130 23 24 ];
+        symbol [ Gfx %tmp.70 130 26 29 ];
+        %tmp.70 = getm $.Toybox.Graphics;
+        symbol [ FONT_MEDIUM %tmp.71 130 30 41 ];
+        %tmp.71 = getv %tmp.70 :FONT_MEDIUM;
+        %tmp.72 = lgetv %bb.1;
+        symbol [ bb %tmp.72 130 43 45 ];
+        symbol [ Gfx %tmp.73 130 47 50 ];
+        %tmp.73 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.74 130 51 68 ];
+        %tmp.74 = getv %tmp.73 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.66 %tmp.67(%tmp.68, %tmp.69, %tmp.71, %tmp.72, %tmp.74);
+D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_101_45_131_4_stop:
     }
-    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc"; @line = 144; @symbol_functiondef = [drawDay,144,10,17]; @symbol_param<0> = [dc,144,19,21]; @symbol_param<1> = [x,144,23,24]; @symbol_param<2> = [y,144,26,27]; ]
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc"; @line = 133; @symbol_functiondef = [drawDay,133,10,17]; @symbol_param<0> = [dc,133,19,21]; @symbol_param<1> = [x,133,23,24]; @symbol_param<2> = [y,133,26,27]; ]
     function drawDay(dc, x, y) {
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_144_30_148_1_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 146 2 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_144_30_148_1_start" "D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_144_30_148_1_stop" ]
+D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_133_30_137_1_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 135 2 ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_133_30_137_1_start" "D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_133_30_137_1_stop" ]
         %ti.1 = local;
-        symbol [ ti %ti.1 146 6 8 ];
-        symbol [ Gregorian %tmp.1 146 11 20 ];
+        symbol [ ti %ti.1 135 6 8 ];
+        symbol [ Gregorian %tmp.1 135 11 20 ];
         %tmp.1 = getm $.Toybox.Time.Gregorian;
-        symbol [ info %tmp.2 146 21 25 ];
+        symbol [ info %tmp.2 135 21 25 ];
         %tmp.2 = getv function %tmp.1 :info;
-        symbol [ Time %tmp.3 146 27 31 ];
+        symbol [ Time %tmp.3 135 27 31 ];
         %tmp.3 = getm $.Toybox.Time;
-        symbol [ today %tmp.4 146 32 37 ];
+        symbol [ today %tmp.4 135 32 37 ];
         %tmp.4 = getv function %tmp.3 :today;
         %tmp.5 = invoke %tmp.3 %tmp.4();
-        symbol [ Time %tmp.6 146 41 45 ];
+        symbol [ Time %tmp.6 135 41 45 ];
         %tmp.6 = getm $.Toybox.Time;
-        symbol [ FORMAT_MEDIUM %tmp.7 146 46 59 ];
+        symbol [ FORMAT_MEDIUM %tmp.7 135 46 59 ];
         %tmp.7 = getv %tmp.6 :FORMAT_MEDIUM;
         %tmp.8 = invoke %tmp.1 %tmp.2(%tmp.5, %tmp.7);
         lputv %ti.1 %tmp.8;
-        symbol [ ti %ti.1 146 6 8 ];
-[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 147 2 ]
+        symbol [ ti %ti.1 135 6 8 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc" 136 2 ]
         %tmp.9 = lgetv %dc;
-        symbol [ dc %tmp.9 147 2 4 ];
-        symbol [ drawText %tmp.10 147 5 13 ];
+        symbol [ dc %tmp.9 136 2 4 ];
+        symbol [ drawText %tmp.10 136 5 13 ];
         %tmp.10 = getv function %tmp.9 :drawText;
         %tmp.11 = lgetv %x;
-        symbol [ x %tmp.11 147 14 15 ];
+        symbol [ x %tmp.11 136 14 15 ];
         %tmp.12 = lgetv %y;
-        symbol [ y %tmp.12 147 17 18 ];
-        symbol [ Gfx %tmp.13 147 20 23 ];
+        symbol [ y %tmp.12 136 17 18 ];
+        symbol [ Gfx %tmp.13 136 20 23 ];
         %tmp.13 = getm $.Toybox.Graphics;
-        symbol [ FONT_MEDIUM %tmp.14 147 24 35 ];
+        symbol [ FONT_MEDIUM %tmp.14 136 24 35 ];
         %tmp.14 = getv %tmp.13 :FONT_MEDIUM;
         %tmp.15 = lgetv %ti.1;
-        symbol [ ti %tmp.15 147 37 39 ];
-        symbol [ day_of_week %tmp.16 147 40 51 ];
+        symbol [ ti %tmp.15 136 37 39 ];
+        symbol [ day_of_week %tmp.16 136 40 51 ];
         %tmp.16 = getv %tmp.15 :day_of_week;
-        symbol [ Gfx %tmp.17 147 53 56 ];
+        symbol [ Gfx %tmp.17 136 53 56 ];
         %tmp.17 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.18 147 57 76 ];
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.18 136 57 76 ];
         %tmp.18 = getv %tmp.17 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.9 %tmp.10(%tmp.11, %tmp.12, %tmp.14, %tmp.16, %tmp.18);
-D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_144_30_148_1_stop:
+D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_133_30_137_1_stop:
     }
 }
 [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\DataDrawer.mc"; @line = 1; ]

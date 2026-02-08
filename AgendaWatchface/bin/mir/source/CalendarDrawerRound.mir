@@ -691,110 +691,106 @@ D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_75_8_99_8_
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 105 8 ]
         symbol [ dataDrawer %tmp.269 105 8 18 ];
         %tmp.269 = getv ? :dataDrawer;
-        symbol [ drawHR %tmp.270 105 19 25 ];
-        %tmp.270 = getv function %tmp.269 :drawHR;
+        symbol [ drawBodyBattery %tmp.270 105 19 34 ];
+        %tmp.270 = getv function %tmp.269 :drawBodyBattery;
         %tmp.271 = lgetv %dc;
-        symbol [ dc %tmp.271 105 26 28 ];
-        symbol [ w %tmp.273 105 30 31 ];
+        symbol [ dc %tmp.271 105 35 37 ];
+        symbol [ w %tmp.273 105 39 40 ];
         %tmp.273 = getv ? :w;
         %tmp.274 = 2;
         %tmp.275 = div %tmp.273 %tmp.274;
         %tmp.276 = lgetv %yHR.8;
-        symbol [ yHR %tmp.276 105 35 38 ];
+        symbol [ yHR %tmp.276 105 44 47 ];
         %tmp.277 = lgetv %dyHR.12;
-        symbol [ dyHR %tmp.277 105 40 44 ];
-        symbol [ GlobalState %tmp.279 105 46 57 ];
-        %tmp.279 = getv ? :GlobalState;
-        symbol [ displayLiveHR %tmp.280 105 58 71 ];
-        %tmp.280 = getv %tmp.279 :displayLiveHR;
-        invoke %tmp.269 %tmp.270(%tmp.271, %tmp.275, %tmp.276, %tmp.277, %tmp.280);
+        symbol [ dyHR %tmp.277 105 49 53 ];
+        invoke %tmp.269 %tmp.270(%tmp.271, %tmp.275, %tmp.276, %tmp.277);
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 107 2 ]
-        %tmp.281 = lgetv %dc;
-        symbol [ dc %tmp.281 107 2 4 ];
-        symbol [ setColor %tmp.282 107 5 13 ];
-        %tmp.282 = getv function %tmp.281 :setColor;
-        %tmp.283 = 0xaaaaaa;
-        symbol [ Gfx %tmp.284 107 23 26 ];
-        %tmp.284 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.285 107 27 44 ];
-        %tmp.285 = getv %tmp.284 :COLOR_TRANSPARENT;
-        invoke %tmp.281 %tmp.282(%tmp.283, %tmp.285);
+        %tmp.278 = lgetv %dc;
+        symbol [ dc %tmp.278 107 2 4 ];
+        symbol [ setColor %tmp.279 107 5 13 ];
+        %tmp.279 = getv function %tmp.278 :setColor;
+        %tmp.280 = 0xaaaaaa;
+        symbol [ Gfx %tmp.281 107 23 26 ];
+        %tmp.281 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.282 107 27 44 ];
+        %tmp.282 = getv %tmp.281 :COLOR_TRANSPARENT;
+        invoke %tmp.278 %tmp.279(%tmp.280, %tmp.282);
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 108 2 ]
-        %tmp.286 = lgetv %dc;
-        symbol [ dc %tmp.286 108 2 4 ];
-        symbol [ setPenWidth %tmp.287 108 5 16 ];
-        %tmp.287 = getv function %tmp.286 :setPenWidth;
-        %tmp.288 = 2;
-        invoke %tmp.286 %tmp.287(%tmp.288);
+        %tmp.283 = lgetv %dc;
+        symbol [ dc %tmp.283 108 2 4 ];
+        symbol [ setPenWidth %tmp.284 108 5 16 ];
+        %tmp.284 = getv function %tmp.283 :setPenWidth;
+        %tmp.285 = 2;
+        invoke %tmp.283 %tmp.284(%tmp.285);
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 109 2 ]
-        %tmp.289 = lgetv %dc;
-        symbol [ dc %tmp.289 109 2 4 ];
-        symbol [ drawLine %tmp.290 109 5 13 ];
-        %tmp.290 = getv function %tmp.289 :drawLine;
-        %tmp.291 = 0;
+        %tmp.286 = lgetv %dc;
+        symbol [ dc %tmp.286 109 2 4 ];
+        symbol [ drawLine %tmp.287 109 5 13 ];
+        %tmp.287 = getv function %tmp.286 :drawLine;
+        %tmp.288 = 0;
+        %tmp.289 = lgetv %yCalendar.9;
+        symbol [ yCalendar %tmp.289 109 16 25 ];
+        symbol [ w %tmp.291 109 26 27 ];
+        %tmp.291 = getv ? :w;
         %tmp.292 = lgetv %yCalendar.9;
-        symbol [ yCalendar %tmp.292 109 16 25 ];
-        symbol [ w %tmp.294 109 26 27 ];
-        %tmp.294 = getv ? :w;
-        %tmp.295 = lgetv %yCalendar.9;
-        symbol [ yCalendar %tmp.295 109 28 37 ];
-        invoke %tmp.289 %tmp.290(%tmp.291, %tmp.292, %tmp.294, %tmp.295);
+        symbol [ yCalendar %tmp.292 109 28 37 ];
+        invoke %tmp.286 %tmp.287(%tmp.288, %tmp.289, %tmp.291, %tmp.292);
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 111 2 ]
 D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_111_2_115_2_if_stmt:
 D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_111_6_111_64_begin:
 D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_111_7_111_30_begin:
-        symbol [ c %tmp.297 111 7 8 ];
-        %tmp.297 = getv ? :c;
-        symbol [ valid %tmp.298 111 9 14 ];
-        %tmp.298 = getv %tmp.297 :valid;
-        bt %tmp.298 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_111_48_111_64_true;
+        symbol [ c %tmp.294 111 7 8 ];
+        %tmp.294 = getv ? :c;
+        symbol [ valid %tmp.295 111 9 14 ];
+        %tmp.295 = getv %tmp.294 :valid;
+        bt %tmp.295 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_111_48_111_64_true;
 D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_111_18_111_30_false:
-        symbol [ GlobalState %tmp.300 111 18 29 ];
-        %tmp.300 = getv ? :GlobalState;
-        symbol [ calendar_demo %tmp.301 111 30 43 ];
-        %tmp.301 = getv %tmp.300 :calendar_demo;
-        push %tmp.301;
+        symbol [ GlobalState %tmp.297 111 18 29 ];
+        %tmp.297 = getv ? :GlobalState;
+        symbol [ calendar_demo %tmp.298 111 30 43 ];
+        %tmp.298 = getv %tmp.297 :calendar_demo;
+        push %tmp.298;
 D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_111_18_111_30_end:
-        %tmp.302 = phi [%tmp.298 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_111_7_111_30_begin] [%tmp.301 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_111_18_111_30_false] [%tmp.302 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_111_18_111_30_end];
-        bf %tmp.302 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_111_2_115_2_if_else_false;
+        %tmp.299 = phi [%tmp.295 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_111_7_111_30_begin] [%tmp.298 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_111_18_111_30_false] [%tmp.299 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_111_18_111_30_end];
+        bf %tmp.299 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_111_2_115_2_if_else_false;
 D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_111_48_111_64_true:
-        symbol [ c %tmp.304 111 48 49 ];
-        %tmp.304 = getv ? :c;
-        symbol [ events %tmp.305 111 50 56 ];
-        %tmp.305 = getv %tmp.304 :events;
-        symbol [ size %tmp.306 111 57 61 ];
-        %tmp.306 = getv function %tmp.305 :size;
-        %tmp.307 = invoke %tmp.305 %tmp.306();
-        %tmp.308 = 0;
-        %tmp.309 = gt %tmp.307 %tmp.308;
-        push %tmp.309;
+        symbol [ c %tmp.301 111 48 49 ];
+        %tmp.301 = getv ? :c;
+        symbol [ events %tmp.302 111 50 56 ];
+        %tmp.302 = getv %tmp.301 :events;
+        symbol [ size %tmp.303 111 57 61 ];
+        %tmp.303 = getv function %tmp.302 :size;
+        %tmp.304 = invoke %tmp.302 %tmp.303();
+        %tmp.305 = 0;
+        %tmp.306 = gt %tmp.304 %tmp.305;
+        push %tmp.306;
 D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_111_48_111_64_end:
-        %tmp.310 = phi [%tmp.302 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_111_6_111_64_begin] [%tmp.309 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_111_48_111_64_true] [%tmp.310 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_111_48_111_64_end];
-        bf %tmp.310 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_111_2_115_2_if_else_false;
+        %tmp.307 = phi [%tmp.299 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_111_6_111_64_begin] [%tmp.306 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_111_48_111_64_true] [%tmp.307 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_111_48_111_64_end];
+        bf %tmp.307 @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_111_2_115_2_if_else_false;
 D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_111_2_115_2_if_true:
 D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_111_68_113_2_start:
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 112 3 ]
-        %tmp.311 = self;
-        symbol [ drawCalendar %tmp.312 112 3 15 ];
-        %tmp.312 = getv function %tmp.311 :drawCalendar;
-        %tmp.313 = lgetv %dc;
-        symbol [ dc %tmp.313 112 16 18 ];
-        %tmp.314 = lgetv %yCalendar.9;
-        symbol [ yCalendar %tmp.314 112 19 28 ];
-        invoke %tmp.311 %tmp.312(%tmp.313, %tmp.314);
+        %tmp.308 = self;
+        symbol [ drawCalendar %tmp.309 112 3 15 ];
+        %tmp.309 = getv function %tmp.308 :drawCalendar;
+        %tmp.310 = lgetv %dc;
+        symbol [ dc %tmp.310 112 16 18 ];
+        %tmp.311 = lgetv %yCalendar.9;
+        symbol [ yCalendar %tmp.311 112 19 28 ];
+        invoke %tmp.308 %tmp.309(%tmp.310, %tmp.311);
 D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_111_68_113_2_stop:
         goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_111_2_115_2_if_end;
 D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_111_2_115_2_if_else_false:
 D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_113_9_115_2_start:
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarDrawerRound.mc" 114 3 ]
-        %tmp.315 = self;
-        symbol [ drawWaitInfo %tmp.316 114 3 15 ];
-        %tmp.316 = getv function %tmp.315 :drawWaitInfo;
-        %tmp.317 = lgetv %dc;
-        symbol [ dc %tmp.317 114 16 18 ];
-        %tmp.318 = lgetv %yCalendar.9;
-        symbol [ yCalendar %tmp.318 114 19 28 ];
-        invoke %tmp.315 %tmp.316(%tmp.317, %tmp.318);
+        %tmp.312 = self;
+        symbol [ drawWaitInfo %tmp.313 114 3 15 ];
+        %tmp.313 = getv function %tmp.312 :drawWaitInfo;
+        %tmp.314 = lgetv %dc;
+        symbol [ dc %tmp.314 114 16 18 ];
+        %tmp.315 = lgetv %yCalendar.9;
+        symbol [ yCalendar %tmp.315 114 19 28 ];
+        invoke %tmp.312 %tmp.313(%tmp.314, %tmp.315);
 D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_113_9_115_2_stop:
 D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_111_2_115_2_if_end:
 D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_48_22_116_1_stop:

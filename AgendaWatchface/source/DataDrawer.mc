@@ -98,47 +98,36 @@ class DataDrawer {
 		dc.drawText(x, y-5,Gfx.FONT_SMALL, "°C", Gfx.TEXT_JUSTIFY_RIGHT); }
 	}
 	
-	function drawHR( dc, x, y, dySym, showLive ) {
-        var hr = "--";
-        if (showLive) {
-            // --- LIVE HEART RATE ---
-            var sample = Activity.getActivityInfo().currentHeartRate;
-            if (null != sample) {
-                hr = "" + sample;
-            }
-        } else {
-            // --- BODY BATTERY ---
-            var val = GlobalState.currentBodyBattery;
-            
-            if (val != null) {
-                // Check if it's a number (Standard)
-                if (val instanceof Number) {
-                    hr = val.format("%d");
-                } 
-                // Check if it's a float (Rare but possible)
-                else if (val instanceof Float) {
-                    hr = val.format("%.0f");
-                }
-                // Fallback for anything else
-                else {
-                    hr = val.toString();
-                }
-            }
-        }
+	function drawBodyBattery( dc, x, y, dySym ) {
+        var bb = "--";
+		// --- BODY BATTERY ---
+		var val = GlobalState.currentBodyBattery;
+		
+		if (val != null) {
+			// Check if it's a number (Standard)
+			if (val instanceof Number) {
+				bb = val.format("%d");
+			} 
+			// Check if it's a float (Rare but possible)
+			else if (val instanceof Float) {
+				bb = val.format("%.0f");
+			}
+			// Fallback for anything else
+			else {
+				bb = val.toString();
+			}
+		}
+        
         
         // Drawing logic
-        if (showLive) {   
-            // Draw the Heart Icon
-            x += -(dc.getTextWidthInPixels(hr,Gfx.FONT_MEDIUM) + 11)/2 + 11; // 11=size of icon
-			dc.drawText(x, y+dySym, fontSymbols, "E", Gfx.TEXT_JUSTIFY_RIGHT);
-        } else {
-            // Draw Body Battery Icon ("L" from weaatherfont)
-            var fullWidth = dc.getTextWidthInPixels(hr,Gfx.FONT_MEDIUM) + dc.getTextWidthInPixels("L", fontWeather) + 2;
-			x += -fullWidth / 2 + 16; // 14 width + 2 gap
-			dc.drawText(x, y+3, fontWeather, "L", Gfx.TEXT_JUSTIFY_RIGHT);
-        }
+        
+		// Draw Body Battery Icon ("L" from weaatherfont)
+		var fullWidth = dc.getTextWidthInPixels(bb,Gfx.FONT_MEDIUM) + dc.getTextWidthInPixels("L", fontWeather) + 2;
+		x += -fullWidth / 2 + 16; // 14 width + 2 gap
+		dc.drawText(x, y+3, fontWeather, "L", Gfx.TEXT_JUSTIFY_RIGHT);
+        
 
-        dc.drawText(x, y, Gfx.FONT_MEDIUM, hr, Gfx.TEXT_JUSTIFY_LEFT);
+        dc.drawText(x, y, Gfx.FONT_MEDIUM, bb, Gfx.TEXT_JUSTIFY_LEFT);
     }
 
 	function drawDay( dc, x, y ) {

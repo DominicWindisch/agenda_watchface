@@ -23,7 +23,7 @@ class CalendarActiveDelegate extends Ui.WatchFaceDelegate {
         // 1. HR / Body Battery Area (Top Center)
         // Approx centered at y=86. Let's define a hit box around it.
         if (y > 50 && y < 110 && x > (w/2 - 50) && x < (w/2 + 50)) {
-            toggleHR();
+            exitToBodyBattery();
             return true;
         }
 
@@ -45,11 +45,12 @@ class CalendarActiveDelegate extends Ui.WatchFaceDelegate {
         return false;
     }
 
-    function toggleHR() {
-        // Toggle the global state flag
-        _view.triggerFlash();
-        GlobalState.displayLiveHR = !GlobalState.displayLiveHR;
-        Ui.requestUpdate(); // Immediate redraw
+    function exitToBodyBattery() {
+        if (Toybox.Complications has :exitTo) {
+            Complications.exitTo(new Complications.Id(Complications.COMPLICATION_TYPE_BODY_BATTERY));
+        } else {
+            System.println("Body Battery ExitTo not supported");
+        }
     }
 
     function toggleBattery() {

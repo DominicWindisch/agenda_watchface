@@ -373,33 +373,103 @@ D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_96_27_100_4
     }
     [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc"; @line = 102; @symbol_functiondef = [onEnterSleep,102,13,25]; ]
     function onEnterSleep() {
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_102_28_105_4_start:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_102_28_118_4_start:
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 103 5 ]
         %tmp.1 = false;
         symbol [ isAwake ? 103 5 12 ];
         putv self :isAwake %tmp.1;
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 104 8 ]
-        symbol [ Ui %tmp.2 104 8 10 ];
-        %tmp.2 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.3 104 11 24 ];
-        %tmp.3 = getv function %tmp.2 :requestUpdate;
-        invoke %tmp.2 %tmp.3();
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_102_28_105_4_stop:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 105 2 ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_102_28_118_4_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_102_28_118_4_stop" ]
+        %watchBattery.1 = local;
+        symbol [ watchBattery %watchBattery.1 105 6 18 ];
+        symbol [ System %tmp.3 105 21 27 ];
+        %tmp.3 = getv ? :System;
+        symbol [ getSystemStats %tmp.4 105 28 42 ];
+        %tmp.4 = getv function %tmp.3 :getSystemStats;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        symbol [ battery %tmp.6 105 45 52 ];
+        %tmp.6 = getv %tmp.5 :battery;
+        lputv %watchBattery.1 %tmp.6;
+        symbol [ watchBattery %watchBattery.1 105 6 18 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 106 2 ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_102_28_118_4_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_102_28_118_4_stop" ]
+        %phoneBattery.2 = local;
+        symbol [ phoneBattery %phoneBattery.2 106 6 18 ];
+        symbol [ GlobalState %tmp.8 106 21 32 ];
+        %tmp.8 = getv ? :GlobalState;
+        symbol [ phoneBattery %tmp.9 106 33 45 ];
+        %tmp.9 = getv %tmp.8 :phoneBattery;
+        lputv %phoneBattery.2 %tmp.9;
+        symbol [ phoneBattery %phoneBattery.2 106 6 18 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 109 2 ]
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_109_2_115_2_if_stmt:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_109_6_109_42_begin:
+        %tmp.10 = lgetv %phoneBattery.2;
+        symbol [ phoneBattery %tmp.10 109 6 18 ];
+        %tmp.11 = 0;
+        %tmp.12 = gte %tmp.10 %tmp.11;
+        bf %tmp.12 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_109_2_115_2_if_false;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_109_27_109_42_true:
+        %tmp.13 = lgetv %phoneBattery.2;
+        symbol [ phoneBattery %tmp.13 109 27 39 ];
+        %tmp.14 = 20;
+        %tmp.15 = lt %tmp.13 %tmp.14;
+        push %tmp.15;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_109_27_109_42_end:
+        %tmp.16 = phi [%tmp.12 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_109_6_109_42_begin] [%tmp.15 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_109_27_109_42_true] [%tmp.16 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_109_27_109_42_end];
+        bf %tmp.16 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_109_2_115_2_if_false;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_109_2_115_2_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_109_46_112_2_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 111 3 ]
+        symbol [ GlobalState %tmp.17 111 3 14 ];
+        %tmp.17 = getv self :GlobalState;
+        %tmp.18 = true;
+        symbol [ displayPhoneBattery ? 111 15 34 ];
+        putv %tmp.17 :displayPhoneBattery %tmp.18;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_109_46_112_2_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_109_2_115_2_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_109_2_115_2_if_false:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 112 9 ]
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_112_9_115_2_if_stmt:
+        %tmp.19 = lgetv %watchBattery.1;
+        symbol [ watchBattery %tmp.19 112 13 25 ];
+        %tmp.20 = 10;
+        %tmp.21 = lt %tmp.19 %tmp.20;
+        bf %tmp.21 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_112_9_115_2_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_112_9_115_2_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_112_32_115_2_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 114 3 ]
+        symbol [ GlobalState %tmp.22 114 3 14 ];
+        %tmp.22 = getv self :GlobalState;
+        %tmp.23 = false;
+        symbol [ displayPhoneBattery ? 114 15 34 ];
+        putv %tmp.22 :displayPhoneBattery %tmp.23;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_112_32_115_2_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_112_9_115_2_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_112_9_115_2_if_end:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_109_2_115_2_if_end:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 117 8 ]
+        symbol [ Ui %tmp.24 117 8 10 ];
+        %tmp.24 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.25 117 11 24 ];
+        %tmp.25 = getv function %tmp.24 :requestUpdate;
+        invoke %tmp.24 %tmp.25();
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_102_28_118_4_stop:
     }
-    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc"; @line = 107; @symbol_functiondef = [triggerFlash,107,10,22]; ]
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc"; @line = 120; @symbol_functiondef = [triggerFlash,120,10,22]; ]
     function triggerFlash() {
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_107_25_110_4_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 108 8 ]
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_120_25_123_4_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 121 8 ]
         %tmp.1 = 1;
-        symbol [ _flashFrame ? 108 8 19 ];
+        symbol [ _flashFrame ? 121 8 19 ];
         putv self :_flashFrame %tmp.1;
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 109 8 ]
-        symbol [ Ui %tmp.2 109 8 10 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 122 8 ]
+        symbol [ Ui %tmp.2 122 8 10 ];
         %tmp.2 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.3 109 11 24 ];
+        symbol [ requestUpdate %tmp.3 122 11 24 ];
         %tmp.3 = getv function %tmp.2 :requestUpdate;
         invoke %tmp.2 %tmp.3();
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_107_25_110_4_stop:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_120_25_123_4_stop:
     }
 }
 [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc"; @line = 1; ]

@@ -102,7 +102,7 @@ class CalendarDrawerRound {
 		dataDrawer.drawLeft(dc, 10, yDataField, GlobalState.watch_leftdatafield, dyDataField, GlobalState.weathernow, GlobalState.weatherid);
 		dataDrawer.drawRight(dc, w-11, yDataField, GlobalState.weatherid, dyDataField, GlobalState.weathermin, GlobalState.weathermax);
 		
-        dataDrawer.drawHR(dc, w/2, yHR, dyHR, GlobalState.displayLiveHR);	
+        dataDrawer.drawBodyBattery(dc, w/2, yHR, dyHR);	
 
 		dc.setColor(0xaaaaaa,Gfx.COLOR_TRANSPARENT);
 		dc.setPenWidth(2);
