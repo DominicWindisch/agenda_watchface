@@ -163,8 +163,11 @@ class Calendar
     function getTodaysAllDayEvents(now as Lang.Number) as Lang.Array<Event> {
         var result = new Lang.Array<Event>[0];
         var timeEndOfToday = Time.today().value() + 24*60*60;
-        for(var i = 0; i < events.size(); i++) {
-            var ev = events[i];
+
+		var safeEvents = events as Lang.Array<Event>;
+
+        for(var i = 0; i < safeEvents.size(); i++) {
+            var ev = safeEvents[i];
             if(ev.tEnd > now && ev.tStart < timeEndOfToday && ev.allday) {
                 result.add(ev);
             }
@@ -175,8 +178,11 @@ class Calendar
     function getTodaysTimedEvents(now as Lang.Number) as Lang.Array<Event> {
         var result = new Lang.Array<Event>[0];
         var timeEndOfToday = Time.today().value() + 24*60*60;
-        for(var i = 0; i < events.size(); i++) {
-            var ev = events[i];
+
+		var safeEvents = events as Lang.Array<Event>;
+
+        for(var i = 0; i < safeEvents.size(); i++) {
+            var ev = safeEvents[i];
             if(ev.tEnd > now && ev.tStart < timeEndOfToday && !ev.allday) {
                 result.add(ev);
             }
@@ -188,8 +194,11 @@ class Calendar
         var result = new Lang.Array<Event>[0];
         var timeStartOfTomorrow = Time.today().value() + 24*60*60;
 		var timeEndOfTomorrow   = Time.today().value() + 48*60*60;
-        for(var i = 0; i < events.size(); i++) {
-            var ev = events[i];
+
+		var safeEvents = events as Lang.Array<Event>;
+
+        for(var i = 0; i < safeEvents.size(); i++) {
+            var ev = safeEvents[i];
             if(ev.tEnd > now && ev.tStart >= timeStartOfTomorrow && ev.tStart < timeEndOfTomorrow) {
                 result.add(ev);
             }
@@ -200,8 +209,11 @@ class Calendar
     function getFutureEvents(now as Lang.Number) as Lang.Array<Event> {
         var result = new Lang.Array<Event>[0];
 		var timeEndOfTomorrow   = Time.today().value() + 48*60*60;
-        for(var i = 0; i < events.size(); i++) {
-            var ev = events[i];
+
+		var safeEvents = events as Lang.Array<Event>;
+
+        for(var i = 0; i < safeEvents.size(); i++) {
+            var ev = safeEvents[i];
             if(ev.tEnd > now && ev.tStart >= timeEndOfTomorrow) {
                 result.add(ev);
             }
@@ -211,8 +223,11 @@ class Calendar
     
     function hasAnyEventsToday() as Lang.Boolean {
         var timeEndOfToday = Time.today().value() + 24*60*60;
-        for(var i = 0; i < events.size(); i++) {
-            if(events[i].tStart < timeEndOfToday) {
+
+		var safeEvents = events as Lang.Array<Event>;
+
+        for(var i = 0; i < safeEvents.size(); i++) {
+            if(safeEvents[i].tStart < timeEndOfToday) {
                 return true;
             }
         }
@@ -223,9 +238,11 @@ class Calendar
 	
 	function getEventIfNotPastAlready( index as Lang.Number, t as Lang.Number) {
 		var ev = null;
-		if (index>=0 && index<events.size()) {
-			if (events[index].tEnd>t) { // not past
-				ev = events[index];
+		var safeEvents = events as Lang.Array<Event>;
+
+		if (index>=0 && index<safeEvents.size()) {
+			if (safeEvents[index].tEnd>t) { // not past
+				ev = safeEvents[index];
 			}
 		}
 		return ev;
@@ -237,8 +254,10 @@ class Calendar
 	
 	function getEvent( index ) {
 		var ev = null;
-		if (index>=0 && index<events.size()) {
-			ev = events[index];
+		var safeEvents = events as Lang.Array<Event>;
+
+		if (index>=0 && index<safeEvents.size()) {
+			ev = safeEvents[index];
 		}
 		return ev;
 	}
@@ -254,9 +273,10 @@ class Calendar
 				demo();	
 			}
 			else {
-				var n = events.size();
+				var safeEvents = events as Lang.Array<Event>;
+				var n = safeEvents.size();
 				for ( var i=0; i<n; i++ ) {
-					events[i].formatDate(today);
+					safeEvents[i].formatDate(today);
 				}
 			}
 		}

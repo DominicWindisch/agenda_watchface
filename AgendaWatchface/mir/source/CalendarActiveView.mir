@@ -1,0 +1,407 @@
+[ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; @symbol_usingAlias = [Ui,1,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Graphics,2,13,21]; @symbol_usingAlias = [Gfx,2,25,28]; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [System,3,13,19]; @symbol_usingAlias = [Sys,3,23,26]; ]
+using Toybox.System as :Sys;
+[ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Lang,4,13,17]; @symbol_usingAlias = [Lang,4,21,25]; ]
+using Toybox.Lang as :Lang;
+[ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc"; @line = 7; foreground = true; @symbol_classdef = [CalendarActiveView,7,6,24]; @symbol_extends<0> = [Ui,7,33,35]; @symbol_extends<1> = [WatchFace,7,36,45]; ]
+class CalendarActiveView extends Ui.WatchFace {
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc"; @line = 7; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc"; @line = 9; @position = 5; @symbol_vardef = [c,9,5,6]; ]
+    var c = null;
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc"; @line = 10; @position = 5; @symbol_vardef = [drawer,10,5,11]; ]
+    var drawer = null;
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc"; @line = 11; @position = 5; @symbol_vardef = [a,11,5,6]; ]
+    var a = null;
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc"; @line = 12; @position = 5; @symbol_vardef = [width,12,5,10]; ]
+    var width = 260;
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc"; @line = 13; @position = 8; @symbol_vardef = [height,13,8,14]; ]
+    var height = 260;
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc"; @line = 14; @position = 8; @symbol_vardef = [isAwake,14,8,15]; ]
+    var isAwake = false;
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc"; @line = 16; @position = 5; @symbol_vardef = [_flashFrame,16,5,16]; ]
+    var _flashFrame = 0;
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc"; @line = 18; @position = 5; @symbol_vardef = [fontSymbols,18,5,16]; ]
+    var fontSymbols;
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc"; @line = 18; @position = 18; @symbol_vardef = [fontWeather,18,18,29]; ]
+    var fontWeather;
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc"; @line = 18; @position = 31; @symbol_vardef = [fontCalendar,18,31,43]; ]
+    var fontCalendar;
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc"; @line = 20; @symbol_functiondef = [initialize,20,13,23]; @symbol_param<0> = [app,20,24,27]; ]
+    function initialize(app) as Void {
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_20_29_27_4_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 21 8 ]
+        symbol [ WatchFace %tmp.2 21 8 17 ];
+        %tmp.2 = getv ? :WatchFace;
+        symbol [ initialize %tmp.3 21 18 28 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 22 2 ]
+        symbol [ Ui %tmp.4 22 16 18 ];
+        %tmp.4 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.5 22 19 31 ];
+        %tmp.5 = getv function %tmp.4 :loadResource;
+        symbol [ Rez %tmp.7 22 32 35 ];
+        %tmp.7 = getv ? :Rez;
+        symbol [ Fonts %tmp.8 22 36 41 ];
+        %tmp.8 = getv %tmp.7 :Fonts;
+        symbol [ symbols %tmp.9 22 42 49 ];
+        %tmp.9 = getv %tmp.8 :symbols;
+        %tmp.10 = invoke %tmp.4 %tmp.5(%tmp.9);
+        symbol [ fontSymbols ? 22 2 13 ];
+        putv self :fontSymbols %tmp.10;
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 23 8 ]
+        symbol [ Ui %tmp.11 23 22 24 ];
+        %tmp.11 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.12 23 25 37 ];
+        %tmp.12 = getv function %tmp.11 :loadResource;
+        symbol [ Rez %tmp.14 23 38 41 ];
+        %tmp.14 = getv ? :Rez;
+        symbol [ Fonts %tmp.15 23 42 47 ];
+        %tmp.15 = getv %tmp.14 :Fonts;
+        symbol [ weathericons %tmp.16 23 48 60 ];
+        %tmp.16 = getv %tmp.15 :weathericons;
+        %tmp.17 = invoke %tmp.11 %tmp.12(%tmp.16);
+        symbol [ fontWeather ? 23 8 19 ];
+        putv self :fontWeather %tmp.17;
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 24 2 ]
+        symbol [ Ui %tmp.18 24 17 19 ];
+        %tmp.18 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.19 24 20 32 ];
+        %tmp.19 = getv function %tmp.18 :loadResource;
+        symbol [ Rez %tmp.21 24 34 37 ];
+        %tmp.21 = getv ? :Rez;
+        symbol [ Fonts %tmp.22 24 38 43 ];
+        %tmp.22 = getv %tmp.21 :Fonts;
+        symbol [ CalFontBold %tmp.23 24 44 55 ];
+        %tmp.23 = getv %tmp.22 :CalFontBold;
+        %tmp.24 = invoke %tmp.18 %tmp.19(%tmp.23);
+        symbol [ fontCalendar ? 24 2 14 ];
+        putv self :fontCalendar %tmp.24;
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 25 8 ]
+        %tmp.25 = lgetv %app;
+        symbol [ app %tmp.25 25 12 15 ];
+        symbol [ a ? 25 8 9 ];
+        putv self :a %tmp.25;
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 26 8 ]
+        symbol [ Calendar %tmp.29 26 16 24 ];
+        %tmp.29 = getv ? :Calendar;
+        %tmp.26 = newc %tmp.29 ();
+        symbol [ c ? 26 8 9 ];
+        putv self :c %tmp.26;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_20_29_27_4_stop:
+    }
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc"; @line = 29; @symbol_functiondef = [onLayout,29,13,21]; @symbol_param<0> = [dc,29,22,24]; ]
+    function onLayout(dc) {
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_29_26_33_4_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 30 2 ]
+        symbol [ CalendarDrawerRound %tmp.4 30 15 34 ];
+        %tmp.4 = getv ? :CalendarDrawerRound;
+        symbol [ c %tmp.6 30 35 36 ];
+        %tmp.6 = getv ? :c;
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 30 37 39 ];
+        %tmp.8 = 9;
+        symbol [ fontSymbols %tmp.10 30 43 54 ];
+        %tmp.10 = getv ? :fontSymbols;
+        symbol [ fontWeather %tmp.12 30 56 67 ];
+        %tmp.12 = getv ? :fontWeather;
+        symbol [ fontCalendar %tmp.14 30 69 81 ];
+        %tmp.14 = getv ? :fontCalendar;
+        %tmp.1 = newc %tmp.4 (%tmp.6, %tmp.7, %tmp.8, %tmp.10, %tmp.12, %tmp.14);
+        symbol [ drawer ? 30 2 8 ];
+        putv self :drawer %tmp.1;
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 31 2 ]
+        %tmp.15 = lgetv %dc;
+        symbol [ dc %tmp.15 31 10 12 ];
+        symbol [ getWidth %tmp.16 31 13 21 ];
+        %tmp.16 = getv function %tmp.15 :getWidth;
+        %tmp.17 = invoke %tmp.15 %tmp.16();
+        symbol [ width ? 31 2 7 ];
+        putv self :width %tmp.17;
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 32 8 ]
+        %tmp.18 = lgetv %dc;
+        symbol [ dc %tmp.18 32 17 19 ];
+        symbol [ getHeight %tmp.19 32 20 29 ];
+        %tmp.19 = getv function %tmp.18 :getHeight;
+        %tmp.20 = invoke %tmp.18 %tmp.19();
+        symbol [ height ? 32 8 14 ];
+        putv self :height %tmp.20;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_29_26_33_4_stop:
+    }
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc"; @line = 35; @symbol_functiondef = [onShow,35,13,19]; ]
+    function onShow() {
+    }
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc"; @line = 39; @symbol_functiondef = [onUpdate,39,13,21]; @symbol_param<0> = [dc,39,22,24]; ]
+    function onUpdate(dc) {
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_39_26_90_1_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 56 5 ]
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_56_5_59_5_if_stmt:
+        symbol [ GlobalState %tmp.2 56 9 20 ];
+        %tmp.2 = getv ? :GlobalState;
+        symbol [ settings_dirty %tmp.3 56 21 35 ];
+        %tmp.3 = getv %tmp.2 :settings_dirty;
+        bf %tmp.3 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_56_5_59_5_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_56_5_59_5_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_56_37_59_5_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 57 6 ]
+        symbol [ drawer %tmp.5 57 6 12 ];
+        %tmp.5 = getv ? :drawer;
+        symbol [ updateSettings %tmp.6 57 13 27 ];
+        %tmp.6 = getv function %tmp.5 :updateSettings;
+        invoke %tmp.5 %tmp.6();
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 58 6 ]
+        symbol [ GlobalState %tmp.7 58 6 17 ];
+        %tmp.7 = getv self :GlobalState;
+        %tmp.8 = false;
+        symbol [ settings_dirty ? 58 18 32 ];
+        putv %tmp.7 :settings_dirty %tmp.8;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_56_37_59_5_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_56_5_59_5_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_56_5_59_5_if_end:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 61 5 ]
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_61_5_73_5_if_stmt:
+        symbol [ GlobalState %tmp.10 61 9 20 ];
+        %tmp.10 = getv ? :GlobalState;
+        symbol [ calendar_dirty %tmp.11 61 21 35 ];
+        %tmp.11 = getv %tmp.10 :calendar_dirty;
+        bf %tmp.11 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_61_5_73_5_if_else_false;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_61_5_73_5_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_61_37_71_5_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 62 6 ]
+        symbol [ GlobalState %tmp.12 62 6 17 ];
+        %tmp.12 = getv self :GlobalState;
+        %tmp.13 = false;
+        symbol [ calendar_dirty ? 62 18 32 ];
+        putv %tmp.12 :calendar_dirty %tmp.13;
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 63 6 ]
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_63_6_69_6_if_stmt:
+        symbol [ GlobalState %tmp.15 63 10 21 ];
+        %tmp.15 = getv ? :GlobalState;
+        symbol [ calendar_demo %tmp.16 63 22 35 ];
+        %tmp.16 = getv %tmp.15 :calendar_demo;
+        bf %tmp.16 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_63_6_69_6_if_false;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_63_6_69_6_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_63_37_65_6_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 64 7 ]
+        symbol [ c %tmp.18 64 7 8 ];
+        %tmp.18 = getv ? :c;
+        symbol [ demo %tmp.19 64 9 13 ];
+        %tmp.19 = getv function %tmp.18 :demo;
+        invoke %tmp.18 %tmp.19();
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_63_37_65_6_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_63_6_69_6_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_63_6_69_6_if_false:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 65 13 ]
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_65_13_69_6_if_stmt:
+        symbol [ GlobalState %tmp.21 65 17 28 ];
+        %tmp.21 = getv ? :GlobalState;
+        symbol [ calendar_raw %tmp.22 65 29 41 ];
+        %tmp.22 = getv %tmp.21 :calendar_raw;
+        symbol [ String %tmp.24 65 53 59 ];
+        %tmp.24 = getv ? :String;
+        %tmp.25 = isa %tmp.22 %tmp.24;
+        bf %tmp.25 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_65_13_69_6_if_else_false;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_65_13_69_6_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_65_61_67_6_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 66 7 ]
+        symbol [ c %tmp.27 66 7 8 ];
+        %tmp.27 = getv ? :c;
+        symbol [ decodeFromCSV %tmp.28 66 9 22 ];
+        %tmp.28 = getv function %tmp.27 :decodeFromCSV;
+        symbol [ GlobalState %tmp.30 66 23 34 ];
+        %tmp.30 = getv ? :GlobalState;
+        symbol [ calendar_raw %tmp.31 66 35 47 ];
+        %tmp.31 = getv %tmp.30 :calendar_raw;
+        invoke %tmp.27 %tmp.28(%tmp.31);
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_65_61_67_6_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_65_13_69_6_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_65_13_69_6_if_else_false:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_67_13_69_6_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 68 7 ]
+        symbol [ c %tmp.33 68 7 8 ];
+        %tmp.33 = getv ? :c;
+        symbol [ demo %tmp.34 68 9 13 ];
+        %tmp.34 = getv function %tmp.33 :demo;
+        invoke %tmp.33 %tmp.34();
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_67_13_69_6_stop:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_65_13_69_6_if_end:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_63_6_69_6_if_end:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 70 6 ]
+        symbol [ GlobalState %tmp.35 70 6 17 ];
+        %tmp.35 = getv self :GlobalState;
+        %tmp.36 = null;
+        symbol [ calendar_raw ? 70 18 30 ];
+        putv %tmp.35 :calendar_raw %tmp.36;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_61_37_71_5_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_61_5_73_5_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_61_5_73_5_if_else_false:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_71_12_73_5_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 72 6 ]
+        symbol [ c %tmp.38 72 6 7 ];
+        %tmp.38 = getv ? :c;
+        symbol [ checkForNewDay %tmp.39 72 8 22 ];
+        %tmp.39 = getv function %tmp.38 :checkForNewDay;
+        invoke %tmp.38 %tmp.39();
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_71_12_73_5_stop:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_61_5_73_5_if_end:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 75 5 ]
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_75_5_77_5_if_stmt:
+        symbol [ drawer %tmp.41 75 9 15 ];
+        %tmp.41 = getv ? :drawer;
+        %tmp.42 = null;
+        %tmp.43 = ne %tmp.41 %tmp.42;
+        bf %tmp.43 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_75_5_77_5_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_75_5_77_5_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_75_23_77_5_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 76 6 ]
+        symbol [ drawer %tmp.45 76 6 12 ];
+        %tmp.45 = getv ? :drawer;
+        %tmp.46 = as %tmp.45 { (!Null) };
+        symbol [ draw %tmp.47 76 13 17 ];
+        %tmp.47 = getv function %tmp.46 :draw;
+        %tmp.48 = lgetv %dc;
+        symbol [ dc %tmp.48 76 18 20 ];
+        invoke %tmp.46 %tmp.47(%tmp.48);
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_75_23_77_5_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_75_5_77_5_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_75_5_77_5_if_end:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 79 2 ]
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_79_2_89_8_if_stmt:
+        symbol [ _flashFrame %tmp.50 79 6 17 ];
+        %tmp.50 = getv ? :_flashFrame;
+        %tmp.51 = 0;
+        %tmp.52 = gt %tmp.50 %tmp.51;
+        bf %tmp.52 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_79_2_89_8_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_79_2_89_8_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_79_23_89_8_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 80 12 ]
+        %tmp.53 = lgetv %dc;
+        symbol [ dc %tmp.53 80 12 14 ];
+        symbol [ setColor %tmp.54 80 15 23 ];
+        %tmp.54 = getv function %tmp.53 :setColor;
+        symbol [ Gfx %tmp.55 80 24 27 ];
+        %tmp.55 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.56 80 28 39 ];
+        %tmp.56 = getv %tmp.55 :COLOR_WHITE;
+        symbol [ Gfx %tmp.57 80 41 44 ];
+        %tmp.57 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.58 80 45 56 ];
+        %tmp.58 = getv %tmp.57 :COLOR_WHITE;
+        invoke %tmp.53 %tmp.54(%tmp.56, %tmp.58);
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 81 12 ]
+        %tmp.59 = lgetv %dc;
+        symbol [ dc %tmp.59 81 12 14 ];
+        symbol [ fillRectangle %tmp.60 81 15 28 ];
+        %tmp.60 = getv function %tmp.59 :fillRectangle;
+        %tmp.61 = 0;
+        %tmp.62 = 0;
+        symbol [ width %tmp.64 81 35 40 ];
+        %tmp.64 = getv ? :width;
+        symbol [ height %tmp.66 81 42 48 ];
+        %tmp.66 = getv ? :height;
+        invoke %tmp.59 %tmp.60(%tmp.61, %tmp.62, %tmp.64, %tmp.66);
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 84 12 ]
+        symbol [ _flashFrame %tmp.69 84 12 23 ];
+        %tmp.69 = getv ? :_flashFrame;
+        %tmp.70 = sub %tmp.69 1;
+        symbol [ _flashFrame ? 84 12 23 ];
+        putv self :_flashFrame dup %tmp.70;
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 88 12 ]
+        symbol [ Ui %tmp.71 88 12 14 ];
+        %tmp.71 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.72 88 15 28 ];
+        %tmp.72 = getv function %tmp.71 :requestUpdate;
+        invoke %tmp.71 %tmp.72();
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_79_23_89_8_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_79_2_89_8_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_79_2_89_8_if_end:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_39_26_90_1_stop:
+    }
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc"; @line = 92; @symbol_functiondef = [onHide,92,13,19]; ]
+    function onHide() {
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_92_22_94_4_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 93 5 ]
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_93_5_93_43_if_stmt:
+        symbol [ drawer %tmp.2 93 9 15 ];
+        %tmp.2 = getv ? :drawer;
+        %tmp.3 = null;
+        %tmp.4 = ne %tmp.2 %tmp.3;
+        bf %tmp.4 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_93_5_93_43_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_93_5_93_43_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_93_22_93_43_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 93 23 ]
+        symbol [ drawer %tmp.6 93 23 29 ];
+        %tmp.6 = getv ? :drawer;
+        %tmp.7 = as %tmp.6 { (!Null) };
+        symbol [ stopLiveHR %tmp.8 93 30 40 ];
+        %tmp.8 = getv function %tmp.7 :stopLiveHR;
+        invoke %tmp.7 %tmp.8();
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_93_22_93_43_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_93_5_93_43_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_93_5_93_43_if_end:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_92_22_94_4_stop:
+    }
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc"; @line = 96; @symbol_functiondef = [onExitSleep,96,13,24]; ]
+    function onExitSleep() {
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_96_27_100_4_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 97 5 ]
+        %tmp.1 = true;
+        symbol [ isAwake ? 97 5 12 ];
+        putv self :isAwake %tmp.1;
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 98 8 ]
+        symbol [ c %tmp.3 98 8 9 ];
+        %tmp.3 = getv ? :c;
+        symbol [ updateDateString %tmp.4 98 10 26 ];
+        %tmp.4 = getv function %tmp.3 :updateDateString;
+        invoke %tmp.3 %tmp.4();
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 99 8 ]
+        symbol [ Ui %tmp.5 99 8 10 ];
+        %tmp.5 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.6 99 11 24 ];
+        %tmp.6 = getv function %tmp.5 :requestUpdate;
+        invoke %tmp.5 %tmp.6();
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_96_27_100_4_stop:
+    }
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc"; @line = 102; @symbol_functiondef = [onEnterSleep,102,13,25]; ]
+    function onEnterSleep() {
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_102_28_105_4_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 103 5 ]
+        %tmp.1 = false;
+        symbol [ isAwake ? 103 5 12 ];
+        putv self :isAwake %tmp.1;
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 104 8 ]
+        symbol [ Ui %tmp.2 104 8 10 ];
+        %tmp.2 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.3 104 11 24 ];
+        %tmp.3 = getv function %tmp.2 :requestUpdate;
+        invoke %tmp.2 %tmp.3();
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_102_28_105_4_stop:
+    }
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc"; @line = 107; @symbol_functiondef = [triggerFlash,107,10,22]; ]
+    function triggerFlash() {
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_107_25_110_4_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 108 8 ]
+        %tmp.1 = 1;
+        symbol [ _flashFrame ? 108 8 19 ];
+        putv self :_flashFrame %tmp.1;
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc" 109 8 ]
+        symbol [ Ui %tmp.2 109 8 10 ];
+        %tmp.2 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.3 109 11 24 ];
+        %tmp.3 = getv function %tmp.2 :requestUpdate;
+        invoke %tmp.2 %tmp.3();
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveView_mc_107_25_110_4_stop:
+    }
+}
+[ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveView.mc"; @line = 1; ]
+<init> {
+}

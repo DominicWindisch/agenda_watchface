@@ -3,6 +3,7 @@ using Toybox.System as Sys;
 using Toybox.WatchUi as Ui;
 using Toybox.Time;
 using Toybox.Background;
+using Toybox.Complications;
 
 (:foreground)
 class CalendarActiveWatch extends App.AppBase {
@@ -22,6 +23,31 @@ class CalendarActiveWatch extends App.AppBase {
     
     // onStart() is called on application start up
     function onStart(state) {
+        // Register for Body Battery updates (Fenix 8 / API 4.2+)
+        if (Toybox has :Complications) {
+            Complications.registerComplicationChangeCallback(method(:onComplicationChanged));
+            
+            // Subscribe specifically to Body Battery
+            Complications.subscribeToUpdates(
+                new Complications.Id(Complications.COMPLICATION_TYPE_BODY_BATTERY)
+            );
+        }
+    }
+
+    function onComplicationChanged(complicationId as Complications.Id) as Void {        
+    if (complicationId.getType() == Complications.COMPLICATION_TYPE_BODY_BATTERY) {
+            var comp = Complications.getComplication(complicationId);
+            
+            // Update Global State
+            if (comp != null && comp.value != null) {
+                GlobalState.currentBodyBattery = comp.value;
+            } else {
+                GlobalState.currentBodyBattery = null;
+            }
+
+            // Force screen update to show new value immediately
+            Ui.requestUpdate();
+        }
     }
 
     // onStop() is called when your application is exiting
@@ -31,7 +57,9 @@ class CalendarActiveWatch extends App.AppBase {
     // Return the initial view of your application here
     function getInitialView() {
         requestImmediateUpdate();
-        return [ new CalendarActiveView(self) ];
+        var view = new CalendarActiveView(self);
+        // Return BOTH the view and the delegate
+        return [ view, new CalendarActiveDelegate(view) ];
     }
 
     // New app settings have been received so trigger a UI update

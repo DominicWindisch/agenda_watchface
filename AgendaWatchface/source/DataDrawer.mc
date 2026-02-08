@@ -24,9 +24,11 @@ class DataDrawer {
     	6 = free memory
 	*/
 
-	function initialize() {
-        fontSymbols = Ui.loadResource(Rez.Fonts.symbols);
-        fontWeather = Ui.loadResource(Rez.Fonts.weathericons);
+	function initialize(symbols, weather) {
+        // No loading here! Just assignment.
+        // This is instant and cannot fail.
+        fontSymbols = symbols;
+        fontWeather = weather;
     }
     
     function getSymbol( what ) {
@@ -96,64 +98,48 @@ class DataDrawer {
 		dc.drawText(x, y-5,Gfx.FONT_SMALL, "°C", Gfx.TEXT_JUSTIFY_RIGHT); }
 	}
 	
-	function drawHR( dc, x, y, dySym, liveHR ) {
-		// Get HR:
-		var hr = "--";
-		
-		if (liveHR < 5)
-		{
-			var sample = Activity.getActivityInfo().currentHeartRate;
-			if (null != sample) 
-			{
-				hr = "" + sample;
-			}
-		}
-		else
-		{
-			/*if (ActivityMonitor has :getHeartRateHistory) 
-			{
-				var hrIterator = ActivityMonitor.getHeartRateHistory(1, true);
-				var sample = hrIterator.next();
-				if (null != sample && sample has :heartRate) {	   // null check
-			        if (sample.heartRate != ActivityMonitor.INVALID_HR_SAMPLE) {    // check for invalid samples
-			        	hr = ""+ sample.heartRate;
-			        }
-			    }
-		    }*/
-			if (Toybox.SensorHistory has :getBodyBatteryHistory) {
-
-				// 2. Request the most recent sample (limit = 1)
-				var bbIterator = Toybox.SensorHistory.getBodyBatteryHistory({
-					:period => 1,
-					:order => Toybox.SensorHistory.ORDER_NEWEST_FIRST
-				});
-
-				// 3. Get the sample from the iterator
-				if (bbIterator != null) {
-					var sample = bbIterator.next();
-					
-					// 4. The value is in the .data field
-					if (sample != null && sample.data != null) {
-						hr = "" + sample.data.format("%d");
-					}
-				}
-			}
-	    }
-	
-		
-		if (liveHR < 5)
-		{	// blink when live
-			x += -(dc.getTextWidthInPixels(hr,Gfx.FONT_MEDIUM) + 11)/2 + 11; // 11=size of icon
-			if (liveHR %2 == 0) {
-				dc.drawText(x, y+dySym, fontSymbols, "E", Gfx.TEXT_JUSTIFY_RIGHT);
-			}
-		} else if (liveHR >= 5 ) {
-			var fullWidth = dc.getTextWidthInPixels(hr,Gfx.FONT_MEDIUM) + dc.getTextWidthInPixels("L", fontWeather) + 2;
+	function drawHR( dc, x, y, dySym, showLive ) {
+        var hr = "--";
+        if (showLive) {
+            // --- LIVE HEART RATE ---
+            var sample = Activity.getActivityInfo().currentHeartRate;
+            if (null != sample) {
+                hr = "" + sample;
+            }
+        } else {
+            // --- BODY BATTERY ---
+            var val = GlobalState.currentBodyBattery;
+            
+            if (val != null) {
+                // Check if it's a number (Standard)
+                if (val instanceof Number) {
+                    hr = val.format("%d");
+                } 
+                // Check if it's a float (Rare but possible)
+                else if (val instanceof Float) {
+                    hr = val.format("%.0f");
+                }
+                // Fallback for anything else
+                else {
+                    hr = val.toString();
+                }
+            }
+        }
+        
+        // Drawing logic
+        if (showLive) {   
+            // Draw the Heart Icon
+            x += -(dc.getTextWidthInPixels(hr,Gfx.FONT_MEDIUM) + 11)/2 + 11; // 11=size of icon
+			dc.drawText(x, y+dySym, fontSymbols, "E", Gfx.TEXT_JUSTIFY_RIGHT);
+        } else {
+            // Draw Body Battery Icon ("L" from weaatherfont)
+            var fullWidth = dc.getTextWidthInPixels(hr,Gfx.FONT_MEDIUM) + dc.getTextWidthInPixels("L", fontWeather) + 2;
 			x += -fullWidth / 2 + 16; // 14 width + 2 gap
 			dc.drawText(x, y+3, fontWeather, "L", Gfx.TEXT_JUSTIFY_RIGHT);
-		}
-		dc.drawText(x, y, Gfx.FONT_MEDIUM, hr, Gfx.TEXT_JUSTIFY_LEFT);
-	}
+        }
+
+        dc.drawText(x, y, Gfx.FONT_MEDIUM, hr, Gfx.TEXT_JUSTIFY_LEFT);
+    }
 
 	function drawDay( dc, x, y ) {
 		// Get Weekday:

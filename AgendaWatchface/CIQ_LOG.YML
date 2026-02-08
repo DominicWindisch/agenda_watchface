@@ -1,0 +1,13 @@
+
+---
+Error: Symbol Not Found Error
+Details: 'Failed invoking <symbol>'
+Time: 2026-02-08T00:47:49Z
+Part-Number: 006-B4532-00
+Firmware-Version: '20.29'
+Language-Code: deu
+ConnectIQ-Version: 5.1.1
+Filename: AgendaWatchface
+Appname: Calendar Active Watch
+Stack: 
+  - pc: 0x100003c7

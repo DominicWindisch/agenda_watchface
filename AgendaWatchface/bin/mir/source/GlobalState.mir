@@ -55,444 +55,450 @@ module GlobalState {
     var english_month = false;
     [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc"; @line = 34; @position = 8; @symbol_vardef = [liveHR,34,8,14]; ]
     var liveHR = false;
-    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc"; @line = 36; @symbol_functiondef = [loadInitialState,36,13,29]; ]
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc"; @line = 36; @position = 8; @symbol_vardef = [displayLiveHR,36,8,21]; ]
+    var displayLiveHR = false;
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc"; @line = 37; @position = 8; @symbol_vardef = [displayPhoneBattery,37,8,27]; ]
+    var displayPhoneBattery = false;
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc"; @line = 38; @position = 8; @symbol_vardef = [currentBodyBattery,38,8,26]; ]
+    var currentBodyBattery = null;
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc"; @line = 40; @symbol_functiondef = [loadInitialState,40,13,29]; ]
     function loadInitialState() {
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_36_32_71_4_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 37 8 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_36_32_71_4_start" "D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_36_32_71_4_stop" ]
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_40_32_75_4_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 41 8 ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_40_32_75_4_start" "D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_40_32_75_4_stop" ]
         %temp.1 = local;
-        symbol [ temp %temp.1 37 12 16 ];
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 39 8 ]
-        symbol [ App %tmp.1 39 15 18 ];
+        symbol [ temp %temp.1 41 12 16 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 43 8 ]
+        symbol [ App %tmp.1 43 15 18 ];
         %tmp.1 = getm $.Toybox.Application;
-        symbol [ Storage %tmp.2 39 19 26 ];
+        symbol [ Storage %tmp.2 43 19 26 ];
         %tmp.2 = getv %tmp.1 :Storage;
-        symbol [ getValue %tmp.3 39 27 35 ];
+        symbol [ getValue %tmp.3 43 27 35 ];
         %tmp.3 = getv function %tmp.2 :getValue;
         %tmp.4 = "Code";
         %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
         lputv %temp.1 %tmp.5;
-        symbol [ temp %temp.1 39 8 12 ];
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 40 8 ]
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_40_8_40_72_if_stmt:
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_40_12_40_49_begin:
+        symbol [ temp %temp.1 43 8 12 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 44 8 ]
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_44_8_44_72_if_stmt:
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_44_12_44_49_begin:
         %tmp.6 = lgetv %temp.1;
-        symbol [ temp %tmp.6 40 12 16 ];
+        symbol [ temp %tmp.6 44 12 16 ];
         %tmp.7 = null;
         %tmp.8 = ne %tmp.6 %tmp.7;
-        bf %tmp.8 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_40_8_40_72_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_40_28_40_49_true:
+        bf %tmp.8 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_44_8_44_72_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_44_28_44_49_true:
         %tmp.9 = lgetv %temp.1;
-        symbol [ temp %tmp.9 40 28 32 ];
+        symbol [ temp %tmp.9 44 28 32 ];
         %tmp.10 = as %tmp.9 { (!Null) };
-        symbol [ Lang %tmp.11 40 44 48 ];
+        symbol [ Lang %tmp.11 44 44 48 ];
         %tmp.11 = getm $.Toybox.Lang;
-        symbol [ String %tmp.12 40 49 55 ];
+        symbol [ String %tmp.12 44 49 55 ];
         %tmp.12 = getv %tmp.11 :String;
         %tmp.13 = isa %tmp.10 %tmp.12;
         push %tmp.13;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_40_28_40_49_end:
-        %tmp.14 = phi [%tmp.8 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_40_12_40_49_begin] [%tmp.13 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_40_28_40_49_true] [%tmp.14 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_40_28_40_49_end];
-        bf %tmp.14 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_40_8_40_72_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_40_8_40_72_if_true:
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_40_57_40_72_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 40 59 ]
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_44_28_44_49_end:
+        %tmp.14 = phi [%tmp.8 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_44_12_44_49_begin] [%tmp.13 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_44_28_44_49_true] [%tmp.14 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_44_28_44_49_end];
+        bf %tmp.14 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_44_8_44_72_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_44_8_44_72_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_44_57_44_72_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 44 59 ]
         %tmp.15 = lgetv %temp.1;
-        symbol [ temp %tmp.15 40 66 70 ];
+        symbol [ temp %tmp.15 44 66 70 ];
         %tmp.16 = as %tmp.15 { (Lang.String) && (!Null) };
-        symbol [ code ? 40 59 63 ];
+        symbol [ code ? 44 59 63 ];
         putv self :code %tmp.16;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_40_57_40_72_stop:
-        goto @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_40_8_40_72_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_40_8_40_72_if_end:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 42 8 ]
-        symbol [ App %tmp.17 42 15 18 ];
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_44_57_44_72_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_44_8_44_72_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_44_8_44_72_if_end:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 46 8 ]
+        symbol [ App %tmp.17 46 15 18 ];
         %tmp.17 = getm $.Toybox.Application;
-        symbol [ Storage %tmp.18 42 19 26 ];
+        symbol [ Storage %tmp.18 46 19 26 ];
         %tmp.18 = getv %tmp.17 :Storage;
-        symbol [ getValue %tmp.19 42 27 35 ];
+        symbol [ getValue %tmp.19 46 27 35 ];
         %tmp.19 = getv function %tmp.18 :getValue;
         %tmp.20 = "calendar_updated";
         %tmp.21 = invoke %tmp.18 %tmp.19(%tmp.20);
         lputv %temp.1 %tmp.21;
-        symbol [ temp %temp.1 42 8 12 ];
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 43 8 ]
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_43_8_43_84_if_stmt:
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_43_12_43_49_begin:
+        symbol [ temp %temp.1 46 8 12 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 47 8 ]
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_47_8_47_84_if_stmt:
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_47_12_47_49_begin:
         %tmp.22 = lgetv %temp.1;
-        symbol [ temp %tmp.22 43 12 16 ];
+        symbol [ temp %tmp.22 47 12 16 ];
         %tmp.23 = null;
         %tmp.24 = ne %tmp.22 %tmp.23;
-        bf %tmp.24 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_43_8_43_84_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_43_28_43_49_true:
+        bf %tmp.24 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_47_8_47_84_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_47_28_47_49_true:
         %tmp.25 = lgetv %temp.1;
-        symbol [ temp %tmp.25 43 28 32 ];
+        symbol [ temp %tmp.25 47 28 32 ];
         %tmp.26 = as %tmp.25 { (!Null) };
-        symbol [ Lang %tmp.27 43 44 48 ];
+        symbol [ Lang %tmp.27 47 44 48 ];
         %tmp.27 = getm $.Toybox.Lang;
-        symbol [ String %tmp.28 43 49 55 ];
+        symbol [ String %tmp.28 47 49 55 ];
         %tmp.28 = getv %tmp.27 :String;
         %tmp.29 = isa %tmp.26 %tmp.28;
         push %tmp.29;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_43_28_43_49_end:
-        %tmp.30 = phi [%tmp.24 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_43_12_43_49_begin] [%tmp.29 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_43_28_43_49_true] [%tmp.30 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_43_28_43_49_end];
-        bf %tmp.30 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_43_8_43_84_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_43_8_43_84_if_true:
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_43_57_43_84_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 43 59 ]
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_47_28_47_49_end:
+        %tmp.30 = phi [%tmp.24 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_47_12_47_49_begin] [%tmp.29 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_47_28_47_49_true] [%tmp.30 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_47_28_47_49_end];
+        bf %tmp.30 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_47_8_47_84_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_47_8_47_84_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_47_57_47_84_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 47 59 ]
         %tmp.31 = lgetv %temp.1;
-        symbol [ temp %tmp.31 43 78 82 ];
+        symbol [ temp %tmp.31 47 78 82 ];
         %tmp.32 = as %tmp.31 { (Lang.String) && (!Null) };
-        symbol [ calendar_updated ? 43 59 75 ];
+        symbol [ calendar_updated ? 47 59 75 ];
         putv self :calendar_updated %tmp.32;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_43_57_43_84_stop:
-        goto @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_43_8_43_84_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_43_8_43_84_if_end:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 45 8 ]
-        symbol [ App %tmp.33 45 15 18 ];
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_47_57_47_84_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_47_8_47_84_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_47_8_47_84_if_end:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 49 8 ]
+        symbol [ App %tmp.33 49 15 18 ];
         %tmp.33 = getm $.Toybox.Application;
-        symbol [ Storage %tmp.34 45 19 26 ];
+        symbol [ Storage %tmp.34 49 19 26 ];
         %tmp.34 = getv %tmp.33 :Storage;
-        symbol [ getValue %tmp.35 45 27 35 ];
+        symbol [ getValue %tmp.35 49 27 35 ];
         %tmp.35 = getv function %tmp.34 :getValue;
         %tmp.36 = "calendar_raw";
         %tmp.37 = invoke %tmp.34 %tmp.35(%tmp.36);
         lputv %temp.1 %tmp.37;
-        symbol [ temp %temp.1 45 8 12 ];
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 46 8 ]
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_46_8_49_8_if_stmt:
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_46_12_46_91_begin:
+        symbol [ temp %temp.1 49 8 12 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 50 8 ]
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_50_8_53_8_if_stmt:
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_50_12_50_91_begin:
         %tmp.38 = lgetv %temp.1;
-        symbol [ temp %tmp.38 46 12 16 ];
+        symbol [ temp %tmp.38 50 12 16 ];
         %tmp.39 = null;
         %tmp.40 = ne %tmp.38 %tmp.39;
-        bf %tmp.40 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_46_8_49_8_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_46_28_46_91_true:
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_46_29_46_81_begin:
+        bf %tmp.40 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_50_8_53_8_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_50_28_50_91_true:
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_50_29_50_81_begin:
         %tmp.41 = lgetv %temp.1;
-        symbol [ temp %tmp.41 46 29 33 ];
+        symbol [ temp %tmp.41 50 29 33 ];
         %tmp.42 = as %tmp.41 { (!Null) };
-        symbol [ Lang %tmp.43 46 45 49 ];
+        symbol [ Lang %tmp.43 50 45 49 ];
         %tmp.43 = getm $.Toybox.Lang;
-        symbol [ String %tmp.44 46 50 56 ];
+        symbol [ String %tmp.44 50 50 56 ];
         %tmp.44 = getv %tmp.43 :String;
         %tmp.45 = isa %tmp.42 %tmp.44;
-        bt %tmp.45 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_46_8_49_8_if_true;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_46_60_46_81_false:
+        bt %tmp.45 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_50_8_53_8_if_true;
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_50_60_50_81_false:
         %tmp.46 = lgetv %temp.1;
-        symbol [ temp %tmp.46 46 60 64 ];
+        symbol [ temp %tmp.46 50 60 64 ];
         %tmp.47 = as %tmp.46 { (!Lang.String) && (!Null) };
-        symbol [ Lang %tmp.48 46 76 80 ];
+        symbol [ Lang %tmp.48 50 76 80 ];
         %tmp.48 = getm $.Toybox.Lang;
-        symbol [ Dictionary %tmp.49 46 81 91 ];
+        symbol [ Dictionary %tmp.49 50 81 91 ];
         %tmp.49 = getv %tmp.48 :Dictionary;
         %tmp.50 = isa %tmp.47 %tmp.49;
         push %tmp.50;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_46_60_46_81_end:
-        %tmp.51 = phi [%tmp.45 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_46_29_46_81_begin] [%tmp.50 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_46_60_46_81_false] [%tmp.51 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_46_60_46_81_end];
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_50_60_50_81_end:
+        %tmp.51 = phi [%tmp.45 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_50_29_50_81_begin] [%tmp.50 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_50_60_50_81_false] [%tmp.51 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_50_60_50_81_end];
         push %tmp.51;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_46_28_46_91_end:
-        %tmp.52 = phi [%tmp.40 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_46_12_46_91_begin] [%tmp.51 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_46_28_46_91_true] [%tmp.52 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_46_28_46_91_end];
-        bf %tmp.52 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_46_8_49_8_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_46_8_49_8_if_true:
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_46_94_49_8_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 47 12 ]
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_50_28_50_91_end:
+        %tmp.52 = phi [%tmp.40 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_50_12_50_91_begin] [%tmp.51 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_50_28_50_91_true] [%tmp.52 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_50_28_50_91_end];
+        bf %tmp.52 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_50_8_53_8_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_50_8_53_8_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_50_94_53_8_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 51 12 ]
         %tmp.53 = lgetv %temp.1;
-        symbol [ temp %tmp.53 47 27 31 ];
+        symbol [ temp %tmp.53 51 27 31 ];
         %tmp.54 = as %tmp.53 { (Lang.String || Lang.Dictionary) && (!Null) };
-        symbol [ calendar_raw ? 47 12 24 ];
+        symbol [ calendar_raw ? 51 12 24 ];
         putv self :calendar_raw %tmp.54;
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 48 12 ]
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 52 12 ]
         %tmp.55 = true;
-        symbol [ calendar_dirty ? 48 12 26 ];
+        symbol [ calendar_dirty ? 52 12 26 ];
         putv self :calendar_dirty %tmp.55;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_46_94_49_8_stop:
-        goto @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_46_8_49_8_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_46_8_49_8_if_end:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 51 8 ]
-        symbol [ App %tmp.56 51 15 18 ];
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_50_94_53_8_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_50_8_53_8_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_50_8_53_8_if_end:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 55 8 ]
+        symbol [ App %tmp.56 55 15 18 ];
         %tmp.56 = getm $.Toybox.Application;
-        symbol [ Storage %tmp.57 51 19 26 ];
+        symbol [ Storage %tmp.57 55 19 26 ];
         %tmp.57 = getv %tmp.56 :Storage;
-        symbol [ getValue %tmp.58 51 27 35 ];
+        symbol [ getValue %tmp.58 55 27 35 ];
         %tmp.58 = getv function %tmp.57 :getValue;
         %tmp.59 = "weathermin";
         %tmp.60 = invoke %tmp.57 %tmp.58(%tmp.59);
         lputv %temp.1 %tmp.60;
-        symbol [ temp %temp.1 51 8 12 ];
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 52 8 ]
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_52_8_52_78_if_stmt:
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_52_12_52_49_begin:
+        symbol [ temp %temp.1 55 8 12 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 56 8 ]
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_56_8_56_78_if_stmt:
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_56_12_56_49_begin:
         %tmp.61 = lgetv %temp.1;
-        symbol [ temp %tmp.61 52 12 16 ];
+        symbol [ temp %tmp.61 56 12 16 ];
         %tmp.62 = null;
         %tmp.63 = ne %tmp.61 %tmp.62;
-        bf %tmp.63 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_52_8_52_78_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_52_28_52_49_true:
+        bf %tmp.63 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_56_8_56_78_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_56_28_56_49_true:
         %tmp.64 = lgetv %temp.1;
-        symbol [ temp %tmp.64 52 28 32 ];
+        symbol [ temp %tmp.64 56 28 32 ];
         %tmp.65 = as %tmp.64 { (!Null) };
-        symbol [ Lang %tmp.66 52 44 48 ];
+        symbol [ Lang %tmp.66 56 44 48 ];
         %tmp.66 = getm $.Toybox.Lang;
-        symbol [ String %tmp.67 52 49 55 ];
+        symbol [ String %tmp.67 56 49 55 ];
         %tmp.67 = getv %tmp.66 :String;
         %tmp.68 = isa %tmp.65 %tmp.67;
         push %tmp.68;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_52_28_52_49_end:
-        %tmp.69 = phi [%tmp.63 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_52_12_52_49_begin] [%tmp.68 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_52_28_52_49_true] [%tmp.69 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_52_28_52_49_end];
-        bf %tmp.69 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_52_8_52_78_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_52_8_52_78_if_true:
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_52_57_52_78_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 52 59 ]
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_56_28_56_49_end:
+        %tmp.69 = phi [%tmp.63 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_56_12_56_49_begin] [%tmp.68 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_56_28_56_49_true] [%tmp.69 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_56_28_56_49_end];
+        bf %tmp.69 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_56_8_56_78_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_56_8_56_78_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_56_57_56_78_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 56 59 ]
         %tmp.70 = lgetv %temp.1;
-        symbol [ temp %tmp.70 52 72 76 ];
+        symbol [ temp %tmp.70 56 72 76 ];
         %tmp.71 = as %tmp.70 { (Lang.String) && (!Null) };
-        symbol [ weathermin ? 52 59 69 ];
+        symbol [ weathermin ? 56 59 69 ];
         putv self :weathermin %tmp.71;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_52_57_52_78_stop:
-        goto @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_52_8_52_78_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_52_8_52_78_if_end:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 54 8 ]
-        symbol [ App %tmp.72 54 15 18 ];
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_56_57_56_78_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_56_8_56_78_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_56_8_56_78_if_end:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 58 8 ]
+        symbol [ App %tmp.72 58 15 18 ];
         %tmp.72 = getm $.Toybox.Application;
-        symbol [ Storage %tmp.73 54 19 26 ];
+        symbol [ Storage %tmp.73 58 19 26 ];
         %tmp.73 = getv %tmp.72 :Storage;
-        symbol [ getValue %tmp.74 54 27 35 ];
+        symbol [ getValue %tmp.74 58 27 35 ];
         %tmp.74 = getv function %tmp.73 :getValue;
         %tmp.75 = "weathermax";
         %tmp.76 = invoke %tmp.73 %tmp.74(%tmp.75);
         lputv %temp.1 %tmp.76;
-        symbol [ temp %temp.1 54 8 12 ];
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 55 8 ]
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_55_8_55_78_if_stmt:
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_55_12_55_49_begin:
+        symbol [ temp %temp.1 58 8 12 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 59 8 ]
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_59_8_59_78_if_stmt:
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_59_12_59_49_begin:
         %tmp.77 = lgetv %temp.1;
-        symbol [ temp %tmp.77 55 12 16 ];
+        symbol [ temp %tmp.77 59 12 16 ];
         %tmp.78 = null;
         %tmp.79 = ne %tmp.77 %tmp.78;
-        bf %tmp.79 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_55_8_55_78_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_55_28_55_49_true:
+        bf %tmp.79 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_59_8_59_78_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_59_28_59_49_true:
         %tmp.80 = lgetv %temp.1;
-        symbol [ temp %tmp.80 55 28 32 ];
+        symbol [ temp %tmp.80 59 28 32 ];
         %tmp.81 = as %tmp.80 { (!Null) };
-        symbol [ Lang %tmp.82 55 44 48 ];
+        symbol [ Lang %tmp.82 59 44 48 ];
         %tmp.82 = getm $.Toybox.Lang;
-        symbol [ String %tmp.83 55 49 55 ];
+        symbol [ String %tmp.83 59 49 55 ];
         %tmp.83 = getv %tmp.82 :String;
         %tmp.84 = isa %tmp.81 %tmp.83;
         push %tmp.84;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_55_28_55_49_end:
-        %tmp.85 = phi [%tmp.79 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_55_12_55_49_begin] [%tmp.84 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_55_28_55_49_true] [%tmp.85 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_55_28_55_49_end];
-        bf %tmp.85 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_55_8_55_78_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_55_8_55_78_if_true:
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_55_57_55_78_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 55 59 ]
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_59_28_59_49_end:
+        %tmp.85 = phi [%tmp.79 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_59_12_59_49_begin] [%tmp.84 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_59_28_59_49_true] [%tmp.85 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_59_28_59_49_end];
+        bf %tmp.85 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_59_8_59_78_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_59_8_59_78_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_59_57_59_78_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 59 59 ]
         %tmp.86 = lgetv %temp.1;
-        symbol [ temp %tmp.86 55 72 76 ];
+        symbol [ temp %tmp.86 59 72 76 ];
         %tmp.87 = as %tmp.86 { (Lang.String) && (!Null) };
-        symbol [ weathermax ? 55 59 69 ];
+        symbol [ weathermax ? 59 59 69 ];
         putv self :weathermax %tmp.87;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_55_57_55_78_stop:
-        goto @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_55_8_55_78_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_55_8_55_78_if_end:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 57 8 ]
-        symbol [ App %tmp.88 57 15 18 ];
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_59_57_59_78_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_59_8_59_78_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_59_8_59_78_if_end:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 61 8 ]
+        symbol [ App %tmp.88 61 15 18 ];
         %tmp.88 = getm $.Toybox.Application;
-        symbol [ Storage %tmp.89 57 19 26 ];
+        symbol [ Storage %tmp.89 61 19 26 ];
         %tmp.89 = getv %tmp.88 :Storage;
-        symbol [ getValue %tmp.90 57 27 35 ];
+        symbol [ getValue %tmp.90 61 27 35 ];
         %tmp.90 = getv function %tmp.89 :getValue;
         %tmp.91 = "weathernow";
         %tmp.92 = invoke %tmp.89 %tmp.90(%tmp.91);
         lputv %temp.1 %tmp.92;
-        symbol [ temp %temp.1 57 8 12 ];
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 58 8 ]
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_58_8_58_78_if_stmt:
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_58_12_58_49_begin:
+        symbol [ temp %temp.1 61 8 12 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 62 8 ]
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_62_8_62_78_if_stmt:
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_62_12_62_49_begin:
         %tmp.93 = lgetv %temp.1;
-        symbol [ temp %tmp.93 58 12 16 ];
+        symbol [ temp %tmp.93 62 12 16 ];
         %tmp.94 = null;
         %tmp.95 = ne %tmp.93 %tmp.94;
-        bf %tmp.95 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_58_8_58_78_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_58_28_58_49_true:
+        bf %tmp.95 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_62_8_62_78_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_62_28_62_49_true:
         %tmp.96 = lgetv %temp.1;
-        symbol [ temp %tmp.96 58 28 32 ];
+        symbol [ temp %tmp.96 62 28 32 ];
         %tmp.97 = as %tmp.96 { (!Null) };
-        symbol [ Lang %tmp.98 58 44 48 ];
+        symbol [ Lang %tmp.98 62 44 48 ];
         %tmp.98 = getm $.Toybox.Lang;
-        symbol [ String %tmp.99 58 49 55 ];
+        symbol [ String %tmp.99 62 49 55 ];
         %tmp.99 = getv %tmp.98 :String;
         %tmp.100 = isa %tmp.97 %tmp.99;
         push %tmp.100;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_58_28_58_49_end:
-        %tmp.101 = phi [%tmp.95 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_58_12_58_49_begin] [%tmp.100 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_58_28_58_49_true] [%tmp.101 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_58_28_58_49_end];
-        bf %tmp.101 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_58_8_58_78_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_58_8_58_78_if_true:
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_58_57_58_78_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 58 59 ]
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_62_28_62_49_end:
+        %tmp.101 = phi [%tmp.95 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_62_12_62_49_begin] [%tmp.100 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_62_28_62_49_true] [%tmp.101 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_62_28_62_49_end];
+        bf %tmp.101 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_62_8_62_78_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_62_8_62_78_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_62_57_62_78_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 62 59 ]
         %tmp.102 = lgetv %temp.1;
-        symbol [ temp %tmp.102 58 72 76 ];
+        symbol [ temp %tmp.102 62 72 76 ];
         %tmp.103 = as %tmp.102 { (Lang.String) && (!Null) };
-        symbol [ weathernow ? 58 59 69 ];
+        symbol [ weathernow ? 62 59 69 ];
         putv self :weathernow %tmp.103;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_58_57_58_78_stop:
-        goto @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_58_8_58_78_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_58_8_58_78_if_end:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 60 8 ]
-        symbol [ App %tmp.104 60 15 18 ];
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_62_57_62_78_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_62_8_62_78_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_62_8_62_78_if_end:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 64 8 ]
+        symbol [ App %tmp.104 64 15 18 ];
         %tmp.104 = getm $.Toybox.Application;
-        symbol [ Storage %tmp.105 60 19 26 ];
+        symbol [ Storage %tmp.105 64 19 26 ];
         %tmp.105 = getv %tmp.104 :Storage;
-        symbol [ getValue %tmp.106 60 27 35 ];
+        symbol [ getValue %tmp.106 64 27 35 ];
         %tmp.106 = getv function %tmp.105 :getValue;
         %tmp.107 = "weatherid";
         %tmp.108 = invoke %tmp.105 %tmp.106(%tmp.107);
         lputv %temp.1 %tmp.108;
-        symbol [ temp %temp.1 60 8 12 ];
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 61 8 ]
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_61_8_61_77_if_stmt:
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_61_12_61_49_begin:
+        symbol [ temp %temp.1 64 8 12 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 65 8 ]
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_65_8_65_77_if_stmt:
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_65_12_65_49_begin:
         %tmp.109 = lgetv %temp.1;
-        symbol [ temp %tmp.109 61 12 16 ];
+        symbol [ temp %tmp.109 65 12 16 ];
         %tmp.110 = null;
         %tmp.111 = ne %tmp.109 %tmp.110;
-        bf %tmp.111 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_61_8_61_77_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_61_28_61_49_true:
+        bf %tmp.111 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_65_8_65_77_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_65_28_65_49_true:
         %tmp.112 = lgetv %temp.1;
-        symbol [ temp %tmp.112 61 28 32 ];
+        symbol [ temp %tmp.112 65 28 32 ];
         %tmp.113 = as %tmp.112 { (!Null) };
-        symbol [ Lang %tmp.114 61 44 48 ];
+        symbol [ Lang %tmp.114 65 44 48 ];
         %tmp.114 = getm $.Toybox.Lang;
-        symbol [ Number %tmp.115 61 49 55 ];
+        symbol [ Number %tmp.115 65 49 55 ];
         %tmp.115 = getv %tmp.114 :Number;
         %tmp.116 = isa %tmp.113 %tmp.115;
         push %tmp.116;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_61_28_61_49_end:
-        %tmp.117 = phi [%tmp.111 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_61_12_61_49_begin] [%tmp.116 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_61_28_61_49_true] [%tmp.117 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_61_28_61_49_end];
-        bf %tmp.117 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_61_8_61_77_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_61_8_61_77_if_true:
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_61_57_61_77_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 61 59 ]
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_65_28_65_49_end:
+        %tmp.117 = phi [%tmp.111 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_65_12_65_49_begin] [%tmp.116 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_65_28_65_49_true] [%tmp.117 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_65_28_65_49_end];
+        bf %tmp.117 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_65_8_65_77_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_65_8_65_77_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_65_57_65_77_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 65 59 ]
         %tmp.118 = lgetv %temp.1;
-        symbol [ temp %tmp.118 61 71 75 ];
+        symbol [ temp %tmp.118 65 71 75 ];
         %tmp.119 = as %tmp.118 { (!Null) && (Lang.Number) };
-        symbol [ weatherid ? 61 59 68 ];
+        symbol [ weatherid ? 65 59 68 ];
         putv self :weatherid %tmp.119;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_61_57_61_77_stop:
-        goto @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_61_8_61_77_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_61_8_61_77_if_end:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 63 8 ]
-        symbol [ App %tmp.120 63 15 18 ];
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_65_57_65_77_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_65_8_65_77_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_65_8_65_77_if_end:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 67 8 ]
+        symbol [ App %tmp.120 67 15 18 ];
         %tmp.120 = getm $.Toybox.Application;
-        symbol [ Storage %tmp.121 63 19 26 ];
+        symbol [ Storage %tmp.121 67 19 26 ];
         %tmp.121 = getv %tmp.120 :Storage;
-        symbol [ getValue %tmp.122 63 27 35 ];
+        symbol [ getValue %tmp.122 67 27 35 ];
         %tmp.122 = getv function %tmp.121 :getValue;
         %tmp.123 = "phoneBattery";
         %tmp.124 = invoke %tmp.121 %tmp.122(%tmp.123);
         lputv %temp.1 %tmp.124;
-        symbol [ temp %temp.1 63 8 12 ];
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 64 8 ]
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_64_8_64_80_if_stmt:
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_64_12_64_49_begin:
+        symbol [ temp %temp.1 67 8 12 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 68 8 ]
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_68_8_68_80_if_stmt:
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_68_12_68_49_begin:
         %tmp.125 = lgetv %temp.1;
-        symbol [ temp %tmp.125 64 12 16 ];
+        symbol [ temp %tmp.125 68 12 16 ];
         %tmp.126 = null;
         %tmp.127 = ne %tmp.125 %tmp.126;
-        bf %tmp.127 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_64_8_64_80_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_64_28_64_49_true:
+        bf %tmp.127 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_68_8_68_80_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_68_28_68_49_true:
         %tmp.128 = lgetv %temp.1;
-        symbol [ temp %tmp.128 64 28 32 ];
+        symbol [ temp %tmp.128 68 28 32 ];
         %tmp.129 = as %tmp.128 { (!Null) };
-        symbol [ Lang %tmp.130 64 44 48 ];
+        symbol [ Lang %tmp.130 68 44 48 ];
         %tmp.130 = getm $.Toybox.Lang;
-        symbol [ Number %tmp.131 64 49 55 ];
+        symbol [ Number %tmp.131 68 49 55 ];
         %tmp.131 = getv %tmp.130 :Number;
         %tmp.132 = isa %tmp.129 %tmp.131;
         push %tmp.132;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_64_28_64_49_end:
-        %tmp.133 = phi [%tmp.127 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_64_12_64_49_begin] [%tmp.132 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_64_28_64_49_true] [%tmp.133 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_64_28_64_49_end];
-        bf %tmp.133 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_64_8_64_80_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_64_8_64_80_if_true:
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_64_57_64_80_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 64 59 ]
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_68_28_68_49_end:
+        %tmp.133 = phi [%tmp.127 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_68_12_68_49_begin] [%tmp.132 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_68_28_68_49_true] [%tmp.133 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_68_28_68_49_end];
+        bf %tmp.133 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_68_8_68_80_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_68_8_68_80_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_68_57_68_80_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 68 59 ]
         %tmp.134 = lgetv %temp.1;
-        symbol [ temp %tmp.134 64 74 78 ];
+        symbol [ temp %tmp.134 68 74 78 ];
         %tmp.135 = as %tmp.134 { (!Null) && (Lang.Number) };
-        symbol [ phoneBattery ? 64 59 71 ];
+        symbol [ phoneBattery ? 68 59 71 ];
         putv self :phoneBattery %tmp.135;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_64_57_64_80_stop:
-        goto @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_64_8_64_80_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_64_8_64_80_if_end:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 66 8 ]
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_68_57_68_80_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_68_8_68_80_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_68_8_68_80_if_end:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 70 8 ]
         %tmp.136 = self;
-        symbol [ readSettings %tmp.137 66 8 20 ];
+        symbol [ readSettings %tmp.137 70 8 20 ];
         %tmp.137 = getv function %tmp.136 :readSettings;
         invoke %tmp.136 %tmp.137();
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 68 8 ]
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_68_8_70_8_if_stmt:
-        symbol [ calendar_demo %tmp.139 68 12 25 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 72 8 ]
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_72_8_74_8_if_stmt:
+        symbol [ calendar_demo %tmp.139 72 12 25 ];
         %tmp.139 = getv ? :calendar_demo;
-        bf %tmp.139 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_68_8_70_8_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_68_8_70_8_if_true:
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_68_27_70_8_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 69 12 ]
+        bf %tmp.139 @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_72_8_74_8_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_72_8_74_8_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_72_27_74_8_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 73 12 ]
         %tmp.140 = true;
-        symbol [ calendar_dirty ? 69 12 26 ];
+        symbol [ calendar_dirty ? 73 12 26 ];
         putv self :calendar_dirty %tmp.140;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_68_27_70_8_stop:
-        goto @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_68_8_70_8_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_68_8_70_8_if_end:
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_36_32_71_4_stop:
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_72_27_74_8_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_72_8_74_8_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_72_8_74_8_if_end:
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_40_32_75_4_stop:
     }
-    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc"; @line = 73; @symbol_functiondef = [readSettings,73,13,25]; ]
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc"; @line = 77; @symbol_functiondef = [readSettings,77,13,25]; ]
     function readSettings() {
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_73_28_86_4_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 75 8 ]
-        %tmp.1 = false;
-        symbol [ calendar_agendastyle ? 75 8 28 ];
-        putv self :calendar_agendastyle %tmp.1;
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 76 8 ]
-        %tmp.2 = true;
-        symbol [ calendar_onelinestyle ? 76 8 29 ];
-        putv self :calendar_onelinestyle %tmp.2;
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 77 8 ]
-        %tmp.3 = true;
-        symbol [ calendar_alignleft ? 77 8 26 ];
-        putv self :calendar_alignleft %tmp.3;
-[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 78 8 ]
-        %tmp.4 = 0xFFFFFF;
-        symbol [ calendar_clockcolor ? 78 8 27 ];
-        putv self :calendar_clockcolor %tmp.4;
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_77_28_90_4_start:
 [ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 79 8 ]
-        %tmp.5 = 0x00AA55;
-        symbol [ calendar_infocolor ? 79 8 26 ];
-        putv self :calendar_infocolor %tmp.5;
+        %tmp.1 = false;
+        symbol [ calendar_agendastyle ? 79 8 28 ];
+        putv self :calendar_agendastyle %tmp.1;
 [ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 80 8 ]
-        %tmp.6 = 0;
-        symbol [ watch_leftdatafield ? 80 8 27 ];
-        putv self :watch_leftdatafield %tmp.6;
+        %tmp.2 = true;
+        symbol [ calendar_onelinestyle ? 80 8 29 ];
+        putv self :calendar_onelinestyle %tmp.2;
 [ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 81 8 ]
-        %tmp.7 = 3;
-        symbol [ watch_rightdatafield ? 81 8 28 ];
-        putv self :watch_rightdatafield %tmp.7;
+        %tmp.3 = true;
+        symbol [ calendar_alignleft ? 81 8 26 ];
+        putv self :calendar_alignleft %tmp.3;
 [ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 82 8 ]
-        %tmp.8 = false;
-        symbol [ calendar_demo ? 82 8 21 ];
-        putv self :calendar_demo %tmp.8;
+        %tmp.4 = 0xFFFFFF;
+        symbol [ calendar_clockcolor ? 82 8 27 ];
+        putv self :calendar_clockcolor %tmp.4;
 [ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 83 8 ]
-        %tmp.9 = 5;
-        symbol [ calendar_updaterate ? 83 8 27 ];
-        putv self :calendar_updaterate %tmp.9;
+        %tmp.5 = 0x00AA55;
+        symbol [ calendar_infocolor ? 83 8 26 ];
+        putv self :calendar_infocolor %tmp.5;
 [ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 84 8 ]
-        %tmp.10 = false;
-        symbol [ watch_weekday ? 84 8 21 ];
-        putv self :watch_weekday %tmp.10;
+        %tmp.6 = 0;
+        symbol [ watch_leftdatafield ? 84 8 27 ];
+        putv self :watch_leftdatafield %tmp.6;
 [ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 85 8 ]
+        %tmp.7 = 3;
+        symbol [ watch_rightdatafield ? 85 8 28 ];
+        putv self :watch_rightdatafield %tmp.7;
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 86 8 ]
+        %tmp.8 = false;
+        symbol [ calendar_demo ? 86 8 21 ];
+        putv self :calendar_demo %tmp.8;
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 87 8 ]
+        %tmp.9 = 5;
+        symbol [ calendar_updaterate ? 87 8 27 ];
+        putv self :calendar_updaterate %tmp.9;
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 88 8 ]
+        %tmp.10 = false;
+        symbol [ watch_weekday ? 88 8 21 ];
+        putv self :watch_weekday %tmp.10;
+[ "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc" 89 8 ]
         %tmp.11 = false;
-        symbol [ english_month ? 85 8 21 ];
+        symbol [ english_month ? 89 8 21 ];
         putv self :english_month %tmp.11;
-D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_73_28_86_4_stop:
+D__git_agenda_watchface_AgendaWatchface_source_GlobalState_mc_77_28_90_4_stop:
     }
 }
 [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc"; @line = 1; ]

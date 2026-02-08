@@ -1,5 +1,5 @@
 <fonts>
-	<font id="symbols" filename="symbols.fnt" filter="ABCDEFGHIJK" antialias="true"/>
-	<font id="weathericons" filename="weathericons.fnt" filter="ABCDEFGHIJKL-" antialias="true"/>
-
+	<font id="symbols" filename="symbols.fnt" filter="ABCDEFGHIJK" antialias="false"/>
+	<font id="weathericons" filename="weathericons.fnt" filter="ABCDEFGHIJKL-" antialias="false"/>
+    <font id="CalFontBold"  filename="final_20_narrow.fnt" antialias="false"/>
 </fonts> 

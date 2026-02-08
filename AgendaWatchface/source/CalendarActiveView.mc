@@ -9,15 +9,27 @@ class CalendarActiveView extends Ui.WatchFace {
 	var c = null;
 	var drawer = null;
 	var a = null;
+	var width = 260; 
+    var height = 260; 
+    var isAwake = false; // New flag to track power state
+
+	var _flashFrame = 0;
+
+	var fontSymbols, fontWeather, fontCalendar;
 	
     function initialize(app) {
         WatchFace.initialize();
+		fontSymbols = Ui.loadResource(Rez.Fonts.symbols);
+        fontWeather = Ui.loadResource(Rez.Fonts.weathericons);
+		fontCalendar = Ui.loadResource((Rez.Fonts.CalFontBold));
         a = app;
         c = new Calendar();
     }
 
     function onLayout(dc) {
-		drawer = new CalendarDrawerRound(c,dc,9);
+		drawer = new CalendarDrawerRound(c,dc,9, fontSymbols, fontWeather, fontCalendar);
+		width = dc.getWidth();
+        height = dc.getHeight();
     }
 
     function onShow() {
@@ -63,6 +75,18 @@ class CalendarActiveView extends Ui.WatchFace {
     	if (drawer!=null) {
     		drawer.draw(dc);
     	}
+
+		if (_flashFrame > 0) {
+            dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_WHITE);
+            dc.fillRectangle(0, 0, width, height);
+            
+            // Decrement so it stops after this frame
+            _flashFrame--; 
+            
+            // Force one more update immediately to clear the white screen
+            // (This creates a quick blink effect)
+            Ui.requestUpdate();
+        }
 	}
 	
     function onHide() {
@@ -70,13 +94,19 @@ class CalendarActiveView extends Ui.WatchFace {
     }
 
     function onExitSleep() {
-    	if (drawer!=null){drawer.startLiveHR();}
-    	c.updateDateString();
-    	a.requestImmediateUpdate();
+    	isAwake = true;
+        c.updateDateString();
+        Ui.requestUpdate();
     }
 
     function onEnterSleep() {
-    	if (drawer!=null){drawer.stopLiveHR();}
+    	isAwake = false;
+        Ui.requestUpdate();
+    }
+
+	function triggerFlash() {
+        _flashFrame = 1; // Set to 1 to trigger the draw loop
+        Ui.requestUpdate(); // Request immediate redraw
     }
 
 }

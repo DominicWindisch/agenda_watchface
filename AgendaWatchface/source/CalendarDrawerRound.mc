@@ -18,6 +18,8 @@ class CalendarDrawerRound {
 	var fontDeltaY = 0;
 	var dataDrawer;
 	var liveHR = 0;
+
+    var fontBold;
 	
 	function startLiveHR() {
 		liveHR = 0;
@@ -26,13 +28,13 @@ class CalendarDrawerRound {
 		liveHR = 999;
 	}
 	
-    function initialize( calendar, dc, type ) {
+    function initialize( calendar, dc, type, symbols, weather, customFont ) {
         w = dc.getWidth();
         h = dc.getHeight();
         c = calendar;
         t = type;
-        dataDrawer = new DataDrawer();
-        
+        dataDrawer = new DataDrawer(symbols, weather);
+        fontBold = customFont;
         updateSettings();
     }
     
@@ -53,9 +55,9 @@ class CalendarDrawerRound {
 		
 		var xClock24 = w/2 + fontDeltaX/2;
 		var yDate = 10;
-		var yClock = 23 + fontDeltaY;
+		var yClock = 21 + fontDeltaY;
 		var yDataField = 92;
-        var yHR = 83;
+        var yHR = 86;
 		var yCalendar = 120; 
 		var dySymbols = 2;
 		var dyDataField = 8;
@@ -68,39 +70,40 @@ class CalendarDrawerRound {
 		dataDrawer.drawInfoLeft(dc, w/2-38, yDate+dySymbols);
 		dataDrawer.drawInfoRight(dc, w/2+30, yDate+dySymbols);
 		
-		dc.drawText( w/2, yDate, Gfx.FONT_XTINY, c.dateShortString, Gfx.TEXT_JUSTIFY_CENTER);
-		if (liveHR < 4) {
-			if (GlobalState.phoneBattery >= 0) {
-				if (GlobalState.phoneBattery >= 30) { 
-					dc.setColor(0x00AA00,Gfx.COLOR_TRANSPARENT);
-				} else if (GlobalState.phoneBattery >= 10) {
-					dc.setColor(0xFF5500,Gfx.COLOR_TRANSPARENT);
-				} else {
-					dc.setColor(0xFF0000,Gfx.COLOR_TRANSPARENT);
-				}
-				dc.drawText( w/2, 234, Gfx.FONT_XTINY, "P:" + GlobalState.phoneBattery.format("%.0f")+"%", Gfx.TEXT_JUSTIFY_CENTER);
-				dc.setColor(GlobalState.calendar_infocolor,Gfx.COLOR_TRANSPARENT);
-			} else {
-				dc.drawText( w/2, 234, Gfx.FONT_XTINY, "???%", Gfx.TEXT_JUSTIFY_CENTER);
-			}
-		}
-		else if (battery < 20) {
-			dc.setColor(0xFF0000,Gfx.COLOR_TRANSPARENT);
-			dc.drawText( w/2, 234, Gfx.FONT_XTINY, battery.format("%.0f")+"%", Gfx.TEXT_JUSTIFY_CENTER);
-			dc.setColor(GlobalState.calendar_infocolor,Gfx.COLOR_TRANSPARENT);
-		} else {
-			dc.drawText( w/2, 234, Gfx.FONT_XTINY, battery.format("%.0f")+"%", Gfx.TEXT_JUSTIFY_CENTER);
-		}
+		dc.drawText( w/2, yDate, fontBold, c.dateShortString, Gfx.TEXT_JUSTIFY_CENTER);
+		// --- DRAW BATTERY ---
+        if (GlobalState.displayPhoneBattery) {
+            // SHOW PHONE BATTERY
+            if (GlobalState.phoneBattery >= 0) {
+                if (GlobalState.phoneBattery >= 30) { 
+                    dc.setColor(0x00AA00, Gfx.COLOR_TRANSPARENT);
+                } else if (GlobalState.phoneBattery >= 10) {
+                    dc.setColor(0xFF5500, Gfx.COLOR_TRANSPARENT);
+                } else {
+                    dc.setColor(0xFF0000, Gfx.COLOR_TRANSPARENT);
+                }
+                dc.drawText( w/2, 234, fontBold, "P:" + GlobalState.phoneBattery.format("%.0f")+"%", Gfx.TEXT_JUSTIFY_CENTER);
+            } else {
+                // Phone battery unknown
+                dc.setColor(GlobalState.calendar_infocolor, Gfx.COLOR_TRANSPARENT);
+                dc.drawText( w/2, 234, fontBold, "P:?", Gfx.TEXT_JUSTIFY_CENTER);
+            }
+        } else {
+            // SHOW WATCH BATTERY
+            if (battery < 20) {
+                dc.setColor(0xFF0000, Gfx.COLOR_TRANSPARENT);
+            } else {
+                dc.setColor(GlobalState.calendar_infocolor, Gfx.COLOR_TRANSPARENT);
+            }
+            dc.drawText( w/2, 234, fontBold, "W:" + battery.format("%.0f")+"%", Gfx.TEXT_JUSTIFY_CENTER);
+        }
 		
 		dc.setColor(GlobalState.calendar_infocolor,Gfx.COLOR_TRANSPARENT);
 		dataDrawer.drawLeft(dc, 10, yDataField, GlobalState.watch_leftdatafield, dyDataField, GlobalState.weathernow, GlobalState.weatherid);
 		dataDrawer.drawRight(dc, w-11, yDataField, GlobalState.weatherid, dyDataField, GlobalState.weathermin, GlobalState.weathermax);
 		
-		if (liveHR < 5) {
-			liveHR++;
-		}
-		dataDrawer.drawHR(dc, w/2, yHR, dyHR, liveHR );
-	
+        dataDrawer.drawHR(dc, w/2, yHR, dyHR, GlobalState.displayLiveHR);	
+
 		dc.setColor(0xaaaaaa,Gfx.COLOR_TRANSPARENT);
 		dc.setPenWidth(2);
 		dc.drawLine(0,yCalendar,w,yCalendar);
@@ -118,9 +121,9 @@ class CalendarDrawerRound {
 		fontWait = Gfx.FONT_TINY;
 		dc.setColor(0xffaa00, Gfx.COLOR_TRANSPARENT);
 		dc.drawText(x, y+dy[0], fontWait, Ui.loadResource(Rez.Strings.WaitInfo_01), Gfx.TEXT_JUSTIFY_CENTER);
-		dc.drawText(x, y+dy[1], Gfx.FONT_XTINY, Ui.loadResource(Rez.Strings.WaitInfo_02), Gfx.TEXT_JUSTIFY_CENTER);
-		dc.drawText(x, y+dy[2], Gfx.FONT_XTINY, Ui.loadResource(Rez.Strings.WaitInfo_03), Gfx.TEXT_JUSTIFY_CENTER);
-		dc.drawText(x, y+dy[3], Gfx.FONT_XTINY, Ui.loadResource(Rez.Strings.WaitInfo_04), Gfx.TEXT_JUSTIFY_CENTER);
+		dc.drawText(x, y+dy[1], fontBold, Ui.loadResource(Rez.Strings.WaitInfo_02), Gfx.TEXT_JUSTIFY_CENTER);
+		dc.drawText(x, y+dy[2], fontBold, Ui.loadResource(Rez.Strings.WaitInfo_03), Gfx.TEXT_JUSTIFY_CENTER);
+		dc.drawText(x, y+dy[3], fontBold, Ui.loadResource(Rez.Strings.WaitInfo_04), Gfx.TEXT_JUSTIFY_CENTER);
 	}
 
     // Helper function to convert a Y-coordinate to an angle on the left side of the screen
@@ -182,13 +185,13 @@ class CalendarDrawerRound {
             prefix += " " + ev.time;
         }
         dc.setColor(color, Gfx.COLOR_TRANSPARENT);
-        dc.drawText(xLineStart, y, Gfx.FONT_XTINY, prefix, Gfx.TEXT_JUSTIFY_LEFT);
+        dc.drawText(xLineStart, y, fontBold, prefix, Gfx.TEXT_JUSTIFY_LEFT);
         
         // --- Draw Event Description ---
         // Calculate the starting X based on the prefix width for a fluid layout
-        var prefixWidth = dc.getTextWidthInPixels(prefix, Gfx.FONT_XTINY);
+        var prefixWidth = dc.getTextWidthInPixels(prefix, fontBold);
         var descriptionStartX = xLineStart + prefixWidth + 5; // 5px gap
-        dc.drawText(descriptionStartX, y, Gfx.FONT_XTINY, ev.desc, Gfx.TEXT_JUSTIFY_LEFT);
+        dc.drawText(descriptionStartX, y, fontBold, ev.desc, Gfx.TEXT_JUSTIFY_LEFT);
     }
 
 	function getDxFromY(y as Lang.Number) {
@@ -237,13 +240,15 @@ class CalendarDrawerRound {
         //var xDelta = [15, 18, 22, 31, 44, 68];
 
         var yCalendarStart = y;
-        var yAfterToday = 0.0, yAfterTomorrow = 0.0, yAfterFuture = 0.0;
+        //var yAfterToday = 0.0;
+        var yAfterTomorrow = 0.0;
+        //var yAfterFuture = 0.0;
         var separatorY = 0.0;
         var hasFutureEvents = false;
 
 		// 1. Check for connection error
 		var lastUpdt = App.Storage.getValue("LastChangedM");
-		var lastReq = App.Storage.getValue("LastRequestM");
+		var lastReq = Time.now().value(); //App.Storage.getValue("LastRequestM");
 		var maxUpdateDelay = 900; 
 		var lastUpdtTime = (lastUpdt != null) ? lastUpdt : 0;
 	    var lastReqTime = (lastReq != null) ? lastReq : maxUpdateDelay + 1;
@@ -251,14 +256,14 @@ class CalendarDrawerRound {
 
 		if (noConnection) {
 			dc.setColor(0xff0000, Gfx.COLOR_TRANSPARENT);
-			dc.drawText(w/2, y, Gfx.FONT_XTINY, "Keine Verbindung!", Gfx.TEXT_JUSTIFY_CENTER);
+			dc.drawText(w/2, y, fontBold, "Keine Verbindung!", Gfx.TEXT_JUSTIFY_CENTER);
 			y += dyLine;
             itemsDrawn++;
 		}
 
         // --- TODAY ---
-        var todaysAllDay = c.getTodaysAllDayEvents(now);
-        var todaysTimed = c.getTodaysTimedEvents(now);
+        var todaysAllDay = c.getTodaysAllDayEvents(now) as Lang.Array<Calendar.Event>;
+        var todaysTimed = c.getTodaysTimedEvents(now) as Lang.Array<Calendar.Event>;
         for (var i = 0; i < todaysAllDay.size() && itemsDrawn < maxitems; i++) {
             drawEvent(dc, todaysAllDay[i], y, getDxFromY(y), 0xaaaaaa);
             y += dyLine;
@@ -284,11 +289,11 @@ class CalendarDrawerRound {
             var msg = c.hasAnyEventsToday() ? "Keine Termine mehr heute" : "Heute keine Termine";
             dc.setColor(0xffffff, Gfx.COLOR_TRANSPARENT);
 			var descriptionStartX = getDxFromY(y) + 5; // 5px gap
-        	dc.drawText(descriptionStartX, y, Gfx.FONT_XTINY, msg, Gfx.TEXT_JUSTIFY_LEFT);
+        	dc.drawText(descriptionStartX, y, fontBold, msg, Gfx.TEXT_JUSTIFY_LEFT);
             y += dyLine;
             itemsDrawn++;
         }
-        yAfterToday = y;
+        //yAfterToday = y;
 
         // --- SEPARATOR ---
         y += 4;
@@ -300,13 +305,12 @@ class CalendarDrawerRound {
 
         // --- TOMORROW ---
         if (itemsDrawn < maxitems) {
-            var tomorrowsEvents = c.getTomorrowsEvents(now);
-            var yBeforeTomorrow = y;
+            var tomorrowsEvents = c.getTomorrowsEvents(now) as Lang.Array<Calendar.Event>;
             if (tomorrowsEvents.size() == 0) {
                 dc.setColor(0xaaaaaa, Gfx.COLOR_TRANSPARENT);
 				var msg = "Morgen keine Termine";
 				var descriptionStartX = getDxFromY(y) + 5; // 5px gap
-        		dc.drawText(descriptionStartX, y, Gfx.FONT_XTINY, msg, Gfx.TEXT_JUSTIFY_LEFT);
+        		dc.drawText(descriptionStartX, y, fontBold, msg, Gfx.TEXT_JUSTIFY_LEFT);
                 y += dyLine;
                 itemsDrawn++;
             } else {
@@ -327,7 +331,7 @@ class CalendarDrawerRound {
         yAfterTomorrow = y;
 
         // --- FUTURE ---
-        var futureEvents = c.getFutureEvents(now);
+        var futureEvents = c.getFutureEvents(now) as Lang.Array<Calendar.Event>;
         hasFutureEvents = futureEvents.size() > 0;
         if (itemsDrawn < maxitems && hasFutureEvents) {
             for (var i = 0; i < futureEvents.size() && itemsDrawn < maxitems; i++) {
@@ -336,7 +340,7 @@ class CalendarDrawerRound {
                 itemsDrawn++;
             }
         }
-        yAfterFuture = y;
+        //yAfterFuture = y;
 
 
         // --- DRAW THE OUTER ARCS ---
@@ -350,16 +354,6 @@ class CalendarDrawerRound {
         var arcTomorrowStartY = separatorY;
         var arcTomorrowStopY = yAfterTomorrow;
 
-        var arcFutureStartY = yAfterTomorrow;
-        var arcFutureStopY = yAfterFuture;
-
-        // Determine which arc is last and extend it to the bottom
-        if (hasFutureEvents) {
-            arcFutureStopY = h;
-        } else {
-            arcTomorrowStopY = h;
-        }
-        
         // Draw Today Arc
         var start = yToAngle(arcTodayStartY);
         var stop = yToAngle(arcTodayStopY);
