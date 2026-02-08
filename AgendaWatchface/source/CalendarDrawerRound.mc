@@ -167,13 +167,13 @@ class CalendarDrawerRound {
         var x_rel = Math.sqrt(x_rel_sq);
 
         var angleRad = Math.atan2(-y_rel, x_rel);
-        var angleDeg = Math.toDegrees(angleRad);
+        var angleDeg = Math.toDegrees(angleRad) + 1; // there's an ever so slight gap
         
         if (angleDeg < 0) {
             angleDeg += 360;
         }
 
-        return angleDeg;
+        return angleDeg; 
     }
 
 
@@ -197,7 +197,7 @@ class CalendarDrawerRound {
 	function getDxFromY(y as Lang.Number) {
 		// radius = 130
 		var dy = (y + 16) - 130; // subtract the line height
-		return Math.ceil(130 - Math.sqrt(16900 - (dy*dy))) + 2; // inherent small offset to get out of the arc
+		return Math.ceil(130 - Math.sqrt(16900 - (dy*dy))) - 2; // inherent small offset to get out of the arc
 	}
 
 	function drawDottedArcs(dc, cx, cy, radius, ystart, ystop) {
@@ -270,7 +270,7 @@ class CalendarDrawerRound {
             itemsDrawn++;
         }
         if (todaysAllDay.size() > 0 && todaysTimed.size() > 0 && itemsDrawn < maxitems) {
-            y+= 1;
+            y+= 2;
             dc.setColor(0x555555,Gfx.COLOR_TRANSPARENT);
             dc.setPenWidth(1);
             var dashLength = 2;
@@ -278,7 +278,7 @@ class CalendarDrawerRound {
             for (var x = 0; x < w; x += (dashLength + gapLength)) {
                 dc.drawLine(x, y, x + dashLength, y);
             }
-            y += 1;
+            //y += 1;
         }
         for (var i = 0; i < todaysTimed.size() && itemsDrawn < maxitems; i++) {
             drawEvent(dc, todaysTimed[i], y, getDxFromY(y), 0xffffff);
@@ -321,8 +321,8 @@ class CalendarDrawerRound {
                 }
             }
 			y += 4;
-			var dashLength = 2;
-            var gapLength = 2;
+			var dashLength = 3;
+            var gapLength = 4;
             for (var x = 0; x < w; x += (dashLength + gapLength)) {
                 dc.drawLine(x, y, x + dashLength, y);
             }
@@ -345,7 +345,7 @@ class CalendarDrawerRound {
 
         // --- DRAW THE OUTER ARCS ---
         dc.setPenWidth(2);
-        var radius = (w/2)-1;
+        var radius = (w/2);
 
         // Arc boundaries
         var arcTodayStartY = yCalendarStart;
@@ -362,8 +362,8 @@ class CalendarDrawerRound {
 
         if (start != stop) {
             dc.setColor(0xaaaaaa, Gfx.COLOR_TRANSPARENT);
-            dc.drawArc((w)/2.0 + 0.5, (h)/2.0, radius, Gfx.ARC_COUNTER_CLOCKWISE, start, stop);
-            dc.drawArc((w)/2.0 - 0.5, (h)/2.0, radius, Gfx.ARC_CLOCKWISE, startR, stopR);
+            dc.drawArc(130.5, 129.5, radius, Gfx.ARC_COUNTER_CLOCKWISE, start, stop);
+            dc.drawArc(129.5, 129.5, radius, Gfx.ARC_CLOCKWISE, startR, stopR);
         }
 
         // Draw Tomorrow Arc
@@ -374,7 +374,7 @@ class CalendarDrawerRound {
 
 		if (start != stop) {
 			dc.setColor(0x888888, Gfx.COLOR_TRANSPARENT);
-			drawDottedArcs(dc, (w)/2.0, (h)/2.0, radius, arcTomorrowStartY, arcTomorrowStopY);
+			drawDottedArcs(dc, (w)/2.0, (h)/2.0, 129, arcTomorrowStartY, arcTomorrowStopY);
 			//drawDottedArc(dc, w/2, h/2, radius, Gfx.ARC_CLOCKWISE, startR, stopR);
 			//dc.drawArc(w/2, h/2, radius, Gfx.ARC_COUNTER_CLOCKWISE, start, stop);
 			//dc.drawArc(w/2, h/2, radius, Gfx.ARC_CLOCKWISE, startR, stopR);

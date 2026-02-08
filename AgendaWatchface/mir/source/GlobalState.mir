@@ -10,7 +10,7 @@ module GlobalState {
     <init> {
     }
     [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc"; @line = 8; @position = 8; @symbol_vardef = [runParseTestInSim,8,8,25]; ]
-    var runParseTestInSim = false;
+    var runParseTestInSim = true;
     [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc"; @line = 11; @position = 8; @symbol_vardef = [code,11,8,12]; ]
     var code = "";
     [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\GlobalState.mc"; @line = 12; @position = 8; @symbol_vardef = [calendar_raw,12,8,20]; ]
