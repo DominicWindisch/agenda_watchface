@@ -23,18 +23,10 @@ class CalendarActiveWatch extends App.AppBase {
     
     // onStart() is called on application start up
     function onStart(state) {
-        // Register for Body Battery updates (Fenix 8 / API 4.2+)
-        if (Toybox has :Complications) {
-            Complications.registerComplicationChangeCallback(method(:onComplicationChanged));
-            
-            // Subscribe specifically to Body Battery
-            Complications.subscribeToUpdates(
-                new Complications.Id(Complications.COMPLICATION_TYPE_BODY_BATTERY)
-            );
-        }
+        
     }
 
-    function onComplicationChanged(complicationId as Complications.Id) as Void {        
+    public function onComplicationChanged(complicationId as Complications.Id) as Void {        
     if (complicationId.getType() == Complications.COMPLICATION_TYPE_BODY_BATTERY) {
             var comp = Complications.getComplication(complicationId);
             
@@ -56,6 +48,18 @@ class CalendarActiveWatch extends App.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() {
+        if (Toybox.Complications has :registerComplicationChangeCallback) {
+            try {
+                Complications.registerComplicationChangeCallback(method(:onComplicationChanged));
+                // Subscribe specifically to Body Battery
+                Complications.subscribeToUpdates(
+                    new Complications.Id(Complications.COMPLICATION_TYPE_BODY_BATTERY)
+                );
+            } catch (e) {
+                System.println("Complications error: " + e.getErrorMessage());
+            }
+        }
+
         requestImmediateUpdate();
         var view = new CalendarActiveView(self);
         // Return BOTH the view and the delegate

@@ -638,7 +638,7 @@ D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_88_22_91_71_start:
         %tmp.39 = getm $.Toybox.Graphics;
         symbol [ FONT_XTINY %tmp.40 91 29 39 ];
         %tmp.40 = getv %tmp.39 :FONT_XTINY;
-        %tmp.41 = "Â°C";
+        %tmp.41 = "°C";
         symbol [ Gfx %tmp.42 91 47 50 ];
         %tmp.42 = getm $.Toybox.Graphics;
         symbol [ TEXT_JUSTIFY_LEFT %tmp.43 91 51 68 ];
@@ -724,7 +724,7 @@ D__git_agenda_watchface_AgendaWatchface_source_DataDrawer_mc_95_17_98_68_start:
         %tmp.36 = getm $.Toybox.Graphics;
         symbol [ FONT_SMALL %tmp.37 98 25 35 ];
         %tmp.37 = getv %tmp.36 :FONT_SMALL;
-        %tmp.38 = "Â°C";
+        %tmp.38 = "°C";
         symbol [ Gfx %tmp.39 98 43 46 ];
         %tmp.39 = getm $.Toybox.Graphics;
         symbol [ TEXT_JUSTIFY_RIGHT %tmp.40 98 47 65 ];
