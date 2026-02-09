@@ -368,7 +368,7 @@ class CalendarDrawerRound {
             dc.setColor(0xaaaaaa, Gfx.COLOR_TRANSPARENT);
             dc.drawArc(130.5, 129.5, radius, Gfx.ARC_COUNTER_CLOCKWISE, start, stop);
             dc.drawArc(129.5, 129.5, radius, Gfx.ARC_CLOCKWISE, startR, stopR);
-            dc.drawLine(1,127,1,133); // there is a tiny gap in the left arc otherwise
+            dc.drawLine(1,122,1,135); // there is a tiny gap in the left arc otherwise
         }
 
         // Draw Tomorrow Arc

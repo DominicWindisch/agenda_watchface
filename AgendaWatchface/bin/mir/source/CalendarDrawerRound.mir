@@ -2931,9 +2931,9 @@ D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_367_27_372
         symbol [ drawLine %tmp.500 371 15 23 ];
         %tmp.500 = getv function %tmp.499 :drawLine;
         %tmp.501 = 1;
-        %tmp.502 = 127;
+        %tmp.502 = 122;
         %tmp.503 = 1;
-        %tmp.504 = 133;
+        %tmp.504 = 135;
         invoke %tmp.499 %tmp.500(%tmp.501, %tmp.502, %tmp.503, %tmp.504);
 D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_367_27_372_8_stop:
         goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarDrawerRound_mc_367_8_372_8_if_end;
