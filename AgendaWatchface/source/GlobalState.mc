@@ -5,7 +5,7 @@ using Toybox.Lang as Lang;
 (:background)
 module GlobalState {
 
-    var runParseTestInSim = true;
+    var runParseTestInSim = false;
 
     // Application State
     var code = "";

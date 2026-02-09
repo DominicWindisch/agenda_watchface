@@ -197,7 +197,7 @@ class CalendarDrawerRound {
 	function getDxFromY(y as Lang.Number) {
 		// radius = 130
 		var dy = (y + 16) - 130; // subtract the line height
-		return Math.ceil(130 - Math.sqrt(16900 - (dy*dy))) - 2; // inherent small offset to get out of the arc
+		return Math.ceil(130 - Math.sqrt(16900 - (dy*dy))); // inherent small offset to get out of the arc
 	}
 
 	function drawDottedArcs(dc, cx, cy, radius, ystart, ystop) {
@@ -237,9 +237,13 @@ class CalendarDrawerRound {
 		var maxitems = 6;
 		var itemsDrawn = 0;
 		var dyLine = 16;
+
+        var textOffset = -2; // depending on the font, text may need to be vertically offset with respect to the arcs and lines
+        y = y + textOffset;
+
         //var xDelta = [15, 18, 22, 31, 44, 68];
 
-        var yCalendarStart = y;
+        var yCalendarStart = y-textOffset;
         //var yAfterToday = 0.0;
         var yAfterTomorrow = 0.0;
         //var yAfterFuture = 0.0;
@@ -276,7 +280,7 @@ class CalendarDrawerRound {
             var dashLength = 2;
             var gapLength = 2;
             for (var x = 0; x < w; x += (dashLength + gapLength)) {
-                dc.drawLine(x, y, x + dashLength, y);
+                dc.drawLine(x, y-textOffset, x + dashLength, y-textOffset);
             }
             //y += 1;
         }
@@ -297,10 +301,10 @@ class CalendarDrawerRound {
 
         // --- SEPARATOR ---
         y += 4;
-        separatorY = y;
+        separatorY = y-textOffset;
         dc.setColor(0xaaaaaa,Gfx.COLOR_TRANSPARENT);
         dc.setPenWidth(2);
-        dc.drawLine(0,y,w,y);
+        dc.drawLine(0,y-textOffset,w,y-textOffset);
         y += 0;
 
         // --- TOMORROW ---
@@ -315,7 +319,7 @@ class CalendarDrawerRound {
                 itemsDrawn++;
             } else {
                 for (var i = 0; i < tomorrowsEvents.size() && itemsDrawn < maxitems; i++) {
-                    drawEvent(dc, tomorrowsEvents[i], y, getDxFromY(y), 0xaaaaaa);
+                    drawEvent(dc, tomorrowsEvents[i], y, getDxFromY(y)+3, 0xaaaaaa);
                     y += dyLine;
                     itemsDrawn++;
                 }
@@ -324,11 +328,11 @@ class CalendarDrawerRound {
 			var dashLength = 3;
             var gapLength = 4;
             for (var x = 0; x < w; x += (dashLength + gapLength)) {
-                dc.drawLine(x, y, x + dashLength, y);
+                dc.drawLine(x, y-textOffset, x + dashLength, y-textOffset);
             }
             y += 1;
         }
-        yAfterTomorrow = y;
+        yAfterTomorrow = y-textOffset;
 
         // --- FUTURE ---
         var futureEvents = c.getFutureEvents(now) as Lang.Array<Calendar.Event>;
@@ -349,7 +353,7 @@ class CalendarDrawerRound {
 
         // Arc boundaries
         var arcTodayStartY = yCalendarStart;
-        var arcTodayStopY = separatorY;
+        var arcTodayStopY = separatorY+2;
 
         var arcTomorrowStartY = separatorY;
         var arcTomorrowStopY = yAfterTomorrow;
@@ -364,6 +368,7 @@ class CalendarDrawerRound {
             dc.setColor(0xaaaaaa, Gfx.COLOR_TRANSPARENT);
             dc.drawArc(130.5, 129.5, radius, Gfx.ARC_COUNTER_CLOCKWISE, start, stop);
             dc.drawArc(129.5, 129.5, radius, Gfx.ARC_CLOCKWISE, startR, stopR);
+            dc.drawLine(1,127,1,133); // there is a tiny gap in the left arc otherwise
         }
 
         // Draw Tomorrow Arc

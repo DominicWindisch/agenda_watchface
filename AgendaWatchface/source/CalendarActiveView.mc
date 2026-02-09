@@ -38,7 +38,7 @@ class CalendarActiveView extends Ui.WatchFace {
     
     function onUpdate(dc) {
 
-		if (GlobalState.runParseTestInSim) {
+		/*if (GlobalState.runParseTestInSim) {
             // Data from your JSON payload:
             GlobalState.code = "446-750-516";
             GlobalState.calendar_raw = "29509860;29511000;d;SD  (11:30-19:00);;1;\n29510310;29510370;;UV Creme! ;;1;\n29510290;29510350;;UV Creme! 💦;;1;\n29510700;29510760;;AI / Fluidized bed / Helmholtz I;;1;\n29511300;29512140;d;Leerung Bio-Tonne;;1;\n29512020;29512080;;Bei Ragna und Martin checken;;1;\n29512740;29513580;d;Leerung Restabfall, Blaue Tonne;;1;\n29512740;29513705;d;ZD  (08:35-16:05);;1;\n29513170;29513230;;UV Creme!;;1;\n29514780;29514840;;Besprechung 24/7-WMS;;1;\n29516050;29516110;;UV Creme! 💦;;1;\n";
@@ -51,7 +51,7 @@ class CalendarActiveView extends Ui.WatchFace {
 
             GlobalState.calendar_dirty = true;
             GlobalState.runParseTestInSim = false; // Unset flag so it only runs once
-        }
+        }*/
 
     	if (GlobalState.settings_dirty) {
     		drawer.updateSettings();
