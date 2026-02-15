@@ -42,6 +42,18 @@ class CalendarActiveDelegate extends Ui.WatchFaceDelegate {
             return true;
         }
 
+        // 4. Weather Area (Top Left)
+        if (y > 50 && y < 110 && x < (w/2 - 50)) {
+            exitToWeather();
+            return true;
+        }
+
+        // 5. Weather Area (Top Right)
+        if (y > 50 && y < 110 && x > (w/2 + 50)) {
+            exitToWeatherForecast();
+            return true;
+        }
+
         return false;
     }
 
@@ -50,6 +62,22 @@ class CalendarActiveDelegate extends Ui.WatchFaceDelegate {
             Complications.exitTo(new Complications.Id(Complications.COMPLICATION_TYPE_BODY_BATTERY));
         } else {
             System.println("Body Battery ExitTo not supported");
+        }
+    }
+
+    function exitToWeather() {
+        if (Toybox.Complications has :exitTo) {
+            Complications.exitTo(new Complications.Id(Complications.COMPLICATION_TYPE_CURRENT_WEATHER));
+        } else {
+            System.println("Weather ExitTo not supported");
+        }
+    }
+
+    function exitToWeatherForecast() {
+        if (Toybox.Complications has :exitTo) {
+            Complications.exitTo(new Complications.Id(Complications.COMPLICATION_TYPE_FORECAST_WEATHER_2DAY));
+        } else {
+            System.println("Weather ExitTo not supported");
         }
     }
 

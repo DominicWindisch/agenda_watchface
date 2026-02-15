@@ -35,9 +35,9 @@ D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_10_30_1
     }
     [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc"; @line = 16; @symbol_functiondef = [onPress,16,13,20]; @symbol_param<0> = [evt,16,21,24]; ]
     function onPress(evt) {
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_16_26_46_4_start:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_16_26_58_4_start:
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 17 8 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_16_26_46_4_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_16_26_46_4_stop" ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_16_26_58_4_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_16_26_58_4_stop" ]
         %coords.1 = local;
         symbol [ coords %coords.1 17 12 18 ];
         %tmp.1 = lgetv %evt;
@@ -48,7 +48,7 @@ D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_16_26_4
         lputv %coords.1 %tmp.3;
         symbol [ coords %coords.1 17 12 18 ];
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 18 8 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_16_26_46_4_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_16_26_46_4_stop" ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_16_26_58_4_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_16_26_58_4_stop" ]
         %x.2 = local;
         symbol [ x %x.2 18 12 13 ];
         %tmp.4 = lgetv %coords.1;
@@ -58,7 +58,7 @@ D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_16_26_4
         lputv %x.2 %tmp.6;
         symbol [ x %x.2 18 12 13 ];
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 19 8 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_16_26_46_4_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_16_26_46_4_stop" ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_16_26_58_4_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_16_26_58_4_stop" ]
         %y.3 = local;
         symbol [ y %y.3 19 12 13 ];
         %tmp.7 = lgetv %coords.1;
@@ -68,7 +68,7 @@ D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_16_26_4
         lputv %y.3 %tmp.9;
         symbol [ y %y.3 19 12 13 ];
 [ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 20 8 ]
-        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_16_26_46_4_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_16_26_46_4_stop" ]
+        [ "D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_16_26_58_4_start" "D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_16_26_58_4_stop" ]
         %w.4 = local;
         symbol [ w %w.4 20 12 13 ];
         symbol [ _view %tmp.11 20 16 21 ];
@@ -217,125 +217,305 @@ D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_40_34_4
 D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_40_34_43_8_stop:
         goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_40_8_43_8_if_end;
 D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_40_8_43_8_if_end:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 45 8 ]
-        %tmp.71 = false;
-        ret %tmp.71;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_16_26_46_4_stop:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 46 8 ]
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_46_8_49_8_if_stmt:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_46_12_46_46_begin:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_46_12_46_26_begin:
+        %tmp.71 = lgetv %y.3;
+        symbol [ y %tmp.71 46 12 13 ];
+        %tmp.72 = 50;
+        %tmp.73 = gt %tmp.71 %tmp.72;
+        bf %tmp.73 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_46_8_49_8_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_46_22_46_26_true:
+        %tmp.74 = lgetv %y.3;
+        symbol [ y %tmp.74 46 22 23 ];
+        %tmp.75 = 110;
+        %tmp.76 = lt %tmp.74 %tmp.75;
+        push %tmp.76;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_46_22_46_26_end:
+        %tmp.77 = phi [%tmp.73 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_46_12_46_26_begin] [%tmp.76 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_46_22_46_26_true] [%tmp.77 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_46_22_46_26_end];
+        bf %tmp.77 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_46_8_49_8_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_46_33_46_46_true:
+        %tmp.78 = lgetv %x.2;
+        symbol [ x %tmp.78 46 33 34 ];
+        %tmp.79 = lgetv %w.4;
+        symbol [ w %tmp.79 46 38 39 ];
+        %tmp.80 = 2;
+        %tmp.81 = div %tmp.79 %tmp.80;
+        %tmp.82 = 50;
+        %tmp.83 = sub %tmp.81 %tmp.82;
+        %tmp.84 = lt %tmp.78 %tmp.83;
+        push %tmp.84;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_46_33_46_46_end:
+        %tmp.85 = phi [%tmp.77 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_46_12_46_46_begin] [%tmp.84 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_46_33_46_46_true] [%tmp.85 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_46_33_46_46_end];
+        bf %tmp.85 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_46_8_49_8_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_46_8_49_8_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_46_49_49_8_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 47 12 ]
+        %tmp.86 = self;
+        symbol [ exitToWeather %tmp.87 47 12 25 ];
+        %tmp.87 = getv function %tmp.86 :exitToWeather;
+        invoke %tmp.86 %tmp.87();
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 48 12 ]
+        %tmp.88 = true;
+        ret %tmp.88;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_46_49_49_8_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_46_8_49_8_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_46_8_49_8_if_end:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 52 8 ]
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_52_8_55_8_if_stmt:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_52_12_52_46_begin:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_52_12_52_26_begin:
+        %tmp.89 = lgetv %y.3;
+        symbol [ y %tmp.89 52 12 13 ];
+        %tmp.90 = 50;
+        %tmp.91 = gt %tmp.89 %tmp.90;
+        bf %tmp.91 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_52_8_55_8_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_52_22_52_26_true:
+        %tmp.92 = lgetv %y.3;
+        symbol [ y %tmp.92 52 22 23 ];
+        %tmp.93 = 110;
+        %tmp.94 = lt %tmp.92 %tmp.93;
+        push %tmp.94;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_52_22_52_26_end:
+        %tmp.95 = phi [%tmp.91 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_52_12_52_26_begin] [%tmp.94 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_52_22_52_26_true] [%tmp.95 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_52_22_52_26_end];
+        bf %tmp.95 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_52_8_55_8_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_52_33_52_46_true:
+        %tmp.96 = lgetv %x.2;
+        symbol [ x %tmp.96 52 33 34 ];
+        %tmp.97 = lgetv %w.4;
+        symbol [ w %tmp.97 52 38 39 ];
+        %tmp.98 = 2;
+        %tmp.99 = div %tmp.97 %tmp.98;
+        %tmp.100 = 50;
+        %tmp.101 = add %tmp.99 %tmp.100;
+        %tmp.102 = gt %tmp.96 %tmp.101;
+        push %tmp.102;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_52_33_52_46_end:
+        %tmp.103 = phi [%tmp.95 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_52_12_52_46_begin] [%tmp.102 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_52_33_52_46_true] [%tmp.103 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_52_33_52_46_end];
+        bf %tmp.103 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_52_8_55_8_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_52_8_55_8_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_52_49_55_8_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 53 12 ]
+        %tmp.104 = self;
+        symbol [ exitToWeatherForecast %tmp.105 53 12 33 ];
+        %tmp.105 = getv function %tmp.104 :exitToWeatherForecast;
+        invoke %tmp.104 %tmp.105();
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 54 12 ]
+        %tmp.106 = true;
+        ret %tmp.106;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_52_49_55_8_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_52_8_55_8_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_52_8_55_8_if_end:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 57 8 ]
+        %tmp.107 = false;
+        ret %tmp.107;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_16_26_58_4_stop:
     }
-    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc"; @line = 48; @symbol_functiondef = [exitToBodyBattery,48,13,30]; ]
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc"; @line = 60; @symbol_functiondef = [exitToBodyBattery,60,13,30]; ]
     function exitToBodyBattery() {
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_48_33_54_4_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 49 8 ]
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_49_8_53_8_if_stmt:
-        symbol [ Toybox %tmp.2 49 12 18 ];
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_60_33_66_4_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 61 8 ]
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_61_8_65_8_if_stmt:
+        symbol [ Toybox %tmp.2 61 12 18 ];
         %tmp.2 = getv ? :Toybox;
-        symbol [ Complications %tmp.3 49 19 32 ];
+        symbol [ Complications %tmp.3 61 19 32 ];
         %tmp.3 = getv %tmp.2 :Complications;
         %tmp.5 = const :exitTo;
-        symbol [ exitTo %tmp.5 49 38 44 const ];
+        symbol [ exitTo %tmp.5 61 38 44 const ];
         %tmp.6 = canhazplz %tmp.3 %tmp.5;
-        bf %tmp.6 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_49_8_53_8_if_else_false;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_49_8_53_8_if_true:
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_49_46_51_8_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 50 12 ]
-        symbol [ Complications %tmp.7 50 12 25 ];
+        bf %tmp.6 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_61_8_65_8_if_else_false;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_61_8_65_8_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_61_46_63_8_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 62 12 ]
+        symbol [ Complications %tmp.7 62 12 25 ];
         %tmp.7 = getm $.Toybox.Complications;
-        symbol [ exitTo %tmp.8 50 26 32 ];
+        symbol [ exitTo %tmp.8 62 26 32 ];
         %tmp.8 = getv function %tmp.7 :exitTo;
-        symbol [ Complications %tmp.11 50 37 50 ];
+        symbol [ Complications %tmp.11 62 37 50 ];
         %tmp.11 = getm $.Toybox.Complications;
-        symbol [ Id %tmp.12 50 51 53 ];
+        symbol [ Id %tmp.12 62 51 53 ];
         %tmp.12 = getv function ? %tmp.11 :Id;
-        symbol [ Complications %tmp.13 50 54 67 ];
+        symbol [ Complications %tmp.13 62 54 67 ];
         %tmp.13 = getm $.Toybox.Complications;
-        symbol [ COMPLICATION_TYPE_BODY_BATTERY %tmp.14 50 68 98 ];
+        symbol [ COMPLICATION_TYPE_BODY_BATTERY %tmp.14 62 68 98 ];
         %tmp.14 = getv %tmp.13 :COMPLICATION_TYPE_BODY_BATTERY;
         %tmp.9 = newc %tmp.12 (%tmp.14);
         invoke %tmp.7 %tmp.8(%tmp.9);
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_49_46_51_8_stop:
-        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_49_8_53_8_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_49_8_53_8_if_else_false:
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_51_15_53_8_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 52 12 ]
-        symbol [ System %tmp.16 52 12 18 ];
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_61_46_63_8_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_61_8_65_8_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_61_8_65_8_if_else_false:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_63_15_65_8_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 64 12 ]
+        symbol [ System %tmp.16 64 12 18 ];
         %tmp.16 = getv ? :System;
-        symbol [ println %tmp.17 52 19 26 ];
+        symbol [ println %tmp.17 64 19 26 ];
         %tmp.17 = getv function %tmp.16 :println;
         %tmp.18 = "Body Battery ExitTo not supported";
         invoke %tmp.16 %tmp.17(%tmp.18);
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_51_15_53_8_stop:
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_49_8_53_8_if_end:
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_48_33_54_4_stop:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_63_15_65_8_stop:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_61_8_65_8_if_end:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_60_33_66_4_stop:
     }
-    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc"; @line = 56; @symbol_functiondef = [toggleBattery,56,13,26]; ]
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc"; @line = 68; @symbol_functiondef = [exitToWeather,68,13,26]; ]
+    function exitToWeather() {
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_68_29_74_4_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 69 8 ]
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_69_8_73_8_if_stmt:
+        symbol [ Toybox %tmp.2 69 12 18 ];
+        %tmp.2 = getv ? :Toybox;
+        symbol [ Complications %tmp.3 69 19 32 ];
+        %tmp.3 = getv %tmp.2 :Complications;
+        %tmp.5 = const :exitTo;
+        symbol [ exitTo %tmp.5 69 38 44 const ];
+        %tmp.6 = canhazplz %tmp.3 %tmp.5;
+        bf %tmp.6 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_69_8_73_8_if_else_false;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_69_8_73_8_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_69_46_71_8_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 70 12 ]
+        symbol [ Complications %tmp.7 70 12 25 ];
+        %tmp.7 = getm $.Toybox.Complications;
+        symbol [ exitTo %tmp.8 70 26 32 ];
+        %tmp.8 = getv function %tmp.7 :exitTo;
+        symbol [ Complications %tmp.11 70 37 50 ];
+        %tmp.11 = getm $.Toybox.Complications;
+        symbol [ Id %tmp.12 70 51 53 ];
+        %tmp.12 = getv function ? %tmp.11 :Id;
+        symbol [ Complications %tmp.13 70 54 67 ];
+        %tmp.13 = getm $.Toybox.Complications;
+        symbol [ COMPLICATION_TYPE_CURRENT_WEATHER %tmp.14 70 68 101 ];
+        %tmp.14 = getv %tmp.13 :COMPLICATION_TYPE_CURRENT_WEATHER;
+        %tmp.9 = newc %tmp.12 (%tmp.14);
+        invoke %tmp.7 %tmp.8(%tmp.9);
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_69_46_71_8_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_69_8_73_8_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_69_8_73_8_if_else_false:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_71_15_73_8_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 72 12 ]
+        symbol [ System %tmp.16 72 12 18 ];
+        %tmp.16 = getv ? :System;
+        symbol [ println %tmp.17 72 19 26 ];
+        %tmp.17 = getv function %tmp.16 :println;
+        %tmp.18 = "Weather ExitTo not supported";
+        invoke %tmp.16 %tmp.17(%tmp.18);
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_71_15_73_8_stop:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_69_8_73_8_if_end:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_68_29_74_4_stop:
+    }
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc"; @line = 76; @symbol_functiondef = [exitToWeatherForecast,76,13,34]; ]
+    function exitToWeatherForecast() {
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_76_37_82_4_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 77 8 ]
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_77_8_81_8_if_stmt:
+        symbol [ Toybox %tmp.2 77 12 18 ];
+        %tmp.2 = getv ? :Toybox;
+        symbol [ Complications %tmp.3 77 19 32 ];
+        %tmp.3 = getv %tmp.2 :Complications;
+        %tmp.5 = const :exitTo;
+        symbol [ exitTo %tmp.5 77 38 44 const ];
+        %tmp.6 = canhazplz %tmp.3 %tmp.5;
+        bf %tmp.6 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_77_8_81_8_if_else_false;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_77_8_81_8_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_77_46_79_8_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 78 12 ]
+        symbol [ Complications %tmp.7 78 12 25 ];
+        %tmp.7 = getm $.Toybox.Complications;
+        symbol [ exitTo %tmp.8 78 26 32 ];
+        %tmp.8 = getv function %tmp.7 :exitTo;
+        symbol [ Complications %tmp.11 78 37 50 ];
+        %tmp.11 = getm $.Toybox.Complications;
+        symbol [ Id %tmp.12 78 51 53 ];
+        %tmp.12 = getv function ? %tmp.11 :Id;
+        symbol [ Complications %tmp.13 78 54 67 ];
+        %tmp.13 = getm $.Toybox.Complications;
+        symbol [ COMPLICATION_TYPE_FORECAST_WEATHER_2DAY %tmp.14 78 68 107 ];
+        %tmp.14 = getv %tmp.13 :COMPLICATION_TYPE_FORECAST_WEATHER_2DAY;
+        %tmp.9 = newc %tmp.12 (%tmp.14);
+        invoke %tmp.7 %tmp.8(%tmp.9);
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_77_46_79_8_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_77_8_81_8_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_77_8_81_8_if_else_false:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_79_15_81_8_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 80 12 ]
+        symbol [ System %tmp.16 80 12 18 ];
+        %tmp.16 = getv ? :System;
+        symbol [ println %tmp.17 80 19 26 ];
+        %tmp.17 = getv function %tmp.16 :println;
+        %tmp.18 = "Weather ExitTo not supported";
+        invoke %tmp.16 %tmp.17(%tmp.18);
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_79_15_81_8_stop:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_77_8_81_8_if_end:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_76_37_82_4_stop:
+    }
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc"; @line = 84; @symbol_functiondef = [toggleBattery,84,13,26]; ]
     function toggleBattery() {
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_56_29_60_4_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 57 8 ]
-        symbol [ _view %tmp.2 57 8 13 ];
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_84_29_88_4_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 85 8 ]
+        symbol [ _view %tmp.2 85 8 13 ];
         %tmp.2 = getv ? :_view;
-        symbol [ triggerFlash %tmp.3 57 14 26 ];
+        symbol [ triggerFlash %tmp.3 85 14 26 ];
         %tmp.3 = getv function %tmp.2 :triggerFlash;
         invoke %tmp.2 %tmp.3();
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 58 8 ]
-        symbol [ GlobalState %tmp.4 58 8 19 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 86 8 ]
+        symbol [ GlobalState %tmp.4 86 8 19 ];
         %tmp.4 = getv self :GlobalState;
-        symbol [ GlobalState %tmp.6 58 43 54 ];
+        symbol [ GlobalState %tmp.6 86 43 54 ];
         %tmp.6 = getv ? :GlobalState;
-        symbol [ displayPhoneBattery %tmp.7 58 55 74 ];
+        symbol [ displayPhoneBattery %tmp.7 86 55 74 ];
         %tmp.7 = getv %tmp.6 :displayPhoneBattery;
         %tmp.8 = not %tmp.7;
-        symbol [ displayPhoneBattery ? 58 20 39 ];
+        symbol [ displayPhoneBattery ? 86 20 39 ];
         putv %tmp.4 :displayPhoneBattery %tmp.8;
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 59 8 ]
-        symbol [ Ui %tmp.9 59 8 10 ];
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 87 8 ]
+        symbol [ Ui %tmp.9 87 8 10 ];
         %tmp.9 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.10 59 11 24 ];
+        symbol [ requestUpdate %tmp.10 87 11 24 ];
         %tmp.10 = getv function %tmp.9 :requestUpdate;
         invoke %tmp.9 %tmp.10();
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_56_29_60_4_stop:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_84_29_88_4_stop:
     }
-    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc"; @line = 62; @symbol_functiondef = [exitToCalendar,62,13,27]; ]
+    [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc"; @line = 90; @symbol_functiondef = [exitToCalendar,90,13,27]; ]
     function exitToCalendar() {
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_62_30_70_4_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 64 8 ]
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_64_8_69_8_if_stmt:
-        symbol [ Complications %tmp.1 64 12 25 ];
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_90_30_98_4_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 92 8 ]
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_92_8_97_8_if_stmt:
+        symbol [ Complications %tmp.1 92 12 25 ];
         %tmp.1 = getm $.Toybox.Complications;
         %tmp.3 = const :exitTo;
-        symbol [ exitTo %tmp.3 64 31 37 const ];
+        symbol [ exitTo %tmp.3 92 31 37 const ];
         %tmp.4 = canhazplz %tmp.1 %tmp.3;
-        bf %tmp.4 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_64_8_69_8_if_else_false;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_64_8_69_8_if_true:
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_64_39_66_8_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 65 12 ]
-        symbol [ Complications %tmp.5 65 12 25 ];
+        bf %tmp.4 @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_92_8_97_8_if_else_false;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_92_8_97_8_if_true:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_92_39_94_8_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 93 12 ]
+        symbol [ Complications %tmp.5 93 12 25 ];
         %tmp.5 = getm $.Toybox.Complications;
-        symbol [ exitTo %tmp.6 65 26 32 ];
+        symbol [ exitTo %tmp.6 93 26 32 ];
         %tmp.6 = getv function %tmp.5 :exitTo;
-        symbol [ Complications %tmp.9 65 37 50 ];
+        symbol [ Complications %tmp.9 93 37 50 ];
         %tmp.9 = getm $.Toybox.Complications;
-        symbol [ Id %tmp.10 65 51 53 ];
+        symbol [ Id %tmp.10 93 51 53 ];
         %tmp.10 = getv function ? %tmp.9 :Id;
-        symbol [ Complications %tmp.11 65 54 67 ];
+        symbol [ Complications %tmp.11 93 54 67 ];
         %tmp.11 = getm $.Toybox.Complications;
-        symbol [ COMPLICATION_TYPE_CALENDAR_EVENTS %tmp.12 65 68 101 ];
+        symbol [ COMPLICATION_TYPE_CALENDAR_EVENTS %tmp.12 93 68 101 ];
         %tmp.12 = getv %tmp.11 :COMPLICATION_TYPE_CALENDAR_EVENTS;
         %tmp.7 = newc %tmp.10 (%tmp.12);
         invoke %tmp.5 %tmp.6(%tmp.7);
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_64_39_66_8_stop:
-        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_64_8_69_8_if_end;
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_64_8_69_8_if_else_false:
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_66_15_69_8_start:
-[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 68 12 ]
-        symbol [ System %tmp.14 68 12 18 ];
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_92_39_94_8_stop:
+        goto @D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_92_8_97_8_if_end;
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_92_8_97_8_if_else_false:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_94_15_97_8_start:
+[ "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc" 96 12 ]
+        symbol [ System %tmp.14 96 12 18 ];
         %tmp.14 = getv ? :System;
-        symbol [ println %tmp.15 68 19 26 ];
+        symbol [ println %tmp.15 96 19 26 ];
         %tmp.15 = getv function %tmp.14 :println;
         %tmp.16 = "ExitTo not supported";
         invoke %tmp.14 %tmp.15(%tmp.16);
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_66_15_69_8_stop:
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_64_8_69_8_if_end:
-D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_62_30_70_4_stop:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_94_15_97_8_stop:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_92_8_97_8_if_end:
+D__git_agenda_watchface_AgendaWatchface_source_CalendarActiveDelegate_mc_90_30_98_4_stop:
     }
 }
 [ @file = "D:\git\agenda_watchface\AgendaWatchface\source\CalendarActiveDelegate.mc"; @line = 1; ]
